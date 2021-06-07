@@ -5,13 +5,15 @@
 .galaxy {
     color: #fff;
     text-align: left;
-    font: normal normal bold 38px/43px Mosk;
+    font-family: Mosk-700;
+    font-size: 38px;
     letter-spacing: 0px;    
 }
 
 .protocol {
     text-align: left;
-    font: normal normal 100 38px/43px Mosk-thin;
+    font-family: Mosk-100;
+    font-size: 38px;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
@@ -26,12 +28,14 @@ hr {
 
 .footerHeading {
     color: #fff;
-    font-family: Mosk;
+    font-family: Mosk-700;
+    font-size: 22px;
 }
 
 .footerText {
     color: #fff;
-    font-family: Mosk-thin;
+    font-family: Mosk-200;
+    font-size: 22px;
 }
 
 .space {
@@ -41,5 +45,6 @@ hr {
 .copyright {
     color: #737373;
     text-align: center;
-    font-family: Mosk-thin;
+    font-family: Mosk-300;
+    font-size: 20px;
 }

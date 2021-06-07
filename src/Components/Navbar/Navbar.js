@@ -87,7 +87,7 @@ const Navbar = () => {
 
             <NavBtn>
                 <NavBtnLink to='/galaxyswap'>
-                    <span className='bold'><b>Use</b>&nbsp;</span><span className='bold'>Galaxy</span><span className='normal'>Swap</span>
+                    <span className='bold'>Use&nbsp;</span><span className='bold'>Galaxy</span><span className='normal'>Swap</span>
                 </NavBtnLink>
             </NavBtn>
         </Nav>
