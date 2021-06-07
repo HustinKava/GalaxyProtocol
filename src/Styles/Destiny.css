@@ -22,14 +22,13 @@
     background: transparent linear-gradient(44deg, #440C8B 0%, #FF00FF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 324px;
 }
 
 .destBox1:hover {
@@ -44,14 +43,13 @@
     background: transparent linear-gradient(226deg, #00CDD5 0%, #440C8B 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 324px;
 }
 
 .destBox2:hover {
@@ -66,14 +64,13 @@
     background: transparent linear-gradient(55deg, #151515 0%, #393939 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 324px;
 }
 
 .destBox3:hover {
@@ -88,14 +85,13 @@
     background: transparent linear-gradient(226deg, #440C8B 0%, #220646 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 324px;
 }
 
 .destBox4:hover {
@@ -107,4 +103,11 @@
 .destBoxHeader {
     font-family: Mosk-700;
     font-size: 35px;
+}
+
+.destBoxText {
+    text-align: center;
+    font-family: Mosk-300;
+    font-size: 25px;
+    padding: 4px;
 }

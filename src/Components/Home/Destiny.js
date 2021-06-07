@@ -12,27 +12,30 @@ function Destiny() {
             </div>
             <div className='space'/>
             <Grid container spacing={1}>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <div className='destBox1'>
                         <span className='destBoxHeader'>Trade</span>
-                        <p className='destBoxText'>Swap, stake, yield your favourite tokens on our exchange</p>
+                        <span className='destBoxText'>Swap, stake, yield your favourite tokens on our exchange</span>
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <div className='destBox2'>
                         <span className='destBoxHeader'>Merch</span>
+                        <span className='destBoxText'>Get your favourite Galaxy merchandise</span>
                     </div>
                 </Grid>
             </Grid>
             <Grid container spacing={1}>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <div className='destBox3'>
                         <span className='destBoxHeader'>Learn</span>
+                        <span className='destBoxText'>We explain everything you need to know about crypto</span>
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <div className='destBox4'>
                         <span className='destBoxHeader'>Jobs</span>
+                        <span className='destBoxText'>We explain everything you need to know about crypto</span>
                     </div>
                 </Grid>
             </Grid>
