@@ -13,11 +13,46 @@ code {
 }
 
 @font-face {
-  font-family: 'Mosk';
-  src: local('Mosk'), url(./Styles/Fonts/Mosk\ Semi-Bold\ 600.ttf) format('truetype');
+  font-family: 'Mosk-100';
+  src: local('Mosk-100'), url(./Styles/Fonts/Mosk\ Thin\ 100.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Mosk-thin';
-  src: local('Mosk-thin'), url(./Styles/Fonts/Mosk\ Thin\ 100.ttf) format('truetype');
+  font-family: 'Mosk-200';
+  src: local('Mosk-200'), url(./Styles/Fonts/Mosk\ Extra-Light\ 200.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-300';
+  src: local('Mosk-300'), url(./Styles/Fonts/Mosk\ Light\ 300.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-400';
+  src: local('Mosk-400'), url(./Styles/Fonts/Mosk\ Normal\ 400.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-500';
+  src: local('Mosk-500'), url(./Styles/Fonts/Mosk\ Medium\ 500.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-600';
+  src: local('Mosk-600'), url(./Styles/Fonts/Mosk\ Semi-Bold\ 600.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-700';
+  src: local('Mosk-700'), url(./Styles/Fonts/Mosk\ Bold\ 700.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-800';
+  src: local('Mosk-800'), url(./Styles/Fonts/Mosk\ Extra-Bold\ 800.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mosk-900';
+  src: local('Mosk-900'), url(./Styles/Fonts/Mosk\ Ultra-Bold\ 900.ttf) format('truetype');
 }
