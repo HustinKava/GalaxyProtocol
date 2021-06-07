@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
 import '../../Styles/Navbar.css';
 
-const Navbar2 = () => {
+const Navbar = () => {
     return (
         <Nav>
 
@@ -16,8 +16,8 @@ const Navbar2 = () => {
             {/* Menu items */}
             <NavMenu>
                 <div className='dropdown'>
-                    <span class="dropbtn">Products</span>
-                    <div class="dropdown-content">
+                    <span className="dropbtn">Products</span>
+                    <div className="dropdown-content">
                         <NavLink to='/galaxyswap' activeStyle>
                             <span>GalaxySwap</span>
                         </NavLink>
@@ -34,8 +34,8 @@ const Navbar2 = () => {
                 </div>
                 
                 <div className='dropdown'>
-                    <span class="dropbtn">Developers</span>
-                    <div class="dropdown-content">
+                    <span className="dropbtn">Developers</span>
+                    <div className="dropdown-content">
                         <NavLink to='/documentation' activeStyle>
                             <span>Documentation</span>
                         </NavLink>
@@ -49,8 +49,8 @@ const Navbar2 = () => {
                 </div>
 
                 <div className='dropdown'>
-                    <span class="dropbtn">Community</span>
-                    <div class="dropdown-content">
+                    <span className="dropbtn">Community</span>
+                    <div className="dropdown-content">
                         <NavLink to='/discord' activeStyle>
                             <span>Discord</span>
                         </NavLink>
@@ -64,8 +64,8 @@ const Navbar2 = () => {
                 </div>
 
                 <div className='dropdown'>
-                    <span class="dropbtn">About</span>
-                    <div class="dropdown-content">
+                    <span className="dropbtn">About</span>
+                    <div className="dropdown-content">
                         <NavLink to='/aboutus' activeStyle>
                             <span>About Us</span>
                         </NavLink>
@@ -94,4 +94,4 @@ const Navbar2 = () => {
     )
 }
 
-export default Navbar2
+export default Navbar
