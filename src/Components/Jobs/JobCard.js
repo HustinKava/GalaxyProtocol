@@ -7,25 +7,47 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-    root: {
-        width: 744.05,
-        height: 474.21,
+    mainCard: {
+        width: '100%',
+        height: '103%',
         background: 'linear-gradient(308deg, #000000 0%, #171717 100%) 0% 0%',
         boxShadow: '0px 0px 20px #000000CB',
         opacity: 1
 
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
+    postingType: {
+        width: 91,
+        height: 33,
+        background: 'transparent linear-gradient(67deg, #00CDD5 0%, #00CDD5 47%, #F60AFF 100%, #000000 100%) 0% 0% no-repeat padding-box',
+        borderRadius: 4,
+        opacity: 1,
+        color: 'white',
+        fontSize: 22,
+        textAlign: 'center',
+        justifyContent: 'center',
+        // This doesn't seem to be working properly
+        fontFamily: 'Mosk-500'
     },
-    title: {
-        fontSize: 14,
+    jobTitle: {
+        fontSize: 58,
+        fontFamily: 'Mosk-600',
+        color: 'white',
     },
-    pos: {
-        marginBottom: 12,
+    jobDesc: {
+        color: 'white',
+        fontFamily: 'Mosk-200',
+        fontSize: 23
     },
+    learnMore: {
+        background: '#292929',
+        color: '#ffffff',
+        borderRadius: 4,
+        height: 41,
+        width: 184,
+        fontFamily: 'Mosk-500',
+        textTransform: 'none',
+        fontSize: 22
+    }
 });
 
 
@@ -34,17 +56,17 @@ function JobCard() {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
-            <div>
-                <p>Remote</p>
+        <Card className={classes.mainCard}>
+            <div className={classes.postingType}>
+                <p >Remote</p>
             </div>
             <CardContent>
-                <h2>Job title here</h2>
-                <p>We’re in search of a marketing specialist to join our team! In this role, you’ll deliver impactful storytelling across various digital platforms.</p>
+                <h2 className={classes.jobTitle}>Job title here</h2>
+                <p className={classes.jobDesc}>We’re in search of a marketing specialist to join our team! In this role, you’ll deliver impactful storytelling across various digital platforms.</p>
             </CardContent>
 
             <CardActions>
-                <Button>Learn more</Button>
+                <Button className={classes.learnMore} href="">Learn more</Button>
             </CardActions>
         </Card>
     )
