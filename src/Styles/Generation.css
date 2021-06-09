@@ -43,3 +43,11 @@
     border: solid 1px #FF00FF;
     cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+@media screen and (max-width: 576px) { .genHeader {font-size: 45px;}}
+@media screen and (max-width: 576px) { .genText {font-size: 16px;}}
+@media screen and (max-width: 576px) { .genButtons {padding-top: 25px;}}
+@media screen and (max-width: 576px) { .genBtn1 {font-size: 16px; width: 114px; height: 27px;}}
+@media screen and (max-width: 576px) { .genBtn2 {font-size: 14px; width: 114px; height: 27px;}}

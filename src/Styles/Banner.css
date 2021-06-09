@@ -1,11 +1,11 @@
 .gridPadding {
-    padding-left: 200px !important;
-    padding-right: 200px !important;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .gridPadding2 {
-    padding-left: 60px !important;
-    padding-right: 200px !important;
+    padding-left: 60px;
+    padding-right: 200px;
 }
 
 /* Space to seperate elements */
@@ -172,3 +172,14 @@
     left: 20px;
     top: 3200px;
 }
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+@media screen and (max-width: 576px) { .gridPadding {padding-left: 10px; padding-right: 10px;}}
+@media screen and (max-width: 576px) { .gridPadding2 {padding-left: 10px; padding-right: 10px;}}
+@media screen and (max-width: 576px) { .banHeaderOne, .banHeaderOne2, .banHeaderTwo, .banHeaderTwo2 {font-size: 45px;}}
+@media screen and (max-width: 576px) { .banHeaderThree {font-size: 20px;}}
+@media screen and (max-width: 576px) { .banHeaderThree2 {font-size: 35px;}}
+@media screen and (max-width: 576px) { .banDesc, .banDesc2 {font-size: 12px;}}
+@media screen and (max-width: 576px) { .btnSwap, .btnMerch, .btnTelegram, .btnDiscord {width: 130px; height: 30px; font-size: 15px;}}
+
