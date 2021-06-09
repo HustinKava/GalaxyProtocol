@@ -24,6 +24,6 @@ function JobsGallery() {
                 </Grid>
             </div>
         </>)
-}
+} 
 
 export default JobsGallery;
