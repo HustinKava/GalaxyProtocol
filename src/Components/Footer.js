@@ -6,19 +6,20 @@ function Footer() {
 
     return (
         
-        <div className='footer'>
-            <Grid container spacing={3}>
+
+        <div>
+            <Grid container spacing={1}>
 
                 {/* Footer company logo and name */}
-                <Grid item xs={4} >
+                <Grid item xs={12} md={4}>
                     <div className='footerLogo'>
-                        <span className='galaxy'>Galaxy</span>
-                        <span className='protocol'>protocol</span>
+                        <span className='footGalaxy'>Galaxy</span>
+                        <span className='footProtocol'>protocol</span>
                     </div>
                 </Grid>
 
                 {/* Footer items */}
-                <Grid item xs={2}>
+                <Grid item xs={3} md={2}>
                     <hr/>
                     <p className='footerHeading'>Products</p>
                     <br/>
@@ -29,7 +30,7 @@ function Footer() {
                     <p className='footerText'>Galaxy University</p>
                     <p className='footerText'>Galaxy Merchandise</p>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={3} md={2}>
                     <hr/>
                     <p className='footerHeading'>Developers</p>
                     <br/>
@@ -40,7 +41,7 @@ function Footer() {
                     <p className='footerText'>Terms & Conditions</p>
                     <p className='footerText'>Privacy & Policy</p>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={3} md={2}>
                     <hr/>
                     <p className='footerHeading'>Community</p>
                     <br/>
@@ -48,7 +49,7 @@ function Footer() {
                     <p className='footerText'>Telegram</p>
                     <p className='footerText'>Twitter</p>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={3} md={2}>
                     <hr/>
                     <p className='footerHeading'>About</p>
                     <br/>
