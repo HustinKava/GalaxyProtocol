@@ -1,15 +1,15 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
+import '../../Styles/JobHero.css';
 
 
 function JobsHero() {
     return (
         <div>
-            <h1>Work With Us</h1>
+            <h1 className='jobHeroHeader'>Work With Us</h1>
 
-            <p>If you get incredibly excited about Blockchain, cryptocurrency and everything that has to do with Starwars, you’re in the right place.</p>
+            <p className='jobHeroIntro'>If you get incredibly excited about Blockchain, cryptocurrency and everything that has to do with Starwars, you’re in the right place.</p>
 
-            <p>APPLY NOW</p>
+            <p className='jobHeroCTA'>APPLY NOW</p>
         </div>
     )
 }

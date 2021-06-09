@@ -5,6 +5,8 @@ import '../Styles/Footer.css';
 function Footer() {
 
     return (
+        
+
         <div>
             <Grid container spacing={1}>
 
@@ -59,7 +61,7 @@ function Footer() {
                 </Grid>
             </Grid>
             <div className='space'/>
-            <p className='copyright'>Copyright © 2021 Cryptonite Technologies LLC</p>
+            <p className='copyright'>Copyright © {new Date().getFullYear()} Cryptonite Technologies LLC</p>
         </div>
     )
 };
