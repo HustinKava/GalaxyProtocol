@@ -47,6 +47,8 @@ hr {
     text-align: center;
     font-family: Mosk-300;
     font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
 }
 
 /* MEDIA QUERIES */

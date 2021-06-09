@@ -1,0 +1,58 @@
+/* Body of card styling */
+.mainCard {
+    width: 100%;
+    height: 103%;
+    background: linear-gradient(308deg, #000000 0%, #171717 100%) 0% 0%;
+    box-shadow: 0px 0px 20px #000000CB;
+}
+
+/*Styling for small job listing type full time/remote etc - top left of job card */
+.postingType {
+    width: 91px;
+    height: 33px;
+    background: transparent linear-gradient(67deg, #00CDD5 0%, #00CDD5 47%, #F60AFF 100%, #000000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 45px;
+    margin-top: 2em;
+}
+
+.postingTypeText{
+    color: white;
+    font-size: 22px;
+    font-family: 'Mosk-500';
+    padding: 3px;
+
+}
+
+/* Job listing position title */
+.jobTitle {
+    font-size: 58px;
+    font-family: 'Mosk-600';
+    color: white;
+    margin-left: 30px
+}
+
+/* Styling of job description text*/
+.jobDesc {
+    color: white;
+    font-family: 'Mosk-200';
+    font-size: 23px;
+    margin-left: 30px
+
+}
+
+/* 'learn more' button styling */
+.learnMore {
+    background: #292929;
+    color: #ffffff;
+    border-radius: 4px;
+    height: 41px;
+    width: 184px;
+    font-family: 'Mosk-500';
+    text-transform: none;
+    font-size: 22px;
+    border: none;
+    margin-left: 37px;
+    margin-bottom: 1em;
+}

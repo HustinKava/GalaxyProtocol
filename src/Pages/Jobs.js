@@ -1,46 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import JobsHero from '../Components/Jobs/JobsHero';
-import JobCard from '../Components/Jobs/JobCard'
-import { Container, Grid, Paper, makeStyles } from '@material-ui/core';
+import JobsGallery from '../Components/Jobs/JobsGallery';
+import PositionDetails from '../Components/Jobs/PositionDetails';
+
+import { Container } from '@material-ui/core';
+
+import '../Styles/JobHero.css';
+
+
+
 
 const Jobs = () => {
 
-    const useStyles = makeStyles((theme) => ({
-        root: {
-            flexGrow: 1,
-        },
-        paper: {
-            padding: theme.spacing(1),
-        },
-    }));
-    const classes = useStyles();
+const [jobSelected, setJobSelected] = useState(false)
 
     return (
-        <div className=''>
+        <div className='background'>
             <Navbar />
             <Container fluid>
-            <JobsHero />
-                <h3>Open positions</h3>
-                <div>
-                    {/* For each new job to be listed add one <Grid item xs={6}> and it's contents */}
-                    <Grid container spacing={3}>
-                        <Grid item xs={6}>
-                            <JobCard />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <JobCard />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <JobCard />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <JobCard />
-                        </Grid>
-                    </Grid>
-                </div>
+                <JobsHero />
+                {!jobSelected ? JobsGallery : PositionDetails}
+                
             </Container>
+            <div className="space"/>
             <Footer />
         </div>
     )

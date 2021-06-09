@@ -3,6 +3,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import { Link } from '@material-ui/core'
 
 import '../../Styles/JobCard.css';
 
@@ -20,7 +21,9 @@ function JobCard() {
             </CardContent>
 
             <CardActions>
-                <button className='learnMore' href="">Learn more</button>
+                <Link  href='/positionDetails'>
+                <button className='learnMore'>Learn more</button>
+                </Link>
             </CardActions>
         </Card>
     )
