@@ -5,11 +5,12 @@ import '../Styles/Footer.css';
 function Footer() {
 
     return (
-        <div>
+        
+        <div className='footer'>
             <Grid container spacing={3}>
 
                 {/* Footer company logo and name */}
-                <Grid item xs={4}>
+                <Grid item xs={4} >
                     <div className='footerLogo'>
                         <span className='galaxy'>Galaxy</span>
                         <span className='protocol'>protocol</span>
@@ -59,7 +60,7 @@ function Footer() {
                 </Grid>
             </Grid>
             <div className='space'/>
-            <p className='copyright'>Copyright © 2021 Cryptonite Technologies LLC</p>
+            <p className='copyright'>Copyright © {new Date().getFullYear()} Cryptonite Technologies LLC</p>
         </div>
     )
 };
