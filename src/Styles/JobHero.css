@@ -1,0 +1,21 @@
+.jobHeroHeader{
+    font-size: 120px;   
+}
+
+.jobHeroIntro{
+    color: #727272;
+    font-size: 30px;
+    font-family: 'Mosk-200';
+}
+
+.jobHeroCTA{
+    color: #00CDD5;
+    font-size: 30px;
+    font-family: 'Mosk-200';
+    margin-top: 95px;
+}
+
+.openPosHeader{
+    font-size: 90px;
+    font-family: 'Mosk-600'
+}
