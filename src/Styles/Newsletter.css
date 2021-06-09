@@ -27,9 +27,36 @@
 #subscribe {
     width: 186px;
     height: 75px;
+    background: transparent linear-gradient(256deg, #FF00FF 0%, #00CDD5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border: none;
+    font-family: Mosk-600;
+    font-size: 34px;
+    color: #fff;
 }
 
 form {
     display: flex;
-    align-content: center;
+    justify-content: center;
+}
+
+.vspace {
+    padding-bottom: 50px;
+}
+
+.hspace {
+    padding-right: 15px;
+}
+
+.light {
+    font-family: Mosk-200;
+    font-size: 20px;
+    color: #727272;
+}
+
+.bold {
+    font-family: Mosk-500;
+    font-size: 20px;
+    color: #727272;
 }

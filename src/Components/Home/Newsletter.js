@@ -9,10 +9,16 @@ const Newsletter = () => {
                 <span className='newsHeader'>MONTHLY</span>
                 <br/>
                 <span className='newsText'>NEWSLETTER</span>
-                <form>
-                    <input type="email" id="email" name="email" placeholder="Enter your email"/>
-                    <input type="submit" id='subscribe' value="Submit"/>                
-                </form>
+                <div className='vspace'/>
+                <div className='formCenter'>
+                    <form>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"/>
+                        <div className='hspace'/>
+                        <input type="submit" id='subscribe' value="Submit"/>                
+                    </form>
+                </div>
+                <div className='vspace'/>
+                <span className='light'>By clicking Subscribe you agree with our</span> <span className='bold'>Terms of Use</span> <span className='light'>&</span> <span className='bold'>Privacy Policy</span>
             </div>
         </Container>
     )
