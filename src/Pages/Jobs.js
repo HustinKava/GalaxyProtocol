@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import JobsHero from '../Components/Jobs/JobsHero';
@@ -14,17 +14,17 @@ import '../Styles/JobHero.css';
 
 const Jobs = () => {
 
-const [jobSelected, setJobSelected] = useState(false)
+    const [jobSelected, setJobSelected] = useState(false)
 
     return (
         <div className='background'>
             <Navbar />
             <Container fluid>
                 <JobsHero />
-                {!jobSelected ? JobsGallery : PositionDetails}
-                
+                {!jobSelected ? <JobsGallery /> : <PositionDetails />}
+
             </Container>
-            <div className="space"/>
+            <div className="space" />
             <Footer />
         </div>
     )
