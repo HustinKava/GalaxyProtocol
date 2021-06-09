@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.galaxy {
+.footGalaxy {
     color: #fff;
     text-align: left;
     font-family: Mosk-700;
@@ -10,7 +10,7 @@
     letter-spacing: 0px;    
 }
 
-.protocol {
+.footProtocol {
     text-align: left;
     font-family: Mosk-100;
     font-size: 38px;
@@ -48,3 +48,10 @@ hr {
     font-family: Mosk-300;
     font-size: 20px;
 }
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+@media screen and (max-width: 576px) { .footGalaxy, .footProtocol {font-size: 15px;}}
+@media screen and (max-width: 576px) { .footerHeading, .footerText {font-size: 12px;}}
+@media screen and (max-width: 576px) { .copyright {font-size: 15px;}}
+@media screen and (max-width: 576px) { .space {padding-top: 10px;}}
