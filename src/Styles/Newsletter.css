@@ -1,0 +1,35 @@
+.newsHeader {
+    font-family: Mosk-800;
+    font-size: 128px;
+    color: #fff;
+}
+
+.newsText {
+    font-family: Mosk-100;
+    font-size: 107px;
+    color: #fff;
+}
+
+.box {
+    text-align: center;
+}
+
+#email {
+    width: 440px;
+    height: 71px;
+    font-size: 24px;
+    font-family: Mosk-500;
+    background: none;
+    border: 1px solid #FF00FF;
+    color: #fff;
+}
+
+#subscribe {
+    width: 186px;
+    height: 75px;
+}
+
+form {
+    display: flex;
+    align-content: center;
+}
