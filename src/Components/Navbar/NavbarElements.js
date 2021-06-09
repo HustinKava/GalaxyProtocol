@@ -20,6 +20,12 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 `
 
+export const NavFooter = styled(Link)`
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+`
+
 export const Bars = styled(FaBars)`
     display: none;
     color: #fff;

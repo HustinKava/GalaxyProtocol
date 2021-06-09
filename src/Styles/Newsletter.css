@@ -34,6 +34,7 @@
     font-family: Mosk-600;
     font-size: 34px;
     color: #fff;
+    cursor: pointer;
 }
 
 form {
@@ -60,3 +61,11 @@ form {
     font-size: 20px;
     color: #727272;
 }
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+@media screen and (max-width: 576px) { .newsHeader {font-size: 64px;}}
+@media screen and (max-width: 576px) { .newsText {font-size: 53px;}}
+@media screen and (max-width: 576px) { .light, .bold {font-size: 13px;}}
+@media screen and (max-width: 576px) { #email {width: 220px; height: 35px; font-size: 12px;}}
+@media screen and (max-width: 576px) { #subscribe {width: 93px; height: 37.5px; font-size: 12px;}}

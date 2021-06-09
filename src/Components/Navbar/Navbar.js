@@ -18,16 +18,16 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">Products</span>
                     <div className="dropdown-content">
-                        <NavLink to='/galaxyswap' activeStyle>
+                        <NavLink to='/galaxyswap'>
                             <span>GalaxySwap</span>
                         </NavLink>
-                        <NavLink to='/nebulalaunchpad' activeStyle>
+                        <NavLink to='/nebulalaunchpad'>
                             <span>Nebula Launchpad</span>
                         </NavLink>
-                        <NavLink to='/galaxyuniverse' activeStyle>
+                        <NavLink to='/galaxyuniverse'>
                             <span>Galaxy Universe</span>
                         </NavLink>
-                        <NavLink to='/safegalaxy' activeStyle>
+                        <NavLink to='/safegalaxy'>
                             <span>SafeGalaxy</span>
                         </NavLink>
                     </div>
@@ -36,13 +36,13 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">Developers</span>
                     <div className="dropdown-content">
-                        <NavLink to='/documentation' activeStyle>
+                        <NavLink to='/documentation'>
                             <span>Documentation</span>
                         </NavLink>
-                        <NavLink to='/whitepaperv1' activeStyle>
+                        <NavLink to='/whitepaperv1'>
                             <span>Whitepaper V1</span>
                         </NavLink>
-                        <NavLink to='/audit' activeStyle>
+                        <NavLink to='/audit'>
                             <span>Audit</span>
                         </NavLink>
                     </div>
@@ -51,13 +51,13 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">Community</span>
                     <div className="dropdown-content">
-                        <NavLink to='/discord' activeStyle>
+                        <NavLink to='/discord'>
                             <span>Discord</span>
                         </NavLink>
-                        <NavLink to='/telegram' activeStyle>
+                        <NavLink to='/telegram'>
                             <span>Telegram</span>
                         </NavLink>
-                        <NavLink to='/twitter' activeStyle>
+                        <NavLink to='/twitter'>
                             <span>Twitter</span>
                         </NavLink>
                     </div>
@@ -66,19 +66,19 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">About</span>
                     <div className="dropdown-content">
-                        <NavLink to='/aboutus' activeStyle>
+                        <NavLink to='/aboutus'>
                             <span>About Us</span>
                         </NavLink>
-                        <NavLink to='/meetourteam' activeStyle>
+                        <NavLink to='/meetourteam'>
                             <span>Meet Our Team</span>
                         </NavLink>
-                        <NavLink to='/jobs' activeStyle>
+                        <NavLink to='/jobs'>
                             <span>Jobs</span>
                         </NavLink>
-                        <NavLink to='/faq' activeStyle>
+                        <NavLink to='/faq'>
                             <span>FAQ</span>
                         </NavLink>
-                        <NavLink to='/presskit' activeStyle>
+                        <NavLink to='/presskit'>
                             <span>Presskit</span>
                         </NavLink>
                     </div>

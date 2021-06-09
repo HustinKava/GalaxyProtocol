@@ -111,3 +111,24 @@
     font-size: 25px;
     padding: 4px;
 }
+
+/* Custom css to pull the grid columns closer together and to center them */
+.boxGrouping {
+    width: 680px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.boxSpace {
+    padding-bottom: 15px;
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+@media screen and (max-width: 576px) { .destBox1, .destBox2, .destBox3, .destBox4 {width: 150px; height: 150px;}}
+@media screen and (max-width: 576px) { .destBoxHeader {font-size: 20px;}}
+@media screen and (max-width: 576px) { .destBoxText {font-size: 11px;}}
+@media screen and (max-width: 576px) { .destHeader1, .destHeader2 {font-size: 31px;}}
+@media screen and (max-width: 576px) { .boxGrouping {width: 307px !important;}}
+@media screen and (max-width: 576px) { .boxSpace {padding-bottom: 3px;}}
+

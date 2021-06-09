@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import '../Styles/Footer.css';
+import { NavFooter } from '../Components/Navbar/NavbarElements';
 
 function Footer() {
 
@@ -55,7 +56,9 @@ function Footer() {
                     <br/>
                     <p className='footerText'>About Us</p>
                     <p className='footerText'>Meet Our Team</p>
-                    <p className='footerText'>Jobs</p>
+                    <NavFooter to='/jobs'>
+                        <p className='footerText'>Jobs</p>
+                    </NavFooter>
                     <p className='footerText'>FAQ</p>
                     <p className='footerText'>Presskit</p>
                 </Grid>
