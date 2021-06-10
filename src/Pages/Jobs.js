@@ -1,27 +1,22 @@
-import React, { useState } from 'react'
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import JobsHero from '../Components/Jobs/JobsHero';
 import JobsGallery from '../Components/Jobs/JobsGallery';
-import PositionDetails from './PositionDetails';
 
 import { Container } from '@material-ui/core';
 
 import '../Styles/JobHero.css';
 
 
-
-
 const Jobs = () => {
 
-    const [jobSelected, setJobSelected] = useState(false)
 
     return (
         <div className='background'>
             <Navbar />
             <Container fluid>
                 <JobsHero />
-                {!jobSelected ? <JobsGallery /> : <PositionDetails />}
+                <JobsGallery />
 
             </Container>
             <div className="space" />
