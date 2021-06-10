@@ -19,3 +19,6 @@
     font-size: 90px;
     font-family: 'Mosk-600'
 }
+
+@media screen and (min-width: 1280px) {.MuiContainer-maxWidthLg {max-width: 1550px !important} }
+
