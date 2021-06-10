@@ -1,11 +1,10 @@
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
-import JobsHero from '../Components/Jobs/JobsHero';
-import JobsGallery from '../Components/Jobs/JobsGallery';
 
 import { Container } from '@material-ui/core';
 
-import '../Styles/JobHero.css';
+
+
 
 
 const Jobs = () => {
@@ -15,9 +14,7 @@ const Jobs = () => {
         <div className='background'>
             <Navbar />
             <Container fluid>
-                <JobsHero />
-                <JobsGallery />
-
+            <img src="https://via.placeholder.com/1349x2333"></img>
             </Container>
             <div className="space" />
             <Footer />

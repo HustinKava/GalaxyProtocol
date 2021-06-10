@@ -1,23 +1,20 @@
+// import React, { useState } from 'react'
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
-import JobsHero from '../Components/Jobs/JobsHero';
-import JobsGallery from '../Components/Jobs/JobsGallery';
+import PositionHero from '../Components/PositionDetails/PositionHero';
+import PositionInfo from '../Components/PositionDetails/PositionInfo';
 
 import { Container } from '@material-ui/core';
 
-import '../Styles/JobHero.css';
-
-
-const Jobs = () => {
+const PositionDetails = () => {
 
 
     return (
         <div className='background'>
             <Navbar />
             <Container fluid>
-                <JobsHero />
-                <JobsGallery />
-
+                <PositionHero />
+                <PositionInfo />
             </Container>
             <div className="space" />
             <Footer />
@@ -25,4 +22,4 @@ const Jobs = () => {
     )
 }
 
-export default Jobs
+export default PositionDetails;
