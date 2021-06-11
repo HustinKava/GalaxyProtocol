@@ -10,21 +10,18 @@ h2{
     font-size: 90px;
 }
 
-.faqIntro{
+.h2Top{
+    margin-bottom: 0px;
+}
+
+.h2Bottom{
+    margin-top: 0px;
+}
+
+/* body copy */
+p{
     font-family: 'Mosk-200';
     font-size: 25px;
-    color: #808080;
-}
-
-h3, h4{
-    font-family: 'Mosk-600';
-    font-size: 50px;
-}
-
-.faqBody{
-    font-family: 'Mosk-300';
-    font-size: 25px;
-    color: #808080;
 }
 
 .mainContainer{
