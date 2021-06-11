@@ -10,7 +10,7 @@ const PositionDetails = () => {
 
 
     return (
-        <div className='background'>
+        <div>
             <Navbar />
             <Container fluid>
                 <PositionHero />

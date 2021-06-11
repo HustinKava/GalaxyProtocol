@@ -4,9 +4,6 @@ p, h1, h2, h3, h4, h5, h6{
 
 html{
     overflow-x:hidden;
-}
-
-.background {
     width: 100vw;
     height: auto;
     background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;

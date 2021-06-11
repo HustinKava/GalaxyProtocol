@@ -9,7 +9,7 @@ import Newsletter from '../Components/Home/Newsletter';
 
 function Home() {
     return (
-      <div className='background'>
+      <div>
           <Navbar/>
           <div className='space'/>
           <Generation/>

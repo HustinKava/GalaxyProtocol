@@ -12,7 +12,7 @@ const Jobs = () => {
 
 
     return (
-        <div className='background'>
+        <div>
             <Navbar />
             <Container fluid className="jobContainer">
                 <JobsHero />
