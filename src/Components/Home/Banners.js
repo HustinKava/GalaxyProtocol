@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import '../../Styles/Banner.css';
 import Laptop from '../../Assets/GalaxySwap-mobile-laptop-mock-up.png';
+import Discord from '../../Assets/Discord-art.png';
 import Telegram from '../../Assets/Telegram-banner.png';
 
 const Banners = () => {;
@@ -10,7 +11,7 @@ const Banners = () => {;
             {/* Banner 1 */}
             <Grid container spacing={0} className='banOne'>
                 <Grid item xs={6} className='gridPadding'>
-                    <div className='banOutSpace'/>
+                    <div className='banTopSpace'/>
                     <span className='banHeaderOne'>Galaxy</span>
                     <span className='banHeaderOne2'>swap</span>
                     <div className='banSpace'/>
@@ -20,8 +21,8 @@ const Banners = () => {;
                     <div className='banOutSpace'/>
                 </Grid>
                 <Grid item xs={6}>
-                    <div className='overflow'>
-                        <img className='laptopImg' src={Laptop} alt='Laptop' />
+                    <div className='imageOne'>
+                        <img src={Laptop} alt='Laptop' />
                     </div>
                 </Grid>
             </Grid>
@@ -66,7 +67,7 @@ const Banners = () => {;
             {/* Banner 4 */}
             <Grid container spacing={0} className='banFour'>
                 <Grid item xs={6}>
-                    <p>ADD IMAGE HERE</p>
+                    <img src={Discord} alt='Discord' className='discord'/>
                 </Grid>
                 <Grid item xs={6} className='gridPadding2'>
                     <div className='banOutSpace'/>
