@@ -11,7 +11,7 @@ const Jobs = () => {
 
 
     return (
-        <div className='background'>
+        <div>
             <Navbar />
             <Container fluid>
             <img src="https://via.placeholder.com/1349x2333"></img>

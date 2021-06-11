@@ -8,7 +8,7 @@ function JobsGallery() {
             <h3 className='openPosHeader'>Open positions</h3>
             <div>
                 {/* For each new job to be listed add one <Grid item xs={6}> and it's contents */}
-                <Grid container spacing={3}>
+                <Grid container spacing={4}>
                     <Grid item xs={12} md={6}>
                         <JobCard />
                     </Grid>

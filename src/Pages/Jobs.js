@@ -12,12 +12,11 @@ const Jobs = () => {
 
 
     return (
-        <div className='background'>
+        <div>
             <Navbar />
-            <Container fluid>
+            <Container fluid className="jobContainer">
                 <JobsHero />
                 <JobsGallery />
-
             </Container>
             <div className="space" />
             <Footer />

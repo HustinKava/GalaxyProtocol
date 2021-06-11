@@ -5,7 +5,7 @@ import { Container, Grid } from '@material-ui/core';
 
 const Documentation = () => {
     return (
-        <div className='background'>
+        <div>
             <Navbar />
             <Container fluid>
                 <Grid container spacing={3}>
