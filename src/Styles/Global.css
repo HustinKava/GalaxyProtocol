@@ -10,6 +10,12 @@ html{
     opacity: 1;
 }
 
+/* Unified space at top and bottom of each page */
+.mainContainer{
+    margin-top: 9em;
+    margin-bottom:9em;
+}
+
 .space {
     padding-bottom: 70px;
 }
