@@ -2,6 +2,10 @@ p, h1, h2, h3, h4, h5, h6{
     color: white
 }
 
+html{
+    overflow-x:hidden;
+}
+
 .background {
     width: 100vw;
     height: auto;

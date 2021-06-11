@@ -152,7 +152,7 @@
 .overflow {
     position: relative;
     /* overflow: hidden; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow-y: visible; */
     width: 100%;
     height: 150%;
