@@ -6,8 +6,8 @@ import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <div className='nav'>
 
+        <div className='nav'>
             {/* Company logo and name */}
             <NavLink to='/' className='navLink'>
                 <img src={Logo} alt='Logo' className='navLogo'/>

@@ -21,9 +21,13 @@ function JobCard() {
             </CardContent>
 
             <CardActions>
-                <Link  href='/positionDetails'>
-                <button className='learnMore'>Learn more</button>
-                </Link>
+                <div className='learnMore'>
+                    <Link href='/positionDetails' className="linkLearn">
+                        <p className="learnMoreInner">
+                            Learn more
+                        </p>
+                    </Link>
+                </div>
             </CardActions>
         </Card>
     )

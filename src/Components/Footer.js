@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import '../Styles/Footer.css';
+
 import { NavLink } from 'react-router-dom';
 import Logo from '../Assets/logo-white_1_25.png';
 
