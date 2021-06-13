@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { Link } from '@material-ui/core'
+import { NavLink } from 'react-router-dom';
 
 import '../../Styles/JobCard.css';
 
@@ -22,11 +22,9 @@ function JobCard() {
 
             <CardActions>
                 <div className='learnMore'>
-                    <Link href='/positionDetails' className="linkLearn">
-                        <p className="learnMoreInner">
-                            Learn more
-                        </p>
-                    </Link>
+                <NavLink to='/positionDetails' className='linkLearn'>
+                        <p className='learnMoreInner'>Learn more</p>
+                    </NavLink>
                 </div>
             </CardActions>
         </Card>
