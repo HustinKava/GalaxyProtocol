@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import '../Styles/Footer.css';
 import { NavFooter } from '../Components/Navbar/NavbarElements';
+import { Container } from '@material-ui/core';
 
 function Footer() {
 

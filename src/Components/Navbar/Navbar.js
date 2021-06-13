@@ -4,8 +4,7 @@ import '../../Styles/Navbar.css';
 
 const Navbar = () => {
     return (
-        <Nav>
-
+        <Nav className="navBar">
             {/* Company logo and name */}
             <NavLink to='/'>
                 <span className='galaxy'>Galaxy</span>

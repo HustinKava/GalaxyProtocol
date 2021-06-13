@@ -12,7 +12,7 @@ const PositionDetails = () => {
     return (
         <div>
             <Navbar />
-            <Container fluid>
+            <Container fluid className="mainContainer">
                 <PositionHero />
                 <PositionInfo />
             </Container>
