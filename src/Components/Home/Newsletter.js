@@ -12,7 +12,7 @@ const Newsletter = () => {
                 <div className='vspace'/>
                 <div className='formCenter'>
                     <form>
-                        <input type="email" id="email" name="email" placeholder="Enter your email"/>
+                        <input type="email" id="email" name="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your email"/>
                         <div className='hspace'/>
                         <input type="submit" id='subscribe' value="Submit"/>                
                     </form>
