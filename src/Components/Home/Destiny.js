@@ -36,7 +36,7 @@ function Destiny() {
                 <Grid item xs={6} md={6}>
                     <div className='destBox4'>
                         <span className='destBoxHeader'>Jobs</span>
-                        <span className='destBoxText'>We explain everything you need to know about crypto</span>
+                        <span className='destBoxText'>Get your favourite Galaxy Merch</span>
                     </div>
                 </Grid>
             </Grid>

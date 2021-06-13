@@ -1,6 +1,12 @@
 
-.footerLogo {
+
+.footerLogoCenter {
     text-align: center;
+}
+
+.footerLogo {
+    height: auto;
+    width: 288px;
 }
 
 .footGalaxy {
@@ -50,6 +56,11 @@ hr {
     font-size: 20px;
     margin-bottom: 0;
     padding-bottom: 15px;
+}
+
+.footLinks {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */

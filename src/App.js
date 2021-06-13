@@ -1,5 +1,5 @@
 import Home from './Pages/Home'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Jobs from './Pages/Jobs.js'
 import PositionDetails from './Pages/PositionDetails.js'
 import GPEcosystem from './Pages/GPEcosystem.js'

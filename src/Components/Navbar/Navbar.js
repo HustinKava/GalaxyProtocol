@@ -1,32 +1,34 @@
 import React from 'react'
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
 import '../../Styles/Navbar.css';
+import Logo from '../../Assets/logo-white_1_25.png';
+import { NavLink } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <Nav className="navBar">
+
+        <div className='nav'>
             {/* Company logo and name */}
-            <NavLink to='/'>
-                <span className='galaxy'>Galaxy</span>
-                <span className='protocol'>protocol</span>
+            <NavLink to='/' className='navLink'>
+                <img src={Logo} alt='Logo' className='navLogo'/>
             </NavLink>
-            <Bars />
+            <FaBars  className='mobileMenu'/>
             
             {/* Menu items */}
-            <NavMenu>
+            <div className='navMenu'>
                 <div className='dropdown'>
                     <span className="dropbtn">Products</span>
                     <div className="dropdown-content">
-                        <NavLink to='/galaxyswap'>
+                        <NavLink to='/galaxyswap' className='navLink'>
                             <span>GalaxySwap</span>
                         </NavLink>
-                        <NavLink to='/nebulalaunchpad'>
+                        <NavLink to='/nebulalaunchpad' className='navLink'>
                             <span>Nebula Launchpad</span>
                         </NavLink>
-                        <NavLink to='/galaxyuniverse'>
+                        <NavLink to='/galaxyuniverse' className='navLink'>
                             <span>Galaxy Universe</span>
                         </NavLink>
-                        <NavLink to='/safegalaxy'>
+                        <NavLink to='/safegalaxy' className='navLink'>
                             <span>SafeGalaxy</span>
                         </NavLink>
                     </div>
@@ -35,13 +37,13 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">Developers</span>
                     <div className="dropdown-content">
-                        <NavLink to='/documentation'>
+                        <NavLink to='/documentation' className='navLink'>
                             <span>Documentation</span>
                         </NavLink>
-                        <NavLink to='/whitepaperv1'>
+                        <NavLink to='/whitepaperv1' className='navLink'>
                             <span>Whitepaper V1</span>
                         </NavLink>
-                        <NavLink to='/audit'>
+                        <NavLink to='/audit' className='navLink'>
                             <span>Audit</span>
                         </NavLink>
                     </div>
@@ -50,13 +52,13 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">Community</span>
                     <div className="dropdown-content">
-                        <NavLink to='/discord'>
+                        <NavLink to='/discord' className='navLink'>
                             <span>Discord</span>
                         </NavLink>
-                        <NavLink to='/telegram'>
+                        <NavLink to='/telegram' className='navLink'>
                             <span>Telegram</span>
                         </NavLink>
-                        <NavLink to='/twitter'>
+                        <NavLink to='/twitter' className='navLink'>
                             <span>Twitter</span>
                         </NavLink>
                     </div>
@@ -65,31 +67,31 @@ const Navbar = () => {
                 <div className='dropdown'>
                     <span className="dropbtn">About</span>
                     <div className="dropdown-content">
-                        <NavLink to='/aboutus'>
+                        <NavLink to='/aboutus' className='navLink'>
                             <span>About Us</span>
                         </NavLink>
-                        <NavLink to='/meetourteam'>
+                        <NavLink to='/meetourteam' className='navLink'>
                             <span>Meet Our Team</span>
                         </NavLink>
-                        <NavLink to='/jobs'>
+                        <NavLink to='/jobs' className='navLink'>
                             <span>Jobs</span>
                         </NavLink>
-                        <NavLink to='/faq'>
+                        <NavLink to='/faq' className='navLink'>
                             <span>FAQ</span>
                         </NavLink>
-                        <NavLink to='/presskit'>
+                        <NavLink to='/presskit' className='navLink'>
                             <span>Presskit</span>
                         </NavLink>
                     </div>
                 </div>
-            </NavMenu>
+            </div>
 
-            <NavBtn>
-                <NavBtnLink to='/galaxyswap'>
-                    <span className='navBold'>Use&nbsp;</span><span className='navBold'>Galaxy</span><span className='normal'>Swap</span>
-                </NavBtnLink>
-            </NavBtn>
-        </Nav>
+            <div className='navBtn'>
+                <NavLink to='/galaxyswap' className='navBtnLink'>
+                        <span className='navBold'>Use&nbsp;</span><span className='navBold'>Galaxy</span><span className='normal'>Swap</span>
+                </NavLink>
+            </div>
+        </div>
     )
 }
 

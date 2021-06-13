@@ -1,8 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import '../Styles/Footer.css';
-import { NavFooter } from '../Components/Navbar/NavbarElements';
-import { Container } from '@material-ui/core';
+
+import { NavLink } from 'react-router-dom';
+import Logo from '../Assets/logo-white_1_25.png';
 
 function Footer() {
 
@@ -14,9 +15,9 @@ function Footer() {
 
                 {/* Footer company logo and name */}
                 <Grid item xs={12} md={4}>
-                    <div className='footerLogo'>
-                        <span className='footGalaxy'>Galaxy</span>
-                        <span className='footProtocol'>protocol</span>
+                    <div className='footerLogoCenter'>
+                        <img src={Logo} alt='Logo' className='footerLogo'/>
+
                     </div>
                 </Grid>
 
@@ -57,9 +58,9 @@ function Footer() {
                     <br/>
                     <p className='footerText'>About Us</p>
                     <p className='footerText'>Meet Our Team</p>
-                    <NavFooter to='/jobs'>
+                    <NavLink to='/jobs' className='footLinks'>
                         <p className='footerText'>Jobs</p>
-                    </NavFooter>
+                    </NavLink>
                     <p className='footerText'>FAQ</p>
                     <p className='footerText'>Presskit</p>
                 </Grid>
