@@ -7,7 +7,6 @@ html{
     width: 100vw;
     height: auto;
     background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
-
 }
 
 
@@ -15,7 +14,6 @@ html{
 .mainContainer{
     margin-top: 9em;
     margin-bottom:9em;
-
 }
 
 .space {
