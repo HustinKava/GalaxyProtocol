@@ -3,16 +3,19 @@ import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import { Container, Grid } from '@material-ui/core';
 
+import '../Styles/Documentation.css';
+
 const Documentation = () => {
     return (
         <div>
             <Navbar />
-            <Container fluid>
+            <Container fluid className="mainContainer">
                 <Grid container spacing={3}>
-                    <Grid item xs={12} md={6}>
-                        <h1>Documentation</h1>
-                        <h2>GalaxyProtocol Ecosystem overview</h2>
-                        <p>In the immediate aftermath of the 2008 financial crisis, people began to experiment with the idea of whether clearly defined, emotionless technology in a trustless environment could govern finance. </p>
+                    <Grid item xs={12} md={12}>
+                        <h1>DOCUMENTATION</h1>
+                        <h2 className="h2Top">GalaxyProtocol </h2>
+                        <h2 className="h2Bottom">Ecosystem overview</h2>
+                        <p className="bodyCopy">In the immediate aftermath of the 2008 financial crisis, people began to experiment with the idea of whether clearly defined, emotionless technology in a trustless environment could govern finance. </p>
 
                         <p>Our traditional, fiat banking system, although susceptible to corruption and mismanagement, evolved for a reason. In the west, after the collapse of Rome and prior to the Medici and the Knights Templar, moving funds from location to location was no simple manner and roads were often lawless and dangerous. If funds were being moved without physical protection they were susceptible to attack and theft. This period, between 500-1300 CE is commonly known as the Middle Ages. Modern historians conceptualize this time as sophisticated but the daily reality for the vast majority of people was very different. Roughly 80-90% of the population living in Western Europe during this time period were enslaved, serfs (almost but not quite enslaved) or peasants. Quality of life during the middle ages, by modern standards, was abject poverty.
                                 </p>
