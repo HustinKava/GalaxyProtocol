@@ -55,7 +55,6 @@
     z-index: 1;
     background: transparent linear-gradient(2deg, #000000 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;    
     border-radius: 4px;
-    opacity: 1;
     font-family: Mosk-300;
     font-size: 20px;
 }
@@ -93,7 +92,6 @@
     margin-left: 60px;
     background: transparent linear-gradient(262deg, #FF1FFF 0%, #8312B2 100%) 0% 0% no-repeat padding-box;
     border-radius: 4px;
-    opacity: 1;
     padding: 5px 11px;
     border: none;
     outline: none;
