@@ -1,3 +1,4 @@
+/* Component heading and alignment */
 .destHeader1 {
     font-family: Mosk-100;
     font-size: 63px;
@@ -16,10 +17,10 @@
     text-align: center;
 }
 
+/* 6 Boxes for Trade, Learn, Launch, Wallet, Jobs and Merch */
 .destBox1 {
     width: 324px;
     height: 324px;
-    background: transparent linear-gradient(44deg, #440C8B 0%, #FF00FF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
     margin-left: auto;
@@ -29,18 +30,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid 1px #FF00FF;
 }
 
 .destBox1:hover {
     background: transparent linear-gradient(225deg, #440C8B 0%, #FF00FF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
+    border: solid 1px black;
 }
 
 .destBox2 {
     width: 324px;
     height: 324px;
-    background: transparent linear-gradient(226deg, #00CDD5 0%, #440C8B 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
     margin-left: auto;
@@ -50,18 +52,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid 1px #00CDD5;
 }
 
 .destBox2:hover {
     background: transparent linear-gradient(45deg, #00CDD5 0%, #440C8B 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
+    border: solid 1px black;
 }
 
 .destBox3 {
     width: 324px;
     height: 324px;
-    background: transparent linear-gradient(55deg, #151515 0%, #393939 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
     margin-left: auto;
@@ -71,18 +74,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid 1px #F6F901;
 }
 
 .destBox3:hover {
-    background: transparent linear-gradient(227deg, #151515 0%, #393939 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(45deg, #6A5B09 0%, #FFEB00 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
+    border: solid 1px black;
 }
 
 .destBox4 {
     width: 324px;
     height: 324px;
-    background: transparent linear-gradient(226deg, #440C8B 0%, #220646 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
     margin-left: auto;
@@ -92,14 +96,110 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid 1px #00F700;
 }
 
 .destBox4:hover {
-    background: transparent linear-gradient(45deg, #440C8B 0%, #220646 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(228deg, #08D830 0%, #042400 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 66px #000000C7;
     opacity: 1;
+    border: solid 1px black;
 }
 
+.destBox5 {
+    width: 324px;
+    height: 324px;
+    box-shadow: 0px 3px 66px #000000C7;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #FFFFFF;
+}
+
+.destBox5:hover {
+    background: transparent linear-gradient(45deg, #141414 0%, #313131 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 66px #000000C7;
+    opacity: 1;
+    border: solid 1px black;
+}
+
+.destBox6 {
+    width: 324px;
+    height: 324px;
+    box-shadow: 0px 3px 66px #000000C7;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #E5009E;
+}
+
+.destBox6:hover {
+    background: transparent linear-gradient(45deg, #00CDD5 0%, #FF00FF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 66px #000000C7;
+    opacity: 1;
+    border: solid 1px black;
+}
+
+/* Custom css to pull the grid columns closer together and to center them */
+.boxGrouping {
+    width: 1020px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Image sizing */
+.imgTrade {
+    width: auto;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+/* Padding for imgTrade */
+.boxSpace {
+    padding-bottom: 25px;
+}
+
+.imgLearn {
+    width: auto;
+    height: 20%;
+    padding-bottom: 20px;
+}
+
+.imgRocket {
+    width: auto;
+    height: 20%;
+    padding-bottom: 20px;
+}
+
+.imgWallet {
+    width: auto;
+    height: 20%;
+    padding-bottom: 20px;
+}
+
+.imgJobs {
+    width: auto;
+    height: 20%;
+    padding-bottom: 20px;
+}
+
+.imgMerch {
+    width: auto;
+    height: 20%;
+    padding-bottom: 20px;
+}
+
+/* Box text */
 .destBoxHeader {
     font-family: Mosk-700;
     font-size: 35px;
@@ -108,19 +208,12 @@
 .destBoxText {
     text-align: center;
     font-family: Mosk-300;
-    font-size: 25px;
-    padding: 4px;
+    font-size: 20px;
+    padding: 40px;
 }
 
-/* Custom css to pull the grid columns closer together and to center them */
-.boxGrouping {
-    width: 680px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.boxSpace {
-    padding-bottom: 15px;
+.boxBottomSpace {
+    padding-bottom: 10px !important;
 }
 
 /* MEDIA QUERIES */

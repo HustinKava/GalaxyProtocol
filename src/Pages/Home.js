@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 import Generation from '../Components/Home/Generation';
 import Destiny from '../Components/Home/Destiny';
 import Banners from '../Components/Home/Banners';
-import Newsletter from '../Components/Home/Newsletter';
+// import Newsletter from '../Components/Home/Newsletter';
 
 function Home() {
     return (
@@ -16,10 +16,11 @@ function Home() {
           <div className='space'/>
           <Destiny/>
           <div className='space'/>
+          <div className='space'/>
           <Banners/>
           <div className='space'/>
-          <Newsletter/>
-          <div className='space'/>
+          {/* <Newsletter/>
+          <div className='space'/> */}
           <Footer/>
           <div className='space'/>
       </div>
