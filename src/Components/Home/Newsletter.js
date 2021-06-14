@@ -4,7 +4,7 @@ import '../../Styles/Newsletter.css';
 
 const Newsletter = () => {
     return (
-        <Container maxWidth="md">
+        <div className='newsBackground'>
             <div className='box'>
                 <span className='newsHeader'>MONTHLY</span>
                 <br/>
@@ -20,7 +20,7 @@ const Newsletter = () => {
                 <div className='vspace'/>
                 <span className='light'>By clicking Subscribe you agree with our</span> <span className='bold'>Terms of Use</span> <span className='light'>&</span> <span className='bold'>Privacy Policy</span>
             </div>
-        </Container>
+        </div>
     )
 };
 
