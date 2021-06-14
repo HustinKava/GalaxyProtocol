@@ -45,14 +45,24 @@
 /* 'learn more' button styling */
 .learnMore {
     background: #292929;
-    color: #ffffff;
     border-radius: 4px;
     height: 41px;
     width: 184px;
+    border: none;
+    margin-left: 2.2em;
+    margin-bottom: 1em;
+    text-align: center;    
+}
+
+.learnMoreInner{
+    color: #ffffff;
     font-family: 'Mosk-500';
     text-transform: none;
     font-size: 22px;
-    border: none;
-    margin-left: 37px;
-    margin-bottom: 1em;
+    margin-top: 6px;
+}
+
+.linkLearn{
+    text-decoration: none !important;
+
 }
