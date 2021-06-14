@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/GalaxyProtocol/static/css/main.e78828f1.chunk.css",
-    "main.js": "/GalaxyProtocol/static/js/main.1d00daf6.chunk.js",
-    "main.js.map": "/GalaxyProtocol/static/js/main.1d00daf6.chunk.js.map",
+    "main.css": "/GalaxyProtocol/static/css/main.7aad29a8.chunk.css",
+    "main.js": "/GalaxyProtocol/static/js/main.0e0e98f7.chunk.js",
+    "main.js.map": "/GalaxyProtocol/static/js/main.0e0e98f7.chunk.js.map",
     "runtime-main.js": "/GalaxyProtocol/static/js/runtime-main.3d175ce3.js",
     "runtime-main.js.map": "/GalaxyProtocol/static/js/runtime-main.3d175ce3.js.map",
     "static/js/2.4d96892e.chunk.js": "/GalaxyProtocol/static/js/2.4d96892e.chunk.js",
     "static/js/2.4d96892e.chunk.js.map": "/GalaxyProtocol/static/js/2.4d96892e.chunk.js.map",
     "index.html": "/GalaxyProtocol/index.html",
-    "static/css/main.e78828f1.chunk.css.map": "/GalaxyProtocol/static/css/main.e78828f1.chunk.css.map",
+    "static/css/main.7aad29a8.chunk.css.map": "/GalaxyProtocol/static/css/main.7aad29a8.chunk.css.map",
     "static/js/2.4d96892e.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.4d96892e.chunk.js.LICENSE.txt",
     "static/media/Discord-art-1.fb5fc70d.png": "/GalaxyProtocol/static/media/Discord-art-1.fb5fc70d.png",
     "static/media/GP-Emblem.dd8d5806.png": "/GalaxyProtocol/static/media/GP-Emblem.dd8d5806.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.3d175ce3.js",
     "static/js/2.4d96892e.chunk.js",
-    "static/css/main.e78828f1.chunk.css",
-    "static/js/main.1d00daf6.chunk.js"
+    "static/css/main.7aad29a8.chunk.css",
+    "static/js/main.0e0e98f7.chunk.js"
   ]
 }
