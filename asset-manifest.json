@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GalaxyProtocol/static/css/main.bb350bc7.chunk.css",
+    "main.css": "/GalaxyProtocol/static/css/main.5cfb9ee9.chunk.css",
     "main.js": "/GalaxyProtocol/static/js/main.8f27c1e2.chunk.js",
     "main.js.map": "/GalaxyProtocol/static/js/main.8f27c1e2.chunk.js.map",
     "runtime-main.js": "/GalaxyProtocol/static/js/runtime-main.3d175ce3.js",
@@ -8,7 +8,7 @@
     "static/js/2.77587367.chunk.js": "/GalaxyProtocol/static/js/2.77587367.chunk.js",
     "static/js/2.77587367.chunk.js.map": "/GalaxyProtocol/static/js/2.77587367.chunk.js.map",
     "index.html": "/GalaxyProtocol/index.html",
-    "static/css/main.bb350bc7.chunk.css.map": "/GalaxyProtocol/static/css/main.bb350bc7.chunk.css.map",
+    "static/css/main.5cfb9ee9.chunk.css.map": "/GalaxyProtocol/static/css/main.5cfb9ee9.chunk.css.map",
     "static/js/2.77587367.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.77587367.chunk.js.LICENSE.txt",
     "static/media/Discord-art-1.fb5fc70d.png": "/GalaxyProtocol/static/media/Discord-art-1.fb5fc70d.png",
     "static/media/GP-Emblem.dd8d5806.png": "/GalaxyProtocol/static/media/GP-Emblem.dd8d5806.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.3d175ce3.js",
     "static/js/2.77587367.chunk.js",
-    "static/css/main.bb350bc7.chunk.css",
+    "static/css/main.5cfb9ee9.chunk.css",
     "static/js/main.8f27c1e2.chunk.js"
   ]
 }
