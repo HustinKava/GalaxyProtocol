@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/GalaxyProtocol/static/css/main.5cfb9ee9.chunk.css",
-    "main.js": "/GalaxyProtocol/static/js/main.8f27c1e2.chunk.js",
-    "main.js.map": "/GalaxyProtocol/static/js/main.8f27c1e2.chunk.js.map",
+    "main.css": "/GalaxyProtocol/static/css/main.9a081c0b.chunk.css",
+    "main.js": "/GalaxyProtocol/static/js/main.4b7b0feb.chunk.js",
+    "main.js.map": "/GalaxyProtocol/static/js/main.4b7b0feb.chunk.js.map",
     "runtime-main.js": "/GalaxyProtocol/static/js/runtime-main.3d175ce3.js",
     "runtime-main.js.map": "/GalaxyProtocol/static/js/runtime-main.3d175ce3.js.map",
-    "static/js/2.77587367.chunk.js": "/GalaxyProtocol/static/js/2.77587367.chunk.js",
-    "static/js/2.77587367.chunk.js.map": "/GalaxyProtocol/static/js/2.77587367.chunk.js.map",
+    "static/js/2.822009c6.chunk.js": "/GalaxyProtocol/static/js/2.822009c6.chunk.js",
+    "static/js/2.822009c6.chunk.js.map": "/GalaxyProtocol/static/js/2.822009c6.chunk.js.map",
     "index.html": "/GalaxyProtocol/index.html",
-    "static/css/main.5cfb9ee9.chunk.css.map": "/GalaxyProtocol/static/css/main.5cfb9ee9.chunk.css.map",
-    "static/js/2.77587367.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.77587367.chunk.js.LICENSE.txt",
+    "static/css/main.9a081c0b.chunk.css.map": "/GalaxyProtocol/static/css/main.9a081c0b.chunk.css.map",
+    "static/js/2.822009c6.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.822009c6.chunk.js.LICENSE.txt",
     "static/media/Discord-art-1.fb5fc70d.png": "/GalaxyProtocol/static/media/Discord-art-1.fb5fc70d.png",
     "static/media/GP-Emblem.dd8d5806.png": "/GalaxyProtocol/static/media/GP-Emblem.dd8d5806.png",
     "static/media/Galaxy-Swap_580x131.1d9843b8.png": "/GalaxyProtocol/static/media/Galaxy-Swap_580x131.1d9843b8.png",
     "static/media/GalaxySwap-mobile-laptop-mock-up.78376c8a.png": "/GalaxyProtocol/static/media/GalaxySwap-mobile-laptop-mock-up.78376c8a.png",
-    "static/media/Hoodies.53f86a23.png": "/GalaxyProtocol/static/media/Hoodies.53f86a23.png",
     "static/media/Jobs-icon.2b1a760a.png": "/GalaxyProtocol/static/media/Jobs-icon.2b1a760a.png",
     "static/media/Learn-icon.f70bc31e.png": "/GalaxyProtocol/static/media/Learn-icon.f70bc31e.png",
     "static/media/Merch-icon.53c5089a.png": "/GalaxyProtocol/static/media/Merch-icon.53c5089a.png",
     "static/media/index.css": "/GalaxyProtocol/static/media/Mosk Ultra-Bold 900.4ae330c3.ttf",
     "static/media/Rocket-icon.e426968d.png": "/GalaxyProtocol/static/media/Rocket-icon.e426968d.png",
     "static/media/Telegram-banner.8810798e.png": "/GalaxyProtocol/static/media/Telegram-banner.8810798e.png",
-    "static/media/Trade-icon.64fc183d.png": "/GalaxyProtocol/static/media/Trade-icon.64fc183d.png"
+    "static/media/Trade-icon.64fc183d.png": "/GalaxyProtocol/static/media/Trade-icon.64fc183d.png",
+    "static/media/hoodie-resize.510f8e45.png": "/GalaxyProtocol/static/media/hoodie-resize.510f8e45.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3d175ce3.js",
-    "static/js/2.77587367.chunk.js",
-    "static/css/main.5cfb9ee9.chunk.css",
-    "static/js/main.8f27c1e2.chunk.js"
+    "static/js/2.822009c6.chunk.js",
+    "static/css/main.9a081c0b.chunk.css",
+    "static/js/main.4b7b0feb.chunk.js"
   ]
 }
