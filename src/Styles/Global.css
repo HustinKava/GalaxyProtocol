@@ -17,8 +17,9 @@ html{
 }
 
 .space {
-    padding-bottom: 70px;
+    padding-bottom: 160px;
 }
+@media screen and (max-width: 576px) { .space {padding-bottom: 50px;}}
 
 p, span {
     color: #fff;

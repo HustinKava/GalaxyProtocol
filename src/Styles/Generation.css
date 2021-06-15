@@ -13,7 +13,6 @@
     margin-top: -350px;
     opacity: 0.11;
     z-index: -1;
-    /*  */
 }
 
 .genHeader {
@@ -33,6 +32,11 @@
 .genButtons {
     padding-top: 50px;
     text-align: center;
+}
+
+/* Break element that will only display in mobile view to stack the buttons */
+.responsiveButtons {
+    display: none;
 }
 
 .genBtn1 {
@@ -63,8 +67,10 @@
 
 /* MEDIA QUERIES */
 /* Extra small devices (Tested with Iphone X) */
-@media screen and (max-width: 576px) { .genHeader {font-size: 45px;}}
-@media screen and (max-width: 576px) { .genText {font-size: 16px;}}
+@media screen and (max-width: 576px) { .genHeader {font-size: 35px;}}
+@media screen and (max-width: 576px) { .genText {font-size: 20px;}}
 @media screen and (max-width: 576px) { .genButtons {padding-top: 25px;}}
-@media screen and (max-width: 576px) { .genBtn1 {font-size: 16px; width: 114px; height: 27px;}}
-@media screen and (max-width: 576px) { .genBtn2 {font-size: 14px; width: 114px; height: 27px;}}
+@media screen and (max-width: 576px) { .genBtn1 {font-size: 16px; width: 114px; height: 27px; margin-right: 0; margin-bottom: 10px;}}
+@media screen and (max-width: 576px) { .genBtn2 {font-size: 14px; width: 114px; height: 27px; margin-left: 0;}}
+@media screen and (max-width: 576px) { .genBackground {display: none;}}
+@media screen and (max-width: 576px) { .responsiveButtons {display: unset;}}

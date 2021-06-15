@@ -11,7 +11,7 @@ function PositionDetails() {
             <div>
                 <Grid container spacing={10}>
                     <Grid item xs={12}>
-                        <img src="https://via.placeholder.com/1433x616"></img>
+                        <img src="https://via.placeholder.com/1433x616" alt='placeholder'></img>
                     </Grid>
                     <Grid item xs={12} md={7} >
                         <h2 className='positionOverview'>Overview</h2>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
 import '../../Styles/Newsletter.css';
 
 const Newsletter = () => {

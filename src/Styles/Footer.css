@@ -10,22 +10,7 @@
     font-size: 20px;
     opacity: .5;
 }
-
-.footGalaxy {
-    color: #fff;
-    text-align: left;
-    font-family: Mosk-700;
-    font-size: 38px;
-    letter-spacing: 0px;    
-}
-
-.footProtocol {
-    text-align: left;
-    font-family: Mosk-100;
-    font-size: 38px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
+@media screen and (max-width: 576px) { .footerAddress {font-size: 17px;}}
 
 hr {
     width: 70%;
@@ -41,16 +26,14 @@ hr {
     font-size: 22px;
     padding-bottom: 40px;
 }
+@media screen and (max-width: 576px) { .footerHeading {font-size: 22px; padding-bottom: 0px;}}
 
 .footerText {
     color: #fff;
     font-family: Mosk-200;
     font-size: 22px;
 }
-
-.space {
-    padding-top: 80px;
-}
+@media screen and (max-width: 576px) { .footerText {font-size: 20px;}}
 
 .copyright {
     color: #737373;
@@ -60,6 +43,7 @@ hr {
     margin-bottom: 0;
     padding-bottom: 15px;
 }
+@media screen and (max-width: 576px) { .copyright {font-size: 15px;}}
 
 .footLinks {
     text-decoration: none;
@@ -67,17 +51,12 @@ hr {
 }
 
 .footerSectionContainer{
-    padding-left: 250px;
+    padding-left: 70px;
 }
+/* Class padding on footer contents on small screen */
+@media screen and (max-width: 576px) { .footerSectionContainer {padding-left: 50px;}}
 
 /* MEDIA QUERIES */
 /* Extra small devices (Tested with Iphone X) */
-@media screen and (max-width: 576px) { .footGalaxy, .footProtocol {font-size: 15px;}}
-@media screen and (max-width: 576px) { .footerHeading, .footerText {font-size: 12px;}}
-@media screen and (max-width: 576px) { .footerAddress {font-size: 17px;}}
-@media screen and (max-width: 576px) { .copyright {font-size: 15px;}}
 @media screen and (max-width: 576px) { .space {padding-top: 10px;}}
-@media screen and (max-width: 576px) { .footerHeading {padding-bottom: 0px;}}
 
-/* Class padding on footer contents on small screen */
-@media screen and (max-width: 576px) { .footerSectionContainer {padding-left: 50px;}}

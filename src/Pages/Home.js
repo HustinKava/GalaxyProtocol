@@ -13,6 +13,7 @@ function Home() {
       <div className='space' />
       <Generation />
       <div className='space' />
+      <div className='space' />
       <Destiny />
       <div className='space' />
       <div className='space' />

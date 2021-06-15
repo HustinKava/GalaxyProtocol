@@ -1,0 +1,94 @@
+/* Global banner styling used by 2 more banner components */
+
+.gridPadding {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+@media screen and (max-width: 576px) { .gridPadding {padding-left: 10px; padding-right: 10px;}}
+
+/* Used by Banner2 and Banner3 */
+.banHeaderTwo {
+    font-family: Mosk-700;
+    font-size: 90px;
+}
+
+.banHeaderTwo2 {
+    font-family: Mosk-100;
+    font-size: 90px;
+}
+
+/* Description styling for banner 1, 2 and 3 */
+.banDesc {
+    font-family: Mosk-300;
+    font-size: 25px;
+    color: #717171;
+    padding-bottom: 50px;
+
+}
+/* Description styling for banner 4 and 5 */
+.banDesc2 {
+    font-family: Mosk-300;
+    font-size: 25px;
+    color: #fff;
+}
+@media screen and (max-width: 576px) { .banDesc, .banDesc2 {font-size: 12px;}}
+
+/* Button styling */
+.btns{
+    width: 185px;
+    height: 43px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-family: Mosk-800;
+    color: #fff;
+    font-size: 21px;
+
+}
+
+.bannerTitleContainer{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+/* Remove padding from "galaxy unversity" header*/
+@media screen and (max-width: 576px) { .bannerTitleContainer {padding-top: 50px; }}
+
+
+.bannerButtonContainer{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+@media screen and (max-width: 576px) { .bannerButtonContainer {padding-bottom: 50px; }}
+
+/* Banner backgrounds */
+.fadeLeft {
+    background: transparent linear-gradient(269deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+}
+
+.fadeRight {
+    background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+}
+
+/* Moving text positioned on the right side of the banner */
+.contentContainer{
+    text-align: end;
+}
+/* Recenter university text on small screens */
+@media screen and (max-width: 576px) { .contentContainer {text-align: center; }}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+
+/* Align all banner contents center on mobile view */
+@media screen and (max-width: 576px) { .bannerOneContainer, .bannerTwoContainer, .bannerThreeContainer, .bannerFourContainer {text-align: center; }}
+@media screen and (max-width: 576px) { .banHeaderOne, .banHeaderOne2, .banHeaderTwo, .banHeaderTwo2 {font-size: 45px;}}
+@media screen and (max-width: 576px) { .banHeaderThree {font-size: 20px;}}
+@media screen and (max-width: 576px) { .banHeaderThree2 {font-size: 35px;}}
+@media screen and (max-width: 576px) { .btnSwap, .btnMerch, .btnTelegram, .btnDiscord {width: 130px; height: 30px; font-size: 15px;}}
+
+/* changing grid layout on smaller screen */
+@media screen and (max-width: 576px) { .gridItemBanner {align-items: center !important;}}
