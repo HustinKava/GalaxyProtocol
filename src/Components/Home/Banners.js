@@ -8,7 +8,6 @@ import Banner4 from './Banner4';
 import Banner5 from './Banner5';
 
 const Banners = () => {
-    ;
     return (
         <div>
             {/* GalaxySwap */}

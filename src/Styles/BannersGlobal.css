@@ -43,7 +43,6 @@
     font-family: Mosk-800;
     color: #fff;
     font-size: 21px;
-
 }
 
 .bannerTitleContainer{
@@ -88,7 +87,9 @@
 @media screen and (max-width: 576px) { .banHeaderOne, .banHeaderOne2, .banHeaderTwo, .banHeaderTwo2 {font-size: 45px;}}
 @media screen and (max-width: 576px) { .banHeaderThree {font-size: 20px;}}
 @media screen and (max-width: 576px) { .banHeaderThree2 {font-size: 35px;}}
-@media screen and (max-width: 576px) { .btnSwap, .btnMerch, .btnTelegram, .btnDiscord {width: 130px; height: 30px; font-size: 15px;}}
+
+/* Larger buttons on smaller screen */
+@media screen and (max-width: 576px) { .btnSwap, .btnMerch, .btnTelegram, .btnDiscord {width: 186px; height: 42px; font-size: 15px;}}
 
 /* changing grid layout on smaller screen */
 @media screen and (max-width: 576px) { .gridItemBanner {align-items: center !important;}}
