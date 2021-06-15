@@ -13,7 +13,7 @@ const Jobs = () => {
         <div>
             <Navbar />
             <Container fluid className="mainContainer">
-            <img src="https://via.placeholder.com/1349x2333"></img>
+            <img src="https://via.placeholder.com/1349x2333" alt='placeholder'></img>
             </Container>
             <div className="space" />
             <Footer />

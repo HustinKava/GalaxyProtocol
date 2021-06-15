@@ -13,6 +13,7 @@ const Generation = () => {
                 <p className='genText'>Create, trade, learn & interact</p>
                 <div className='genButtons'>
                     <button className='genBtn1'>Learn</button>
+                    <br className='responsiveButtons'/>
                     <button className='genBtn2'>Read Documents</button>
                 </div>
             </div>

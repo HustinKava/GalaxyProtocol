@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: center;
     border: solid 1px #FF00FF;
+    cursor: pointer;
 }
 
 .destBox1:hover {
@@ -50,6 +51,7 @@
     justify-content: center;
     align-items: center;
     border: solid 1px #00CDD5;
+    cursor: pointer;
 }
 
 .destBox2:hover {
@@ -70,6 +72,7 @@
     justify-content: center;
     align-items: center;
     border: solid 1px #F6F901;
+    cursor: pointer;
 }
 
 .destBox3:hover {
@@ -90,6 +93,7 @@
     justify-content: center;
     align-items: center;
     border: solid 1px #00F700;
+    cursor: pointer;
 }
 
 .destBox4:hover {
@@ -110,6 +114,7 @@
     justify-content: center;
     align-items: center;
     border: solid 1px #FFFFFF;
+    cursor: pointer;
 }
 
 .destBox5:hover {
@@ -130,6 +135,7 @@
     justify-content: center;
     align-items: center;
     border: solid 1px #E5009E;
+    cursor: pointer;
 }
 
 .destBox6:hover {
@@ -206,10 +212,15 @@
 
 /* MEDIA QUERIES */
 /* Extra small devices (Tested with Iphone X) */
-@media screen and (max-width: 576px) { .destBox1, .destBox2, .destBox3, .destBox4 {width: 150px; height: 150px;}}
-@media screen and (max-width: 576px) { .destBoxHeader {font-size: 20px;}}
-@media screen and (max-width: 576px) { .destBoxText {font-size: 11px;}}
-@media screen and (max-width: 576px) { .destHeader1, .destHeader2 {font-size: 31px;}}
+
+/* Making the boxes responsive */
+@media screen and (max-width: 576px) { .destBox1, .destBox2, .destBox3, .destBox4, .destBox5, .destBox6 {width: 145px; height: 150px;}}
+@media screen and (max-width: 576px) { .destBoxHeader {font-size: 16px;}}
+@media screen and (max-width: 576px) { .destBoxText {font-size: 11px; padding: 4px;}}
+@media screen and (max-width: 576px) { .destHeader1, .destHeader2 {font-size: 36px;}}
 @media screen and (max-width: 576px) { .boxGrouping {width: 307px !important;}}
-@media screen and (max-width: 576px) { .boxSpace {padding-bottom: 3px;}}
+/* This padding is needed for the trade box as the spacing differs slightly compared to the other boxes */
+@media screen and (max-width: 576px) { .boxSpace {padding-bottom: 8px;}}
+/* Removing the bottom spacing that is applied for desktop view when there is 3 columns per row  */
+@media screen and (max-width: 576px) { .boxBottomSpace {padding-bottom: 0 !important;}}
 
