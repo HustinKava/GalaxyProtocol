@@ -9,6 +9,24 @@
 }
 
 /* Space to seperate elements */
+.bannerLogoContainer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.bannerTitleContainer{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+/* Remove padding from "galaxy unversity" header*/
+@media screen and (max-width: 576px) { .bannerTitleContainer {padding-top: 50px; }}
+
+
+.bannerButtonContainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .banTopSpace {
     padding-bottom: 70px;
 }
@@ -34,14 +52,15 @@
     background: transparent linear-gradient(269deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
 }
 
+
 .fadeRight {
     background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
 }
 
 /* Header styling */
 .swapLogo {
-    width: 580px;
-    height: 131px;
+    max-width: 100%;
+    height: auto;
 }
 
 .banHeaderTwo {
@@ -66,15 +85,19 @@
 }
 
 /* Moving text positioned on the right side of the banner */
-.moveTextRight {
+.contentContainer{
     text-align: end;
 }
+/* Recenter university text on small screens */
+@media screen and (max-width: 576px) { .contentContainer {text-align: center; }}
 
 /* Description styling for banner 1 and 2*/
 .banDesc {
     font-family: Mosk-300;
     font-size: 25px;
     color: #717171;
+    padding-bottom: 50px;
+
 }
 
 /* Description styling for banner 3 and 4 */
@@ -85,105 +108,117 @@
 }
 
 /* Button styling */
-.btnSwap {
+
+.btns{
     width: 185px;
     height: 43px;
     cursor: pointer;
-    background: transparent linear-gradient(84deg, #FF00FF 0%, #670AA1 100%) 0% 0% no-repeat padding-box;
     border-radius: 5px;
     border: none;
     font-family: Mosk-800;
     color: #fff;
     font-size: 21px;
+
+}
+.btnSwap {
+    background: transparent linear-gradient(84deg, #FF00FF 0%, #670AA1 100%) 0% 0% no-repeat padding-box;
 }
 
 .btnLearn {
-    width: 185px;
-    height: 43px;
-    cursor: pointer;
     background: transparent linear-gradient(84deg, #00CDD5 0%, #440C8B 100%) 0% 0% no-repeat padding-box;    
-    border-radius: 5px;
-    border: none;
-    font-family: Mosk-800;
-    color: #fff;
-    font-size: 21px;
 }
 
 .btnMerch {
-    width: 185px;
-    height: 43px;
-    cursor: pointer;
     background: transparent linear-gradient(84deg, #00CDD5 0%, #FF00FF 100%) 0% 0% no-repeat padding-box;    
-    border-radius: 5px;
-    border: none;
-    font-family: Mosk-800;
-    color: #fff;
-    font-size: 21px;
 }
 
 .btnTelegram {
-    width: 185px;
-    height: 43px;
     cursor: pointer !important;
     background: transparent linear-gradient(84deg, #345FDA 0%, #3072FF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;    
-    border-radius: 5px;
-    border: none;
-    font-family: Mosk-800;
-    color: #fff;
-    font-size: 21px;
 }
 
 .btnDiscord {
-    width: 185px;
-    height: 43px;
-    cursor: pointer;
     background: transparent linear-gradient(84deg, #4063E8 0%, #6484FF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    border-radius: 5px;
-    border: none;
-    font-family: Mosk-800;
-    color: #fff;
-    font-size: 21px;
 }
 
 /* Images */
 .imageOne {
     position: relative;
     width: 100%;
-    height: 150%;
+    height: 100%;
 }
-.imageOne img {
+
+.imageOne .laptop {
     position: absolute;
-    top: -50px;
-    left: -100px;
-    width: 950px;
+    top: -80px;
+    max-width: 100%;
     height: auto;
     z-index: 1;
 }
 
+/* Align all banner contents center on mobile view */
+@media screen and (max-width: 576px) { .bannerOneContainer, .bannerTwoContainer, .bannerThreeContainer, .bannerFourContainer {text-align: center; }}
+
+/* Re-align laptop image and re-enter into layout */
+@media screen and (max-width: 576px) { .imageOne .laptop {position: relative; top: 0}}
+
 .placeholder {
-    padding-top: 180px;
+    padding-top: 220px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Resize university image on small screen */
+@media screen and (max-width: 576px) { .placeholder {
+    max-width: 90%;
+    padding-top: 100px;
+}}
+
+/* Images */
+.merchImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .hoodies {
     position: absolute;
-    height: auto;
-    width: 34%;
-    top: 4200px;
-    left: 150px;
+    height: 120%;
+    top: -70px;
+    left: 180px;
 }
+
+/* Resize and move hoodies for mobile view */
+@media screen and (max-width: 576px) { .hoodies {
+    position: relative; 
+    top: 25px;
+    left: 25%;
+    max-width: 50%;
+    height: auto;
+}}
+
+ .telegramImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+} 
 
 .telegram {
     position: absolute;
     height: auto;
     width: 60%;
     left: 755px;
-    top: 5000px;
 }
+
+/* Resize and move hoodies for mobile view */
+@media screen and (max-width: 576px) { .telegram {
+    position: relative; 
+    left: 0;
+}}
 
 .discord {
     padding-top: 60px;
@@ -193,6 +228,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* MEDIA QUERIES */
 /* Extra small devices (Tested with Iphone X) */
@@ -204,3 +240,5 @@
 @media screen and (max-width: 576px) { .banDesc, .banDesc2 {font-size: 12px;}}
 @media screen and (max-width: 576px) { .btnSwap, .btnMerch, .btnTelegram, .btnDiscord {width: 130px; height: 30px; font-size: 15px;}}
 
+/* changing grid layout on smaller screen */
+@media screen and (max-width: 576px) { .gridItemBanner {align-items: center !important;}}
