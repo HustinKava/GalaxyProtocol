@@ -13,21 +13,22 @@ function Footer() {
 
         <div>
             <ScrollIntoView>
-                <Grid container spacing={1}>
+                <Grid container spacing={1} className="footerSectionContainer">
 
                     {/* Footer company logo and name */}
-                    <Grid item xs={12} md={4}>
-                        <div className='footerLogoCenter'>
+                    <Grid item xs={12} md={4} >
+                        <div>
                             <img src={Logo} alt='Logo' className='footerLogo' />
-
+                            <p className="footerAddress">Country name here </p>
+                            <p className="footerAddress">Address line here, ZIP CODE</p>
                         </div>
                     </Grid>
 
                     {/* Footer items */}
-                    <Grid item xs={3} md={2}>
-                        <hr />
+                    <Grid item xs={12} md={2} >
+                        <hr className="footerDivider"/>
                         <p className='footerHeading'>Products</p>
-                        <br />
+                        {/* <br /> */}
                         <p className='footerText'>SafeGalaxy</p>
                         <p className='footerText'>GalaxySwap</p>
                         <p className='footerText'>GalaxyStation</p>
@@ -35,10 +36,10 @@ function Footer() {
                         <p className='footerText'>Galaxy University</p>
                         <p className='footerText'>Galaxy Merchandise</p>
                     </Grid>
-                    <Grid item xs={3} md={2}>
+                    <Grid item xs={12} md={2}>
                         <hr />
                         <p className='footerHeading'>Developers</p>
-                        <br />
+                        {/* <br /> */}
                         <p className='footerText'>Documentation</p>
                         <p className='footerText'>Whitepaper V1</p>
                         <p className='footerText'>Audit</p>
@@ -46,18 +47,18 @@ function Footer() {
                         <p className='footerText'>Terms & Conditions</p>
                         <p className='footerText'>Privacy & Policy</p>
                     </Grid>
-                    <Grid item xs={3} md={2}>
+                    <Grid item xs={12} md={2}>
                         <hr />
                         <p className='footerHeading'>Community</p>
-                        <br />
+                        {/* <br /> */}
                         <p className='footerText'>Discord</p>
                         <p className='footerText'>Telegram</p>
                         <p className='footerText'>Twitter</p>
                     </Grid>
-                    <Grid item xs={3} md={2}>
+                    <Grid item xs={12} md={2}>
                         <hr />
                         <p className='footerHeading'>About</p>
-                        <br />
+                        {/* <br /> */}
                         <p className='footerText'>About Us</p>
                         <p className='footerText'>Meet Our Team</p>
                         <NavLink to='/jobs' className='footLinks'>

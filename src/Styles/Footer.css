@@ -1,10 +1,14 @@
-.footerLogoCenter {
-    text-align: center;
-}
 
 .footerLogo {
-    height: auto;
-    width: 288px;
+    height: 1.8em;
+    width: auto;
+    padding-top:30px
+}
+
+.footerAddress{
+    font-family: 'Mosk-300';
+    font-size: 20px;
+    opacity: .5;
 }
 
 .footGalaxy {
@@ -35,6 +39,7 @@ hr {
     color: #fff;
     font-family: Mosk-700;
     font-size: 22px;
+    padding-bottom: 40px;
 }
 
 .footerText {
@@ -61,9 +66,18 @@ hr {
     cursor: pointer;
 }
 
+.footerSectionContainer{
+    padding-left: 250px;
+}
+
 /* MEDIA QUERIES */
 /* Extra small devices (Tested with Iphone X) */
 @media screen and (max-width: 576px) { .footGalaxy, .footProtocol {font-size: 15px;}}
 @media screen and (max-width: 576px) { .footerHeading, .footerText {font-size: 12px;}}
+@media screen and (max-width: 576px) { .footerAddress {font-size: 17px;}}
 @media screen and (max-width: 576px) { .copyright {font-size: 15px;}}
 @media screen and (max-width: 576px) { .space {padding-top: 10px;}}
+@media screen and (max-width: 576px) { .footerHeading {padding-bottom: 0px;}}
+
+/* Class padding on footer contents on small screen */
+@media screen and (max-width: 576px) { .footerSectionContainer {padding-left: 50px;}}
