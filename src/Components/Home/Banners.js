@@ -1,33 +1,22 @@
 import React from 'react';
 import '../../Styles/BannersGlobal.css';
-import Banner1 from './Banner1';
-import Banner2 from './Banner2';
+import Swap from './BannerSwap';
+import University from './BannerUniversity';
 import Newsletter from '../../Components/Home/Newsletter';
-import Banner3 from './Banner3';
-import Banner4 from './Banner4';
-import Banner5 from './Banner5';
+import Merch from './BannerMerch';
+import Telegram from './BannerTelegram';
+import Discord from './BannerDiscord';
 
 const Banners = () => {
     ;
     return (
         <div>
-            {/* GalaxySwap */}
-            <Banner1/>
-
-            {/* GalaxyUniversity */}
-            <Banner2/>
-
-            {/* Newsletter Subscribe */}
+            <Swap/>
+            <University/>
             <Newsletter />
-
-            {/* GalaxyMerch */}
-            <Banner3/>
-
-            {/* Telegram */}
-            <Banner4/>
-
-            {/* Discord */}
-            <Banner5/>
+            <Merch/>
+            <Telegram/>
+            <Discord/>
         </div>
     )
 };

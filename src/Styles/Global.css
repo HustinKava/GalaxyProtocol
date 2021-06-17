@@ -7,6 +7,7 @@ html{
     width: 100vw;
     height: auto;
     background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -23,4 +24,9 @@ html{
 
 p, span {
     color: #fff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }

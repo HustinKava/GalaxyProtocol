@@ -1,5 +1,4 @@
-import React from 'react'
-import Navbar from '../Components/Navbar/Navbar';
+import React from 'react';
 import Footer from '../Components/Footer';
 import { Container, Grid } from '@material-ui/core';
 
@@ -8,8 +7,7 @@ import '../Styles/Documentation.css';
 const Documentation = () => {
     return (
         <div>
-            <Navbar />
-            <Container fluid className="mainContainer">
+            <Container className="mainContainer">
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={12}>
                         <h1>DOCUMENTATION</h1>

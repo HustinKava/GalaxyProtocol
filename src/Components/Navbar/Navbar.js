@@ -1,94 +1,117 @@
 import React from 'react'
 import '../../Styles/Navbar.css';
 import Logo from '../../Assets/logo-white_1_25.png';
+import MobileLogo from '../../Assets/mobile-navbar-logo.png';
+import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
 
         <div className='nav'>
             {/* Company logo and name */}
+            <FaBars  className='mobileMenu' onClick={toggle}/>
             <NavLink to='/' className='navLink'>
                 <img src={Logo} alt='Logo' className='navLogo'/>
+                <img src={MobileLogo} alt='Mobile Logo' className='navMobileLogo'/>
             </NavLink>
-            <FaBars  className='mobileMenu'/>
             
             {/* Menu items */}
             <div className='navMenu'>
                 <div className='dropdown'>
-                    <span className="dropbtn">Products</span>
+                    <p className="dropbtn">Products</p>
                     <div className="dropdown-content">
-                        <NavLink to='/galaxyswap' className='navLink'>
-                            <span>GalaxySwap</span>
-                        </NavLink>
-                        <NavLink to='/nebulalaunchpad' className='navLink'>
-                            <span>Nebula Launchpad</span>
-                        </NavLink>
-                        <NavLink to='/galaxyuniverse' className='navLink'>
-                            <span>Galaxy Universe</span>
-                        </NavLink>
-                        <NavLink to='/safegalaxy' className='navLink'>
-                            <span>SafeGalaxy</span>
-                        </NavLink>
+                        {/* <NavLink to='/galaxyswap' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>GalaxySwap</p>
+                        </Link>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/nebulalaunchpad' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Nebula Launchpad</p>
+                        </Link>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/galaxyuniverse' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Galaxy Universe</p>
+                        </Link>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/safegalaxy' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>SafeGalaxy</p>
+                        </Link>
+                        {/* </NavLink> */}
                     </div>
                 </div>
                 
                 <div className='dropdown'>
-                    <span className="dropbtn">Developers</span>
+                    <p className="dropbtn">Developers</p>
                     <div className="dropdown-content">
                         <NavLink to='/documentation' className='navLink'>
-                            <span>Documentation</span>
+                            <p className='navText'>Documentation</p>
                         </NavLink>
-                        <NavLink to='/whitepaperv1' className='navLink'>
-                            <span>Whitepaper V1</span>
-                        </NavLink>
-                        <NavLink to='/audit' className='navLink'>
-                            <span>Audit</span>
-                        </NavLink>
+                        {/* <NavLink to='/whitepaperv1' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Whitepaper V1</p>
+                        </Link>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/audit' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Audit</p>
+                        </Link>
+                        {/* </NavLink> */}
                     </div>
                 </div>
 
                 <div className='dropdown'>
-                    <span className="dropbtn">Community</span>
+                    <p className="dropbtn">Community</p>
                     <div className="dropdown-content">
-                        <NavLink to='/discord' className='navLink'>
-                            <span>Discord</span>
-                        </NavLink>
-                        <NavLink to='/telegram' className='navLink'>
-                            <span>Telegram</span>
-                        </NavLink>
-                        <NavLink to='/twitter' className='navLink'>
-                            <span>Twitter</span>
-                        </NavLink>
+                        <Link to='/#footerDiscord' className='navLink'>
+                            <p className='navText'>Discord</p>
+                        </Link>
+                        <Link to='/#footerTelegram' className='navLink'>
+                            <p className='navText'>Telegram</p>
+                        </Link>
+                        {/* <NavLink to='/twitter' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Twitter</p>
+                        </Link>
+                        {/* </NavLink> */}
                     </div>
                 </div>
 
                 <div className='dropdown'>
-                    <span className="dropbtn">About</span>
+                    <p className="dropbtn">About</p>
                     <div className="dropdown-content">
-                        <NavLink to='/aboutus' className='navLink'>
-                            <span>About Us</span>
-                        </NavLink>
-                        <NavLink to='/meetourteam' className='navLink'>
-                            <span>Meet Our Team</span>
-                        </NavLink>
+                        {/* <NavLink to='/aboutus' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>About Us</p>
+                        </Link>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/meetourteam' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Meet Our Team</p>
+                        </Link>
+                        {/* </NavLink> */}
                         <NavLink to='/jobs' className='navLink'>
-                            <span>Jobs</span>
+                            <p className='navText'>Jobs</p>
                         </NavLink>
                         <NavLink to='/faq' className='navLink'>
-                            <span>FAQ</span>
+                            <p className='navText'>FAQ</p>
                         </NavLink>
-                        <NavLink to='/presskit' className='navLink'>
-                            <span>Presskit</span>
-                        </NavLink>
+                        {/* <NavLink to='/presskit' className='navLink'> */}
+                        <Link className='navLink'>
+                            <p className='navText'>Presskit</p>
+                        </Link>
+                        {/* </NavLink> */}
                     </div>
                 </div>
             </div>
 
             <div className='navBtn'>
                 <NavLink to='/galaxyswap' className='navBtnLink'>
-                        <span className='navBold'>Use&nbsp;</span><span className='navBold'>Galaxy</span><span className='normal'>Swap</span>
+                        <span className='navUse'>Use&nbsp;</span><span className='navGalaxy'>Galaxy</span><span className='navSwap'>Swap</span>
                 </NavLink>
             </div>
         </div>

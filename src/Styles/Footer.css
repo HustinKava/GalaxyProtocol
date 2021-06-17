@@ -24,14 +24,16 @@ hr {
     color: #fff;
     font-family: Mosk-700;
     font-size: 22px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+    padding-top: 40px;
 }
-@media screen and (max-width: 576px) { .footerHeading {font-size: 22px; padding-bottom: 0px;}}
+@media screen and (max-width: 576px) { .footerHeading {font-size: 22px; padding-top: 30px; padding-bottom: 30px;}}
 
 .footerText {
     color: #fff;
     font-family: Mosk-200;
     font-size: 22px;
+    padding-bottom: 20px;
 }
 @media screen and (max-width: 576px) { .footerText {font-size: 20px;}}
 
