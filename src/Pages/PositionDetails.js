@@ -1,5 +1,4 @@
 // import React, { useState } from 'react'
-import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import PositionHero from '../Components/PositionDetails/PositionHero';
 import PositionInfo from '../Components/PositionDetails/PositionInfo';
@@ -11,7 +10,6 @@ const PositionDetails = () => {
 
     return (
         <div>
-            <Navbar />
             <Container fluid className="mainContainer">
                 <PositionHero />
                 <PositionInfo />

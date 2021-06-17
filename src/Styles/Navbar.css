@@ -6,6 +6,12 @@
     justify-content: space-between;
     z-index: 10;
 }
+@media screen and (max-width: 768px) {.nav {
+    height: 0;     
+    background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0% 0% no-repeat padding-box; 
+    padding-bottom: 40px;   
+}}
+
 
 /* Spacing between navbar items */
 .navLink {
@@ -25,6 +31,12 @@
     height: auto;
     width: 35%;
 }
+@media screen and (max-width: 768px) {.navLogo {display: none;}}
+
+.navMobileLogo {
+    display: none;
+}
+@media screen and (max-width: 768px) {.navMobileLogo {display: unset; padding-left: 0;}}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -37,8 +49,6 @@
     display: flex;
     align-items: center;
     margin-right: 100px;
-    font-family: Mosk-700;
-    font-size: 20px;
     cursor: pointer;
     border: none;
 }
@@ -46,6 +56,13 @@
 /* Style to seperate Products, Developers, Community and About links */
 .dropbtn {
     padding: 25px;
+    font-family: Mosk-700;
+    font-size: 20px;
+}
+
+.navText {
+    font-family: Mosk-300;
+    font-size: 20px;
 }
   
 /* Dropdown content links (Hidden by Default) */
@@ -55,8 +72,7 @@
     z-index: 1;
     background: transparent linear-gradient(2deg, #000000 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;    
     border-radius: 4px;
-    font-family: Mosk-300;
-    font-size: 20px;
+    padding-right: 15px;
 }
   
 /* Links inside the dropdown */
@@ -72,15 +88,23 @@
 }
 
 /* Use GalaxySwap button styling */
-.navBold {
+.navUse {
+    font-family: Mosk-700;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) { .navUse {font-size: 13px; font-family: Mosk-400; padding-right: 2px;}}
+
+.navGalaxy {
   font-family: Mosk-700;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) { .navGalaxy {font-size: 16px; font-family: Mosk-600;}}
 
-.normal {
+.navSwap {
   font-family: Mosk-100;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) { .navSwap {font-size: 15px;}}
 
 .navBtn {
     display: flex;
@@ -99,16 +123,20 @@
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) { .navBtnLink {margin-left: 0; padding: 1px 4px;}}
 
 /* Hamburger icon for mobile view */
 .mobileMenu {
     display: none;
     color: #fff;
-    margin-top: 15px;
+    margin-left: 20px;
+    margin-top: -12px;
+    font-size: 1.5rem;
 }
 
 /* Hiding desktop menu */
-@media screen and (max-width: 768px) {.navBtn {display: none;}}
+/* @media screen and (max-width: 768px) {.navBtn {display: none;}} */
 @media screen and (max-width: 768px) { .navMenu {display: none;}}
 /* Displaying mobile menu */
-@media screen and (max-width: 768px) {.mobileMenu { display: block; position: absolute; top: 0; right: 0; transform: translate(-100%, 75%); font-size: 1.8rem; cursor: pointer;}}
+/* @media screen and (max-width: 768px) {.mobileMenu { display: block; position: absolute; top: 0; right: 0; transform: translate(-100%, 75%); font-size: 1.8rem; cursor: pointer;}} */
+@media screen and (max-width: 768px) {.mobileMenu { display: unset; cursor: pointer;}}

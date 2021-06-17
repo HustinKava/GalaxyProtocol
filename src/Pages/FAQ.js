@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import { Container, Grid } from '@material-ui/core';
 
@@ -8,7 +7,6 @@ import '../Styles/Faq.css'
 const FAQ = () => {
     return (
         <div>
-            <Navbar />
             <Container fluid className="mainContainer">
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>

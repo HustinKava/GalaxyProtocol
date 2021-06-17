@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import '../Styles/Footer.css';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import Logo from '../Assets/logo-white_1_25.png';
 
@@ -28,44 +28,80 @@ function Footer() {
                     <Grid item xs={12} md={2} >
                         <hr className="footerDivider"/>
                         <p className='footerHeading'>Products</p>
-                        {/* <br /> */}
-                        <p className='footerText'>SafeGalaxy</p>
-                        <p className='footerText'>GalaxySwap</p>
-                        <p className='footerText'>GalaxyStation</p>
-                        <p className='footerText'>Nebula Launchpad</p>
-                        <p className='footerText'>Galaxy University</p>
-                        <p className='footerText'>Galaxy Merchandise</p>
+                        {/* <NavLink to='/safegalaxy' className='footLinks'>     */}
+                            <p className='footerText'>SafeGalaxy</p>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/galaxyswap' className='footLinks'> */}
+                            <p className='footerText'>GalaxySwap</p>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/galaxystation' className='footLinks'> */}
+                            <p className='footerText'>GalaxyStation</p>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/nebulalaunchpad' className='footLinks'> */}
+                            <p className='footerText'>Nebula Launchpad</p>
+                        {/* </NavLink> */}
+                        <Link to='/#footerUniversity' className='footLinks'>
+                            <p className='footerText'>Galaxy University</p>
+                        </Link>
+                        <Link to='/#footerMerchandise' className='footLinks'>
+                            <p className='footerText'>Galaxy Merchandise</p>
+                        </Link>
                     </Grid>
+
                     <Grid item xs={12} md={2}>
                         <hr />
                         <p className='footerHeading'>Developers</p>
-                        {/* <br /> */}
-                        <p className='footerText'>Documentation</p>
-                        <p className='footerText'>Whitepaper V1</p>
-                        <p className='footerText'>Audit</p>
-                        <p className='footerText'>Partnership Overview</p>
-                        <p className='footerText'>Terms & Conditions</p>
-                        <p className='footerText'>Privacy & Policy</p>
+                        <NavLink to='/documentation' className='footLinks'>
+                            <p className='footerText'>Documentation</p>
+                        </NavLink>
+                        {/* <NavLink to='/whitepaperv1' className='footLinks'> */}
+                            <p className='footerText'>Whitepaper V1</p>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/audit' className='footLinks'> */}
+                            <p className='footerText'>Audit</p>
+                        {/* </NavLink> */}
+                        <NavLink to='/partnershipoverview' className='footLinks'>
+                            <p className='footerText'>Partnership Overview</p>
+                        </NavLink>
+                        {/* <NavLink to='/terms&conditions' className='footLinks'> */}
+                            <p className='footerText'>Terms & Conditions</p>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/privacy&policy' className='footLinks'> */}
+                            <p className='footerText'>Privacy & Policy</p>
+                        {/* </NavLink> */}
                     </Grid>
+
                     <Grid item xs={12} md={2}>
                         <hr />
                         <p className='footerHeading'>Community</p>
-                        {/* <br /> */}
-                        <p className='footerText'>Discord</p>
-                        <p className='footerText'>Telegram</p>
-                        <p className='footerText'>Twitter</p>
+                        <Link to='/#footerDiscord' className='footLinks'>
+                            <p className='footerText'>Discord</p>
+                        </Link>
+                        <Link to='/#footerTelegram' className='footLinks'>
+                            <p className='footerText'>Telegram</p>
+                        </Link>
+                        {/* <Link to='/footerTwitter' className='footLinks'> */}
+                            <p className='footerText'>Twitter</p>
+                        {/* </Link> */}
                     </Grid>
                     <Grid item xs={12} md={2}>
                         <hr />
                         <p className='footerHeading'>About</p>
-                        {/* <br /> */}
-                        <p className='footerText'>About Us</p>
-                        <p className='footerText'>Meet Our Team</p>
+                        {/* <NavLink to='/aboutus' className='footLinks'> */}
+                            <p className='footerText'>About Us</p>
+                        {/* </NavLink> */}
+                        {/* <NavLink to='/meetourteam' className='footLinks'> */}
+                            <p className='footerText'>Meet Our Team</p>
+                        {/* </NavLink> */}
                         <NavLink to='/jobs' className='footLinks'>
                             <p className='footerText'>Jobs</p>
                         </NavLink>
-                        <p className='footerText'>FAQ</p>
-                        <p className='footerText'>Presskit</p>
+                        <NavLink to='/faq' className='footLinks'>
+                            <p className='footerText'>FAQ</p>
+                        </NavLink>
+                        {/* <NavLink to='/presskit' className='footLinks'> */}
+                            <p className='footerText'>Presskit</p>
+                        {/* </NavLink> */}
                     </Grid>
                 </Grid>
             </ScrollIntoView>

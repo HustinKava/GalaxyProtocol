@@ -1,4 +1,3 @@
-import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer';
 import JobsHero from '../Components/Jobs/JobsHero';
 import JobsGallery from '../Components/Jobs/JobsGallery';
@@ -13,7 +12,6 @@ const Jobs = () => {
 
     return (
         <div>
-            <Navbar />
             <Container fluid className="jobContainer">
                 <JobsHero />
                 <JobsGallery />
