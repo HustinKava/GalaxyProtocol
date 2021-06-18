@@ -6,6 +6,13 @@
   justify-content: space-between;
   z-index: 10;
 
+  @include respond(ipad-pro) {
+    height: 0;
+    background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0%
+      0% no-repeat padding-box;
+    padding-bottom: 40px;
+  }
+
   @include respond(ipad) {
     height: 0;
     background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0%
@@ -33,6 +40,10 @@
   width: 35%;
   min-width: 14rem;
 
+  @include respond(ipad-pro) {
+    display: none;
+  }
+
   @include respond(ipad) {
     display: none;
   }
@@ -40,6 +51,11 @@
 
 .navMobileLogo {
   display: none;
+
+  @include respond(ipad-pro) {
+    display: unset;
+    margin-left: -10rem;
+  }
 
   @include respond(ipad) {
     display: unset;
@@ -62,7 +78,10 @@
   border: none;
 
   /* Hiding desktop menu */
-  /* @media screen and (max-width: 768px) {.navBtn {display: none;}} */
+  @include respond(ipad-pro) {
+    display: none;
+  }
+
   @include respond(ipad) {
     display: none;
   }
@@ -154,6 +173,11 @@
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
+  @include respond(ipad-pro) {
+    margin-left: 0;
+    padding: 1px 4px;
+  }
+
   @include respond(ipad) {
     margin-left: 0;
     padding: 1px 4px;
@@ -169,7 +193,12 @@
   font-size: 1.5rem;
 
   /* Displaying mobile menu */
-  /* @media screen and (max-width: 768px) {.mobileMenu { display: block; position: absolute; top: 0; right: 0; transform: translate(-100%, 75%); font-size: 1.8rem; cursor: pointer;}} */
+  @include respond(ipad-pro) {
+    margin-top: -16px;
+    font-size: 3rem;
+    display: unset;
+  }
+
   @include respond(ipad) {
     display: unset;
   }

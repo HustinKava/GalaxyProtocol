@@ -16,7 +16,8 @@
   &__text {
     font-family: Mosk-100;
     font-size: 10.7rem;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
+    line-height: 0;
 
     @include respond(surface-duo) {
       font-size: 5.3rem;
@@ -58,6 +59,7 @@
     font-size: 3.4rem;
     color: $color-white;
     margin: 0.5rem;
+    cursor: pointer;
 
     @include respond(surface-duo) {
       width: 9.3rem;

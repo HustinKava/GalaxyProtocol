@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import Discord from '../../Assets/Discord-art-1.png';
 
 function Banner5() {
@@ -14,6 +14,10 @@ function Banner5() {
         md={6}
         className="ban-gridPadding ban-contentContainer"
       >
+
+<Container maxWidth="sm">
+
+
         <div className="bannerTitleContainer">
           <span className="banHeader-alt banHeader-alt--1">
             STAY CONNECTED WITH US
@@ -28,6 +32,9 @@ function Banner5() {
         <div className="bannerButtonContainer">
           <button className="ban-button ban-button--discord">Join now</button>
         </div>
+
+</Container>
+
       </Grid>
     </Grid>
   );

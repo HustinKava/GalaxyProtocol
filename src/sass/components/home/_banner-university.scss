@@ -1,8 +1,10 @@
 .placeholder {
   padding-top: 220px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: 70%;
+  width: 70%;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
 
   /* Resize university image on small screen */
   @include respond(surface-duo) {
