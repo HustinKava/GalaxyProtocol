@@ -1,0 +1,19 @@
+.telegramImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.telegram {
+  position: absolute;
+  height: auto;
+  width: 60%;
+  top: 530rem;
+  left: 75.5rem;
+
+  @include respond(ipad-pro) {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}

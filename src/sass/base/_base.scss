@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  background: transparent
+    linear-gradient(90deg, $color-black 0%, $color-gradient-black 100%) 0% 0%
+    no-repeat padding-box;
+  scroll-behavior: smooth;
+
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  // @include respond(tab-land) {
+  //   // width < 1200?
+  //   font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  // }
+  //
+  // @include respond(tab-port) {
+  //   // width < 900?
+  //   font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  // }
+  //
+  // @include respond(big-desktop) {
+  //   font-size: 75%; //1rem = 12, 12/16
+  // }
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: $color-white;
+}
+
+/* Unified space at top and bottom of each page */
+.mainContainer {
+  margin: 9rem 13rem;
+}
+
+.space {
+  padding-bottom: 70px;
+}
+
+button {
+  cursor: pointer;
+}

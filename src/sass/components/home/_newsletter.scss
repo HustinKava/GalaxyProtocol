@@ -1,0 +1,86 @@
+.news {
+  background: transparent
+    linear-gradient(269deg, $color-black 0%, $color-gradient-black 100%) 0% 0%
+    no-repeat padding-box;
+  text-align: center;
+
+  &__header {
+    font-family: Mosk-800;
+    font-size: 12.8rem;
+
+    @include respond(surface-duo) {
+      font-size: 6.4rem;
+    }
+  }
+
+  &__text {
+    font-family: Mosk-100;
+    font-size: 10.7rem;
+    padding-bottom: 5rem;
+
+    @include respond(surface-duo) {
+      font-size: 5.3rem;
+    }
+  }
+}
+
+.news-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  &__email {
+    width: 44rem;
+    height: 7.1rem;
+    font-size: 2.4rem;
+    font-family: Mosk-500;
+    background: none;
+    border: 1px solid $color-pink;
+    color: $color-white;
+    margin: 0.5rem;
+
+    @include respond(surface-duo) {
+      width: 22rem;
+      height: 3.5rem;
+      font-size: $font-size-12;
+    }
+  }
+
+  &__subscribe {
+    width: 18.6rem;
+    height: 7.5rem;
+    background: transparent
+      linear-gradient(256deg, $color-pink 0%, $color-teal 100%) 0% 0% no-repeat
+      padding-box;
+    border-radius: 4px;
+    border: none;
+    font-family: Mosk-600;
+    font-size: 3.4rem;
+    color: $color-white;
+    margin: 0.5rem;
+
+    @include respond(surface-duo) {
+      width: 9.3rem;
+      height: 3.75rem;
+      font-size: $font-size-12;
+    }
+  }
+}
+
+.news-span {
+  font-size: $font-size-20;
+  color: $color-grey-light-1;
+
+  @include respond(surface-duo) {
+    font-size: 1.3rem;
+  }
+
+  &--light {
+    font-family: Mosk-200;
+  }
+
+  &--bold {
+    font-family: Mosk-500;
+    text-decoration: underline;
+  }
+}

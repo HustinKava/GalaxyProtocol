@@ -1,0 +1,179 @@
+.destCenter {
+  text-align: center;
+}
+
+/* Component heading and alignment */
+.destHeader {
+  font-size: 6.4rem;
+  color: $color-white;
+
+  &--1 {
+    font-family: Mosk-100;
+  }
+
+  &--2 {
+    font-family: Mosk-700;
+  }
+}
+
+.boxGrouping-container {
+  display: flex;
+  justify-content: center;
+}
+
+.boxGrouping {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10rem;
+  width: 102rem;
+
+  @include respond(surface-duo) {
+    width: 60rem;
+  }
+}
+
+.destBox-container {
+  margin: 0.8rem;
+
+  @include respond(iphone-plus) {
+    margin: 0.5rem;
+  }
+}
+
+/* 6 Boxes for Trade, Learn, Launch, Wallet, Jobs and Merch */
+.destBox {
+  width: 32.4rem;
+  height: 32.4rem;
+  box-shadow: 0px 0.3rem 6.6rem $color-box-shadow-dark;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(surface-duo) {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  @include respond(iphone-plus) {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  &:hover {
+    box-shadow: 0px 0.3rem 6.6rem $color-box-shadow-dark;
+    border: solid 1px $color-black;
+  }
+
+  &--1 {
+    border: solid 1px $color-pink;
+
+    &:hover {
+      background: transparent
+        linear-gradient(225deg, $color-purple-dark 0%, $color-pink 100%) 0% 0%
+        no-repeat padding-box;
+    }
+  }
+
+  &--2 {
+    border: solid 1px $color-teal;
+
+    &:hover {
+      background: transparent
+        linear-gradient(45deg, $color-teal 0%, $color-purple-dark 100%) 0% 0%
+        no-repeat padding-box;
+    }
+  }
+
+  &--3 {
+    border: solid 1px $color-yellow-light;
+
+    &:hover {
+      background: transparent
+        linear-gradient(45deg, $color-yellow-dark 0%, $color-yellow 100%) 0% 0%
+        no-repeat padding-box;
+    }
+  }
+
+  &--4 {
+    border: solid 1px $color-green-light;
+
+    &:hover {
+      background: transparent
+        linear-gradient(228deg, $color-green 0%, $color-green-dark 100%) 0% 0%
+        no-repeat padding-box;
+    }
+  }
+
+  &--5 {
+    border: solid 1px $color-white;
+
+    &:hover {
+      background: transparent
+        linear-gradient(45deg, $color-off-black 0%, $color-grey-dark-1 100%) 0%
+        0% no-repeat padding-box;
+    }
+  }
+
+  &--6 {
+    border: solid 1px $color-pink;
+
+    &:hover {
+      background: transparent
+        linear-gradient(45deg, $color-teal 0%, $color-pink 100%) 0% 0% no-repeat
+        no-repeat padding-box;
+    }
+  }
+
+  /* Image sizing */
+  // destBox__image
+  &__image {
+    width: auto;
+    height: 20%;
+    margin-bottom: 2rem;
+
+    @include respond(surface-duo) {
+      margin-bottom: 1rem;
+    }
+
+    @include respond(iphone-plus) {
+      margin-top: 1.8rem;
+    }
+  }
+
+  /* Box text */
+  // destBox__header
+  &__header {
+    font-family: Mosk-700;
+    font-size: 3.5rem;
+
+    @include respond(surface-duo) {
+      font-size: $font-size-20;
+    }
+
+    @include respond(iphone-plus) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-family: Mosk-300;
+    font-size: 1.8rem;
+    padding: 4rem;
+
+    @include respond(surface-duo) {
+      font-size: 1.4rem;
+      height: 10rem;
+      padding: 1rem;
+    }
+
+    @include respond(iphone-plus) {
+      font-size: 1.3rem;
+      height: 10rem;
+      padding: 0.8rem;
+    }
+  }
+}

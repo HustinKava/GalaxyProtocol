@@ -1,13 +1,11 @@
-import React from 'react'
-import { Container } from '@material-ui/core';
-
+import React from 'react';
 
 const MeetOurTeam = () => {
-    return (
-        <div>
-            <Container fluid className="mainContainer"/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="mainContainer" />
+    </div>
+  );
+};
 
-export default MeetOurTeam
+export default MeetOurTeam;

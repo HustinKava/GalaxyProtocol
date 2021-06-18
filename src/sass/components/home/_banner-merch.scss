@@ -1,0 +1,21 @@
+.merchImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hoodies {
+  position: absolute;
+  height: 115%;
+  top: -70px;
+  left: 180px;
+
+  /* Resize and move hoodies for mobile view */
+  @include respond(surface-duo) {
+    position: relative;
+    top: 25px;
+    left: 25%;
+    max-width: 50%;
+    height: auto;
+  }
+}
