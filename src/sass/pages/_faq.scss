@@ -1,0 +1,22 @@
+.faq {
+  font-size: $font-size-25;
+  color: $color-grey-light-2;
+
+  &__header {
+    max-width: 90rem;
+    line-height: normal;
+    margin-bottom: 5rem;
+  }
+
+  &__intro {
+    font-family: Mosk-200;
+    color: $color-grey-light-2;
+    width: 80rem;
+    margin-bottom: 20rem;
+  }
+
+  &__body {
+    font-family: Mosk-300;
+    color: $color-grey-light-2;
+  }
+}

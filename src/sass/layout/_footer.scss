@@ -1,0 +1,79 @@
+.footerSectionContainer {
+  padding-left: 7rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerLogo {
+  width: auto;
+  padding-top: 3rem;
+  max-width: 20rem;
+}
+
+.footerAddress {
+  font-family: Mosk-300;
+  font-size: $font-size-20;
+  opacity: 0.5;
+
+  @include respond(surface-duo) {
+    font-size: 1.7rem;
+  }
+}
+
+.footer-column {
+  &__divider {
+    width: 70%;
+    margin-left: 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(
+      270deg,
+      $color-white 0%,
+      $color-grey-light-2 100%
+    );
+  }
+
+  &__heading {
+    color: $color-white;
+    font-family: Mosk-700;
+    font-size: 2.2rem;
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+
+    @include respond(surface-duo) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    font-family: Mosk-200;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+
+    @include respond(surface-duo) {
+      font-size: 2rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.footer-copyright {
+  color: $color-grey-light-1;
+  text-align: center;
+  font-family: Mosk-300;
+  font-size: $font-size-20;
+  margin-bottom: 0;
+  margin-top: 10rem;
+  padding-bottom: 1.5rem;
+
+  @include respond(surface-duo) {
+    font-size: 1.5rem;
+  }
+}

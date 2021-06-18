@@ -1,29 +1,22 @@
-import JobCard from './JobCard'
-import React from 'react'
-import { Grid } from '@material-ui/core';
+import JobCard from './JobCard';
+import React from 'react';
 
 function JobsGallery() {
-    return (
-        <>
-            <h3 className='openPosHeader'>Open positions</h3>
-            <div>
-                {/* For each new job to be listed add one <Grid item xs={6}> and it's contents */}
-                <Grid container spacing={4}>
-                    <Grid item xs={12} md={6}>
-                        <JobCard />
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <JobCard />
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <JobCard />
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <JobCard />
-                    </Grid>
-                </Grid>
-            </div>
-        </>)
-} 
+  return (
+    <>
+      <h3 className="openPosHeader">Open positions</h3>
+      <div className="jobs-gallery">
+        {/* For each new job to be listed add one <Grid item xs={6}> and it's contents */}
+        <JobCard />
+
+        <JobCard />
+
+        <JobCard />
+
+        <JobCard />
+      </div>
+    </>
+  );
+}
 
 export default JobsGallery;

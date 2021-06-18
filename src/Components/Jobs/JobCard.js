@@ -1,34 +1,30 @@
 import React from 'react';
 // import { Container } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import { NavLink } from 'react-router-dom';
 
-import '../../Styles/JobCard.css';
-
-
 function JobCard() {
+  return (
+    <div className="job-card">
+      <div className="postingType">
+        <div className="postingType__text">Remote</div>
+      </div>
 
-    return (
-        <Card className='mainCard'>
-            <div className='postingType'>
-                <p className='postingTypeText'>Remote</p>
-            </div>
-            <CardContent>
-                <h2 className='jobTitle'>Job title here</h2>
-                <p className='jobDesc'>We’re in search of a marketing specialist to join our team! In this role, you’ll deliver impactful storytelling across various digital platforms.</p>
-            </CardContent>
+      <div className="job-info">
+        <h2 className="job-info__title">Job title here</h2>
+        <p className="job-info__desc">
+          We’re in search of a marketing specialist to join our team! In this
+          role, you’ll deliver impactful storytelling across various digital
+          platforms.
+        </p>
+      </div>
 
-            <CardActions>
-                <div className='learnMore'>
-                <NavLink to='/positionDetails' className='linkLearn'>
-                        <p className='learnMoreInner'>Learn more</p>
-                    </NavLink>
-                </div>
-            </CardActions>
-        </Card>
-    )
+      <div className="learnMore">
+        <NavLink to="/positionDetails" className="learnMore__link">
+          <p className="learnMore__inner">Learn more</p>
+        </NavLink>
+      </div>
+    </div>
+  );
 }
 
 export default JobCard;

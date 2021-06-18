@@ -1,0 +1,86 @@
+// TODO: before this reaches the public, all scss will have to be compressed
+
+// If any of this gets too confusing, just contact DC and I will help you out :)
+
+// Pure css works perfectly with sass as well so if you're more comfortable with that, use that!
+// The Sass file extension is .scss (sassy css lol)
+// When creating a new file, simply import it into the main.scss and that's it. No need to import elsewhere
+
+// NOTE: You may get an error that mentions 'resolve-url-loader'
+  // If this happens, navigate to 'resolve-url-loader' in the node_modules folder then go to the index.js file
+  // find var options, should be around line  46,
+  // there should be something that says removeCR: false, change this to true and that should do it
+
+// this is the block in BEM
+.example-component {
+  // this is 16px. 1px = 1/10rem, 10px = 1rem (the math is in the base file)
+  font-size: 1.6rem;
+
+  // These are all elements in BEM, they are children of the block
+  // Note that even though the p tag is the child of the div tag, we do not nest it that way.
+  // Grandchildren are nested the same way as children
+  &__button {
+    // Variables are awesome! Make as many as you need for whatever you need
+    color: $color-teal;
+
+    // We can do this plus things like &:focus, &::after etc.
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__some-div {
+    font-weight: 400;
+  }
+
+  &__description {
+    text-decoration: underline;
+  }
+}
+
+.example-two-div {
+  color: $color-white;
+  font-weight: 400;
+
+  // These next two are examples of modifiers. Notice how the divs had two class names
+  // They share some similarities (which is why they share the first class name) but they also have some differences (which is why they are modifiers)
+  &--1 {
+    background-color: $color-pink;
+  }
+
+  &--2 {
+    background-color: $color-purple;
+  }
+
+  &__header {
+    // important that we use rem instead of px as much as possible, this will help with browser responsiveness
+    padding: 1rem;
+    // but for some instances, using px is fine (usually not larger than 5px, but this is not set in stone)
+    border-bottom: 1px solid $color-grey-light-2;
+    border-radius: 3px;
+  }
+
+  &__other-div {
+    position: fixed;
+
+    // Instead of media queries, we can use this respond mixin, the argument you pass in is the breakpoint.
+    // The breakpoints are based on the Google console device toolbar. Feel free to edit if needed
+    @include respond(surface-duo) {
+      font-size: 2rem;
+    }
+
+    @include respond(iphone-5) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(galaxy-fold) {
+      font-size: 1rem;
+    }
+  }
+
+  &__another-div {
+    // we don't need font variables but I like to have them so we know which font sizes we're using most often,
+    // if something is used often enough, probably best to have a variable
+    font-size: $font-size-30;
+  }
+}

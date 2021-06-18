@@ -2,24 +2,16 @@ import Footer from '../Components/Footer';
 import JobsHero from '../Components/Jobs/JobsHero';
 import JobsGallery from '../Components/Jobs/JobsGallery';
 
-import { Container } from '@material-ui/core';
-
-import '../Styles/JobHero.css';
-
-
 const Jobs = () => {
+  return (
+    <div>
+      <div className="mainContainer">
+        <JobsHero />
+        <JobsGallery />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-
-    return (
-        <div>
-            <Container fluid className="jobContainer">
-                <JobsHero />
-                <JobsGallery />
-            </Container>
-            <div className="space" />
-            <Footer />
-        </div>
-    )
-}
-
-export default Jobs
+export default Jobs;

@@ -1,13 +1,11 @@
-import React from 'react'
-import { Container } from '@material-ui/core';
+import React from 'react';
 
 const PartnershipOverview = () => {
-    return (
-        <div>
-                        <Container fluid className="mainContainer"/>
+  return (
+    <div>
+      <div className="mainContainer" />
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default PartnershipOverview
+export default PartnershipOverview;

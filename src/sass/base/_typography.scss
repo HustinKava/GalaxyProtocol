@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@include font("Mosk-100", "../fonts/Mosk-Thin-100");
+@include font("Mosk-200", "../fonts/Mosk-Extra-Light-200");
+@include font("Mosk-300", "../fonts/Mosk-Light-300");
+@include font("Mosk-400", "../fonts/Mosk-Normal-400");
+@include font("Mosk-500", "../fonts/Mosk-Medium-500");
+@include font("Mosk-600", "../fonts/Mosk-Semi-Bold-600");
+@include font("Mosk-700", "../fonts/Mosk-Bold-700");
+@include font("Mosk-800", "../fonts/Mosk-Extra-Bold-800");
+@include font("Mosk-900", "../fonts/Mosk-Ultra-Bold-900");
