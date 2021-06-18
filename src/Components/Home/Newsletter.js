@@ -17,15 +17,15 @@ const Newsletter = () => {
           <input
             type="submit"
             className="news-form__subscribe"
-            value="Submit"
+            value="Subscribe"
           />
         </form>
       </div>
       <span className="news-span news-span--light">
-        By clicking Subscribe you agree with our
+        By clicking Subscribe you agree with our&nbsp;
       </span>
-      <span className="news-span news-span--bold">Terms of Use</span>
-      <span className="news-span news-span--light">&</span>
+      <span className="news-span news-span--bold">Terms of Use&nbsp;</span>
+      <span className="news-span news-span--light">&&nbsp;</span>
       <span className="news-span news-span--bold">Privacy Policy</span>
     </div>
   );

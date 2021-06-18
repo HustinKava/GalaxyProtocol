@@ -1,7 +1,12 @@
 /* Global banner styling used by 2 more banner components */
 .ban-gridPadding {
-  padding-left: 200px;
-  padding-right: 200px;
+  // padding-left: 200px;
+  // padding-right: 200px;
+
+  @include respond(ipad-pro) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
   @include respond(surface-duo) {
     padding-left: 10px;
@@ -11,6 +16,10 @@
 
 .banHeader {
   font-size: 9rem;
+
+  @include respond(ipad-pro) {
+    font-size: 6rem;
+  }
 
   @include respond(surface-duo) {
     font-size: 2rem;
@@ -31,16 +40,32 @@
 
   &--1 {
     font-size: 4rem;
+
+    @include respond(ipad-pro) {
+      font-size: 3rem;
+    }
   }
+
 
   &--2 {
     font-size: 7rem;
+    line-height: 0.5;
+
+    @include respond(ipad-pro) {
+      font-size: 6rem;
+    }
   }
+
+
 }
 
 .banDesc {
   font-family: Mosk-300;
   font-size: 2.5rem;
+
+  @include respond(ipad-pro) {
+    font-size: 2rem;
+  }
 
   @include respond(surface-duo) {
     font-size: $font-size-12;
@@ -50,11 +75,13 @@
   &--1 {
     color: $color-grey-light-1;
     padding-bottom: 50px;
+    line-height: 1.2;
   }
 
   /* Description styling for banner 4 and 5 */
   &--2 {
     color: $color-white;
+    line-height: 1.2;
   }
 }
 
@@ -63,6 +90,10 @@
   padding-bottom: 50px;
 
   /* Remove padding from "galaxy unversity" header*/
+  @include respond(ipad-pro) {
+    padding-top: 100px;
+  }
+
   @include respond(surface-duo) {
     padding-top: 50px;
   }
@@ -71,6 +102,10 @@
 .bannerButtonContainer {
   padding-top: 50px;
   padding-bottom: 150px;
+
+  @include respond(ipad-pro) {
+    padding-bottom: 50px;
+  }
 
   @include respond(surface-duo) {
     padding-bottom: 50px;
