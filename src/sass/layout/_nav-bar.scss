@@ -1,205 +1,201 @@
 /* Navbar div that houses all the elements */
 .nav {
-  padding-top: 50px;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
-
-  @include respond(ipad-pro) {
-    height: 0;
-    background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0%
-      0% no-repeat padding-box;
-    padding-bottom: 40px;
+    padding-top: 5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  
+    // This styling will carry down to small devices
+    @include respond(ipad-pro) {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 0;
+      background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0% 0% no-repeat padding-box;
+      padding-top: 8rem;
+      padding-bottom: 5rem;
+    }
   }
-
-  @include respond(ipad) {
-    height: 0;
-    background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0%
-      0% no-repeat padding-box;
-    padding-bottom: 40px;
+  
+  /* Spacing between navbar items */
+  .navLink {
+    margin-left: 5.5%;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
   }
-}
-
-/* Spacing between navbar items */
-.navLink {
-  margin-left: 5.5%;
-  color: $color-white;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  width: 50%;
-  cursor: pointer;
-}
-
-/* Navbar logo sizing */
-.navLogo {
-  height: auto;
-  width: 35%;
-  min-width: 14rem;
-
-  @include respond(ipad-pro) {
+  
+  /* Navbar logo sizing */
+  .navLogo {
+    height: auto;
+    width: 35%;
+    min-width: 14rem;
+  
+    @include respond(ipad-pro) {
+      display: none;
+    }
+  }
+  
+  .navMobileLogo {
     display: none;
+  
+    @include respond(ipad-pro) {
+      display: unset;
+      width: 15%;
+      margin-left: -18rem;
+    }
+  
+    @include respond(ipad) {
+      width: 17%;
+      margin-left: -10rem;
+    }
+  
+    @include respond(surface-duo) {
+      width: 22%;
+      margin-left: -6rem;
+    }
+  
+    @include respond(iphone-plus) {
+      width: 25%;
+      margin-left: -4rem;
+    }
+  
+    @include respond(iphone-x) {
+      width: 25%;
+      margin-left: -4rem;
+    }
+  
+    @include respond(galaxy-s5) {
+      width: 25%;
+      margin-left: -4rem;
+    }
+  
+    @include respond(iphone-5) {
+      width: 25%;
+      margin-left: -5rem;
+    }
+  
+    @include respond(galaxy-fold) {
+      width: 25%;
+      margin-left: -6rem;
+    }
   }
-
-  @include respond(ipad) {
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Parent element of the dropdown links (Products, Developers, Community and About) */
+  .navMenu {
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+    cursor: pointer;
+    border: none;
+  
+    /* Hiding desktop menu */
+    @include respond(ipad-pro) {
+      display: none;
+    }
+  }
+  
+  /* Style to seperate Products, Developers, Community and About links */
+  .dropbtn {
+    padding: 2.5rem;
+    font-family: Mosk-700;
+    font-size: $font-size-20;
+  }
+  
+  .navText {
+    font-family: Mosk-300;
+    font-size: $font-size-20;
+  }
+  
+  /* Dropdown content links (Hidden by Default) */
+  .dropdown-content {
     display: none;
+    position: absolute;
+    z-index: 1;
+    background: transparent
+      linear-gradient(2deg, $color-black 0%, $color-off-black-light 100%) 0% 0%
+      no-repeat padding-box;
+    border-radius: 4px;
+    padding-right: 1.5rem;
   }
-}
-
-.navMobileLogo {
-  display: none;
-
-  @include respond(ipad-pro) {
-    display: unset;
-    margin-left: -10rem;
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    width: max-content;
   }
-
-  @include respond(ipad) {
-    display: unset;
-    padding-left: 0;
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Parent element of the dropdown links (Products, Developers, Community and About) */
-.navMenu {
-  display: flex;
-  align-items: center;
-  margin-right: 100px;
-  cursor: pointer;
-  border: none;
-
-  /* Hiding desktop menu */
-  @include respond(ipad-pro) {
+  
+  /* Use GalaxySwap button styling */
+  .navUse {
+    font-family: Mosk-700;
+    font-size: $font-size-20;
+  }
+  
+  .navGalaxy {
+    font-family: Mosk-700;
+    font-size: $font-size-20;
+  }
+  
+  .navSwap {
+    font-family: Mosk-100;
+    font-size: $font-size-20;
+  }
+  
+  .navBtn {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+  }
+  
+  .navBtnLink {
+    margin-left: 6rem;
+    background: transparent
+      linear-gradient(262deg, $color-pink 0%, $color-purple-light 100%) 0% 0%
+      no-repeat padding-box;
+    border-radius: 4px;
+    padding: 0.5rem 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  
+    @include respond(ipad-pro) {
+      margin-left: 0;
+      padding: 1px 4px;
+    }
+  }
+  
+  /* Hamburger icon for mobile view */
+  .mobileMenu {
     display: none;
-  }
-
-  @include respond(ipad) {
-    display: none;
-  }
-}
-
-/* Style to seperate Products, Developers, Community and About links */
-.dropbtn {
-  padding: 25px;
-  font-family: Mosk-700;
-  font-size: $font-size-20;
-}
-
-.navText {
-  font-family: Mosk-300;
-  font-size: $font-size-20;
-}
-
-/* Dropdown content links (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background: transparent
-    linear-gradient(2deg, $color-black 0%, $color-off-black-light 100%) 0% 0%
-    no-repeat padding-box;
-  border-radius: 4px;
-  padding-right: 15px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  width: max-content;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Use GalaxySwap button styling */
-.navUse {
-  font-family: Mosk-700;
-  font-size: $font-size-20;
-
-  @include respond(ipad) {
-    font-size: 1.3rem;
-    font-family: Mosk-400;
-    padding-right: 2px;
-  }
-}
-
-.navGalaxy {
-  font-family: Mosk-700;
-  font-size: $font-size-20;
-
-  @include respond(ipad) {
-    font-size: 1.6rem;
-    font-family: Mosk-600;
-  }
-}
-
-.navSwap {
-  font-family: Mosk-100;
-  font-size: $font-size-20;
-
-  @include respond(ipad) {
+    color: $color-white;
+    margin-left: 2rem;
+    margin-top: -1.2rem;
     font-size: 1.5rem;
+  
+    /* Displaying mobile menu */
+    @include respond(ipad-pro) {
+      margin-top: -1.6rem;
+      font-size: 3rem;
+      display: unset;
+    }
   }
-}
-
-.navBtn {
-  display: flex;
-  align-items: center;
-  margin-right: 5.5%;
-}
-
-.navBtnLink {
-  margin-left: 60px;
-  background: transparent
-    linear-gradient(262deg, $color-pink 0%, $color-purple-light 100%) 0% 0%
-    no-repeat padding-box;
-  border-radius: 4px;
-  padding: 5px 11px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  @include respond(ipad-pro) {
-    margin-left: 0;
-    padding: 1px 4px;
-  }
-
-  @include respond(ipad) {
-    margin-left: 0;
-    padding: 1px 4px;
-  }
-}
-
-/* Hamburger icon for mobile view */
-.mobileMenu {
-  display: none;
-  color: $color-white;
-  margin-left: 20px;
-  margin-top: -12px;
-  font-size: 1.5rem;
-
-  /* Displaying mobile menu */
-  @include respond(ipad-pro) {
-    margin-top: -16px;
-    font-size: 3rem;
-    display: unset;
-  }
-
-  @include respond(ipad) {
-    display: unset;
-  }
-}
