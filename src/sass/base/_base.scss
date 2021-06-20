@@ -18,19 +18,39 @@ html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
-  // @include respond(tab-land) {
-  //   // width < 1200?
-  //   font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
-  // }
-  //
-  // @include respond(tab-port) {
-  //   // width < 900?
-  //   font-size: 50%; //1 rem = 8px, 8/16 = 50%
-  // }
-  //
-  // @include respond(big-desktop) {
-  //   font-size: 75%; //1rem = 12, 12/16
-  // }
+  @include respond(ipad-pro) {
+    // width < 1024?
+    font-size: 56.25%; //1 rem = 9px, 9/16
+  }
+
+  @include respond(surface-duo) {
+    // width < 540?
+    font-size: 50%; //1 rem = 8px, 8/16
+  }
+
+  @include respond(iphone-plus) {
+    // width < 420?
+    font-size: 43.75%; //1 rem = 7px, 7/16
+  }
+
+  @include respond(iphone-x) {
+    // width < 380?
+    font-size: 37.5%; //1 rem = 6px, 6/16
+  }
+
+  @include respond(iphone-5) {
+    // width < 320?
+    font-size: 31.25%; //1 rem = 5px, 5/16
+  }
+
+  @include respond(galaxy-fold) {
+    // width < 280?
+    font-size: 25%; //1 rem = 4px, 4/16
+  }
+
+  @include respond(big-desktop) {
+    font-size: 68.75%; //1rem = 11px, 11/16
+  }
 }
 
 body {
@@ -50,9 +70,27 @@ span {
   color: $color-white;
 }
 
+
+
 /* Unified space at top and bottom of each page */
 .mainContainer {
-  margin: 9rem 13rem;
+  margin: 22rem 25em;
+
+  @include respond(ipad-pro) {
+    margin: 5rem 7em;
+  }
+  @include respond(ipad) {
+    margin: 5rem 3.5em;
+  }
+  @include respond(iphone-x) {
+    margin: 5rem 2.5em;
+  }
+  @include respond(iphone-5) {
+    margin: 5rem 2em;
+  }
+  @include respond(galaxy-fold) {
+    margin: 5rem 2em;
+  }
 }
 
 .space {

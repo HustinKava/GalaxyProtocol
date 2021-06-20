@@ -1,7 +1,7 @@
 /* Space to seperate elements */
 .bannerLogoContainer {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 /* Header styling */
@@ -11,13 +11,8 @@
 }
 
 .bannerSwapButtonContainer {
-  padding-top: 50px;
-  padding-bottom: 150px;
-
-  @include respond(ipad-pro) {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
+  padding-top: 5rem;
+  padding-bottom: 15rem;
 }
 
 /* Images */
@@ -35,10 +30,10 @@
     transform: translateY(-50%);
   }
 
-  /* Re-align laptop image and re-enter into layout */
-  @include respond(surface-duo) {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+  // /* Re-align laptop image and re-enter into layout */
+  // @include respond(surface-duo) {
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  // }
 }

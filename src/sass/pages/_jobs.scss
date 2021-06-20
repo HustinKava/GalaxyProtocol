@@ -50,14 +50,14 @@
 
   @include respond(big-desktop) {
     margin: 1rem;
-    max-width: 70rem;
+    max-width: 65rem;
   }
 }
 
 /*Styling for small job listing type full time/remote etc - top left of job card */
 .postingType {
-  width: 91px;
-  height: 33px;
+  width: 9.1rem;
+  height: 3.3rem;
   background: transparent
     linear-gradient(
       67deg,
@@ -72,10 +72,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @include respond(big-desktop) {
-    margin-bottom: 3rem;
-  }
 
   &__text {
     color: $color-white;
