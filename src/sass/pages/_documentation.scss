@@ -1,19 +1,81 @@
-.documentation-h2 {
+.documentation-h1{
   font-size: 6rem;
-  padding: 0;
 
+  @include respond(ipad) {
+    font-size: 4rem;
+  }
+  @include respond(surface-duo) {
+    font-size: 2.5rem;
+  }
+  @include respond(iphone-x) {
+    font-size: 2rem;
+  }
+  @include respond(galaxy-s5) {
+    font-size: 1.8rem;
+  }
+
+}
+
+.documentation-h2 {
+  font-size: 9rem;
+  padding: 0;
+  
   &--1 {
     margin-top: 1rem;
   }
-
+  
   &--2 {
-    margin-top: -2rem;
+    margin-top: -6rem;
     margin-bottom: 6.5rem;
+     
+    @include respond(ipad) {
+          margin-top: -4rem;
+          margin-bottom: 5.5rem;
+      }
+      @include respond(surface-duo) {
+          margin-top: -2rem;
+          margin-bottom: 5.5rem;
+      }
+      @include respond(iphone-x) {
+          margin-top: -1.75rem;
+          margin-bottom: 6.5rem;
+      }
+      @include respond(galaxy-s5) {
+          margin-top: -1rem;
+          margin-bottom: 5.5rem;
+    }
+  }
+    @include respond(ipad) {
+      font-size: 7rem;
+    }
+    @include respond(surface-duo) {
+      font-size: 4.5rem;
+    }
+    @include respond(iphone-plus) {
+      font-size: 3.5rem;
+    }
+    @include respond(iphone-x) {
+      font-size: 3rem;
+    }
+    @include respond(galaxy-s5) {
+      font-size: 2.5rem;
   }
 }
+
 
 .documentation-paragraph {
   font-family: Mosk-200;
   font-size: $font-size-25;
   padding-bottom: 2.5rem;
+  color: #C7C7C7;
+  
+  @include respond(surface-duo) {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  @include respond(iphone-x) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+  }
 }

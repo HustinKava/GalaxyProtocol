@@ -1,22 +1,104 @@
 .faq {
-  font-size: $font-size-25;
-  color: $color-grey-light-2;
 
   &__header {
     max-width: 90rem;
     line-height: normal;
     margin-bottom: 5rem;
+    padding-top: 3rem;
+
+        @include respond(ipad) {
+          font-size: 7rem;
+        }
+        @include respond(surface-duo) {
+          font-size: 4.5rem;
+        }
+        @include respond(iphone-plus) {
+          font-size: 3.5rem;
+        }
+        @include respond(iphone-x) {
+          font-size: 4rem;
+        }
+        @include respond(galaxy-s5) {
+          font-size: 3rem;
+      }
   }
 
   &__intro {
     font-family: Mosk-200;
+    font-size: $font-size-25;
     color: $color-grey-light-2;
-    width: 80rem;
     margin-bottom: 20rem;
+      @include respond(ipad-pro) {
+        margin-bottom: 16rem;
+      }
+      @include respond(ipad) {
+        font-size: 2.5rem;
+      }
+    
   }
 
   &__body {
     font-family: Mosk-300;
+    font-size: 1.8rem;
     color: $color-grey-light-2;
+    line-height: 2.5rem;
+    padding-bottom: 10rem;
+
+    @include respond(ipad-pro) {
+      font-size: 2rem;
+    }
+    @include respond(iphone-x) {
+      padding-top: 2rem;
+    }
   }
+
+  &__h1 {
+    font-size: 6rem;
+
+      @include respond(ipad) {
+        font-size: 4rem;
+      }
+      @include respond(surface-duo) {
+        font-size: 2.5rem;
+      }
+      @include respond(iphone-x) {
+        font-size: 3rem;
+      }
+      @include respond(galaxy-s5) {
+        font-size: 3rem;
+      }
+    }
+
+    &__h3 {
+      font-size: 2.6rem;
+        @include respond(ipad-pro) {
+          font-size: 4rem;
+        }
+        @include respond(surface-duo) {
+          line-height: 4.5rem       
+         }
+         @include respond(galaxy-s5) {
+          font-size: 2.5rem;
+         }
+         @include respond(galaxy-fold) {
+          line-height: 3rem       
+        }
+    }
+
+    &__indentedPara{
+      margin-left: 18rem;
+      @include respond(ipad-pro) {
+        margin-left: 0rem;
+      }
+  }
+}
+
+h4{
+  font-size: 2.6rem;
+    @include respond(ipad-pro) {
+      font-size: 4rem;
+    }
+    @include respond(galaxy-s5) {
+      font-size: 3rem;
+    }
 }

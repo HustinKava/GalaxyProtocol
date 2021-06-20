@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import Discord from '../../Assets/Discord-art-1.png';
 
-function Banner5() {
+function BannerDiscord() {
   return (
     <Grid container spacing={0} className="fadeRight" id="footerDiscord">
       <Grid item xs={12} md={6}>
@@ -40,4 +40,4 @@ function Banner5() {
   );
 }
 
-export default Banner5;
+export default BannerDiscord;

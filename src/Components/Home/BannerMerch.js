@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import Hoodies from '../../Assets/hoodie-resize.png';
 
-function Banner3() {
+function BannerMerch() {
   return (
     <Grid container spacing={0} className="fadeRight" id="footerMerchandise">
       <Grid item xs={12} md={6}>
@@ -42,4 +42,4 @@ function Banner3() {
   );
 }
 
-export default Banner3;
+export default BannerMerch;
