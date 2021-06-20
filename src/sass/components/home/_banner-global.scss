@@ -1,0 +1,170 @@
+/* Global banner styling used by 2 more banner components */
+.ban-gridPadding {
+  // padding-left: 200px;
+  // padding-right: 200px;
+
+  @include respond(ipad-pro) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.banHeader {
+  font-size: 9rem;
+
+  @include respond(ipad-pro) {
+    font-size: 6rem;
+  }
+  //
+  // @include respond(surface-duo) {
+  //   font-size: 2rem;
+  // }
+
+  /* Used by Banner2 and Banner3 */
+  &--1 {
+    font-family: Mosk-700;
+  }
+
+  &--2 {
+    font-family: Mosk-100;
+  }
+}
+
+.banHeader-alt {
+  font-family: Mosk-700;
+
+  &--1 {
+    font-size: 4rem;
+  }
+
+  &--2 {
+    font-size: 7rem;
+    line-height: 0.5;
+  }
+}
+
+.banDesc {
+  font-family: Mosk-300;
+  font-size: 2.5rem;
+  line-height: 1.2;
+
+  /* Description styling for banner 1, 2 and 3 */
+  &--1 {
+    color: $color-grey-light-1;
+    padding-bottom: 5rem;
+  }
+
+  /* Description styling for banner 4 and 5 */
+  &--2 {
+    color: $color-white;
+  }
+}
+
+.bannerTitleContainer {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+
+  /* Remove padding from "galaxy unversity" header*/
+  @include respond(ipad-pro) {
+    padding-top: 10rem;
+  }
+  //
+  // @include respond(surface-duo) {
+  //   padding-top: 5rem;
+  // }
+}
+
+.bannerButtonContainer {
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+
+  @include respond(ipad-pro) {
+    padding-bottom: 5rem;
+  }
+  //
+  // @include respond(surface-duo) {
+  //   padding-bottom: 5rem;
+  // }
+}
+
+/* Banner backgrounds */
+.fadeLeft {
+  background: transparent
+    linear-gradient(269deg, $color-black 0%, $color-gradient-black 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.fadeRight {
+  background: transparent
+    linear-gradient(90deg, $color-black 0%, $color-gradient-black 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+/* Moving text positioned on the right side of the banner */
+.ban-contentContainer {
+  text-align: end;
+
+  /* Recenter university text on small screens */
+  // @include respond(surface-duo) {
+  //   text-align: center;
+  // }
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (Tested with Iphone X) */
+
+/* Align all banner contents center on mobile view */
+.banner-container {
+  // @include respond(surface-duo) {
+  //   text-align: center;
+  // }
+}
+
+/* Button styling */
+.ban-button {
+  width: 18.5rem;
+  height: 4.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: Mosk-800;
+  color: $color-white;
+  font-size: 2.1rem;
+
+  // @include respond(surface-duo) {
+  //   width: 13rem;
+  //   height: 3rem;
+  //   font-size: 1.5rem;
+  // }
+
+  &--discord {
+    background: transparent
+      linear-gradient(84deg, $color-blue-light 0%, $color-blue-extra-light 100%)
+      0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px $color-box-shadow-light;
+  }
+
+  &--learn {
+    background: transparent
+      linear-gradient(84deg, $color-teal 0%, $color-purple-dark 100%) 0% 0%
+      no-repeat padding-box;
+  }
+
+  &--merch {
+    background: transparent
+      linear-gradient(84deg, $color-teal 0%, $color-pink 100%) 0% 0% no-repeat
+      padding-box;
+  }
+
+  &--swap {
+    background: transparent
+      linear-gradient(84deg, $color-pink 0%, $color-purple 100%) 0% 0% no-repeat
+      padding-box;
+  }
+
+  &--telegram {
+    background: transparent
+      linear-gradient(84deg, $color-blue 0%, $color-blue-bright 100%) 0% 0%
+      no-repeat padding-box;
+    box-shadow: 0px 3px 6px $color-box-shadow-light;
+  }
+}

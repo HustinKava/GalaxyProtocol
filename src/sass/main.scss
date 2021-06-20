@@ -1,0 +1,30 @@
+// @import "abstracts/functions";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+//
+// @import "base/animations";
+@import 'base/base';
+@import 'base/typography';
+// @import "base/utilities";
+//
+@import 'components/home/destiny';
+@import 'components/home/generation';
+@import 'components/home/newsletter';
+@import 'components/home/banner-merch';
+@import 'components/home/banner-discord';
+@import 'components/home/banner-global';
+@import 'components/home/banner-swap';
+@import 'components/home/banner-telegram';
+@import 'components/home/banner-university';
+
+@import 'layout/footer';
+// @import "layout/header";
+@import 'layout/heading';
+@import 'layout/nav-bar';
+@import 'layout/sidebar';
+
+@import 'pages/documentation';
+@import 'pages/faq';
+@import 'pages/home';
+@import 'pages/jobs';
+@import 'pages/position-details';

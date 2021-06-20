@@ -1,0 +1,173 @@
+.footerSectionContainer {
+  padding-left: 7rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(ipad-pro) {
+    display: unset;
+    padding-left: 2rem;
+  }
+}
+
+.footerLogoAndAddress {
+
+  @include respond(ipad-pro) {
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  @include respond(ipad) {
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  @include respond(galaxy-fold) {
+    padding-left: 1rem;
+  }   
+}
+
+.footerLogo {
+  height: 100%;
+  width: auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
+
+  @include respond(ipad-pro) {
+    height: auto;
+    width: 30%;
+  }
+
+  @include respond(ipad) {
+    height: auto;
+    width: 35%;
+  }
+
+  @include respond(surface-duo) {
+    height: auto;
+    width: 50%;  
+  }
+
+  @include respond(iphone-x) {
+    height: auto;
+    width: 70%;
+  }
+
+  @include respond(galaxy-fold) {
+    height: auto;
+    width: 60%;
+  }
+  
+}
+
+.footerAddress {
+  font-family: Mosk-300;
+  font-size: $font-size-20;
+  opacity: 0.5;
+
+  @include respond(iphone-x) {
+    font-size: 2.8rem;
+  }
+}
+
+.footer-column {
+
+  @include respond(ipad-pro) {
+    padding-left: 6rem;
+  }  
+  
+  @include respond(ipad) {
+    padding-left: 3rem;
+  }  
+
+  @include respond(galaxy-fold) {
+    padding-left: 1rem;
+  }    
+
+  &__divider {
+    width: 70%;
+    margin-left: 0;
+    border: 0;
+    height: 0.2rem;
+    background-image: linear-gradient(
+      270deg,
+      $color-white 0%,
+      $color-grey-light-2 100%
+    );
+
+    @include respond(ipad-pro) {
+      width: 85%;
+    }
+
+    @include respond(ipad) {
+      width: 95%;
+    }
+
+    @include respond(surface-duo) {
+      width: 35%;
+    }
+
+    @include respond(iphone-x) {
+      width: 47%;
+    }
+
+    @include respond(galaxy-s5) {
+      width: 50%;
+    }
+
+    @include respond(iphone-5) {
+      width: 45%;
+    }
+  }
+
+  &__heading {
+    color: $color-white;
+    font-family: Mosk-700;
+    font-size: 2.2rem;
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+
+    @include respond(ipad-pro) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    @include respond(surface-duo) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-size: 2.2rem;
+    }
+
+    @include respond(iphone-x) {
+      padding-bottom: 2rem;
+      font-size: 3.4rem;
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    font-family: Mosk-200;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+
+    @include respond(iphone-x) {
+      font-size: 3rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.footer-copyright {
+  color: $color-grey-light-1;
+  text-align: center;
+  font-family: Mosk-300;
+  font-size: $font-size-20;
+  margin-bottom: 0;
+  margin-top: 10rem;
+  padding-bottom: 1.5rem;
+}

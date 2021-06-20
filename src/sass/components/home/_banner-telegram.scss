@@ -1,0 +1,15 @@
+.telegram {
+  height: auto;
+  width: 120%;
+  margin-left: -20rem;
+  margin-top: -6rem;
+  margin-bottom: -7rem;
+
+  @include respond(ipad-pro) {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

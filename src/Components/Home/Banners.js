@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../Styles/BannersGlobal.css';
 import Swap from './BannerSwap';
 import University from './BannerUniversity';
 import Newsletter from '../../Components/Home/Newsletter';
@@ -8,17 +7,16 @@ import Telegram from './BannerTelegram';
 import Discord from './BannerDiscord';
 
 const Banners = () => {
-    ;
-    return (
-        <div>
-            <Swap/>
-            <University/>
-            <Newsletter />
-            <Merch/>
-            <Telegram/>
-            <Discord/>
-        </div>
-    )
+  return (
+    <div className="home-sub-container">
+      <Swap />
+      <University />
+      <Newsletter />
+      <Merch />
+      <Telegram />
+      <Discord />
+    </div>
+  );
 };
 
 export default Banners;

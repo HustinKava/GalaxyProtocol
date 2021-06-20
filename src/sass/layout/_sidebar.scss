@@ -1,0 +1,42 @@
+.icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.closeBtn {
+  color: #fff;
+}
+
+.sidebarLogo {
+  width: auto;
+  padding-top: 2.3rem;
+  padding-left: 2rem;
+  max-width: 21rem;
+}
+
+.sidebarHeader {
+  font-family: Mosk-700;
+  font-size: 2.2rem;
+  padding-left: 2rem;
+  padding-top: 4.5rem;
+}
+
+.sidebarLinks {
+  margin-left: 5.5%;
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  padding: 0 1rem;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+
+.sidebarText {
+  font-family: Mosk-200;
+  font-size: 2rem;
+}

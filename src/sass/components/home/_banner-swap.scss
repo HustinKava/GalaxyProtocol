@@ -1,0 +1,39 @@
+/* Space to seperate elements */
+.bannerLogoContainer {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+/* Header styling */
+.swapLogo {
+  max-width: 100%;
+  height: auto;
+}
+
+.bannerSwapButtonContainer {
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+}
+
+/* Images */
+.laptop {
+  height: auto;
+  width: 100%;
+  margin-left: -10rem;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+
+  @include respond(ipad-pro) {
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  // /* Re-align laptop image and re-enter into layout */
+  // @include respond(surface-duo) {
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  // }
+}
