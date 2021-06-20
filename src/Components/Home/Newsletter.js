@@ -1,8 +1,11 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 
 const Newsletter = () => {
   return (
+
     <div className="home-sub-container news">
+    <Container fixed >
       <span className="news__header">MONTHLY</span>
       <br />
       <p className="news__text">NEWSLETTER</p>
@@ -27,6 +30,7 @@ const Newsletter = () => {
       <span className="news-span news-span--bold">Terms of Use&nbsp;</span>
       <span className="news-span news-span--light">&&nbsp;</span>
       <span className="news-span news-span--bold">Privacy Policy</span>
+    </Container>
     </div>
   );
 };

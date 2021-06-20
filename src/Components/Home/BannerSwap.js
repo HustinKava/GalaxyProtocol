@@ -4,7 +4,7 @@ import Swap2 from '../../Assets/Galaxy-Swap_580x131.png';
 import Laptop from '../../Assets/GalaxySwap-mobile-laptop-mock-up.png';
 
 
-function Banner1() {
+function BannerSwap() {
 
   return (
     <div>
@@ -33,9 +33,6 @@ function Banner1() {
 
           </Grid>
           <Grid item xs={12} md={6}>
-
-          
-
             {/* <div className="imageOne"> */}
               <img src={Laptop} alt="Laptop" className="laptop" />
             {/* </div> */}
@@ -47,4 +44,4 @@ function Banner1() {
   );
 }
 
-export default Banner1;
+export default BannerSwap;

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Grid, Container, Box } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import Placeholder from '../../Assets/663x344.png';
 
-function Banner2() {
+function BannerUniversity() {
   return (
     <div className="banner-container" id="footerUniversity">
       <Grid container spacing={0} className="fadeRight">
@@ -38,4 +38,4 @@ function Banner2() {
   );
 }
 
-export default Banner2;
+export default BannerUniversity;

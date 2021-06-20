@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import Telegram from '../../Assets/Telegram-banner.png';
 
-function Banner4() {
+function BannerTelegram() {
   return (
     <div className="banner-container" id="footerTelegram">
       <Grid container spacing={0} className="fadeLeft">
@@ -39,4 +39,4 @@ function Banner4() {
   );
 }
 
-export default Banner4;
+export default BannerTelegram;

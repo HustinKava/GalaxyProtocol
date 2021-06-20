@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from '@material-ui/core';
 
-function JobsHero() {
+function PositionHero() {
   return (
     <div>
-      <h1 className="openPosHeader">Work With Us</h1>
+      <h1 className="openPos-hero-header">Work With Us</h1>
 
       <p className="openPosIntro">
         If you get incredibly excited about Blockchain, cryptocurrency and
@@ -18,4 +18,4 @@ function JobsHero() {
   );
 }
 
-export default JobsHero;
+export default PositionHero;

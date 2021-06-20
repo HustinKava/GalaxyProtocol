@@ -2,7 +2,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
-function PositionDetails() {
+function PositionInfo() {
   return (
     <>
       <h3 className="positionDetailHeader">Job Title Here</h3>
@@ -35,7 +35,7 @@ function PositionDetails() {
           </Grid>
           <Grid item xs={12} md={4}>
             <h2 className="contactInfo">
-              <span>Ready to Join Us?</span>
+              <span className="contactInfo__span">Ready to Join Us?</span>
             </h2>
             <p className="contactDetails">
               Please have your resume/portfolio ready and send them to:
@@ -120,4 +120,4 @@ function PositionDetails() {
   );
 }
 
-export default PositionDetails;
+export default PositionInfo;

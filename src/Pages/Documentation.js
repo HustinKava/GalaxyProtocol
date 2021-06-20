@@ -1,11 +1,12 @@
 import React from 'react';
 import Footer from '../Components/Footer';
+import { Box } from '@material-ui/core';
 
 const Documentation = () => {
   return (
     <div>
-      <div className="mainContainer">
-        <h1>DOCUMENTATION</h1>
+      <Box className="mainContainer">
+        <h1 className="documentation-h1">DOCUMENTATION</h1>
         <h2 className="documentation-h2 documentation-h2--1">GalaxyProtocol</h2>
         <h2 className="documentation-h2 documentation-h2--2">
           Ecosystem overview
@@ -158,7 +159,7 @@ const Documentation = () => {
           will always stay true to our goal of building trust in this trustless
           ecosystem.
         </p>
-      </div>
+      </Box>
       <Footer />
     </div>
   );
