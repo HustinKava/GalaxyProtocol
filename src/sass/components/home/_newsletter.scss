@@ -8,8 +8,8 @@
     font-family: Mosk-800;
     font-size: 12.8rem;
 
-    @include respond(surface-duo) {
-      font-size: 6.4rem;
+    @include respond(iphone-plus) {
+      font-size: 11rem;
     }
   }
 
@@ -19,8 +19,8 @@
     padding-bottom: 10rem;
     line-height: 0;
 
-    @include respond(surface-duo) {
-      font-size: 5.3rem;
+    @include respond(iphone-plus) {
+      font-size: 9.5rem;
     }
   }
 }
@@ -39,12 +39,6 @@
     border: 1px solid $color-pink;
     color: $color-white;
     margin: 0.5rem;
-
-    @include respond(surface-duo) {
-      width: 22rem;
-      height: 3.5rem;
-      font-size: $font-size-12;
-    }
   }
 
   &__subscribe {
@@ -60,12 +54,6 @@
     color: $color-white;
     margin: 0.5rem;
     cursor: pointer;
-
-    @include respond(surface-duo) {
-      width: 9.3rem;
-      height: 3.75rem;
-      font-size: $font-size-12;
-    }
   }
 }
 
@@ -73,16 +61,20 @@
   font-size: $font-size-20;
   color: $color-grey-light-1;
 
-  @include respond(surface-duo) {
-    font-size: 1.3rem;
-  }
-
   &--light {
     font-family: Mosk-200;
+
+    @include respond(iphone-plus) {
+      font-size: 1.8rem;
+    }
   }
 
   &--bold {
     font-family: Mosk-500;
     text-decoration: underline;
+
+    @include respond(iphone-plus) {
+      font-size: 1.8rem;
+    }
   }
 }

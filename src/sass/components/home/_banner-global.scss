@@ -7,11 +7,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
-  @include respond(surface-duo) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 .banHeader {
@@ -20,10 +15,10 @@
   @include respond(ipad-pro) {
     font-size: 6rem;
   }
-
-  @include respond(surface-duo) {
-    font-size: 2rem;
-  }
+  //
+  // @include respond(surface-duo) {
+  //   font-size: 2rem;
+  // }
 
   /* Used by Banner2 and Banner3 */
   &--1 {
@@ -40,76 +35,56 @@
 
   &--1 {
     font-size: 4rem;
-
-    @include respond(ipad-pro) {
-      font-size: 3rem;
-    }
   }
-
 
   &--2 {
     font-size: 7rem;
     line-height: 0.5;
-
-    @include respond(ipad-pro) {
-      font-size: 6rem;
-    }
   }
-
-
 }
 
 .banDesc {
   font-family: Mosk-300;
   font-size: 2.5rem;
-
-  @include respond(ipad-pro) {
-    font-size: 2rem;
-  }
-
-  @include respond(surface-duo) {
-    font-size: $font-size-12;
-  }
+  line-height: 1.2;
 
   /* Description styling for banner 1, 2 and 3 */
   &--1 {
     color: $color-grey-light-1;
-    padding-bottom: 50px;
-    line-height: 1.2;
+    padding-bottom: 5rem;
   }
 
   /* Description styling for banner 4 and 5 */
   &--2 {
     color: $color-white;
-    line-height: 1.2;
   }
 }
 
 .bannerTitleContainer {
-  padding-top: 200px;
-  padding-bottom: 50px;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
 
   /* Remove padding from "galaxy unversity" header*/
   @include respond(ipad-pro) {
-    padding-top: 100px;
+    padding-top: 10rem;
   }
-
-  @include respond(surface-duo) {
-    padding-top: 50px;
-  }
+  //
+  // @include respond(surface-duo) {
+  //   padding-top: 5rem;
+  // }
 }
 
 .bannerButtonContainer {
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
 
   @include respond(ipad-pro) {
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
   }
-
-  @include respond(surface-duo) {
-    padding-bottom: 50px;
-  }
+  //
+  // @include respond(surface-duo) {
+  //   padding-bottom: 5rem;
+  // }
 }
 
 /* Banner backgrounds */
@@ -130,9 +105,9 @@
   text-align: end;
 
   /* Recenter university text on small screens */
-  @include respond(surface-duo) {
-    text-align: center;
-  }
+  // @include respond(surface-duo) {
+  //   text-align: center;
+  // }
 }
 
 /* MEDIA QUERIES */
@@ -140,26 +115,26 @@
 
 /* Align all banner contents center on mobile view */
 .banner-container {
-  @include respond(surface-duo) {
-    text-align: center;
-  }
+  // @include respond(surface-duo) {
+  //   text-align: center;
+  // }
 }
 
 /* Button styling */
 .ban-button {
-  width: 185px;
-  height: 43px;
-  border-radius: 5px;
+  width: 18.5rem;
+  height: 4.3rem;
+  border-radius: 0.5rem;
   border: none;
   font-family: Mosk-800;
   color: $color-white;
   font-size: 2.1rem;
 
-  @include respond(surface-duo) {
-    width: 130px;
-    height: 30px;
-    font-size: 1.5rem;
-  }
+  // @include respond(surface-duo) {
+  //   width: 13rem;
+  //   height: 3rem;
+  //   font-size: 1.5rem;
+  // }
 
   &--discord {
     background: transparent

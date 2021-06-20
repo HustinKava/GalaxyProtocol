@@ -17,10 +17,6 @@
     @include respond(ipad-pro) {
       display: none;
     }
-
-    @include respond(surface-duo) {
-      display: none;
-    }
   }
 
   &__header {
@@ -35,10 +31,10 @@
     @include respond(big-desktop) {
       font-size: $font-size-90;
     }
-
-    @include respond(surface-duo) {
-      font-size: 4.5rem;
-    }
+    //
+    // @include respond(surface-duo) {
+    //   font-size: 4.5rem;
+    // }
   }
 
   &__text {
@@ -48,18 +44,18 @@
     text-align: center;
     padding-bottom: 8rem;
 
-    @include respond(surface-duo) {
-      font-size: 1.6rem;
-    }
+    // @include respond(surface-duo) {
+    //   font-size: 1.6rem;
+    // }
   }
 
   &__buttons-container {
     padding-top: 5rem;
     text-align: center;
 
-    @include respond(surface-duo) {
-      padding-top: 2.5rem;
-    }
+    // @include respond(surface-duo) {
+    //   padding-top: 2.5rem;
+    // }
   }
 }
 
@@ -71,10 +67,10 @@
   color: $color-white;
   cursor: pointer;
 
-  @include respond(surface-duo) {
-    width: 11.4rem;
-    height: 2.7rem;
-  }
+  // @include respond(surface-duo) {
+  //   width: 11.4rem;
+  //   height: 2.7rem;
+  // }
 
   &--1 {
     background: transparent
@@ -90,9 +86,9 @@
     font-size: 2.8rem;
     border: none;
 
-    @include respond(surface-duo) {
-      font-size: 2rem;
-    }
+    // @include respond(surface-duo) {
+    //   font-size: 2rem;
+    // }
   }
 
   &--2 {
@@ -101,9 +97,9 @@
     font-size: $font-size-25;
     border: solid 1px $color-pink;
 
-    @include respond(surface-duo) {
-      font-size: 1.4rem;
-    }
+    // @include respond(surface-duo) {
+    //   font-size: 1.4rem;
+    // }
   }
 }
 
