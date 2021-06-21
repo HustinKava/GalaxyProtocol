@@ -4,20 +4,34 @@
   margin-top: -6rem;
   margin-bottom: -6rem;
 
+  @include respond(ipad-pro) {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Resize and move hoodies for mobile view */
+  @include respond(ipad) {
+    display: none;
+  }
+}
+
+.hoodiesMobile {
+  display: none;
   /* Resize and move hoodies for mobile view */
 
-  @include respond(ipad-pro) {
-    margin: auto;
-    width: 90%;
+  @include respond(ipad) {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
-  //
-  // @include respond(surface-duo) {
-  //   position: relative;
-  //   top: 2.5rem;
-  //   left: 25%;
-  //   max-width: 50%;
-  //   height: auto;
-  // }
 }
 
 .bannerMerchButtonContainer {
@@ -28,6 +42,18 @@
   margin-left: -4rem !important;
 
   @include respond(ipad-pro) {
+    margin-left: -10rem !important;
+  }
+
+  @include respond(ipad) {
     margin-left: auto !important;
+  }
+}
+
+.merchSpace {
+  padding-bottom: 7rem;
+
+  @include respond(ipad) {
+    padding-bottom: 0;
   }
 }

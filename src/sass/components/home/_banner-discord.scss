@@ -12,4 +12,13 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  @include respond(ipad) {
+    position: relative;
+    padding-top: 0;
+    top: 0;
+    transform: translateY(0);
+    height: auto;
+    width: 60%;
+  }
 }
