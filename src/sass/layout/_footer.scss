@@ -23,8 +23,9 @@
   }
 
   @include respond(galaxy-fold) {
-    padding-left: 1rem;
-  }   
+    padding-left: 4.6rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .footerLogo {
@@ -49,14 +50,24 @@
     width: 50%;  
   }
 
+  @include respond(iphone-plus) {
+    height: auto;
+    width: 72%;
+  }
+
   @include respond(iphone-x) {
     height: auto;
-    width: 70%;
+    width: 72%;
+  }
+
+  @include respond(iphone-5) {
+    height: auto;
+    width: 74%;
   }
 
   @include respond(galaxy-fold) {
     height: auto;
-    width: 60%;
+    width: 70%;
   }
   
 }
@@ -66,8 +77,24 @@
   font-size: $font-size-20;
   opacity: 0.5;
 
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
+
   @include respond(iphone-x) {
+    font-size: 2.9rem;
+  }
+
+  @include respond(galaxy-s5) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(iphone-5) {
     font-size: 2.8rem;
+  }
+
+  @include respond(galaxy-fold) {
+    font-size: 3rem;
   }
 }
 
@@ -79,11 +106,11 @@
   
   @include respond(ipad) {
     padding-left: 3rem;
-  }  
+  }   
 
   @include respond(galaxy-fold) {
-    padding-left: 1rem;
-  }    
+    padding-left: 4.6rem;
+  }   
 
   &__divider {
     width: 70%;
@@ -108,6 +135,10 @@
       width: 35%;
     }
 
+    @include respond(iphone-plus) {
+      width: 52%;
+    }
+
     @include respond(iphone-x) {
       width: 47%;
     }
@@ -117,7 +148,11 @@
     }
 
     @include respond(iphone-5) {
-      width: 45%;
+      width: 60%;
+    }
+
+    @include respond(galaxy-fold) {
+      width: 55%;
     }
   }
 
@@ -139,9 +174,19 @@
       font-size: 2.2rem;
     }
 
+    @include respond(iphone-plus) {
+      padding-bottom: 2rem;
+      font-size: 3.6rem;
+    }
+
     @include respond(iphone-x) {
       padding-bottom: 2rem;
-      font-size: 3.4rem;
+      font-size: 3.6rem;
+    }
+
+    @include respond(iphone-5) {
+      padding-bottom: 2rem;
+      font-size: 4.2rem;
     }
   }
 
@@ -151,8 +196,16 @@
     font-size: 2.2rem;
     padding-bottom: 2rem;
 
+    @include respond(iphone-plus) {
+      font-size: 3.2rem;
+    }
+
     @include respond(iphone-x) {
-      font-size: 3rem;
+      font-size: 3.2rem;
+    }
+
+    @include respond(iphone-5) {
+      font-size: 3.8rem;
     }
   }
 

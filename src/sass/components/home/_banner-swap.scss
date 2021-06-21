@@ -8,11 +8,24 @@
 .swapLogo {
   max-width: 100%;
   height: auto;
+
+  @include respond(ipad-pro) {
+    max-width: 75%;
+  }
+
+  @include respond(ipad) {
+    max-width: 80%;
+  }
+
+  @include respond(iphone-plus) {
+    max-width: 90%;
+  }
 }
 
-.bannerSwapButtonContainer {
-  padding-top: 5rem;
-  padding-bottom: 15rem;
+.mobileCenter {
+  @include respond(ipad) {
+    text-align: center;
+  }
 }
 
 /* Images */
@@ -24,16 +37,20 @@
   margin-bottom: -5rem;
 
   @include respond(ipad-pro) {
-    margin: auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  // /* Re-align laptop image and re-enter into layout */
-  // @include respond(surface-duo) {
-  //   position: relative;
-  //   top: 0;
-  //   left: 0;
-  // }
+  @include respond(ipad) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
