@@ -8,98 +8,100 @@ import { NavLink } from 'react-router-dom';
 function Sidebar({ isOpen, toggle }) {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      {/* Close button */}
-      <div className="icon" onClick={toggle}>
-        <FaTimes className="closeBtn" />
+      <div className='sidebar-navbar'>
+        {/* Sidebar logo */}
+        <img src={Logo} alt="Logo" className="sidebar-navbar__logo" />
+
+        {/* Close button */}
+        <div className="sidebar-navbar__icon" onClick={toggle}>
+          <FaTimes className="sidebar-navbar__closeBtn" />
+        </div>
       </div>
 
-      {/* Sidebar logo */}
-      <img src={Logo} alt="Logo" className="sidebarLogo" />
-
       {/* Products */}
-      <p className="sidebarHeader">Products</p>
+      <p className="sidebar-header">Products</p>
 
       <div>
-        {/* <NavLink to='/galaxyswap' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">GalaxySwap</p>
+        {/* <NavLink to='/galaxyswap' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">GalaxySwap</p>
         </Link>
         {/* </NavLink> */}
-        <Link to="/#footerUniversity" className="sidebarLinks">
-          <p className="sidebarText">Galaxy University</p>
+        <Link to="/#footerUniversity" className="sidebar-links">
+          <p className="sidebar-text">Galaxy University</p>
         </Link>
-        {/* <NavLink to='/nebulalaunchpad' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Nebula Launchpad</p>
-        </Link>
-        {/* </NavLink> */}
-        {/* <NavLink to='/galaxystation' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Galaxy Station</p>
+        {/* <NavLink to='/nebulalaunchpad' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Nebula Launchpad</p>
         </Link>
         {/* </NavLink> */}
-        <Link to="/#footerMerchandise" className="sidebarLinks">
-          <p className="sidebarText">Galaxy Merchandise</p>
+        {/* <NavLink to='/galaxystation' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Galaxy Station</p>
+        </Link>
+        {/* </NavLink> */}
+        <Link to="/#footerMerchandise" className="sidebar-links">
+          <p className="sidebar-text">Galaxy Merchandise</p>
         </Link>
       </div>
 
       {/* Developers */}
-      <p className="sidebarHeader">Developers</p>
+      <p className="sidebar-header">Developers</p>
 
       <div>
-        <NavLink to="/documentation" className="sidebarLinks">
-          <p className="sidebarText">Documentation</p>
+        <NavLink to="/documentation" className="sidebar-links">
+          <p className="sidebar-text">Documentation</p>
         </NavLink>
-        {/* <NavLink to='/whitepaperv1' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Whitepaper V1</p>
+        {/* <NavLink to='/whitepaperv1' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Whitepaper V1</p>
         </Link>
         {/* </NavLink> */}
-        {/* <NavLink to='/audit' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Audit</p>
+        {/* <NavLink to='/audit' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Audit</p>
         </Link>
         {/* </NavLink> */}
-        {/* <NavLink to='/partnershipoverview' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Partnership Overview</p>
+        {/* <NavLink to='/partnershipoverview' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Partnership Overview</p>
         </Link>
         {/* </NavLink> */}
-        {/* <NavLink to='/term&conditions' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Terms & Conditions</p>
+        {/* <NavLink to='/term&conditions' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Terms & Conditions</p>
         </Link>
         {/* </NavLink> */}
-        {/* <NavLink to='/privacy&policy' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Privacy & Policy</p>
+        {/* <NavLink to='/privacy&policy' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Privacy & Policy</p>
         </Link>
         {/* </NavLink> */}
       </div>
 
       {/* About */}
-      <p className="sidebarHeader">About</p>
+      <p className="sidebar-header">About</p>
 
       <div>
-        {/* <NavLink to='/aboutus' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">About Us</p>
+        {/* <NavLink to='/aboutus' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">About Us</p>
         </Link>
         {/* </NavLink> */}
-        {/* <NavLink to='/meetourteam' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Meet Our Team</p>
+        {/* <NavLink to='/meetourteam' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Meet Our Team</p>
         </Link>
         {/* </NavLink> */}
-        <NavLink to="/jobs" className="sidebarLinks">
-          <p className="sidebarText">Jobs</p>
+        <NavLink to="/jobs" className="sidebar-links">
+          <p className="sidebar-text">Jobs</p>
         </NavLink>
-        <NavLink to="/faq" className="sidebarLinks">
-          <p className="sidebarText">FAQ</p>
+        <NavLink to="/faq" className="sidebar-links">
+          <p className="sidebar-text">FAQ</p>
         </NavLink>
-        {/* <NavLink to='/presskit' className='sidebarLinks'> */}
-        <Link className="sidebarLinks">
-          <p className="sidebarText">Presskit</p>
+        {/* <NavLink to='/presskit' className='sidebar-links'> */}
+        <Link className="sidebar-links">
+          <p className="sidebar-text">Presskit</p>
         </Link>
         {/* </NavLink> */}
       </div>

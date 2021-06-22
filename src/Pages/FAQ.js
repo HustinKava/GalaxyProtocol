@@ -44,7 +44,7 @@ const FAQ = () => {
 
         <div >
           <div className="faq__indentedPara">
-            <h4>Galaxyswap</h4>
+            <h4 className="faq__h4">Galaxyswap</h4>
             <p className="faq__body">
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -53,7 +53,7 @@ const FAQ = () => {
           </div>
 
           <div className="faq__indentedPara">
-            <h4>Galaxystation</h4>
+            <h4 className="faq__h4">Galaxystation</h4>
             <p className="faq__body">
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -62,7 +62,7 @@ const FAQ = () => {
           </div>
 
           <div className="faq__indentedPara">
-            <h4>Nebula Launchpad</h4>
+            <h4 className="faq__h4">Nebula Launchpad</h4>
             <p className="faq__body">
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis

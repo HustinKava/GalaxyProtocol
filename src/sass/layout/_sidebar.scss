@@ -1,32 +1,97 @@
-.icon {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  background: transparent;
-  font-size: 2rem;
-  cursor: pointer;
-  outline: none;
+.sidebar-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+
+  &__logo {
+    margin-left: 5rem;
+
+    @include respond(ipad-pro) {
+      height: auto;
+      width: 50%;
+      margin-left: 6rem;
+    }
+
+    @include respond(surface-duo) {
+      height: auto;
+      width: 50%;
+      margin-left: 5rem;
+    }
+    
+    @include respond(galaxy-s5) {
+      height: auto;
+      width: 55%;
+    }
+  }
+
+  &__icon {
+    font-size: 6rem;
+    cursor: pointer;
+    margin-right: 5rem;
+
+    @include respond(ipad-pro) {
+      font-size: 7.5rem;
+      padding-top: 2rem;
+      margin-right: 6rem;
+    }
+
+    @include respond(ipad) {
+      padding-top: 1.2rem;
+    }
+
+    @include respond(surface-duo) {
+      font-size: 5rem;
+      padding-top: 1rem;
+      margin-right: 5rem;
+    }
+  }
+
+  &__closeBtn {
+    color: $color-white;
+  }
 }
 
-.closeBtn {
-  color: #fff;
-}
-
-.sidebarLogo {
-  width: auto;
-  padding-top: 2.3rem;
-  padding-left: 2rem;
-  max-width: 21rem;
-}
-
-.sidebarHeader {
+.sidebar-header {
   font-family: Mosk-700;
   font-size: 2.2rem;
-  padding-left: 2rem;
+  padding-left: 5rem;
   padding-top: 4.5rem;
+
+  @include respond(ipad-pro) {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+  }
+
+  @include respond(ipad) {
+    font-size: 3.5rem;
+  }
+
+  @include respond(surface-duo) {
+    padding-left: 5rem;
+  }
 }
 
-.sidebarLinks {
+.sidebar-text {
+  font-family: Mosk-200;
+  font-size: 2rem;
+
+  @include respond(ipad-pro) {
+    font-size: 3.8rem;
+    padding-left: 1rem;
+  }
+
+  @include respond(ipad) {
+    font-size: 3rem;
+  }
+
+  @include respond(surface-duo) {
+    padding-left: 0;
+  }
+}
+
+.sidebar-links {
   margin-left: 5.5%;
   color: #fff;
   display: flex;
@@ -34,9 +99,10 @@
   padding: 0 1rem;
   padding-top: 2rem;
   cursor: pointer;
+
+  @include respond(surface-duo) {
+    margin-left: 10%;
+  }
 }
 
-.sidebarText {
-  font-family: Mosk-200;
-  font-size: 2rem;
-}
+

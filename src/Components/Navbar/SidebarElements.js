@@ -6,8 +6,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
   display: grid;
   align-items: center;
   top: 0;
