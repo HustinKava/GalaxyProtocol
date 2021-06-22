@@ -6,14 +6,18 @@ function JobsGallery() {
     <>
       <h3 className="openPosHeader">Open positions</h3>
       <div className="jobs-gallery">
-        {/* For each new job to be listed add one <Grid item xs={6}> and it's contents */}
+        <div className="jobs-gallery-column">
         <JobCard />
-
+        </div>
+        <div className="jobs-gallery-column">
         <JobCard />
-
+        </div>
+        <div className="jobs-gallery-column">
         <JobCard />
-
+        </div>
+        <div className="jobs-gallery-column">
         <JobCard />
+        </div>
       </div>
     </>
   );
