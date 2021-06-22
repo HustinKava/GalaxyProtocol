@@ -70,31 +70,13 @@ span {
   color: $color-white;
 }
 
-
-
 /* Unified space at top and bottom of each page */
 .mainContainer {
-  margin: 22rem 25em;
+  margin: 15rem 20rem;
 
   @include respond(ipad-pro) {
-    margin: 5rem 7em;
+    margin: 21rem 7rem;
   }
-  @include respond(ipad) {
-    margin: 5rem 3.5em;
-  }
-  @include respond(iphone-x) {
-    margin: 5rem 2.5em;
-  }
-  @include respond(iphone-5) {
-    margin: 5rem 2em;
-  }
-  @include respond(galaxy-fold) {
-    margin: 5rem 2em;
-  }
-}
-
-.space {
-  padding-bottom: 70px;
 }
 
 button {
