@@ -1,25 +1,17 @@
 .placeholder {
-  // padding-top: 22rem;
-  // height: auto;
-  // width: 100%;
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  display: none;
+  height: auto;
+  width: 80%;
 
   /* Resize university image on small screen */
+  @include respond(ipad-pro) {
+    max-width: 90%;
+    padding-top: 0;
+  }
+
   @include respond(ipad) {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0;
-  }
-  
-  @include respond(ipad-pro) {
-    max-width: 90%;
-    padding-top: 0;
-    // TEMP MARGIN
-    // margin-top: 25%;
   }
 }
 
@@ -31,11 +23,59 @@
   }
 }
 
-// Forced to use important because the text is too long for the container
 .universityText {
-  margin-left: -8rem !important;
+  // display: inline-block;
+  margin-left: -8rem ;
 
   @include respond(ipad) {
-    margin-left: 0 !important;
+    margin-left: 0 ;
+  }
+}
+
+.universityIcon {
+  display: none;
+
+  @include respond(ipad) {
+    display: unset;
+    height: auto;
+    width: 18%;
+    margin-bottom: -3rem;
+  }
+
+  @include respond(iphone-plus) {
+    margin-bottom: -2.5rem;
+  }
+
+  @include respond(iphone-plus) {
+    width: 17%;
+  }
+}
+
+.banUniversityHeader {
+  font-size: 9rem;
+
+  @include respond(ipad-pro) {
+    font-size: 6rem;
+  }
+
+  @include respond(ipad) {
+    font-size: 7.5rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 6rem;
+  }
+
+  @include respond(galaxy-fold) {
+    font-size: 7rem;
+  }
+
+  /* Used by Banner2 and Banner3 */
+  &--1 {
+    font-family: Mosk-700;
+  }
+
+  &--2 {
+    font-family: Mosk-100;
   }
 }

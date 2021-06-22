@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from '@material-ui/core';
 import Trade from '../../Assets/Trade-icon.png';
 import Learn from '../../Assets/Learn-icon.png';
 import Rocket from '../../Assets/Rocket-icon.png';
@@ -9,11 +10,14 @@ import Merch from '../../Assets/Merch-icon.png';
 function Destiny() {
   return (
     <div className="home-sub-container">
-      <div className="destCenter">
-        <span className="destHeader destHeader--1">Welcome.</span>
-        <br />
-        <span className="destHeader destHeader--2">Choose your Destiny</span>
-      </div>
+
+      <Container maxWidth="md">
+        <div className="destCenter">
+          <span className="destHeader destHeader--1">Welcome.</span>
+          <br />
+          <span className="destHeader destHeader--2">Choose your Destiny</span>
+        </div>
+      </Container>
 
       {/* Boxes */}
       <div className="boxGrouping-container">

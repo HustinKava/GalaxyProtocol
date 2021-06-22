@@ -38,18 +38,6 @@
   padding-top: 5rem;
 }
 
-.bannerMerchTextPadding {
-  margin-left: -4rem !important;
-
-  @include respond(ipad-pro) {
-    margin-left: -10rem !important;
-  }
-
-  @include respond(ipad) {
-    margin-left: auto !important;
-  }
-}
-
 .merchSpace {
   padding-bottom: 7rem;
 

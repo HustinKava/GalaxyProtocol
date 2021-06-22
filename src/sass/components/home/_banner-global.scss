@@ -1,8 +1,5 @@
 /* Global banner styling used by 2 more banner components */
 .ban-gridPadding {
-  // padding-left: 200px;
-  // padding-right: 200px;
-
   @include respond(ipad-pro) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -191,6 +188,25 @@
   @include respond(ipad) {
     padding-top: 5rem;
     padding-bottom: 5rem;  
+    text-align: center;
+  }
+}
+
+.centered-images {
+  @include respond(ipad-pro) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  @include respond(ipad) {
+    display: unset;
+  }
+}
+
+.mobileCenter {
+  @include respond(ipad) {
     text-align: center;
   }
 }

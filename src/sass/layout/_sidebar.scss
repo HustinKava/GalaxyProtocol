@@ -14,13 +14,10 @@
     }
 
     @include respond(surface-duo) {
-      height: auto;
-      width: 50%;
       margin-left: 5rem;
     }
     
     @include respond(galaxy-s5) {
-      height: auto;
       width: 55%;
     }
   }

@@ -23,7 +23,7 @@ function BannerMerch() {
       </Box>
       <Box clone order={{ xs: 1, sm: 1, md: 1 }}>
         <Grid item xs={12} md={6} className="ban-gridPadding ban-contentContainer">
-          <Container maxWidth="sm" className='bannerMerchTextPadding mobileCenter'>
+          <Container maxWidth="sm" className='mobileCenter'>
             <div className="bannerTitleContainer">
               <span className="banHeader banHeader--1">Galaxy</span>
               <span className="banHeader banHeader--2">Merch</span>

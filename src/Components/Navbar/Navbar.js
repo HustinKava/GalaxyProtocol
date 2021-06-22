@@ -109,8 +109,7 @@ const Navbar = ({ toggle }) => {
 
       <div className="navBtn">
         <NavLink to="/galaxyswap" className="navBtnLink">
-          <span className="navUse">Use&nbsp;</span>
-          <span className="navGalaxy">Galaxy</span>
+          <span className="navUseGalaxy">Use&nbsp;Galaxy</span>
           <span className="navSwap">Swap</span>
         </NavLink>
       </div>

@@ -1,20 +1,25 @@
 .gen {
   position: relative;
   margin-top: 11rem;
-  margin-bottom: 8rem;
+  margin-bottom: 0rem;
 
   &__background {
-    width: 128rem;
+    height: auto;
+    width: 70%;
     display: block;
     position: absolute;
     left: 50%;
-    margin-left: -65rem;
-    top: 50%;
-    margin-top: -36rem;
+    top: 45%;
+    transform: translate(-50%, -50%);
     opacity: 0.11;
     z-index: -1;
 
     @include respond(ipad-pro) {
+      width: 95%;
+      top: 55%;
+    }
+
+    @include respond(ipad) {
       display: none;
     }
   }
@@ -22,39 +27,73 @@
   &__header {
     color: $color-white;
     font-family: Mosk-700;
-    font-size: 6rem;
+    font-size: 8.18rem;
     text-align: center;
     line-height: 1;
     padding-top: 5rem;
     padding-bottom: 4rem;
 
-    @include respond(big-desktop) {
-      font-size: $font-size-90;
-    }
+    // @include respond(big-desktop) {
+    //   font-size: $font-size-90;
+    // }
 
     @include respond(ipad-pro) {
+      margin-top: 15rem;
+    }
+
+    @include respond(ipad) {
       margin-top: 10rem;
+      font-size: 7rem;
+    }
+
+    @include respond(surface-duo) {
+      font-size: 6rem;
+    }
+
+    @include respond(iphone-plus) {
+      font-size: 5rem;
+    }
+
+    @include respond(iphone-x) {
+      font-size: 6rem;
     }
   }
 
   &__text {
     color: $color-white;
     font-family: Mosk-300;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     text-align: center;
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
+
+    @include respond(ipad-pro) {
+      padding-bottom: 5rem;
+    }
+
+    @include respond(ipad-pro) {
+      padding-bottom: 4rem;
+    }
+
+    @include respond(iphone-plus) {
+      padding-bottom: 1rem;
+    }
   }
 
   &__buttons-container {
     padding-top: 5rem;
     text-align: center;
+
+    @include respond(iphone-plus) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
 .gen-btn {
-  width: 22.8rem;
-  height: 5.4rem;
-  margin-right: 4rem;
+  width: 17rem;
+  height: 4rem;
   border-radius: 0.4rem;
   color: $color-white;
   cursor: pointer;
@@ -70,19 +109,20 @@
       )
       0% 0% no-repeat padding-box;
     font-family: Mosk-700;
-    font-size: 2.8rem;
+    font-size: 2rem;
     border: none;
+    margin-right: 3rem;
+
+    @include respond(iphone-plus) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
   }
 
   &--2 {
     background: none;
     font-family: Mosk-400;
-    font-size: $font-size-25;
+    font-size: 2rem;
     border: solid 1px $color-pink;
   }
-}
-
-/* Break element that will only display in mobile view to stack the buttons */
-.responsiveButtons {
-  display: none;
 }

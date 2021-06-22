@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Container, Box } from '@material-ui/core';
 import Placeholder from '../../Assets/663x344.png';
+import UniversityIcon from '../../Assets/Learn-icon.png'; 
 
 function BannerUniversity() {
   return (
@@ -8,14 +9,16 @@ function BannerUniversity() {
       <Grid container spacing={0} className="fadeRight">
           <Box clone order={{ xs: 2, sm: 2, md: 1 }}>
             <Grid item xs={12} md={6}>
-                  <img src={Placeholder} alt="Placeholder" className="placeholder" />
-                  <div className="bannerButtonMobileContainer">
-                    <Container maxWidth="sm">
-                      <button className="ban-button ban-button--learn btn-mobile">
-                        Learn more
-                      </button>
-                    </Container>
-                  </div>
+              <div className='centered-images'>
+                <img src={Placeholder} alt="Placeholder" className="placeholder" />
+              </div>
+              <div className="bannerButtonMobileContainer">
+                <Container maxWidth="sm">
+                  <button className="ban-button ban-button--learn btn-mobile">
+                    Learn more
+                  </button>
+                </Container>
+              </div>
             </Grid>
           </Box>
 
@@ -23,8 +26,9 @@ function BannerUniversity() {
             <Grid item xs={12} md={6} className="ban-gridPadding ban-contentContainer">
               <Container maxWidth="sm" className='mobileCenter'>
                 <div className="bannerTitleContainer universityText">
-                  <span className="banHeader banHeader--1">Galaxy</span>
-                  <span className="banHeader banHeader--2">university</span>
+                  <img src={UniversityIcon} alt='University icon' className='universityIcon'/>
+                  <span className="banUniversityHeader banUniversityHeader--1">Galaxy</span>
+                  <span className="banUniversityHeader banUniversityHeader--2">university</span>
                 </div>
                 <span className="banDesc banDesc--1">
                   Rest, interact & create. Galaxystation it’s designed for you to

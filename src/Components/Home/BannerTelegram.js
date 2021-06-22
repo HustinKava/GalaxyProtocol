@@ -27,7 +27,9 @@ function BannerTelegram() {
           </Container>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img className="telegram" src={Telegram} alt="Telegram" />
+          <div className='centered-images'>
+            <img className="telegram" src={Telegram} alt="Telegram" />
+          </div>
           <div className="bannerButtonMobileContainer">
             <Container maxWidth="sm">
               <button className="ban-button ban-button--telegram btn-mobile">

@@ -5,7 +5,7 @@ const Newsletter = () => {
   return (
 
     <div className="home-sub-container news">
-    <Container fixed >
+    <Container maxWidth="md">
       <span className="news__header">MONTHLY</span>
       <br />
       <p className="news__text">NEWSLETTER</p>

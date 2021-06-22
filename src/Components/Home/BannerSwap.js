@@ -9,7 +9,6 @@ function BannerSwap() {
   return (
     <div>
       <div className="banner-container">
-        {/* Banner 1 */}
         <Grid container spacing={0} className="fadeLeft">
           <Grid item xs={12} md={6} className="ban-gridPadding">
             <Container maxWidth="sm" className='mobileCenter'>
@@ -29,7 +28,9 @@ function BannerSwap() {
             </Container>
           </Grid>
           <Grid item xs={12} md={6}>
-            <img src={Laptop} alt="Laptop" className="laptop" />
+            <div className='centered-images'>
+              <img src={Laptop} alt="Laptop" className="laptop" />
+            </div>
             <div className="bannerButtonMobileContainer">
               <Container maxWidth="sm">
                 <button className="ban-button ban-button--swap btn-mobile">

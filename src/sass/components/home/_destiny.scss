@@ -9,11 +9,35 @@
 
   &--1 {
     font-family: Mosk-100;
+
+    @include respond(surface-duo) {
+      font-size: 6rem;
+    }
+
+    @include respond(iphone-plus) {
+      font-size: 5rem;
+    }
+
+    @include respond(iphone-x) {
+      font-size: 6rem;
+    }
   }
 
   &--2 {
     font-family: Mosk-700;
     line-height: 0.4;
+
+    @include respond(surface-duo) {
+      font-size: 6rem;
+    }
+
+    @include respond(iphone-plus) {
+      font-size: 5rem;
+    }
+
+    @include respond(iphone-x) {
+      font-size: 6rem;
+    }
   }
 }
 
@@ -49,10 +73,20 @@
   justify-content: center;
   align-items: center;
 
-  // @include respond(surface-duo) {
-  //   width: 20rem;
-  //   height: 20rem;
-  // }
+  @include respond(surface-duo) {
+    width: 32rem;
+    height: 32rem;
+  }
+  
+  @include respond(iphone-plus) {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  @include respond(galaxy-fold) {
+    width: 32rem;
+    height: 32rem;
+  }
 
   &:hover {
     box-shadow: 0px 0.3rem 6.6rem $color-box-shadow-dark;
@@ -126,9 +160,9 @@
     height: 20%;
     margin-bottom: 2rem;
 
-    // @include respond(surface-duo) {
-    //   margin-bottom: 1rem;
-    // }
+    @include respond(iphone-plus) {
+      margin-top: 2rem;
+    }
   }
 
   /* Box text */
@@ -148,10 +182,14 @@
     font-size: 1.8rem;
     padding: 4rem;
 
-    // @include respond(surface-duo) {
-    //   font-size: 1.4rem;
-    //   height: 10rem;
-    //   padding: 1rem;
-    // }
+    @include respond(iphone-plus) {
+      font-size: 1.8rem;
+      height: 10rem;
+      padding: 1rem;
+    }
+
+    @include respond(galaxy-fold) {
+      padding: 4rem;
+    }
   }
 }

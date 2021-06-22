@@ -7,7 +7,9 @@ function BannerDiscord() {
     <Grid container spacing={0} className="fadeRight" id="footerDiscord">
       <Box clone order={{ xs: 2, sm: 2, md: 1 }}>
         <Grid item xs={12} md={6}>
-          <img src={Discord} alt="Discord" className="discord" />
+          <div className='centered-images'>
+            <img src={Discord} alt="Discord" className="discord" />
+          </div>
           <div className="bannerButtonMobileContainer">
             <Container maxWidth="sm">
               <button className="ban-button ban-button--discord btn-mobile">
