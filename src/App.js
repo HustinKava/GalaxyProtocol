@@ -8,6 +8,7 @@ import PositionDetails from './Pages/PositionDetails.js';
 import GPEcosystem from './Pages/GPEcosystem.js';
 import FAQ from './Pages/FAQ.js';
 import Documentation from './Pages/Documentation.js';
+import GalaxyUniversity from './Pages/GalaxyUniversity.js';
 
 import './sass/main.scss';
 
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/GPEcosystem" component={GPEcosystem} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/Documentation" component={Documentation} />
+        <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
       </Switch>
     </Router>
   );

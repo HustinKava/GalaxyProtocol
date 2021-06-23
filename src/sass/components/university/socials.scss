@@ -1,0 +1,51 @@
+.university-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__bold-text {
+    font-family: Mosk-700;
+    font-size: 6rem;
+
+    @include respond(iphone-plus) {
+      font-size: 5rem;
+    }
+
+    @include respond(galaxy-fold) {
+      font-size: 6rem;
+    }
+  }
+
+  &__text {
+    font-family: Mosk-100;
+    font-weight: lighter;
+    font-size: 6rem;
+
+    @include respond(iphone-plus) {
+      font-size: 5rem;
+    }
+
+    @include respond(galaxy-fold) {
+      font-size: 6rem;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  &__icon {
+    height: 4rem;
+    margin: 1.5rem;
+
+    @include respond(iphone-plus) {
+      height: 3rem;
+    }
+
+    @include respond(galaxy-fold) {
+      height: 4rem;
+    }
+  }
+}

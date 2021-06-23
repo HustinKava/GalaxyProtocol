@@ -1,0 +1,40 @@
+.galaxyUniversityHeader{
+    display: flex;
+    flex-direction: column;
+
+    &__h1{
+        font-size: 12.8rem;
+        font-family: 'Mosk-700';
+
+        @include respond(surface-duo) {
+            font-size: 9.5rem;
+          }
+    }
+    &__span{
+        font-size: 9.4rem;
+        font-family: 'Mosk-200';
+
+        @include respond(ipad) {
+            // margin-top: -2rem; 
+        }
+
+        @include respond(surface-duo) {
+            font-size: 7rem; 
+          }
+
+
+    }
+
+
+    &__intro{
+        font-size: 2.8rem;
+        font-family: 'Mosk-200';
+        color: $color-grey-light-3;
+        max-width: 50%;
+        @include respond(ipad) {
+            max-width: 100%;
+         
+        }
+
+    }
+}

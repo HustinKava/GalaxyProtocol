@@ -17,6 +17,8 @@
 @import 'components/home/banner-telegram';
 @import 'components/home/banner-university';
 
+@import 'components/university/socials';
+
 @import 'layout/footer';
 // @import "layout/header";
 @import 'layout/heading';
@@ -28,3 +30,6 @@
 @import 'pages/home';
 @import 'pages/jobs';
 @import 'pages/position-details';
+
+//@import GalaxyUniversity
+@import 'pages/galaxyUniversity';
