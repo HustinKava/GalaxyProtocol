@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Components/Footer';
 import { Box } from '@material-ui/core';
 
 const FAQ = () => {
@@ -112,7 +111,6 @@ const FAQ = () => {
           </p>
         </div>
       </Box>
-      <Footer />
     </div>
   );
 };

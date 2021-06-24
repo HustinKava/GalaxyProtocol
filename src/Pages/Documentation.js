@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Components/Footer';
 import { Box } from '@material-ui/core';
 
 const Documentation = () => {
@@ -160,7 +159,6 @@ const Documentation = () => {
           ecosystem.
         </p>
       </Box>
-      <Footer />
     </div>
   );
 };

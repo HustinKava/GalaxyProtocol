@@ -1,4 +1,4 @@
-import Footer from '../Components/Footer';
+import React from 'react';
 
 const Jobs = () => {
   return (
@@ -9,7 +9,6 @@ const Jobs = () => {
           alt="placeholder"
         ></img>
       </div>
-      <Footer />
     </div>
   );
 };

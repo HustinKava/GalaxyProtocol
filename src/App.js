@@ -3,12 +3,13 @@ import Sidebar from '../src/Components/Navbar/Sidebar';
 import Navbar from '../src/Components/Navbar/Navbar';
 import Home from './Pages/Home';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import Jobs from './Pages/Jobs.js';
-import PositionDetails from './Pages/PositionDetails.js';
+// import Jobs from './Pages/Jobs.js';
+// import PositionDetails from './Pages/PositionDetails.js';
 import GPEcosystem from './Pages/GPEcosystem.js';
 import FAQ from './Pages/FAQ.js';
 import Documentation from './Pages/Documentation.js';
 import GalaxyUniversity from './Pages/GalaxyUniversity.js';
+import Footer from '../src/Components/Footer';
 
 import './sass/main.scss';
 
@@ -26,13 +27,14 @@ function App() {
       <Navbar toggle={toggle} />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Jobs" component={Jobs} />
-        <Route exact path="/PositionDetails" component={PositionDetails} />
+        {/* <Route exact path="/Jobs" component={Jobs} /> */}
+        {/* <Route exact path="/PositionDetails" component={PositionDetails} /> */}
         <Route exact path="/GPEcosystem" component={GPEcosystem} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/Documentation" component={Documentation} />
         <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
       </Switch>
+      <Footer/>
     </Router>
   );
 }

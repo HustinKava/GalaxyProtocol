@@ -1,7 +1,7 @@
 import React from 'react';
 import Swap from './BannerSwap';
 import University from './BannerUniversity';
-import Newsletter from '../../Components/Home/Newsletter';
+// import Newsletter from '../../Components/Home/Newsletter';
 import Merch from './BannerMerch';
 import Telegram from './BannerTelegram';
 import Discord from './BannerDiscord';
@@ -11,7 +11,7 @@ const Banners = () => {
     <div className="home-sub-container">
       <Swap />
       <University />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Merch />
       <Telegram />
       <Discord />

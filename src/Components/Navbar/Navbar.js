@@ -92,9 +92,9 @@ const Navbar = ({ toggle }) => {
               <p className="navText">Meet Our Team</p>
             </Link>
             {/* </NavLink> */}
-            <NavLink to="/jobs" className="navLink">
+            {/* <NavLink to="/jobs" className="navLink">
               <p className="navText">Jobs</p>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/faq" className="navLink">
               <p className="navText">FAQ</p>
             </NavLink>

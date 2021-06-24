@@ -1,5 +1,4 @@
 // import React, { useState } from 'react'
-import Footer from '../Components/Footer';
 import PositionHero from '../Components/PositionDetails/PositionHero';
 import PositionInfo from '../Components/PositionDetails/PositionInfo';
 
@@ -10,7 +9,6 @@ const PositionDetails = () => {
         <PositionHero />
         <PositionInfo />
       </div>
-      <Footer />
     </div>
   );
 };

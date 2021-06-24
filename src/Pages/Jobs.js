@@ -1,4 +1,3 @@
-import Footer from '../Components/Footer';
 import JobsHero from '../Components/Jobs/JobsHero';
 import JobsGallery from '../Components/Jobs/JobsGallery';
 
@@ -9,7 +8,6 @@ const Jobs = () => {
         <JobsHero />
         <JobsGallery />
       </div>
-      <Footer />
     </div>
   );
 };

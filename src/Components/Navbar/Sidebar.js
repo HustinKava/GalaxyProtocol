@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 function Sidebar({ isOpen, toggle }) {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <div className='sidebar-navbar'>
+      <div className="sidebar-navbar">
         {/* Sidebar logo */}
         <img src={Logo} alt="Logo" className="sidebar-navbar__logo" />
 
@@ -93,9 +93,9 @@ function Sidebar({ isOpen, toggle }) {
           <p className="sidebar-text">Meet Our Team</p>
         </Link>
         {/* </NavLink> */}
-        <NavLink to="/jobs" className="sidebar-links">
+        {/* <NavLink to="/jobs" className="sidebar-links">
           <p className="sidebar-text">Jobs</p>
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/faq" className="sidebar-links">
           <p className="sidebar-text">FAQ</p>
         </NavLink>

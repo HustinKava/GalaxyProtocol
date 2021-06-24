@@ -53,9 +53,9 @@
   padding-top: 10rem;
   width: 102rem;
 
-  // @include respond(surface-duo) {
-  //   width: 60rem;
-  // }
+  @include respond(surface-duo) {
+    width: 50rem;
+  }
 }
 
 .destBox-container {
@@ -73,17 +73,12 @@
   justify-content: center;
   align-items: center;
 
-  @include respond(surface-duo) {
-    width: 32rem;
-    height: 32rem;
-  }
-  
-  @include respond(iphone-plus) {
-    width: 25rem;
-    height: 25rem;
+  @include respond(ipad) {
+    width: 26.5rem;
+    height: 26.5rem;
   }
 
-  @include respond(galaxy-fold) {
+  @include respond(surface-duo) {
     width: 32rem;
     height: 32rem;
   }
@@ -160,7 +155,7 @@
     height: 20%;
     margin-bottom: 2rem;
 
-    @include respond(iphone-plus) {
+    @include respond(ipad) {
       margin-top: 2rem;
     }
   }
@@ -171,9 +166,13 @@
     font-family: Mosk-700;
     font-size: 3.5rem;
 
-    // @include respond(surface-duo) {
-    //   font-size: $font-size-20;
-    // }
+    @include respond(ipad) {
+      font-size: $font-size-20;
+    }
+
+    @include respond(surface-duo) {
+      font-size: $font-size-30;
+    }
   }
 
   &__text {
@@ -182,14 +181,14 @@
     font-size: 1.8rem;
     padding: 4rem;
 
-    @include respond(iphone-plus) {
-      font-size: 1.8rem;
+    @include respond(ipad) {
       height: 10rem;
-      padding: 1rem;
+      padding: 2rem;
     }
 
-    @include respond(galaxy-fold) {
-      padding: 4rem;
+    @include respond(surface-duo) {
+      padding: 1rem;
+      font-size: 2.2rem;
     }
   }
 }
