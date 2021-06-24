@@ -41,11 +41,7 @@
     margin: 1.5rem;
 
     @include respond(iphone-plus) {
-      height: 3rem;
-    }
-
-    @include respond(galaxy-fold) {
-      height: 4rem;
+      height: 3.4rem;
     }
   }
 }

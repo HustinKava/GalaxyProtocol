@@ -1,12 +1,11 @@
 import React from 'react';
-// placeholders until we get the assets
-import Discord from '../../Assets/Trade-icon.png';
-import Telegram from '../../Assets/Trade-icon.png';
-import Twitter from '../../Assets/Trade-icon.png';
-import Facebook from '../../Assets/Trade-icon.png';
-import Instagram from '../../Assets/Trade-icon.png';
-import Reddit from '../../Assets/Trade-icon.png';
-import Tiktok from '../../Assets/Trade-icon.png';
+import Discord from '../../Assets/Discord-icon-gp.png';
+import Telegram from '../../Assets/Telegram-icon-gp.png';
+import Twitter from '../../Assets/Twitter-icon-gp.png';
+import Facebook from '../../Assets/Facebook-icon-gp.png';
+import Instagram from '../../Assets/Instagram-icon-gp.png';
+import Reddit from '../../Assets/Reddit-icon-gp.png';
+import Tiktok from '../../Assets/Tiktok-icon-gp.png';
 
 const SocialIcon = ({ social }) => {
   return (
