@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import Telegram from '../../Assets/Telegram-banner.png';
+import { Link } from 'react-router-dom';
 
 function BannerTelegram() {
   return (
@@ -20,9 +21,12 @@ function BannerTelegram() {
               interact with one of our developers.
             </span>
             <div className="bannerButtonContainer">
-              <button className="ban-button ban-button--telegram btn-desktop">
+            <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer">
+            <button className="ban-button ban-button--telegram btn-desktop">
                 Join now
-              </button>
+              </button>  
+              </a>    
+
             </div>
           </Container>
         </Grid>
@@ -32,6 +36,7 @@ function BannerTelegram() {
           </div>
           <div className="bannerButtonMobileContainer">
             <Container maxWidth="sm">
+
               <button className="ban-button ban-button--telegram btn-mobile">
                 Join Now
               </button>

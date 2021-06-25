@@ -1,0 +1,40 @@
+.uni-partners {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+
+    @include respond(ipad) {
+      margin: 1rem;
+    }
+  }
+
+  &__logo {
+    height: 8rem;
+    margin: 3rem;
+    transition: all 0.2s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    &:hover {
+      transform: scale(1.4);
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    @include respond(iphone-plus) {
+      height: 11rem;
+      margin: 1rem;
+    }
+
+    @include respond(iphone-5) {
+      height: 13rem;
+      margin: 1rem;
+    }
+  }
+}

@@ -2,8 +2,25 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Logo from '../../Assets/logo-white_1_25.png';
 import MobileLogo from '../../Assets/mobile-navbar-logo.png';
+import TwitterLogo from '../../Assets/Twitter-icon.png';
+import InstagramLogo from '../../Assets/Instagram-icon.png';
+import LinkedInLogo from '../../Assets/Linkedin-icon.png';
 import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
+
+const ExternalLink = ({ href, text }) => {
+  return (
+    <a
+      as="a"
+      href={`${href}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="navLink"
+    >
+      <p className="navText">{text}</p>
+    </a>
+  );
+};
 
 const Navbar = ({ toggle }) => {
   return (
@@ -30,11 +47,11 @@ const Navbar = ({ toggle }) => {
               <p className="navText">Nebula Launchpad</p>
             </Link>
             {/* </NavLink> */}
-            {/* <NavLink to='/galaxyuniverse' className='navLink'> */}
-            <Link className="navLink">
-              <p className="navText">Galaxy Universe</p>
-            </Link>
-            {/* </NavLink> */}
+            <NavLink to='/galaxyUniversity' className='navLink'>
+            {/* <Link className="navLink"> */}
+              <p className="navText">Galaxy University</p>
+            {/* </Link> */}
+            </NavLink>
             {/* <NavLink to='/safegalaxy' className='navLink'> */}
             <Link className="navLink">
               <p className="navText">SafeGalaxy</p>
@@ -44,38 +61,11 @@ const Navbar = ({ toggle }) => {
         </div>
 
         <div className="dropdown">
-          <p className="dropbtn">Developers</p>
-          <div className="dropdown-content">
-            <NavLink to="/documentation" className="navLink">
-              <p className="navText">Documentation</p>
-            </NavLink>
-            {/* <NavLink to='/whitepaperv1' className='navLink'> */}
-            <Link className="navLink">
-              <p className="navText">Whitepaper V1</p>
-            </Link>
-            {/* </NavLink> */}
-            {/* <NavLink to='/audit' className='navLink'> */}
-            <Link className="navLink">
-              <p className="navText">Audit</p>
-            </Link>
-            {/* </NavLink> */}
-          </div>
-        </div>
-
-        <div className="dropdown">
           <p className="dropbtn">Community</p>
           <div className="dropdown-content">
-            <Link to="/#footerDiscord" className="navLink">
-              <p className="navText">Discord</p>
-            </Link>
-            <Link to="/#footerTelegram" className="navLink">
-              <p className="navText">Telegram</p>
-            </Link>
-            {/* <NavLink to='/twitter' className='navLink'> */}
-            <Link className="navLink">
-              <p className="navText">Twitter</p>
-            </Link>
-            {/* </NavLink> */}
+            <ExternalLink href="https://discord.com/invite/dq7m6R7UAz" target="_blank" rel="noreferrer" className="navLink" text="Discord" />
+            <ExternalLink href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className="navLink" text="Telegram" />
+            <ExternalLink href="https://twitter.com/SafeGalaxyToken" target="_blank" rel="noreferrer" className="navLink" text="Twitter" />
           </div>
         </div>
 
@@ -86,11 +76,15 @@ const Navbar = ({ toggle }) => {
             <Link className="navLink">
               <p className="navText">About Us</p>
             </Link>
+            <NavLink to="/documentation" className="navLink">
+              <p className="navText">Documentation</p>
+            </NavLink>
+            <ExternalLink href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a" target="_blank" rel="noreferrer" className="navLink" text="Whitepaper V1" />
+
             {/* </NavLink> */}
             {/* <NavLink to='/meetourteam' className='navLink'> */}
-            <Link className="navLink">
-              <p className="navText">Meet Our Team</p>
-            </Link>
+            <ExternalLink href="https://safegalaxy.net/team" target="_blank" rel="noreferrer" className="navLink" text="Meet Our Team" />
+
             {/* </NavLink> */}
             {/* <NavLink to="/jobs" className="navLink">
               <p className="navText">Jobs</p>
@@ -99,21 +93,23 @@ const Navbar = ({ toggle }) => {
               <p className="navText">FAQ</p>
             </NavLink>
             {/* <NavLink to='/presskit' className='navLink'> */}
-            <Link className="navLink">
+            {/* <Link className="navLink">
               <p className="navText">Presskit</p>
-            </Link>
+            </Link> */}
             {/* </NavLink> */}
           </div>
         </div>
       </div>
 
-      <div className="navBtn">
-        <NavLink to="/galaxyswap" className="navBtnLink">
-          <span className="navUseGalaxy">Use&nbsp;Galaxy</span>
-          <span className="navSwap">Swap</span>
-        </NavLink>
+      {/* Social icons */}
+      <div className="socialIcons">
+        <a><img src={LinkedInLogo} alt="Linkedin social icon" className="socialIcon"></img></a>
+        <a><img src={TwitterLogo} alt="twitter social icon" className="socialIcon"></img></a>
+        <a><img src={InstagramLogo} alt="Instagram social icon" className="socialIcon"></img></a>
       </div>
-    </div>
+
+
+    </div >
   );
 };
 

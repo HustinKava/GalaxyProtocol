@@ -1,0 +1,9 @@
+.progress-bar {
+  top: 0;
+  height: 0.5rem;
+
+  @include respond(ipad-pro) {
+    padding-top: 6rem;
+    top: 8rem;
+  }
+}

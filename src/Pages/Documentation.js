@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
+import getProgress from '../Components/ProgressBar/getProgress';
 
 const Documentation = () => {
   return (
@@ -163,4 +164,4 @@ const Documentation = () => {
   );
 };
 
-export default Documentation;
+export default getProgress(Documentation);

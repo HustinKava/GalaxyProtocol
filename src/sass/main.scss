@@ -6,7 +6,9 @@
 @import 'base/base';
 @import 'base/typography';
 // @import "base/utilities";
-//
+
+@import 'components/modal';
+
 @import 'components/home/destiny';
 @import 'components/home/generation';
 @import 'components/home/newsletter';
@@ -17,12 +19,14 @@
 @import 'components/home/banner-telegram';
 @import 'components/home/banner-university';
 
+@import 'components/university/partners';
 @import 'components/university/socials';
 
 @import 'layout/footer';
 // @import "layout/header";
 @import 'layout/heading';
 @import 'layout/nav-bar';
+@import 'layout/progress-bar';
 @import 'layout/sidebar';
 
 @import 'pages/documentation';
@@ -33,3 +37,4 @@
 
 //@import GalaxyUniversity
 @import 'pages/galaxyUniversity';
+@import 'components/university/videocarousel';

@@ -14,8 +14,12 @@ function Footer() {
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <div className="footerLogoAndAddress">
               <img src={Logo} alt="Logo" className="footerLogo" />
-              <p className="footerAddress">Country name here </p>
-              <p className="footerAddress">Address line here, ZIP CODE</p>
+              <p className="footerAddress">
+                GalaxyProtocol is a product of Cryptonite Technologies Ltd.
+              </p>
+              <p className="footerAddress">5700 Yonge Street, Suite 200</p>
+              <p className="footerAddress">Toronto, ON</p>
+              <p className="footerAddress">M2M4K2</p>
             </div>
           </Grid>
 
@@ -99,15 +103,15 @@ function Footer() {
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Community</p>
-              <Link to="/#footerDiscord" className="footer-column__link">
+              <a href="https://discord.com/invite/dq7m6R7UAz" target="_blank" rel="noreferrer" className="footer-column__link">
                 <p className="footer-column__text">Discord</p>
-              </Link>
-              <Link to="/#footerTelegram" className="footer-column__link">
+              </a>
+              <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className="footer-column__link">
                 <p className="footer-column__text">Telegram</p>
-              </Link>
-              {/* <Link to='/footerTwitter' className='footLinks'> */}
-              <p className="footer-column__text">Twitter</p>
-              {/* </Link> */}
+              </a>
+              <a href="https://twitter.com/SafeGalaxyToken" target="_blank" rel="noreferrer" className="footer-column__link">
+                <p className="footer-column__text">Twitter</p>
+              </a>
             </div>
           </Grid>
         </Grid>

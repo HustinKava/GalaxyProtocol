@@ -12,9 +12,11 @@ function BannerDiscord() {
           </div>
           <div className="bannerButtonMobileContainer">
             <Container maxWidth="sm">
-              <button className="ban-button ban-button--discord btn-mobile">
-                Join now
-              </button>
+              <a href="https://discord.com/invite/dq7m6R7UAz" target="_blank" rel="noreferrer">
+                <button className="ban-button ban-button--discord btn-mobile">
+                  Join now
+                </button>
+              </a>
             </Container>
           </div>
         </Grid>
@@ -34,7 +36,9 @@ function BannerDiscord() {
               about everything we do and interact with one of our developers.
             </span>
             <div className="bannerButtonContainer">
-              <button className="ban-button ban-button--discord btn-desktop">Join now</button>
+              <a href="https://discord.com/invite/dq7m6R7UAz" target="_blank" rel="noreferrer">
+                <button className="ban-button ban-button--discord btn-desktop">Join now</button>
+              </a>
             </div>
           </Container>
         </Grid>

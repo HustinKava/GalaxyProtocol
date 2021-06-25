@@ -1,0 +1,238 @@
+.carousel-background {
+  background: transparent linear-gradient(270deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+
+  @include respond(ipad-pro) {
+    padding-top: 10rem;
+  }
+}
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Styling for recent and all videos text
+.carousel-recent-videos {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.5rem solid $color-grey-dark-2;
+  width: 25rem;
+
+  @include respond(ipad-pro) {
+    width: 20rem;
+  }
+
+  @include respond(ipad) {
+    width: 15rem;
+  }
+}
+
+.carousel-all-videos-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @include respond(ipad-pro) {
+    margin-left: 5rem;
+  }
+
+  @include respond(ipad) {
+    margin-left: 10rem;
+  }
+}
+
+.carousel-all-videos {
+    padding-top: 5rem;
+    border-bottom: 0.5rem solid $color-grey-dark-2;
+    width: 25rem; 
+}
+
+.carousel-thin {
+  font-family: Mosk-100;
+  font-size: 2.6rem;
+
+  @include respond(ipad) {
+    font-size: 2rem;
+  }
+}
+
+.carousel-bold {
+  font-family: Mosk-700;
+  font-size: 2.6rem;
+
+  @include respond(ipad) {
+    font-size: 2rem;
+  }
+}
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Styling for the carousel buttons
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+}
+
+.slick-next {
+  height: auto;
+  width: 15%;
+  z-index: 1;
+  right: -16rem;
+
+  @include respond(ipad-pro) {
+    width: 10%;
+    right: -6rem;
+  }
+
+  @include respond(ipad) {
+    width: 18%;
+    right: -8rem;
+  }
+
+  @include respond(surface-duo) {
+    width: 40%;
+    right: -9rem;
+  }
+}
+
+.slick-prev {
+  height: auto;
+  width: 15%;
+  z-index: 1;
+  left: -16rem;
+
+  @include respond(ipad-pro) {
+    width: 10%;
+    left: -6rem;
+  }
+
+  @include respond(ipad) {
+    width: 18%;
+    left: -8rem;
+  }
+
+  @include respond(surface-duo) {
+    width: 40%;
+    right: -9rem;
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+content: none;
+}
+
+.arrows {
+  height: auto;
+  width: 100%;
+}
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Styling for the images
+
+.carousel-image-container {
+    position: relative;
+  }
+  
+  .carousel-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+    border-radius: 1rem;
+
+    @include respond(surface-duo) {
+      width: 65%;
+    }
+  }
+
+.carousel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000CC;
+    opacity: 0.9;
+    overflow: hidden;
+    width: 80%;
+    height: 0;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    @include respond(surface-duo) {
+      width: 65%;
+    }
+  }
+  
+  .carousel-image-container:hover .carousel-overlay {
+    height: 35%;
+  }
+  
+  .carousel-text {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Mosk-300;
+    text-align: center;
+
+    @include respond(ipad-pro) {
+      font-size: 1.2rem;
+    }
+  }
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.carousel-line-padding {
+  padding-bottom: 5rem;
+}
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Spinner styling for when there is no data from the youtube api
+
+.spinner {
+  animation: spin infinite 5s linear;
+  color: #fff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Container for the carousel
+
+.carousel-container {
+  margin-left: 15rem;
+  margin-right: 15rem;
+
+  @include respond(ipad-pro) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  @include respond(surface-duo) {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  @include respond(iphone-plus) {
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+}
+
+.slick-dots li button {
+  display: none;
+}

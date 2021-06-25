@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from '../src/Components/Navbar/Sidebar';
 import Navbar from '../src/Components/Navbar/Navbar';
+import { Modal as MainModal } from './Components/Modal/Modal';
+import { modalContent } from './Components/Modal/modalContent';
 import Home from './Pages/Home';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 // import Jobs from './Pages/Jobs.js';
 // import PositionDetails from './Pages/PositionDetails.js';
 import GPEcosystem from './Pages/GPEcosystem.js';
@@ -23,6 +25,7 @@ function App() {
   };
   return (
     <Router>
+      <MainModal modalContent={modalContent.mainModal} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Switch>
@@ -34,7 +37,7 @@ function App() {
         <Route exact path="/Documentation" component={Documentation} />
         <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
