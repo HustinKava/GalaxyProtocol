@@ -35,11 +35,6 @@ html {
 
   @include respond(iphone-x) {
     // width < 380?
-    font-size: 37.5%; //1 rem = 6px, 6/16
-  }
-
-  @include respond(iphone-5) {
-    // width < 320?
     font-size: 31.25%; //1 rem = 5px, 5/16
   }
 
