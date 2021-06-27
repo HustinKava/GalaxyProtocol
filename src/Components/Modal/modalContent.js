@@ -1,9 +1,9 @@
 export const modalContent = {
   mainModal: (
     <>
-      Attention beloved community! <br />
+      <span className='modal-title'>Attention beloved community!</span> <br />
       We are currently undergoing a migration from SafeGalaxy to The Galaxy
-      Protocol this will include an exchange of <b>SAFEGALAXY</b> tokens to the
+      Protocol. This will include an exchange of <b>SAFEGALAXY</b> tokens to the
       new <b>GALAXIA</b> tokens. The exchange of <b>SAFEGALAXY</b> tokens to{' '}
       <b>GALAXIA</b> tokens will take place between July 24th - 27th. You will
       have to <b>MANUALLY</b> take part in the migration. If you do not take

@@ -70,6 +70,7 @@
     color: $color-white;
     border: none;
     font-family: Mosk-700;
+    font-size: 2rem;
     background: transparent
       linear-gradient(
         120deg,
@@ -79,5 +80,13 @@
         $color-black 100%
       )
       0% 0% no-repeat padding-box;
+  }
+}
+
+.modal-title {
+  font-size: 4.4rem;
+  font-family: Mosk-700;
+  @include respond(surface-duo) {
+    font-size: 3.7rem;
   }
 }

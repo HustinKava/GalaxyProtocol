@@ -37,26 +37,44 @@ const Navbar = ({ toggle }) => {
         <div className="dropdown">
           <p className="dropbtn">Products</p>
           <div className="dropdown-content">
+
             {/* <NavLink to='/galaxyswap' className='navLink'> */}
             <Link className="navLink">
               <p className="navText">GalaxySwap</p>
             </Link>
             {/* </NavLink> */}
+
             {/* <NavLink to='/nebulalaunchpad' className='navLink'> */}
             <Link className="navLink">
               <p className="navText">Nebula Launchpad</p>
             </Link>
             {/* </NavLink> */}
+
             <NavLink to='/galaxyUniversity' className='navLink'>
-            {/* <Link className="navLink"> */}
               <p className="navText">Galaxy University</p>
-            {/* </Link> */}
             </NavLink>
+
             {/* <NavLink to='/safegalaxy' className='navLink'> */}
             <Link className="navLink">
               <p className="navText">SafeGalaxy</p>
             </Link>
             {/* </NavLink> */}
+
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <p className="dropbtn">Documentation</p>
+          <div className="dropdown-content">
+
+            <ExternalLink href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a" target="_blank" rel="noreferrer" className="navLink" text="Whitepaper V1" />
+
+            {/* <NavLink to='/safegalaxy' className='navLink'> */}
+            <Link className="navLink">
+              <p className="navText">Migration Docs</p>
+            </Link>
+            {/* </NavLink> */}
+
           </div>
         </div>
 
@@ -72,31 +90,33 @@ const Navbar = ({ toggle }) => {
         <div className="dropdown">
           <p className="dropbtn">About</p>
           <div className="dropdown-content">
+
             {/* <NavLink to='/aboutus' className='navLink'> */}
             <Link className="navLink">
               <p className="navText">About Us</p>
             </Link>
+            {/* </NavLink> */}
+
             <NavLink to="/documentation" className="navLink">
               <p className="navText">Documentation</p>
             </NavLink>
-            <ExternalLink href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a" target="_blank" rel="noreferrer" className="navLink" text="Whitepaper V1" />
 
-            {/* </NavLink> */}
-            {/* <NavLink to='/meetourteam' className='navLink'> */}
             <ExternalLink href="https://safegalaxy.net/team" target="_blank" rel="noreferrer" className="navLink" text="Meet Our Team" />
 
-            {/* </NavLink> */}
             {/* <NavLink to="/jobs" className="navLink">
               <p className="navText">Jobs</p>
             </NavLink> */}
+
             <NavLink to="/faq" className="navLink">
               <p className="navText">FAQ</p>
             </NavLink>
+
             {/* <NavLink to='/presskit' className='navLink'> */}
             {/* <Link className="navLink">
               <p className="navText">Presskit</p>
             </Link> */}
             {/* </NavLink> */}
+
           </div>
         </div>
       </div>
