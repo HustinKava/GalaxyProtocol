@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/GalaxyProtocol/static/css/main.7bd3f793.chunk.css",
-    "main.js": "/GalaxyProtocol/static/js/main.65c41c47.chunk.js",
-    "main.js.map": "/GalaxyProtocol/static/js/main.65c41c47.chunk.js.map",
+    "main.css": "/GalaxyProtocol/static/css/main.75f1122a.chunk.css",
+    "main.js": "/GalaxyProtocol/static/js/main.b56edf91.chunk.js",
+    "main.js.map": "/GalaxyProtocol/static/js/main.b56edf91.chunk.js.map",
     "runtime-main.js": "/GalaxyProtocol/static/js/runtime-main.839b6a47.js",
     "runtime-main.js.map": "/GalaxyProtocol/static/js/runtime-main.839b6a47.js.map",
     "static/css/2.09f195fe.chunk.css": "/GalaxyProtocol/static/css/2.09f195fe.chunk.css",
-    "static/js/2.e04d684b.chunk.js": "/GalaxyProtocol/static/js/2.e04d684b.chunk.js",
-    "static/js/2.e04d684b.chunk.js.map": "/GalaxyProtocol/static/js/2.e04d684b.chunk.js.map",
+    "static/js/2.8fec5ee1.chunk.js": "/GalaxyProtocol/static/js/2.8fec5ee1.chunk.js",
+    "static/js/2.8fec5ee1.chunk.js.map": "/GalaxyProtocol/static/js/2.8fec5ee1.chunk.js.map",
     "index.html": "/GalaxyProtocol/index.html",
     "static/css/2.09f195fe.chunk.css.map": "/GalaxyProtocol/static/css/2.09f195fe.chunk.css.map",
-    "static/css/main.7bd3f793.chunk.css.map": "/GalaxyProtocol/static/css/main.7bd3f793.chunk.css.map",
-    "static/js/2.e04d684b.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.e04d684b.chunk.js.LICENSE.txt",
+    "static/css/main.75f1122a.chunk.css.map": "/GalaxyProtocol/static/css/main.75f1122a.chunk.css.map",
+    "static/js/2.8fec5ee1.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.8fec5ee1.chunk.js.LICENSE.txt",
     "static/media/Discord-art-1.fb5fc70d.png": "/GalaxyProtocol/static/media/Discord-art-1.fb5fc70d.png",
     "static/media/GP-Emblem.dd8d5806.png": "/GalaxyProtocol/static/media/GP-Emblem.dd8d5806.png",
     "static/media/Galaxy-Swap_580x131.1d9843b8.png": "/GalaxyProtocol/static/media/Galaxy-Swap_580x131.1d9843b8.png",
@@ -37,13 +37,14 @@
     "static/media/right-arrow.dd975ea4.png": "/GalaxyProtocol/static/media/right-arrow.dd975ea4.png",
     "static/media/slick-theme.css": "/GalaxyProtocol/static/media/slick.c94f7671.ttf",
     "static/media/swft-partner-logo-08.f9e9fe92.png": "/GalaxyProtocol/static/media/swft-partner-logo-08.f9e9fe92.png",
-    "static/media/trustwallet-partner-logo-09.db4b1f24.png": "/GalaxyProtocol/static/media/trustwallet-partner-logo-09.db4b1f24.png"
+    "static/media/trustwallet-partner-logo-09.db4b1f24.png": "/GalaxyProtocol/static/media/trustwallet-partner-logo-09.db4b1f24.png",
+    "static/media/university-img.2e055d05.png": "/GalaxyProtocol/static/media/university-img.2e055d05.png"
   },
   "entrypoints": [
     "static/js/runtime-main.839b6a47.js",
     "static/css/2.09f195fe.chunk.css",
-    "static/js/2.e04d684b.chunk.js",
-    "static/css/main.7bd3f793.chunk.css",
-    "static/js/main.65c41c47.chunk.js"
+    "static/js/2.8fec5ee1.chunk.js",
+    "static/css/main.75f1122a.chunk.css",
+    "static/js/main.b56edf91.chunk.js"
   ]
 }
