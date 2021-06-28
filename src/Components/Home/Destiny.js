@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
-import Trade from '../../Assets/Trade-icon.png';
+import Trade from '../../Assets/SafeGalaxy-icon.png';
 import Learn from '../../Assets/Learn-icon.png';
 // import Rocket from '../../Assets/Rocket-icon.png';
 // import Wallet from '../../Assets/Wallet-icon.png';
@@ -23,10 +23,10 @@ function Destiny() {
         <div className="boxGrouping">
           <div className="destBox-container">
             <div className="destBox destBox--1">
-              <img src={Trade} alt="Trade" className="destBox__image" />
+              <img src={Trade} alt="Trade" className="destBox__image destBox__safeGalaxyImg" />
               <span className="destBox__header">Buy SafeGalaxy</span>
               <span className="destBox__text">
-                Swap, stake, yield your favourite tokens on our exchange
+              Get in on the on the Galaxia Presale: Buy SafeGalaxy
               </span>
             </div>
           </div>

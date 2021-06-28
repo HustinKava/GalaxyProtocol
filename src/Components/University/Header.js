@@ -18,7 +18,7 @@ const UniversityHeader = () => {
               Learn all about blockchain &#38; crypto. It doesn’t matter if you
               are a Galaxy Rookie who just started their space journey or if
               you’re a Master Chief looking to test your knowledge, we have it
-              all.
+              all. 
             </p>
           </div>
 

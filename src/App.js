@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from '../src/Components/Navbar/Sidebar';
 import Navbar from '../src/Components/Navbar/Navbar';
+import MobileNav from '../src/Components/Navbar/MobileNav';
 import { Modal as MainModal } from './Components/Modal/Modal';
 import { modalContent } from './Components/Modal/modalContent';
 import Home from './Pages/Home';
@@ -27,7 +28,8 @@ function App() {
     <Router>
       <MainModal modalContent={modalContent.mainModal} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar />
+      <MobileNav toggle={toggle} />
       <Switch>
         <Route exact path="/" component={Home} />
         {/* <Route exact path="/Jobs" component={Jobs} /> */}

@@ -111,7 +111,6 @@
     flex: 0 48%;
     height: auto;
     padding: 6%;
-    // margin-bottom: 2%;
   }
 
 
@@ -123,10 +122,14 @@
 }
 
 .video-card-image{
-    height: 365px;
+    height: 450px;
     padding: 1.2rem;
     border-radius: 3rem;
-    background: rgb(104, 211, 214)
+    background: rgb(104, 211, 214);
+    
+    @include respond(surface-duo) {
+        height: 375px;
+    }
 }
 
 .video-card-details-container{

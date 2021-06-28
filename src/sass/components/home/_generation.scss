@@ -1,22 +1,21 @@
 .gen {
   position: relative;
-  margin-top: 11rem;
+  margin-top: 16rem;
   margin-bottom: 0rem;
 
   &__background {
     height: auto;
-    width: 70%;
+    width: 67%;
     display: block;
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 30%;
     transform: translate(-50%, -50%);
-    opacity: 0.11;
     z-index: -1;
 
     @include respond(ipad-pro) {
-      width: 95%;
-      top: 55%;
+      width: 85%;
+      top: 40%;
     }
 
     @include respond(ipad) {
@@ -33,12 +32,9 @@
     padding-top: 5rem;
     padding-bottom: 4rem;
 
-    // @include respond(big-desktop) {
-    //   font-size: $font-size-90;
-    // }
-
     @include respond(ipad-pro) {
       margin-top: 15rem;
+      font-size: 7rem;
     }
 
     @include respond(ipad) {

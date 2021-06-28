@@ -97,7 +97,7 @@ function VideoCarousel() {
                 </div>
                 <div className='carousel-all-videos-container'>
                     <div className='carousel-all-videos'>
-                        <span className='carousel-thin'>All&nbsp;</span>
+                        <span className='carousel-thin'>More&nbsp;</span>
                         <span className='carousel-bold'>Videos</span>
                     </div>
                 </div>
