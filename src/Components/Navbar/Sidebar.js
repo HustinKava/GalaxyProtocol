@@ -3,6 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { SidebarContainer } from './SidebarElements';
 import { FaTimes } from 'react-icons/fa';
 import Logo from '../../Assets/logo-white_1_25.png';
+import ComingSoon from '../../Assets/coming-soon-badge.png';
 import { NavLink } from 'react-router-dom';
 
 const ExternalLink = ({ href, text }) => {
@@ -39,11 +40,13 @@ function Sidebar({ isOpen, toggle }) {
         {/* <NavLink to='/galaxyswap' className='sidebar-links'> */}
         <Link className="sidebar-links">
           <p className="sidebar-text">GalaxySwap</p>
+          <img src={ComingSoon} alt='' className="comingSoon"></img>
         </Link>
         {/* </NavLink> */}
         {/* <NavLink to='/nebulalaunchpad' className='sidebar-links'> */}
         <Link className="sidebar-links">
           <p className="sidebar-text">Nebula Launchpad</p>
+          <img src={ComingSoon} alt='' className="comingSoon"></img>
         </Link>
         {/* </NavLink> */}
         <NavLink to='/galaxyUniversity' className='sidebar-links'>
@@ -84,10 +87,6 @@ function Sidebar({ isOpen, toggle }) {
               <p className="sidebar-text">About Us</p>
             </Link>
             {/* </NavLink> */}
-
-            <NavLink to="/documentation" className="sidebar-links">
-              <p className="sidebar-text">Documentation</p>
-            </NavLink>
 
             <ExternalLink href="https://safegalaxy.net/team" target="_blank" rel="noreferrer" text="Meet Our Team" />
 

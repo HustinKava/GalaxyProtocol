@@ -2,6 +2,7 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../Assets/logo-white_1_25.png';
+import ComingSoon from '../../Assets/coming-soon-badge.png';
 import NavSocial from './NavSocial';
 
 const ExternalLink = ({ href, text }) => {
@@ -33,12 +34,18 @@ const Navbar = () => {
             <div className="dropdown-content">
               {/* <NavLink to='/galaxyswap' className='navLink'> */}
               <Link className="navLink">
-                <p className="navText">GalaxySwap</p>
+                <div className="comingSoonNav">
+                  <p className="navText coming">GalaxySwap</p>
+                  <img src={ComingSoon} alt='' className="comingSoon"></img>
+                </div>
               </Link>
               {/* </NavLink> */}
               {/* <NavLink to='/nebulalaunchpad' className='navLink'> */}
               <Link className="navLink">
-                <p className="navText">Nebula Launchpad</p>
+                <div className="comingSoonNav--2">
+                  <p className="navText coming">Nebula Launchpad</p>
+                  <img src={ComingSoon} alt='' className="comingSoon"></img>
+                </div>
               </Link>
               {/* </NavLink> */}
               <NavLink to="/galaxyUniversity" className="navLink">
@@ -79,9 +86,6 @@ const Navbar = () => {
               <Link className="navLink">
                 <p className="navText">About Us</p>
               </Link>
-              <NavLink to="/documentation" className="navLink">
-                <p className="navText">Documentation</p>
-              </NavLink>
               <ExternalLink
                 href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
                 text="Whitepaper V1"

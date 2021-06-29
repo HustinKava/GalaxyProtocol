@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import Telegram from '../../Assets/Telegram-banner.png';
-import { Link } from 'react-router-dom';
 
 function BannerTelegram() {
   return (

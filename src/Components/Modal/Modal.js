@@ -7,7 +7,11 @@ export const Modal = ({ modalContent }) => {
     <>
       {showModal ? (
         <div className="modal">
-          <div className="modal__content-container">
+          <div
+            className="modal__content-container"
+            tabIndex={0}
+            onBlur={() => setShowModal(false)}
+          >
             <div className="modal__text">{modalContent}</div>
             <button
               onClick={() => setShowModal(false)}

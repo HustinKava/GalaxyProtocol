@@ -1,7 +1,7 @@
 import React from 'react';
 import TwitterLogo from '../../Assets/Twitter-icon.png';
-import InstagramLogo from '../../Assets/Instagram-icon.png';
-import LinkedInLogo from '../../Assets/Linkedin-icon.png';
+import TelegramLogo from '../../Assets/Telegram-icon-nocircle.png';
+import DiscordLogo from '../../Assets/Discord-icon-nocircle.png';
 
 const SocialIconLink = ({ href, logo, alt }) => {
   return (
@@ -14,16 +14,20 @@ const SocialIconLink = ({ href, logo, alt }) => {
 const Navbar = ({ toggle }) => {
   return (
     <div>
-      <SocialIconLink href="" logo={LinkedInLogo} alt="Linkedin social icon" />
       <SocialIconLink
         href="https://twitter.com/SafeGalaxyToken"
         logo={TwitterLogo}
         alt="twitter social icon"
       />
+      <SocialIconLink 
+      href="https://t.me/safegalaxychat" 
+      logo={TelegramLogo} 
+      alt="telegram social icon" 
+      />
       <SocialIconLink
-        href="https://www.instagram.com/safegalaxytoken"
-        logo={InstagramLogo}
-        alt="Instagram social icon"
+        href="https://discord.com/invite/dq7m6R7UAz"
+        logo={DiscordLogo}
+        alt="discord social icon"
       />
     </div>
   );

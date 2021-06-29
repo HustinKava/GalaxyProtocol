@@ -11,7 +11,6 @@
 }
 
 .footerLogoAndAddress {
-
   @include respond(ipad-pro) {
     padding-left: 6rem;
     padding-bottom: 2rem;
@@ -19,12 +18,10 @@
 
   @include respond(ipad) {
     padding-left: 3rem;
-    padding-bottom: 2rem;
   }
 
   @include respond(galaxy-fold) {
     padding-left: 4.6rem;
-    padding-bottom: 2rem;
   }
 }
 
@@ -33,7 +30,6 @@
   width: auto;
   padding-top: 3rem;
   padding-bottom: 1rem;
-
 
   @include respond(ipad-pro) {
     height: auto;
@@ -47,7 +43,7 @@
 
   @include respond(surface-duo) {
     height: auto;
-    width: 50%;  
+    width: 50%;
   }
 
   @include respond(iphone-plus) {
@@ -69,7 +65,6 @@
     height: auto;
     width: 70%;
   }
-  
 }
 
 .footerAddress {
@@ -99,18 +94,17 @@
 }
 
 .footer-column {
-
   @include respond(ipad-pro) {
     padding-left: 6rem;
-  }  
-  
+  }
+
   @include respond(ipad) {
     padding-left: 3rem;
-  }   
+  }
 
   @include respond(galaxy-fold) {
     padding-left: 4.6rem;
-  }   
+  }
 
   &__divider {
     width: 70%;
@@ -169,8 +163,6 @@
     }
 
     @include respond(surface-duo) {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
       font-size: 2.2rem;
     }
 
@@ -179,13 +171,7 @@
       font-size: 3.6rem;
     }
 
-    @include respond(iphone-x) {
-      padding-bottom: 2rem;
-      font-size: 3.6rem;
-    }
-
     @include respond(iphone-5) {
-      padding-bottom: 2rem;
       font-size: 4.2rem;
     }
   }
@@ -193,19 +179,50 @@
   &__text {
     color: $color-white;
     font-family: Mosk-200;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     padding-bottom: 2rem;
+
+    @include respond(big-desktop) {
+      font-size: 2.2rem;
+    }
 
     @include respond(iphone-plus) {
       font-size: 3.2rem;
     }
 
-    @include respond(iphone-x) {
-      font-size: 3.2rem;
+    @include respond(iphone-5) {
+      font-size: 3.8rem;
+    }
+  }
+
+  &__coming-soon-container {
+    display: flex;
+
+    @include respond(ipad-pro) {
+      justify-content: space-between;
+    }
+
+    @include respond(surface-duo) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__coming-soon {
+    height: 1.8rem;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+
+    @include respond(big-desktop) {
+      height: 2.4rem;
+    }
+
+    @include respond(iphone-plus) {
+      height: 3rem;
+      margin-top: 1rem;
     }
 
     @include respond(iphone-5) {
-      font-size: 3.8rem;
+      margin-top: 1.6rem;
     }
   }
 

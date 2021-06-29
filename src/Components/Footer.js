@@ -1,10 +1,44 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { NavLink } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
 import Logo from '../Assets/logo-white_1_25.png';
-
+import ComingSoonBadge from '../Assets/coming-soon-badge.png';
 import ScrollIntoView from './ScrollIntoView';
+
+const ExternalLink = ({ href, text }) => {
+  return (
+    <a
+      href={`${href}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="footer-column__link"
+    >
+      <p className="footer-column__text">{text}</p>
+    </a>
+  );
+};
+
+const InternalLink = ({ link, text }) => {
+  return (
+    <NavLink to={`/${link}`} className="footer-column__link">
+      <p className="footer-column__text">{text}</p>
+    </NavLink>
+  );
+};
+
+const ComingSoon = ({ text }) => {
+  return (
+    <div className="footer-column__coming-soon-container">
+      <p className="footer-column__text">{text}</p>
+      <img
+        src={ComingSoonBadge}
+        alt={`${text} coming soon`}
+        className="footer-column__coming-soon"
+      />
+    </div>
+  );
+};
+
 function Footer() {
   return (
     <div>
@@ -14,12 +48,8 @@ function Footer() {
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <div className="footerLogoAndAddress">
               <img src={Logo} alt="Logo" className="footerLogo" />
-              <p className="footerAddress">
-                GalaxyProtocol is a product of Cryptonite Technologies Ltd.
-              </p>
-              <p className="footerAddress">5700 Yonge Street, Suite 200</p>
-              <p className="footerAddress">Toronto, ON</p>
-              <p className="footerAddress">M2M4K2</p>
+              <p className="footerAddress">Country name here </p>
+              <p className="footerAddress">Address line here, ZIP CODE</p>
             </div>
           </Grid>
 
@@ -28,24 +58,13 @@ function Footer() {
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Products</p>
-              {/* <NavLink to='/safegalaxy' className='footLinks'>     */}
-              <p className="footer-column__text">SafeGalaxy</p>
-              {/* </NavLink> */}
-              {/* <NavLink to='/galaxyswap' className='footLinks'> */}
-              <p className="footer-column__text">GalaxySwap</p>
-              {/* </NavLink> */}
-              {/* <NavLink to='/galaxystation' className='footLinks'> */}
-              <p className="footer-column__text">GalaxyStation</p>
-              {/* </NavLink> */}
-              {/* <NavLink to='/nebulalaunchpad' className='footLinks'> */}
-              <p className="footer-column__text">Nebula Launchpad</p>
-              {/* </NavLink> */}
-              <Link to="/#footerUniversity" className="footer-column__link">
-                <p className="footer-column__text">Galaxy University</p>
-              </Link>
-              <Link to="/#footerMerchandise" className="footer-column__link">
-                <p className="footer-column__text">Galaxy Merchandise</p>
-              </Link>
+              <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
+              {/* <ExternalLink href="#" text="GalaxySwap" /> */}
+              <ComingSoon text="GalaxySwap" />
+              <InternalLink link="galaxyuniversity" text="Galaxy University" />
+              {/* <ExternalLink href="#" text="Nebula Launchpad" /> */}
+              <ComingSoon text="Nebula Launchpad" />
+              <ExternalLink href="#" text="Galaxy Merchandise" />
             </div>
           </Grid>
 
@@ -53,9 +72,6 @@ function Footer() {
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Developers</p>
-              <NavLink to="/documentation" className="footer-column__link">
-                <p className="footer-column__text">Documentation</p>
-              </NavLink>
               {/* <NavLink to='/whitepaperv1' className='footLinks'> */}
               <p className="footer-column__text">Whitepaper V1</p>
               {/* </NavLink> */}
@@ -81,21 +97,11 @@ function Footer() {
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">About</p>
-              {/* <NavLink to='/aboutus' className='footLinks'> */}
-              <p className="footer-column__text">About Us</p>
-              {/* </NavLink> */}
-              {/* <NavLink to='/meetourteam' className='footLinks'> */}
-              <p className="footer-column__text">Meet Our Team</p>
-              {/* </NavLink> */}
-              {/* <NavLink to="/jobs" className="footer-column__link">
-                <p className="footer-column__text">Jobs</p>
-              </NavLink> */}
-              <NavLink to="/faq" className="footer-column__link">
-                <p className="footer-column__text">FAQ</p>
-              </NavLink>
-              {/* <NavLink to='/presskit' className='footLinks'> */}
-              <p className="footer-column__text">Presskit</p>
-              {/* </NavLink> */}
+              <InternalLink link="aboutus" text="About Us" />
+              <InternalLink link="meetourteam" text="Meet Our Team" />
+              {/* <InternalLink link="jobs" text="Jobs" /> */}
+              <InternalLink link="faq" text="FAQ" />
+              {/* <InternalLink link="presskit" text="Presskit" /> */}
             </div>
           </Grid>
 
@@ -103,15 +109,18 @@ function Footer() {
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Community</p>
-              <a href="https://discord.com/invite/dq7m6R7UAz" target="_blank" rel="noreferrer" className="footer-column__link">
-                <p className="footer-column__text">Discord</p>
-              </a>
-              <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className="footer-column__link">
-                <p className="footer-column__text">Telegram</p>
-              </a>
-              <a href="https://twitter.com/SafeGalaxyToken" target="_blank" rel="noreferrer" className="footer-column__link">
-                <p className="footer-column__text">Twitter</p>
-              </a>
+              <ExternalLink
+                href="https://discord.com/invite/dq7m6R7UAz"
+                text="Discord"
+              />
+              <ExternalLink
+                href="https://t.me/safegalaxychat"
+                text="Telegram"
+              />
+              <ExternalLink
+                href="https://twitter.com/SafeGalaxyToken"
+                text="Twitter"
+              />
             </div>
           </Grid>
         </Grid>

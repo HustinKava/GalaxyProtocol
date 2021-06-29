@@ -1,0 +1,144 @@
+.meet-our-team {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 11rem;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem;
+
+  @include respond(big-desktop) {
+    padding: 0 10rem;
+  }
+}
+
+.team-header {
+  font-family: Mosk-800;
+  font-size: 7rem;
+  margin-left: 23rem;
+  margin-top: 3rem;
+  line-height: normal;
+
+  @include respond(big-desktop) {
+    margin-left: 38rem;
+  }
+
+  @include respond(ipad-pro) {
+    margin-left: 14rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 5rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 4rem;
+    margin-left: 13rem;
+  }
+}
+
+.profile-card {
+  color: $color-white;
+  margin: 4rem;
+
+  @include respond(big-desktop) {
+    margin: 6rem;
+  }
+
+  @include respond(iphone-plus) {
+    margin: 2rem;
+  }
+
+  &__pic-container {
+    display: flex;
+    flex-direction: column;
+    background: transparent
+      linear-gradient(329deg, $color-black 0%, $color-gradient-black 100%) 0% 0%
+      no-repeat padding-box;
+  }
+
+  &__text {
+    padding: 0.5rem 2rem;
+  }
+
+  &__name {
+    font-family: Mosk-600;
+    font-size: 2rem;
+
+    @include respond(surface-duo) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__job-title {
+    font-family: Mosk-200;
+    font-size: 1.2rem;
+
+    @include respond(surface-duo) {
+      font-size: 1rem;
+    }
+  }
+
+  &__image {
+    height: 35rem;
+
+    @include respond(ipad-pro) {
+      height: 30rem;
+    }
+
+    @include respond(surface-duo) {
+      height: 27rem;
+    }
+
+    @include respond(iphone-x) {
+      height: 28rem;
+    }
+  }
+
+  &__logo-3d-container {
+    height: 35rem;
+    width: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(ipad-pro) {
+      height: 30rem;
+      width: 24rem;
+    }
+
+    @include respond(surface-duo) {
+      height: 25rem;
+      width: 19rem;
+    }
+
+    @include respond(iphone-x) {
+      height: 28rem;
+      width: 22.5rem;
+    }
+  }
+
+  &__logo-3d {
+    height: 14rem;
+
+    @include respond(ipad-pro) {
+      height: 11rem;
+    }
+
+    @include respond(surface-duo) {
+      height: 9rem;
+    }
+
+    @include respond(iphone-x) {
+      height: 10rem;
+    }
+  }
+
+  &__linkedIn {
+    height: 2rem;
+    margin-top: 0.75rem;
+  }
+}

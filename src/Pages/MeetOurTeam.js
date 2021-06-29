@@ -1,9 +1,12 @@
 import React from 'react';
+import TeamHeader from '../Components/MeetOurTeam/TeamHeader';
+import OurTeam from '../Components/MeetOurTeam/OurTeam';
 
 const MeetOurTeam = () => {
   return (
-    <div>
-      <div className="mainContainer" />
+    <div className="meet-our-team">
+      <TeamHeader />
+      <OurTeam />
     </div>
   );
 };

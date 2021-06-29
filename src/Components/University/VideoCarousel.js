@@ -11,7 +11,7 @@ require('dotenv').config()
 function VideoCarousel() {
     const [data, setData] = useState([]);
 
-    const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE;
+    // const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE;
 
     const SlickButtonFix = ({currentSlide, slideCount, children, ...props}) => (
         <div {...props}>{children}</div>
@@ -63,6 +63,7 @@ function VideoCarousel() {
     };
 
     useEffect(() => {
+        const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE;
         axios.get(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=UC4VeQJeQNWt_F7DuXRq6hLQ&part=snippet,id&order=date&maxResults=20`)
             .then(res => {
                 setData([res.data])

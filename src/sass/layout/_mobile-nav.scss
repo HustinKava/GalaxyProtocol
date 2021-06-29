@@ -5,6 +5,7 @@
   // This styling will carry down to small devices
   @include respond(ipad-pro) {
     display: unset;
+    z-index: 10;
     position: fixed;
     top: 0;
     width: 100%;
