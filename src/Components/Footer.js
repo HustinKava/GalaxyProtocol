@@ -48,8 +48,12 @@ function Footer() {
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <div className="footerLogoAndAddress">
               <img src={Logo} alt="Logo" className="footerLogo" />
-              <p className="footerAddress">Country name here </p>
-              <p className="footerAddress">Address line here, ZIP CODE</p>
+              <p className="footerAddress">
+                GalaxyProtocol is a product of Cryptonite Technologies Ltd.
+              </p>
+              <p className="footerAddress">5700 Yonge Street, Suite 200</p>
+              <p className="footerAddress">Toronto, ON</p>
+              <p className="footerAddress">M2M4K2</p>
             </div>
           </Grid>
 
@@ -59,12 +63,10 @@ function Footer() {
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Products</p>
               <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
-              {/* <ExternalLink href="#" text="GalaxySwap" /> */}
               <ComingSoon text="GalaxySwap" />
               <InternalLink link="galaxyuniversity" text="Galaxy University" />
-              {/* <ExternalLink href="#" text="Nebula Launchpad" /> */}
               <ComingSoon text="Nebula Launchpad" />
-              <ExternalLink href="#" text="Galaxy Merchandise" />
+              <ExternalLink href="https://intergalacticmerch.myshopify.com/" text="Galaxy Merchandise" />
             </div>
           </Grid>
 
@@ -72,24 +74,14 @@ function Footer() {
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Developers</p>
-              {/* <NavLink to='/whitepaperv1' className='footLinks'> */}
-              <p className="footer-column__text">Whitepaper V1</p>
-              {/* </NavLink> */}
-              {/* <NavLink to='/audit' className='footLinks'> */}
-              <p className="footer-column__text">Audit</p>
-              {/* </NavLink> */}
-              <NavLink
-                to="/partnershipoverview"
-                className="footer-column__link"
-              >
-                <p className="footer-column__text">Partnership Overview</p>
-              </NavLink>
-              {/* <NavLink to='/terms&conditions' className='footLinks'> */}
+              <ExternalLink
+                href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+                text="Whitepaper V1"
+              />
+              {/* <InternalLink link="audit" text="Audit" /> */}
+              {/* <InternalLink link="partnershipoverview" text="Partnership Overview" /> */}
               <p className="footer-column__text">Terms & Conditions</p>
-              {/* </NavLink> */}
-              {/* <NavLink to='/privacy&policy' className='footLinks'> */}
               <p className="footer-column__text">Privacy & Policy</p>
-              {/* </NavLink> */}
             </div>
           </Grid>
 

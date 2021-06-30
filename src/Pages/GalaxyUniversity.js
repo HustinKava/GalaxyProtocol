@@ -9,7 +9,7 @@ import getProgress from '../Components/ProgressBar/getProgress';
 const GalaxyUniversity = () => {
   return (
     <div>
-    
+
       <Header />
       <GradientBar />
       <VideosCarousel/>

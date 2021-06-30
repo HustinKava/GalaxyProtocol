@@ -33,7 +33,16 @@ function BannerMerch() {
               Galaxy pieces.
             </span>
             <div className="bannerMerchButtonContainer">
-              <button className="ban-button ban-button--merch btn-desktop">Shop now</button>
+              <button className="ban-button ban-button--merch btn-desktop">
+                <a 
+                  href='https://intergalacticmerch.myshopify.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='merch-button-link'
+                  >
+                  Shop now
+                </a>
+              </button>
             </div>
             <div className="merchSpace" />
           </Container>

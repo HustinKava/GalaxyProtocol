@@ -1,0 +1,139 @@
+.about-us-header {
+  color: $color-white;
+
+  &__subtitle {
+    font-family: Mosk-200;
+    font-size: 6rem;
+    font-weight: lighter;
+
+    @include respond(surface-duo) {
+      font-size: 5rem;
+    }
+  }
+
+  &__title {
+    font-family: Mosk-600;
+    font-size: $font-size-90;
+
+    @include respond(surface-duo) {
+      font-size: 7rem;
+    }
+
+    @include respond(iphone-plus) {
+      font-size: 6rem;
+    }
+
+    @include respond(iphone-x) {
+      font-size: 8rem;
+    }
+
+    @include respond(galaxy-s5) {
+      font-size: 6rem;
+    }
+  }
+
+  &__desc {
+    font-family: Mosk-300;
+    font-size: $font-size-25;
+    max-width: 70rem;
+  }
+}
+
+.about-us-info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+
+  &__image-Mission {
+    height: 11rem;
+  }
+
+  &__image-Vision {
+    height: 14rem;
+  }
+
+  &__image-Transparency {
+    height: 14rem;
+  }
+
+  &__image-Community {
+    height: 11rem;
+  }
+
+  &__image-Growth {
+    height: 13rem;
+  }
+
+  &__image-Abundance {
+    height: 9rem;
+  }
+
+  &__image-Fun {
+    height: 12rem;
+  }
+
+  &__text-container {
+    width: 90rem;
+
+    @include respond(big-desktop) {
+      margin-right: 30rem;
+    }
+
+    @include respond(ipad-pro) {
+      width: 80rem;
+    }
+
+    @include respond(ipad) {
+      width: 55rem;
+    }
+
+    @include respond(surface-duo) {
+      width: 38rem;
+    }
+
+    @include respond(iphone-plus) {
+      width: 29rem;
+    }
+
+    @include respond(iphone-x) {
+      width: 45rem;
+    }
+
+    @include respond(galaxy-s5) {
+      width: 42rem;
+    }
+
+    @include respond(iphone-5) {
+      width: 33rem;
+    }
+
+    @include respond(galaxy-fold) {
+      width: 38rem;
+    }
+  }
+
+  &__info-text {
+    font-family: Mosk-200;
+    font-size: 2.4rem;
+  }
+}
+
+.about-us-h3 {
+  font-family: Mosk-600;
+  font-size: 8rem;
+  line-height: normal;
+
+  @include respond(ipad) {
+    font-size: 6rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 5rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 4rem;
+  }
+}

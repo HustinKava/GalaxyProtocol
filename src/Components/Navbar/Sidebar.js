@@ -1,15 +1,13 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 import { SidebarContainer } from './SidebarElements';
 import { FaTimes } from 'react-icons/fa';
 import Logo from '../../Assets/logo-white_1_25.png';
-import ComingSoon from '../../Assets/coming-soon-badge.png';
+import ComingSoonBadge from '../../Assets/coming-soon-badge.png';
 import { NavLink } from 'react-router-dom';
 
 const ExternalLink = ({ href, text }) => {
   return (
     <a
-      as="a"
       href={`${href}`}
       target="_blank"
       rel="noopener noreferrer"
@@ -17,6 +15,27 @@ const ExternalLink = ({ href, text }) => {
     >
       <p className="sidebar-text">{text}</p>
     </a>
+  );
+};
+
+const InternalLink = ({ link, text }) => {
+  return (
+    <NavLink to={`/${link}`} className="sidebar-links">
+      <p className="sidebar-text">{text}</p>
+    </NavLink>
+  );
+};
+
+const ComingSoon = ({ text }) => {
+  return (
+    <div className="sidebar-links">
+      <p className="sidebar-text">{text}</p>
+      <img
+        src={ComingSoonBadge}
+        alt={`${text} coming soon`}
+        className="comingSoon"
+      />
+    </div>
   );
 };
 
@@ -37,62 +56,41 @@ function Sidebar({ isOpen, toggle }) {
       <p className="sidebar-header">Products</p>
 
       <div>
-        {/* <NavLink to='/galaxyswap' className='sidebar-links'> */}
-        <Link className="sidebar-links">
-          <p className="sidebar-text">GalaxySwap</p>
-          <img src={ComingSoon} alt='' className="comingSoon"></img>
-        </Link>
-        {/* </NavLink> */}
-        {/* <NavLink to='/nebulalaunchpad' className='sidebar-links'> */}
-        <Link className="sidebar-links">
-          <p className="sidebar-text">Nebula Launchpad</p>
-          <img src={ComingSoon} alt='' className="comingSoon"></img>
-        </Link>
-        {/* </NavLink> */}
-        <NavLink to='/galaxyUniversity' className='sidebar-links'>
-          <p className="sidebar-text">Galaxy University</p>
-        </NavLink>
-        {/* <NavLink to='/safegalaxy' className='navLink'> */}
-        <Link className="sidebar-links">
-          <p className="sidebar-text">SafeGalaxy</p>
-        </Link>
-        {/* </NavLink> */}
+        <ComingSoon text="GalaxySwap" />
+        <ComingSoon text="Nebula Launchpad" />
+        <InternalLink link="galaxyUniversity" text="Galaxy University" />
+        <ExternalLink href="https://safegalaxy.net/" text="SafeGalaxy" />
       </div>
 
       {/* Documentation */}
       <p className="sidebar-header">Documentation</p>
-        <ExternalLink href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a" target="_blank" rel="noreferrer" text="Whitepaper V1" />
-        {/* <NavLink to='/safegalaxy' className='navLink'> */}
-        <Link className="sidebar-links">
-          <p className="sidebar-text">Migration Docs</p>
-        </Link>
-        {/* </NavLink> */}
+      <ExternalLink
+        href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+        text="Whitepaper V1"
+      />
+      <InternalLink link="migrationdocs" text="Migration Docs" />
 
       {/* Community */}
       <p className="sidebar-header">Community</p>
-        <div>
-          <ExternalLink href="https://discord.com/invite/dq7m6R7UAz" target="_blank" rel="noreferrer" text="Discord" />
-          <ExternalLink href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" text="Telegram" />
-          <ExternalLink href="https://twitter.com/SafeGalaxyToken" target="_blank" rel="noreferrer" text="Twitter" />
-        </div>
-
-
+      <div>
+        <ExternalLink
+          href="https://discord.com/invite/dq7m6R7UAz"
+          text="Discord"
+        />
+        <ExternalLink href="https://t.me/safegalaxychat" text="Telegram" />
+        <ExternalLink
+          href="https://twitter.com/SafeGalaxyToken"
+          text="Twitter"
+        />
+      </div>
 
       {/* About */}
       <p className="sidebar-header">About</p>
 
       <div>
-            {/* <NavLink to='/aboutus' className='navLink'> */}
-            <Link className="sidebar-links">
-              <p className="sidebar-text">About Us</p>
-            </Link>
-            {/* </NavLink> */}
-
-            <ExternalLink href="https://safegalaxy.net/team" target="_blank" rel="noreferrer" text="Meet Our Team" />
-
-            <NavLink to="/faq" className="sidebar-links">
-              <p className="sidebar-text">FAQ</p>
-            </NavLink>
+        <InternalLink link="aboutus" text="About Us" />
+        <InternalLink link="meetourteam" text="Meet Our Team" />
+        <InternalLink link="faq" text="FAQ" />
       </div>
     </SidebarContainer>
   );
