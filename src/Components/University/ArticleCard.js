@@ -6,10 +6,10 @@ function ArticleCard() {
         <div className="article-card">
             <div className="article-card-content">
                 {/* Main image in Article card */}
-                <div className="Article-card-image">
+                <div className="article-card-image">
                 </div>
 
-                <div className="aticle-card-details-container">
+                <div className="article-card-details-container">
                     <p className="article-card-title">What is Galaxia?</p>
                     <ArticleLevel />
                 </div>

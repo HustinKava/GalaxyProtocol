@@ -75,6 +75,7 @@
   }
 
   &__text-container {
+    margin-left: 5rem;
     width: 90rem;
 
     @include respond(big-desktop) {
@@ -86,11 +87,12 @@
     }
 
     @include respond(ipad) {
-      width: 55rem;
+      width: 52rem;
     }
 
     @include respond(surface-duo) {
-      width: 38rem;
+      margin-left: 3rem;
+      width: 34rem;
     }
 
     @include respond(iphone-plus) {

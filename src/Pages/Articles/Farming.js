@@ -1,12 +1,13 @@
 import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
+import FarmingHeroImg from '../../Assets/GP-Farming.png'
 
 
 const Farming = () => {
 
     let content = {
-        heroImage: '',
+        heroImage: FarmingHeroImg,
         title: 'Farming',
         body: [
             {

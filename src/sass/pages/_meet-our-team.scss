@@ -2,54 +2,66 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 11rem;
+  padding-left: 9rem;
+
+  @include respond(ipad) {
+    padding-left: 6rem;
+  }
+
+  @include respond(surface-duo) {
+    padding-left: 0;
+  }
+
+  @include respond(iphone-x) {
+    padding-left: 4rem;
+  }
+
+  @include respond(galaxy-s5) {
+    padding-left: 3rem;
+  }
+
+  @include respond(iphone-5) {
+    padding-left: 0;
+  }
+
+  @include respond(galaxy-fold) {
+    padding-left: 4rem;
+  }
 }
 
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 3rem;
-
-  @include respond(big-desktop) {
-    padding: 0 10rem;
-  }
 }
 
 .team-header {
   font-family: Mosk-800;
   font-size: 7rem;
-  margin-left: 23rem;
-  margin-top: 3rem;
   line-height: normal;
-
-  @include respond(big-desktop) {
-    margin-left: 38rem;
-  }
-
-  @include respond(ipad-pro) {
-    margin-left: 14rem;
-  }
-
-  @include respond(surface-duo) {
-    font-size: 5rem;
-  }
-
-  @include respond(iphone-plus) {
-    font-size: 4rem;
-    margin-left: 13rem;
-  }
 }
 
 .profile-card {
   color: $color-white;
-  margin: 4rem;
+  margin: 6rem 5rem 4rem 0;
 
   @include respond(big-desktop) {
-    margin: 6rem;
+    margin: 6rem 7rem 4rem 0;
+  }
+
+  @include respond(surface-duo) {
+    margin: 4rem 4rem 2rem 0;
   }
 
   @include respond(iphone-plus) {
-    margin: 2rem;
+    margin: 4rem 1.5rem 2rem 0;
+  }
+
+  @include respond(iphone-x) {
+    margin: 5rem 5rem 2rem 0;
+  }
+
+  @include respond(iphone-5) {
+    margin: 5rem 2.5rem 2rem 0;
   }
 
   &__pic-container {
@@ -83,14 +95,18 @@
   }
 
   &__image {
-    height: 35rem;
+    height: 34rem;
+
+    @include respond(big-desktop) {
+      height: 35rem;
+    }
 
     @include respond(ipad-pro) {
       height: 30rem;
     }
 
     @include respond(surface-duo) {
-      height: 27rem;
+      height: 26rem;
     }
 
     @include respond(iphone-x) {
@@ -99,11 +115,16 @@
   }
 
   &__logo-3d-container {
-    height: 35rem;
-    width: 28rem;
+    height: 34rem;
+    width: 27.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(big-desktop) {
+      height: 35rem;
+      width: 28rem;
+    }
 
     @include respond(ipad-pro) {
       height: 30rem;
@@ -111,8 +132,8 @@
     }
 
     @include respond(surface-duo) {
-      height: 25rem;
-      width: 19rem;
+      height: 26rem;
+      width: 21rem;
     }
 
     @include respond(iphone-x) {

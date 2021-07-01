@@ -2,7 +2,7 @@
   "name": "galaxy-protocol",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HustinKava.github.io/GalaxyProtocol",
+  "homepage": "https://Galaxians.github.io/galaxy-protocol",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.13.0",
@@ -24,8 +24,15 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "watch:sass": "node-sass src/sass/main.scss src/sass/css/style.css -w",
+    "devserver": "react-scripts start",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass src/sass/main.scss src/sass/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/sass/css/style.comp.css -o src/sass/css/style.prefix.css",
+    "compress:css": "node-sass src/sass/css/style.prefix.css src/sass/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "build:reactapp": "react-scripts build",
+    "build": "npm-run-all build:css build:reactapp",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -48,5 +55,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
   }
 }

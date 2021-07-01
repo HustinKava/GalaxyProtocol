@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { NavLink } from 'react-router-dom';
 import Logo from '../Assets/logo-white_1_25.png';
 import ComingSoonBadge from '../Assets/coming-soon-badge.png';
 import ScrollIntoView from './ScrollIntoView';
+import { Modal as MainModal } from '../Components/Modal/Modal';
+import { modalContent } from '../Components/Modal/modalContent';
 
 const ExternalLink = ({ href, text }) => {
   return (
@@ -40,6 +42,10 @@ const ComingSoon = ({ text }) => {
 };
 
 function Footer() {
+  
+  const [termsModal, setTermsModal] = useState(false);
+  const [privacyModal, setPrivacyModal] = useState(false);
+
   return (
     <div>
       <ScrollIntoView>
@@ -80,8 +86,29 @@ function Footer() {
               />
               {/* <InternalLink link="audit" text="Audit" /> */}
               {/* <InternalLink link="partnershipoverview" text="Partnership Overview" /> */}
-              <p className="footer-column__text">Terms & Conditions</p>
-              <p className="footer-column__text">Privacy & Policy</p>
+
+              <div className="footer-column__text">
+                <button 
+                className='footer-modal-btns'
+                onClick={() => {
+                  setTermsModal(true);
+                }}>
+                  Terms & Conditions
+                </button>
+                {termsModal && <MainModal modalContent={modalContent.termsModal} closeModal={setTermsModal}/>}
+              </div>
+              
+              <div className="footer-column__text" >
+                <button 
+                className='footer-modal-btns'
+                onClick={() => {
+                  setPrivacyModal(true);
+                }}>
+                  Privacy & Policy
+                </button>
+                {privacyModal && <MainModal modalContent={modalContent.privacyModal} closeModal={setPrivacyModal}/>}
+              </div>
+
             </div>
           </Grid>
 

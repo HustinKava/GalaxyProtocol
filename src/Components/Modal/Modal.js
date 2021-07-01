@@ -1,27 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export const Modal = ({ modalContent }) => {
-  const [showModal, setShowModal] = useState(true);
+export const Modal = ({ modalContent, closeModal }) => {
 
   return (
     <>
-      {showModal ? (
         <div className="modal">
           <div
             className="modal__content-container"
             tabIndex={0}
-            onBlur={() => setShowModal(false)}
+            onBlur={() => closeModal(false)}
           >
             <div className="modal__text">{modalContent}</div>
             <button
-              onClick={() => setShowModal(false)}
+              onClick={() => closeModal(false)}
               className="modal__button"
             >
               close
             </button>
           </div>
         </div>
-      ) : null}
     </>
   );
 };

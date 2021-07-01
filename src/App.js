@@ -4,8 +4,8 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from './Components/Navbar/Sidebar';
 import Navbar from './Components/Navbar/Navbar';
 import MobileNav from './Components/Navbar/MobileNav';
-import { Modal as MainModal } from './Components/Modal/Modal';
-import { modalContent } from './Components/Modal/modalContent';
+// import { Modal as MainModal } from './Components/Modal/Modal';
+// import { modalContent } from './Components/Modal/modalContent';
 import Footer from './Components/Footer';
 
 import Home from './Pages/Home';
@@ -18,17 +18,19 @@ import GalaxyUniversity from './Pages/GalaxyUniversity';
 import MeetOurTeam from './Pages/MeetOurTeam';
 import AboutUs from './Pages/AboutUs';
 
-// Importing articles 
+// Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
 // import HistoryofDefi from './Pages/Articles/HistoryofDeFi'
-import Staking from './Pages/Articles/Staking'
-import ImpermanentLoss from './Pages/Articles/ImpermanentLoss'
-import ETHvsBTC from './Pages/Articles/ETHvsBTC'
-import Farming from './Pages/Articles/Farming'
-import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens'
-import ChartReading from './Pages/Articles/ChartReading'
-import ChartPatterns from './Pages/Articles/ChartPatterns'
-import './sass/main.scss';
+import Staking from './Pages/Articles/Staking';
+import ImpermanentLoss from './Pages/Articles/ImpermanentLoss';
+import ETHvsBTC from './Pages/Articles/ETHvsBTC';
+import Farming from './Pages/Articles/Farming';
+import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens';
+import ChartReading from './Pages/Articles/ChartReading';
+import ChartPatterns from './Pages/Articles/ChartPatterns';
+
+import './sass/css/style.css';
+// import './sass/main.scss';
 
 function App() {
   // useState to determine if the mobile menu has been toggled
@@ -40,7 +42,7 @@ function App() {
   };
   return (
     <Router>
-      <MainModal modalContent={modalContent.mainModal} />
+      {/* <MainModal modalContent={modalContent.mainModal} /> */}
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar />
       <MobileNav toggle={toggle} />
@@ -60,7 +62,11 @@ function App() {
         <Route exact path="/ImpermanentLoss" component={ImpermanentLoss} />
         <Route exact path="/ETHvsBTC" component={ETHvsBTC} />
         <Route exact path="/Farming" component={Farming} />
-        <Route exact path="/LiquidityandLPTokens" component={LiquidityandLPTokens} />
+        <Route
+          exact
+          path="/LiquidityandLPTokens"
+          component={LiquidityandLPTokens}
+        />
         <Route exact path="/ChartReading" component={ChartReading} />
         <Route exact path="/ChartPatterns" component={ChartPatterns} />
 

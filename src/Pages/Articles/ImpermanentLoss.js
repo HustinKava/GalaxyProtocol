@@ -2,11 +2,12 @@ import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
  
+import ImpermanentLossHeroImg from '../../Assets/GP-ImpermanentLoss.png'
 
 const ImpermanentLoss = () => {
 
     let content = {
-        heroImage: '',
+        heroImage: ImpermanentLossHeroImg,
         title: 'Impermanent Loss',
         body: [
             {

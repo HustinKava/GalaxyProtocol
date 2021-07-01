@@ -9,7 +9,6 @@ import BodyParagraph from './BodyParagraph'
 
 
 const ArticleTemplate = ({ heroImage, title, body }) => {
-    console.log("body", body)
     return (
         <div className="articleContainer">
             <div className="heroImageContainer">

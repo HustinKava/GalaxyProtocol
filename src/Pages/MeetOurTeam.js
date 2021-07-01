@@ -4,7 +4,7 @@ import OurTeam from '../Components/MeetOurTeam/OurTeam';
 
 const MeetOurTeam = () => {
   return (
-    <div className="meet-our-team">
+    <div className="mainContainer meet-our-team">
       <TeamHeader />
       <OurTeam />
     </div>

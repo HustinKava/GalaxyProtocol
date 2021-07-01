@@ -2,11 +2,12 @@ import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
 
+import BeginnerChart from '../../Assets/GP-BeginnerChart.png'
 
 const ChartReading = () => {
 
     let content = {
-        heroImage: '',
+        heroImage: BeginnerChart,
         title: 'Chart Reading for Beginners',
         body: [
             {

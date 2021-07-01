@@ -2,11 +2,12 @@ import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
 
+import LPTokens from '../../Assets/GP-LPtokens.png'
 
 const LiquidityandLPTokens = () => {
 
     let content = {
-        heroImage: '',
+        heroImage: LPTokens,
         title: 'Liquidity & LP Tokens',
         body: [
             {

@@ -11,6 +11,9 @@
 
 @import 'components/home/destiny';
 @import 'components/home/generation';
+
+@import 'components/home/opening-message';
+
 @import 'components/home/newsletter';
 @import 'components/home/banner-merch';
 @import 'components/home/banner-discord';
@@ -21,6 +24,7 @@
 
 @import 'components/university/partners';
 @import 'components/university/socials';
+@import 'components/university/videoCarousel';
 
 @import 'layout/footer';
 // @import "layout/header";
@@ -31,11 +35,10 @@
 @import 'layout/sidebar';
 
 @import 'pages/about-us';
+@import 'pages/article';
 @import 'pages/faq';
+@import 'pages/galaxyUniversity';
 @import 'pages/home';
 @import 'pages/jobs';
 @import 'pages/meet-our-team';
 @import 'pages/position-details';
-@import 'pages/galaxyUniversity';
-@import 'pages/article';
-@import 'components/university/videocarousel';

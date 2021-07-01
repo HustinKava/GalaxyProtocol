@@ -2,11 +2,12 @@ import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
 
+import ChartPatternsHero from '../../Assets/GP-ChartPatterns.png'
 
 const ChartPatterns = () => {
 
     let content = {
-        heroImage: '',
+        heroImage: ChartPatternsHero,
         title: 'Chart Patterns',
         body: [
             {

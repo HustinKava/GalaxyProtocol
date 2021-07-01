@@ -3,24 +3,64 @@
 // HERO IMAGE
 .heroImageContainer{
     display: flex;
-    justify-content: center;
-    padding-bottom: 7rem;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 55rem;
+    width: 128rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin-bottom: 8rem;
 
+        @include respond(ipad-pro) {
+            width: 100rem; 
+            height: 40rem;
+            margin-bottom: 2rem;
+               }
+
+        @include respond(ipad) {
+            width: 72rem; 
+               }
+
+        @include respond(surface-duo) {
+            width: 54rem; 
+            height: 25rem;
+            margin-bottom: 1rem;
+               }
+
+        @include respond(iphone-plus) {
+            width: 45rem;
+            height: 20rem; 
+            margin-bottom: 1rem;
+               }
+
+// Iphone x to plus width is behaving strangely - had to add this width in for it to sit right on the screen 
+        @include respond(iphone-x) {
+            width: 60rem;
+               }
+
+        @include respond(iphone-5) {
+            width: 50rem;
+               }
+
+            @include respond(iphone-5) {
+            width: 55rem;
+               }
 }
-.heroImage{
-    border-radius: 3rem;
-    width: 140rem;
 
+.heroImage{
+    border-radius: 2rem;
+    max-width: 100%;
 }
 
 // Content container styling */
 .contentContainer{
-    margin-left: 12rem;
+    margin-left: 8rem;
 }
 
 
 //TITLE TEXT
 .articleTitle{
+    
     font-size: 6.4rem;
     font-family: 'Mosk-700';
 }

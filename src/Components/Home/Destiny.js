@@ -6,6 +6,7 @@ import Learn from '../../Assets/Learn-icon.png';
 // import Wallet from '../../Assets/Wallet-icon.png';
 // import Jobs from '../../Assets/Jobs-icon.png';
 import Merch from '../../Assets/Merch-icon.png';
+import { NavLink } from 'react-router-dom';
 
 function Destiny() {
   return (
@@ -21,6 +22,7 @@ function Destiny() {
       {/* Boxes */}
       <div className="boxGrouping-container">
         <div className="boxGrouping">
+
           <div className="destBox-container">
             <div className="destBox destBox--1">
               <img src={Trade} alt="Trade" className="destBox__image destBox__safeGalaxyImg" />
@@ -31,15 +33,17 @@ function Destiny() {
             </div>
           </div>
 
-          <div className="destBox-container">
-            <div className="destBox destBox--2">
-              <img src={Learn} alt="Learn" className="destBox__image" />
-              <span className="destBox__header">Learn</span>
-              <span className="destBox__text">
-                We explain everything you need to know about crypto
-              </span>
+          <NavLink to='/GalaxyUniversity' className='test'>
+            <div className="destBox-container">
+              <div className="destBox destBox--2">
+                <img src={Learn} alt="Learn" className="destBox__image" />
+                <span className="destBox__header">Learn</span>
+                <span className="destBox__text">
+                  We explain everything you need to know about crypto
+                </span>
+              </div>
             </div>
-          </div>
+          </NavLink>
 
           {/* <div className="destBox-container">
             <div className="destBox destBox--3">
