@@ -33,7 +33,7 @@ function Destiny() {
             </div>
           </div>
 
-          <NavLink to='/GalaxyUniversity' className='test'>
+          <NavLink to='/GalaxyUniversity' className='destiny-links'>
             <div className="destBox-container">
               <div className="destBox destBox--2">
                 <img src={Learn} alt="Learn" className="destBox__image" />
@@ -75,6 +75,12 @@ function Destiny() {
             </div>
           </div> */}
 
+          <a
+            href='https://intergalacticmerch.myshopify.com/'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="destiny-links"
+          >
           <div className="destBox-container">
             <div className="destBox destBox--6">
               <img src={Merch} alt="Merch" className="destBox__image" />
@@ -84,6 +90,8 @@ function Destiny() {
               </span>
             </div>
           </div>
+          </a>
+
         </div>
       </div>
     </div>

@@ -64,12 +64,6 @@ export const profileInfo = [
     linkedIn: '',
   },
   {
-    name: 'Daniel',
-    image: null,
-    jobTitle: 'BE Developer',
-    linkedIn: '',
-  },
-  {
     name: 'Alec',
     image: null,
     jobTitle: 'Dev in training, Technical questions',

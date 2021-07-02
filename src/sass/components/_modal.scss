@@ -1,5 +1,5 @@
 .modal {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -21,69 +21,46 @@
   }
 
   @include respond(big-desktop) {
-    font-size: $font-size-30;
+    font-size: 1.7rem;
   }
 
   @include respond(ipad) {
-    font-size: 2.6rem;
-  }
-
-  @include respond(surface-duo) {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
   }
 
   &__content-container {
     font-family: Mosk-100;
-    padding: 4rem;
-    padding-top: 2rem;
+    padding: 6rem;
     max-height: 80vh;
-    max-width: 80vw;
-    overflow: scroll;
-    // width: 50%;
+    max-width: 60vw;
+    overflow-y: scroll;
     background-color: $color-off-black-light;
-    border-radius: 1rem;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    scrollbar-width: thin;
+    scrollbar-color: blue red;
+    border-radius: 1rem;
 
-    &::-webkit-scrollbar {
-      display: none;
+    @include respond(surface-duo) {
+      padding: 2rem;
     }
 
     @include respond(iphone-plus) {
       max-height: 75vh;
       max-width: 80vw;
     }
-
-    // @include respond(galaxy-fold) {
-    //   font-size: $font-size-30;
-    // }
   }
-  //
-  // &__text {
-  //   width: 60rem;
-  //
-  //   @include respond(ipad-pro) {
-  //     width: 65rem;
-  //   }
-  //
-  //   @include respond(surface-duo) {
-  //     width: 50rem;
-  //   }
-  // }
 
   &__button {
-    width: 17rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    width: 10rem;
     border-radius: 1rem;
     margin-top: 3rem;
     color: $color-white;
     border: none;
     font-family: Mosk-700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background: transparent
       linear-gradient(
         120deg,
@@ -105,6 +82,22 @@
   }
 }
 
-.terms-content {
+.modal__content-container::-webkit-scrollbar {
+	background-color: #262626;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.modal__content-container::-webkit-scrollbar-thumb {
+	border-radius: 1rem;
+	background-color: #555;
+}
+
+.content-align-left {
   text-align: left;
+}
+
+.buyback-header {
+  font-family: Mosk-700;
+  font-size: 4rem;
 }

@@ -85,7 +85,9 @@ function VideoCarousel() {
 
                         {data.length === 0 ? <FaSpinner icon="spinner" className="spinner" /> : data[0].items.filter((item) => item.id.kind === 'youtube#video').map(item => (
                             <div key={item.id.videoId} className="carousel-image-container">
-                                <img src={item.snippet.thumbnails.high.url} alt={item.id.videoId} className="carousel-image"/>
+                                <a href={`https://www.youtube.com/watch?v=${item.id.videoId}`} target="_blank" rel="noopener noreferrer">
+                                    <img src={item.snippet.thumbnails.high.url} alt={item.id.videoId} className="carousel-image"/>
+                                </a>
                                 <div className="carousel-overlay">
                                     <a href={`https://www.youtube.com/watch?v=${item.id.videoId}`} target="_blank" rel="noopener noreferrer">
                                         <div className="carousel-text">{item.snippet.title}</div>

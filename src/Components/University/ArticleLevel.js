@@ -2,10 +2,9 @@ import React from 'react';
 
 
 
-function ArticleLevel(level) {
+function ArticleLevel({level}) {
 
     //Dynamic level population and color attribute based on level
-    level = "Beginner";
     let levelStyle;
 
     if(level === "Beginner") {

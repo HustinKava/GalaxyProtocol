@@ -34,7 +34,7 @@ const ArticleTemplate = ({ heroImage, title, body }) => {
                                     <Subtitle subtitle={section.subtitle} />
                                     {section.paraContent.map((subSection) => {
                                         return (
-                                            <BodyParagraph bodyparagraph={subSection} />
+                                            <BodyParagraph key={subSection} bodyparagraph={subSection} />
                                         )
                                     })}
                                 </>
@@ -46,7 +46,7 @@ const ArticleTemplate = ({ heroImage, title, body }) => {
                                     <InnerSubtitle innerSubtitle={section.innerSubtitle} />
                                     {section.paraContent.map((subSection) => {
                                         return (
-                                            <BodyParagraph bodyparagraph={subSection} />
+                                            <BodyParagraph key={subSection} bodyparagraph={subSection} />
                                         )
                                     })}
                                 </>
@@ -58,7 +58,7 @@ const ArticleTemplate = ({ heroImage, title, body }) => {
                                 <>
                                     {section.paraContent.map((subSection) => {
                                         return (
-                                            <BodyParagraph bodyparagraph={subSection} />
+                                            <BodyParagraph key={subSection}  bodyparagraph={subSection} />
                                         )
                                     })}
                                 </>

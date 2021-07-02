@@ -3,7 +3,7 @@ import React from 'react';
 export const Modal = ({ modalContent, closeModal }) => {
 
   return (
-    <>
+    <>  
         <div className="modal">
           <div
             className="modal__content-container"

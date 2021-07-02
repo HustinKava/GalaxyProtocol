@@ -42,7 +42,6 @@ const ComingSoon = ({ text }) => {
 };
 
 function Footer() {
-  
   const [termsModal, setTermsModal] = useState(false);
   const [privacyModal, setPrivacyModal] = useState(false);
 
@@ -63,8 +62,8 @@ function Footer() {
             </div>
           </Grid>
 
+          {/* Footer items */}
           <Grid item xs={12} sm={3} md={3} lg={2}>
-            {/* Footer items */}
             <div className="footer-column">
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Products</p>
@@ -72,7 +71,10 @@ function Footer() {
               <ComingSoon text="GalaxySwap" />
               <InternalLink link="galaxyuniversity" text="Galaxy University" />
               <ComingSoon text="Nebula Launchpad" />
-              <ExternalLink href="https://intergalacticmerch.myshopify.com/" text="Galaxy Merchandise" />
+              <ExternalLink
+                href="https://intergalacticmerch.myshopify.com/"
+                text="Galaxy Merchandise"
+              />
             </div>
           </Grid>
 
@@ -88,27 +90,38 @@ function Footer() {
               {/* <InternalLink link="partnershipoverview" text="Partnership Overview" /> */}
 
               <div className="footer-column__text">
-                <button 
-                className='footer-modal-btns'
-                onClick={() => {
-                  setTermsModal(true);
-                }}>
+                <button
+                  className="footer-modal-btns"
+                  onClick={() => {
+                    setTermsModal(true);
+                  }}
+                >
                   Terms & Conditions
                 </button>
-                {termsModal && <MainModal modalContent={modalContent.termsModal} closeModal={setTermsModal}/>}
-              </div>
-              
-              <div className="footer-column__text" >
-                <button 
-                className='footer-modal-btns'
-                onClick={() => {
-                  setPrivacyModal(true);
-                }}>
-                  Privacy & Policy
-                </button>
-                {privacyModal && <MainModal modalContent={modalContent.privacyModal} closeModal={setPrivacyModal}/>}
+                {termsModal && (
+                  <MainModal
+                    modalContent={modalContent.termsModal}
+                    closeModal={setTermsModal}
+                  />
+                )}
               </div>
 
+              <div className="footer-column__text">
+                <button
+                  className="footer-modal-btns"
+                  onClick={() => {
+                    setPrivacyModal(true);
+                  }}
+                >
+                  Privacy & Policy
+                </button>
+                {privacyModal && (
+                  <MainModal
+                    modalContent={modalContent.privacyModal}
+                    closeModal={setPrivacyModal}
+                  />
+                )}
+              </div>
             </div>
           </Grid>
 

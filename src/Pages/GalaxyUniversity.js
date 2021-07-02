@@ -4,22 +4,20 @@ import GradientBar from '../Components/University/GradientBar';
 import Partners from '../Components/University/Partners';
 import ArticleGallery from '../Components/University/ArticleGallery.js';
 import VideosCarousel from '../Components/University/VideoCarousel';
+import Socials from '../Components/University/Socials';
 import getProgress from '../Components/ProgressBar/getProgress';
-
 
 const GalaxyUniversity = () => {
   return (
     <div>
-
       <Header />
       <GradientBar />
       <ArticleGallery />
-      <VideosCarousel/>
+      <Socials />
       <Partners />
-    
-    </div>  
+      <VideosCarousel />
+    </div>
   );
-
 };
 
 export default getProgress(GalaxyUniversity);

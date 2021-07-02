@@ -94,12 +94,18 @@
 }
 
 .footer-column {
-  @include respond(ipad-pro) {
-    padding-left: 6rem;
+  width: 23rem;
+
+  @include respond(big-desktop) {
+    width: 28rem;
   }
 
-  @include respond(ipad) {
+  @include respond(ipad-pro) {
     padding-left: 3rem;
+  }
+
+  @include respond(surface-duo) {
+    width: 100%;
   }
 
   @include respond(galaxy-fold) {
@@ -215,10 +221,6 @@
   &__coming-soon-container {
     display: flex;
 
-    @include respond(ipad-pro) {
-      justify-content: space-between;
-    }
-
     @include respond(ipad) {
       justify-content: flex-start;
     }
@@ -234,10 +236,10 @@
     }
 
     @include respond(ipad-pro) {
-      height: 1.4rem;
+      height: 1.5rem;
       margin-top: 0.6rem;
     }
-    
+
     @include respond(ipad) {
       height: 0.9rem;
       margin-top: 0.7rem;

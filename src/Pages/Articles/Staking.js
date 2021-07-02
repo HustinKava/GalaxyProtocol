@@ -62,7 +62,6 @@ const Staking = () => {
         ]
     }
 
-    console.log(content.title)
     return (
         <div>
             <div className="mainContainer">

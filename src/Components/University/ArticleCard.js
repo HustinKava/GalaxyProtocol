@@ -1,28 +1,35 @@
 import React from 'react';
-import ArticleLevel from './ArticleLevel'
+import ArticleLevel from './ArticleLevel';
 
-function ArticleCard() {
+function ArticleCard({ articleName, level, length, link, image }) {
+
     return (
         <div className="article-card">
             <div className="article-card-content">
                 {/* Main image in Article card */}
-                <div className="article-card-image">
-                </div>
+                <a href={link} className="articleGalleryLink">
+                    <div className="article-card-image-div">
+                        <img src={image} alt="" className="article-card-image"></img>
+                    </div>
+                </a>
 
                 <div className="article-card-details-container">
-                    <p className="article-card-title">What is Galaxia?</p>
-                    <ArticleLevel />
+                    <a href={link} className="articleGalleryLink">
+                        <p className="article-card-title">{articleName}</p>
+                    </a>
+
+                    <ArticleLevel
+                        level={level} />
                 </div>
 
-                <hr></hr>
+        {/* <hr></hr> */}
 
-                <div className="article-card-timeframe-container">
-                    <div className="article-card-length"> &#128343;10m</div>
-                </div>
-
-            </div>
-        </div>
-    );
+        {/* <div className="article-card-timeframe-container">
+                    <div className="article-card-length"> &#128343;{length}m</div>
+                </div> */}
+      </div>
+    </div>
+  );
 }
 
 export default ArticleCard;

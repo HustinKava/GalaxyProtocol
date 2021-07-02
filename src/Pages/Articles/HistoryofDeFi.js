@@ -70,7 +70,6 @@ const DLTandBlockchain = () => {
         ]
     }
 
-    console.log(content.title)
     return (
         <div>
             <div className="mainContainer">

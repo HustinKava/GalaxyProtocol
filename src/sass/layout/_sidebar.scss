@@ -73,6 +73,9 @@
 .sidebar-text {
   font-family: Mosk-200;
   font-size: 2rem;
+  color: $color-white;
+  background: none;
+  border: none;
 
   @include respond(ipad-pro) {
     font-size: 3.8rem;

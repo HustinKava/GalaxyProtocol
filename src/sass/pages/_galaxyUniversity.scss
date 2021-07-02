@@ -1,209 +1,256 @@
-
 //Galaxy University HEADER COMPONENT
 
-.headerContainer{
-    display:flex;
-    flex-direction: row;
+.headerContainer {
+  display: flex;
+  flex-direction: row;
 }
 
-.galaxyUniversityHeader{
-    display: flex;
-    flex-direction: column;
+.galaxyUniversityHeader {
+  display: flex;
+  flex-direction: column;
 
-    &__h1{
-        font-size: 10rem;
-        font-family: 'Mosk-700';
-        display: inline;
-        
-        @include respond(surface-duo) {
-            font-size: 9.5rem;
-          }
-        }
+  &__h1 {
+    font-size: 10rem;
+    font-family: 'Mosk-700';
+    display: inline;
 
-        &__span{
-        font-size: 8rem;
-        font-family: 'Mosk-200';
-        
-        
-        @include respond(ipad) {
-            font-size: 6rem;
-        }
-        @include respond(surface-duo) {
-            font-size: 7rem; 
-          }
-        }
-        
-    &__intro{
-        font-size: 2.8rem;
-        font-family: 'Mosk-200';
-        color: $color-grey-light-3;
-        max-width: 60%;
-     
-        @include respond(ipad-pro) {
-            max-width: 90%;
-            font-size: 2.3rem;
-        }
-
+    @include respond(surface-duo) {
+      font-size: 9.5rem;
     }
-}
+  }
 
-.headerImage{
-    height: 55rem;
-    margin-top: -5.5rem;
+  &__span {
+    font-size: 8rem;
+    font-family: 'Mosk-200';
 
-    @include respond(ipad-pro) {
-        margin-top: 0rem;
-    }
     @include respond(ipad) {
-        height: 35rem;
-        margin-top: 4rem;
-
+      font-size: 6rem;
     }
     @include respond(surface-duo) {
-    display: none;    }
+      font-size: 7rem;
+    }
+  }
+
+  &__intro {
+    font-size: 2.8rem;
+    font-family: 'Mosk-200';
+    color: $color-grey-light-3;
+    max-width: 60%;
+
+    @include respond(ipad-pro) {
+      max-width: 90%;
+      font-size: 2.3rem;
+    }
+  }
 }
 
+.headerImage {
+  height: 55rem;
+  margin-top: -5.5rem;
+
+  @include respond(ipad-pro) {
+    margin-top: 0rem;
+  }
+  @include respond(ipad) {
+    height: 35rem;
+    margin-top: 4rem;
+  }
+  @include respond(surface-duo) {
+    display: none;
+  }
+}
 
 // GRADIENT BAR
-.gradientBar{
-    height: 5.5rem;
-    background: transparent
-      linear-gradient(
-        75deg,
-        $color-pink 0%,
-        $color-teal 67%,
-        $color-teal 100%,
-        $color-black 100%
-      )
-      0% 0% no-repeat padding-box;
+.gradientBar {
+  height: 5.5rem;
+  background: transparent
+    linear-gradient(
+      75deg,
+      $color-pink 0%,
+      $color-teal 67%,
+      $color-teal 100%,
+      $color-black 100%
+    )
+    0% 0% no-repeat padding-box;
 }
 
-// VIDEO GALLERY COMPONENT
-.articleGalleryContainer{
-    margin: 15rem 20rem;
+// ARTICLE GALLERY COMPONENT
+.articleGalleryContainer {
+  margin: 12rem 6rem;
+  display: flex;
+  justify-content: center;
 
-    @include respond(ipad-pro) {
-      margin: 21rem 7rem;
-    }
+  @include respond(big-desktop) {
+    margin: 15rem 8rem;
   }
 
-.article-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+  @include respond(ipad-pro) {
+    margin: 10rem 7rem;
+  }
 }
 
-.article-gallery-column{
-    flex: 25%;
-    padding-bottom: 2%;
-    
-    @include respond(ipad-pro) {
-        flex: 50%;
-    }
-    @include respond(surface-duo) {
-        flex: 100%;
-    }
-  }
+.article-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-/* Body of card styling */
+  @include respond(big-desktop) {
+    max-width: 165rem;
+  }
+}
+
+.article-gallery-column {
+  padding-bottom: 2%;
+}
+
+.articleGalleryLink {
+  text-decoration: none;
+  color: #22222a;
+}
+
+// ARTICLE CARD COMPONENT
+
 .article-card {
-    flex: 0 48%;
-    height: auto;
-    padding: 6%;
+  // width: auto;
+  // padding: 6%;
+  margin: 3rem;
+  margin-bottom: 0;
+
+  @include respond(ipad-pro) {
+    margin: 2.5rem;
+  }
+}
+
+.article-card-image-div {
+  display: flex;
+  justify-content: center;
+  height: 36rem;
+  width: 28rem;
+  overflow: hidden;
+
+  border-radius: 3rem;
+  background: rgb(104, 211, 214);
+
+  @include respond(surface-duo) {
+    height: 48rem;
+    width: 39rem;
   }
 
-
-// VIDEO CARD COMPONENT
-
-.article-card{
-    border-radius: 3rem;
-    width: auto;
+  @include respond(iphone-x) {
+    height: 56rem;
+    width: 46rem;
+  }
 }
 
-.article-card-image{
-    height: 450px;
-    padding: 1.2rem;
-    border-radius: 3rem;
-    background: rgb(104, 211, 214);
-    
-    @include respond(surface-duo) {
-        height: 375px;
-    }
+.article-card-image {
+  // max-height: 100%;
 }
 
-.article-card-details-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.article-card-details-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.article-card-title{
+.article-card-title {
+  font-size: 2.5rem;
+  font-family: 'Mosk-600';
+  color: $color-white;
+  padding-top: 2.2rem;
+  padding-bottom: 4rem;
+  max-width: 16rem;
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
     font-size: 2.5rem;
-    font-family: 'Mosk-600';
-    color: $color-white;
-    padding-top: 2.2rem;
-    padding-bottom: 4rem;
-
-    @include respond(surface-duo) {
-        font-size: 2.8rem;
-    }
+  }
 }
 
-.article-level-beginner{
-    border: .3rem solid #228346;
-    height: 0%;
-    margin-top: 2.2rem;
-    border-radius: 1rem;
-    display: inline-block;
-    padding-left: .8rem;
-    padding-right: .8rem;
-    font-size: 2rem;
-    font-family: 'Mosk-600';
-    color:#228346;
-        @include respond(surface-duo) {
-            font-size: 2.8rem;
-        }
+.article-level-beginner {
+  border: 0.3rem solid #228346;
+  height: 0%;
+  margin-top: 2.2rem;
+  border-radius: 1rem;
+  display: inline-block;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.8rem;
+  font-family: 'Mosk-600';
+  color: #228346;
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
 }
 
-.article-level-intermediate{
-    border: .3rem solid #FFB100;
-    border-radius: 1rem;
-    display: inline-block;
-    padding: .1rem 1.8rem;
-    font-size: 2rem;
-    font-family: 'Mosk-600';
-    color:#FFB100;
-        @include respond(surface-duo) {
-            font-size: 2.8rem;
-        }
-}
-.article-level-advanced{
-    border: .3rem solid #EA044B;
-    border-radius: 1rem;
-    display: inline-block;
-    padding: .1rem 1.8rem;
-    font-size: 2rem;
-    font-family: 'Mosk-600';
-    color:#EA044B;
-        @include respond(surface-duo) {
-            font-size: 2.8rem;
-        }
-    }
+.article-level-intermediate {
+  height: 0%;
+  margin-top: 2.2rem;
+  border: 0.3rem solid #ffb100;
+  border-radius: 1rem;
+  display: inline-block;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.8rem;
+  font-family: 'Mosk-600';
+  color: #ffb100;
 
-.article-card-timeframe-container{
-    display: flex;
-    flex-direction: row;
-        @include respond(surface-duo) {
-            font-size: 2.8rem;
-        }
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
 }
 
+.article-level-advanced {
+  height: 0%;
+  margin-top: 2.2rem;
+  border: 0.3rem solid #ea044b;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.1rem 1.8rem;
+  font-size: 1.8rem;
+  font-family: 'Mosk-600';
+  color: #ea044b;
 
-.article-card-length{
-    font-size: 2rem;
-    font-family: 'Mosk-600';
-    color: $color-white;
-    padding-top: 1rem;
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
 }
 
+// .article-card-timeframe-container {
+//   display: flex;
+//
+//   @include respond(surface-duo) {
+//     font-size: 2.8rem;
+//   }
+// }
+
+// .article-card-length {
+//   font-size: 2rem;
+//   font-family: 'Mosk-600';
+//   color: $color-white;
+//   padding-top: 1rem;
+// }
+
+.uni-bold-text {
+  font-family: Mosk-700;
+  font-size: 6rem;
+}
+
+.uni-text {
+  font-family: Mosk-100;
+  font-weight: lighter;
+}

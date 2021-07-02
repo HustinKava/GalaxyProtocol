@@ -41,10 +41,6 @@
         @include respond(iphone-5) {
             width: 50rem;
                }
-
-            @include respond(iphone-5) {
-            width: 55rem;
-               }
 }
 
 .heroImage{
@@ -55,14 +51,21 @@
 // Content container styling */
 .contentContainer{
     margin-left: 8rem;
+
+    @include respond(ipad-pro) {
+        margin-left: 0;
+    }
 }
 
 
 //TITLE TEXT
 .articleTitle{
-    
     font-size: 6.4rem;
     font-family: 'Mosk-700';
+
+     @include respond(surface-duo) {
+        font-size: 5rem;
+    }
 }
 
 // HR
@@ -71,13 +74,20 @@
     max-width: 65%;
     margin-top: 2rem;
     border: none;
-    background-color: #22222A
-
+    background-color: #22222A;
+    
+        @include respond(ipad-pro) {
+            max-width: 100%;
+        }
 }
 
 .articleBodyContainer{
     margin-left: 10rem;
     padding-top: 10rem;
+    
+    @include respond(ipad-pro) {
+        margin-left: 0rem;
+            }
 
 }
 
@@ -95,6 +105,10 @@
     max-width: 80%;
     line-height: 3.5rem;
     margin-bottom: 3rem;
+   
+    @include respond(ipad-pro) {
+        max-width: 100%;
+    }
 }
 
 .innerArticleSubtitle{
