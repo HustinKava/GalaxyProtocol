@@ -72,15 +72,12 @@ button {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
- "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
- sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
- monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 @font-face {
   font-family: "Mosk-100";
@@ -191,6 +188,9 @@ code {
     cursor: pointer;
     font-size: 2.5rem;
     right: 0; }
+  .modal__button-container {
+    width: 100%;
+    padding-bottom: 1rem; }
   .modal__button {
     width: 10rem;
     border-radius: 1rem;
@@ -224,6 +224,10 @@ code {
   font-family: Mosk-700;
   font-size: 4rem; }
 
+.modal-cookie-link {
+  color: #fff;
+  text-decoration: none; }
+
 .destCenter {
   text-align: center; }
 
@@ -247,7 +251,8 @@ code {
     line-height: 0.4; }
     @media only screen and (max-width: 33.75em) {
       .destHeader--2 {
-        font-size: 6rem; } }
+        font-size: 6rem;
+        line-height: normal; } }
     @media only screen and (max-width: 26.25em) {
       .destHeader--2 {
         font-size: 5rem; } }
@@ -392,7 +397,8 @@ code {
         font-size: 7rem; } }
     @media only screen and (max-width: 33.75em) {
       .gen__header {
-        font-size: 6rem; } }
+        font-size: 6rem;
+        line-height: normal; } }
     @media only screen and (max-width: 26.25em) {
       .gen__header {
         font-size: 5rem; } }
@@ -455,7 +461,8 @@ code {
   line-height: 0.4; }
   @media only screen and (max-width: 33.75em) {
     .openingHeader {
-      font-size: 6rem; } }
+      font-size: 6rem;
+      line-height: normal; } }
   @media only screen and (max-width: 26.25em) {
     .openingHeader {
       font-size: 5rem; } }
@@ -489,7 +496,8 @@ code {
     line-height: 0; }
     @media only screen and (max-width: 33.75em) {
       .news__text {
-        font-size: 8rem; } }
+        font-size: 8rem;
+        line-height: normal; } }
     @media only screen and (max-width: 17.5em) {
       .news__text {
         font-size: 10.7rem; } }
@@ -645,6 +653,9 @@ code {
   .banHeader-alt--2 {
     font-size: 7rem;
     line-height: 0.5; }
+    @media only screen and (max-width: 33.75em) {
+      .banHeader-alt--2 {
+        line-height: normal; } }
 
 .banDesc {
   font-family: Mosk-300;
@@ -827,13 +838,11 @@ code {
       width: 60%; } }
 
 .university-image {
-  height: auto;
-  width: 140%;
+  height: 75rem;
   margin-top: -3rem;
   /* Resize university image on small screen */ }
   @media only screen and (max-width: 64em) {
     .university-image {
-      width: 90%;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -893,6 +902,9 @@ code {
     font-family: Mosk-700; }
   .banUniversityHeader--2 {
     font-family: Mosk-100; }
+
+.ban-university-link {
+  text-decoration: none; }
 
 .uni-partners-container {
   display: flex;
@@ -1419,7 +1431,7 @@ h3, h4 {
   .mobile-nav__burger {
     color: #fff;
     font-size: 3rem;
-    margin-right: 1rem; }
+    margin-right: 3rem; }
     @media only screen and (max-width: 17.5em) {
       .mobile-nav__burger {
         font-size: 4rem; } }
@@ -1787,7 +1799,7 @@ h3, h4 {
   font-size: 2.5rem;
   font-family: 'Mosk-200';
   color: #C7C7C7;
-  max-width: 80%;
+  max-width: 85%;
   line-height: 3.5rem;
   margin-bottom: 3rem; }
   @media only screen and (max-width: 64em) {
@@ -2292,6 +2304,34 @@ h3, h4 {
   .profile-card__linkedIn {
     height: 2rem;
     margin-top: 0.75rem; }
+
+.migration-docs-container {
+  display: flex;
+  flex-direction: column; }
+
+.migration-docs {
+  color: #fff;
+  font-size: 2rem; }
+  .migration-docs__header {
+    font-size: 9rem;
+    line-height: normal; }
+    @media only screen and (max-width: 33.75em) {
+      .migration-docs__header {
+        font-size: 7rem; } }
+  .migration-docs__subheader {
+    font-size: 6rem; }
+    @media only screen and (max-width: 33.75em) {
+      .migration-docs__subheader {
+        font-size: 5rem; } }
+  .migration-docs__text {
+    padding: 0.5rem; }
+  .migration-docs__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+
+.migration-docs-infographic {
+  padding-top: 3rem; }
 
 /* HERO STYLING */
 .openPos-hero-header {

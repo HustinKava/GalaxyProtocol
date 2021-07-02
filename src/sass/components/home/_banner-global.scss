@@ -37,6 +37,10 @@
   &--2 {
     font-size: 7rem;
     line-height: 0.5;
+
+    @include respond(surface-duo) {
+      line-height: normal;
+    }
   }
 }
 

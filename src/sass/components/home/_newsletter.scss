@@ -25,6 +25,7 @@
 
     @include respond(surface-duo) {
       font-size: 8rem;
+      line-height: normal;
     }
 
     @include respond(galaxy-fold) {

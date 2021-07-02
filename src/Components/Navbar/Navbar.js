@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../Assets/logo-white_1_25.png';
 import ComingSoonBadge from '../../Assets/coming-soon-badge.png';
 import NavSocial from './NavSocial';
-import { Modal as MainModal } from '../../Components/Modal/Modal';
-import { modalContent } from '../../Components/Modal/modalContent';
 
 const ExternalLink = ({ href, text }) => {
   return (
@@ -41,9 +39,6 @@ const ComingSoon = ({ text }) => {
 };
 
 const Navbar = () => {
-
-  const [buyBackModal, setBuyBackModal] = useState(false);
-
   return (
     <div className="nav">
       {/* Company logo and name */}
@@ -71,17 +66,10 @@ const Navbar = () => {
                 href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
                 text="Whitepaper V1"
               />
-              <div className="navLink" >
-                <button 
-                className='navText'
-                onClick={() => {
-                  setBuyBackModal(true);
-                }}>
-                  Migration Docs
-                </button>
-                {buyBackModal && <MainModal modalContent={modalContent.buyBackModal} closeModal={setBuyBackModal}/>}
-              </div>
-
+              <InternalLink
+                link="migrationdocumentation"
+                text="Migration Docs"
+              />
             </div>
           </div>
 

@@ -7,6 +7,7 @@ import Okawa from '../../Assets/team/Okawa.png';
 import Rijk from '../../Assets/team/Rijk.png';
 import Spencer from '../../Assets/team/Spencer.png';
 import Tim from '../../Assets/team/Tim.png';
+import Collin from '../../Assets/team/Collin.png';
 
 export const profileInfo = [
   {
@@ -61,6 +62,12 @@ export const profileInfo = [
     name: 'Okawa',
     image: Okawa,
     jobTitle: 'BE Developer',
+    linkedIn: '',
+  },
+  {
+    name: 'Collin',
+    image: Collin,
+    jobTitle: 'Project Manager',
     linkedIn: '',
   },
   {

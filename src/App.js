@@ -17,21 +17,23 @@ import FAQ from './Pages/FAQ';
 import GalaxyUniversity from './Pages/GalaxyUniversity';
 import MeetOurTeam from './Pages/MeetOurTeam';
 import AboutUs from './Pages/AboutUs';
+import MigrationDocs from './Pages/MigrationDocs';
 
 // Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
 // import HistoryofDefi from './Pages/Articles/HistoryofDeFi'
 
-import Staking from './Pages/Articles/Staking'
-import ImpermanentLoss from './Pages/Articles/ImpermanentLoss'
-import ETHvsBTC from './Pages/Articles/ETHvsBTC'
-import Farming from './Pages/Articles/Farming'
-import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens'
-import ChartReading from './Pages/Articles/ChartReading'
-import ChartPatterns from './Pages/Articles/ChartPatterns'
-import FlashLoans from './Pages/Articles/FlashLoans'
-import OwnNFTs from './Pages/Articles/OwnNFTs'
-import Bridging from './Pages/Articles/Bridging'
+import Staking from './Pages/Articles/Staking';
+import ImpermanentLoss from './Pages/Articles/ImpermanentLoss';
+import ETHvsBTC from './Pages/Articles/ETHvsBTC';
+import Farming from './Pages/Articles/Farming';
+import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens';
+import ChartReading from './Pages/Articles/ChartReading';
+import ChartPatterns from './Pages/Articles/ChartPatterns';
+import FlashLoans from './Pages/Articles/FlashLoans';
+import OwnNFTs from './Pages/Articles/OwnNFTs';
+import Bridging from './Pages/Articles/Bridging';
+import CryptoWallets from './Pages/Articles/CryptoWallets';
 import './sass/main.scss';
 
 function App() {
@@ -74,9 +76,11 @@ function App() {
         <Route exact path="/FlashLoans" component={FlashLoans} />
         <Route exact path="/OwnNFTs" component={OwnNFTs} />
         <Route exact path="/Bridging" component={Bridging} />
+        <Route exact path="/CryptoWallets" component={CryptoWallets} />
 
         <Route exact path="/meetourteam" component={MeetOurTeam} />
         <Route exact path="/aboutus" component={AboutUs} />
+        <Route exact path="/migrationdocumentation" component={MigrationDocs} />
       </Switch>
       <Footer />
     </Router>

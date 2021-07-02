@@ -81,11 +81,7 @@ function Footer() {
           <Grid item xs={12} sm={3} md={3} lg={2}>
             <div className="footer-column">
               <hr className="footer-column__divider" />
-              <p className="footer-column__heading">Developers</p>
-              <ExternalLink
-                href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
-                text="Whitepaper V1"
-              />
+              <p className="footer-column__heading">Documentation</p>
               {/* <InternalLink link="audit" text="Audit" /> */}
               {/* <InternalLink link="partnershipoverview" text="Partnership Overview" /> */}
 
@@ -122,6 +118,11 @@ function Footer() {
                   />
                 )}
               </div>
+
+              <InternalLink
+                link="migrationdocumentation"
+                text="Migration Docs"
+              />
             </div>
           </Grid>
 
@@ -130,6 +131,10 @@ function Footer() {
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">About</p>
               <InternalLink link="aboutus" text="About Us" />
+              <ExternalLink
+                href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+                text="Whitepaper V1"
+              />
               <InternalLink link="meetourteam" text="Meet Our Team" />
               {/* <InternalLink link="jobs" text="Jobs" /> */}
               <InternalLink link="faq" text="FAQ" />

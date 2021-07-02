@@ -66,6 +66,11 @@
     right: 0;
   }
 
+  &__button-container {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
   &__button {
     width: 10rem;
     border-radius: 1rem;
@@ -113,4 +118,9 @@
 .buyback-header {
   font-family: Mosk-700;
   font-size: 4rem;
+}
+
+.modal-cookie-link {
+  color: $color-white;
+  text-decoration: none;
 }

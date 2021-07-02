@@ -24,7 +24,7 @@
   &__burger {
     color: $color-white;
     font-size: 3rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
 
     @include respond(galaxy-fold) {
       font-size: 4rem;

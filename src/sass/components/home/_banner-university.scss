@@ -1,11 +1,10 @@
 .university-image {
-  height: auto;
-  width: 140%;
+  height: 75rem;
+  // max-width: 140%;
   margin-top: -3rem;
 
   /* Resize university image on small screen */
   @include respond(ipad-pro) {
-    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -32,10 +31,10 @@
 
 .universityText {
   // display: inline-block;
-  margin-left: -8rem ;
+  margin-left: -8rem;
 
   @include respond(ipad) {
-    margin-left: 0 ;
+    margin-left: 0;
   }
 }
 
@@ -85,4 +84,8 @@
   &--2 {
     font-family: Mosk-100;
   }
+}
+
+.ban-university-link {
+  text-decoration: none;
 }

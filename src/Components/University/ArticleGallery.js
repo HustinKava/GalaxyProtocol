@@ -26,21 +26,21 @@ function ArticleGallery() {
           {/* first row of article cards */}
           <div className="article-gallery-column">
             <ArticleCard
-              articleName={'Chart Patterns'}
-              link={'#ChartPatterns'}
-              level={'Intermediate'}
+              articleName={'Crypto Wallets Explained'}
+              link={'#CryptoWallets'}
+              level={'Beginner'}
               length={10}
-              image={ChartPatterns}
+              image={''}
             />
           </div>
 
           <div className="article-gallery-column">
             <ArticleCard
-              articleName={'Chart Reading for Beginners'}
-              link={'#ChartReading'}
-              level={'Advanced'}
-              length={10}
-              image={BeginnerChart}
+              articleName={'ETH vs BTC'}
+              link={'#ETHvsBTC'}
+              level={'Beginner'}
+              // length={10}
+              // image={}
             />
           </div>
 

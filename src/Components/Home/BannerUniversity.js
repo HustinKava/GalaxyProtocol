@@ -9,16 +9,12 @@ function BannerUniversity() {
       <Grid container spacing={0} className="fadeRight">
           <Box clone order={{ xs: 2, sm: 2, md: 1 }}>
             <Grid item xs={12} md={6}>
-              {/* <div className='centered-images'>
-                <img src={UniversityImage} alt="University Image" className="university-image" />
-              </div> */}
-
               <Container maxWidth="sm">
                 <img src={UniversityImage} alt="University Logo" className="university-image" />
               </Container>
                     <div className="bannerButtonMobileContainer">
                 <Container maxWidth="sm">
-                <a href="#/galaxyUniversity">
+                <a href="#/galaxyUniversity" className='ban-university-link'>
                   <button className="ban-button ban-button--learn btn-mobile">
                     Learn more
                   </button>

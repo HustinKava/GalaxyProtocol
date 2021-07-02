@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import MobileLogo from '../../Assets/mobile-navbar-logo.png';
+import MobileLogo from '../../Assets/GP-EMBLEM-COLOR-small.png';
 import NavSocial from './NavSocial';
 
 const MobileNav = ({ toggle }) => {
