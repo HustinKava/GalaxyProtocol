@@ -37,7 +37,7 @@ function BannerUniversity() {
                   <span className="banUniversityHeader banUniversityHeader--2">university</span>
                 </div>
                 <span className="banDesc banDesc--1">
-                  Rest, interact & create. Galaxystation it’s designed for you to
+                  Rest, interact & create. Galaxystation is designed for you to
                   relax, interact with other people from our community and above all
                   to show off your creative talent. Oh and earn tokens.
                 </span>

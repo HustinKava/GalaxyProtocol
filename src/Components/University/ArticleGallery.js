@@ -2,9 +2,8 @@ import ArticleCard from './ArticleCard';
 import React from 'react';
 
 // Images
-import GPFarming from '../../Assets/GP-Farming-slice.png'
 import GPFlash from '../../Assets/GP-Flash-slice.png'
-import GPETCvsBTC from '../../Assets/GP-ETHvsBTC-slice.png'
+// import GPETCvsBTC from '../../Assets/GP-ETHvsBTC-slice.png'
 import BeginnerChart from '../../Assets/GP-beginnerchart-slice.png'
 import ChartPatterns from '../../Assets/GP-ChartPatterns-slice.png'
 
@@ -47,11 +46,11 @@ function ArticleGallery() {
 
           <div className="article-gallery-column">
             <ArticleCard
-              articleName={'ETH vs BTC'}
-              link={'#ETHvsBTC'}
-              level={'Advanced'}
+              articleName={'Flash Loans'}
+              link={'#FlashLoans'}
+              level={'Intermediate'}
               length={10}
-              image={GPETCvsBTC}
+              image={GPFlash}
             />
           </div>
 
@@ -69,15 +68,15 @@ function ArticleGallery() {
             <ArticleCard
               articleName={'Impermanent Loss'}
               link={'#ImpermanentLoss'}
-              level={'Beginner'}
+              level={'Advanced'}
               length={10}
             />
           </div>
 
           <div className="article-gallery-column">
             <ArticleCard
-              articleName={'Liquidity and LP Tokens'}
-              link={'#LiquidityandLPTokens'}
+              articleName={'How to make your own NFTs'}
+              link={'#OwnNFTs'}
               level={'Beginner'}
               length={10}
             />
@@ -87,13 +86,17 @@ function ArticleGallery() {
             <ArticleCard
               articleName={'Staking'}
               link={'#Staking'}
-              level={'Beginner'}
+              level={'Intermediate'}
               length={10}
             />
           </div>
 
           <div className="article-gallery-column">
-            <ArticleCard />
+            <ArticleCard
+              articleName={'Bridging'}
+              link={'#Bridging'}
+              level={'Beginner'}
+              length={10} />
           </div>
         </div>
       </div>

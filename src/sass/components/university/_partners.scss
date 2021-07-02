@@ -1,21 +1,31 @@
-.uni-partners {
+.uni-partners-container {
   display: flex;
   justify-content: center;
+}
+
+.uni-partners {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  width: 100rem;
 
-  &__column {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem;
+  @include respond(ipad) {
+    width: 80rem;
+  }
 
-    @include respond(ipad) {
-      margin: 1rem;
-    }
+  @include respond(surface-duo) {
+    width: 60rem;
+    justify-content: center;
+  }
+
+  @include respond(iphone-plus) {
+    width: 50rem;
+    justify-content: center;
   }
 
   &__logo {
-    height: 8rem;
+    height: 9rem;
     margin: 3rem;
     transition: all 0.2s ease-in-out;
     -webkit-filter: grayscale(100%);
@@ -27,14 +37,13 @@
       filter: grayscale(0%);
     }
 
-    @include respond(iphone-plus) {
-      height: 11rem;
+    @include respond(ipad) {
+      height: 8rem;
       margin: 1rem;
     }
 
-    @include respond(iphone-5) {
+    @include respond(iphone-plus) {
       height: 13rem;
-      margin: 1rem;
     }
   }
 }

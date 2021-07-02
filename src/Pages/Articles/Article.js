@@ -6,9 +6,7 @@ import getProgress from '../../Components/ProgressBar/getProgress';
 const Article = () => {
   return (
     <div>
-      {/* <div className="mainContainer"> */}
         <ArticleTemplate />
-      {/* </div> */}
     </div>
   );
 };

@@ -2,10 +2,12 @@ import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
 
+import DLTHero from '../../Assets/GP-Farming.png'
 
 const DLTandBlockchain = () => {
 
     let content = {
+        heroImage: DLTHero,
         title: 'History of DeFi',
         body: [
             {

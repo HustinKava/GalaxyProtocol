@@ -1,16 +1,17 @@
 import ArticleTemplate from '../../Components/Articles/ArticleTemplate';
 // Progress bar
 import getProgress from '../../Components/ProgressBar/getProgress';
+import StakingHero from '../../Assets/GP-FlashLoans.png'
 
 
 const Staking = () => {
 
     let content = {
-        heroImage: '',
+        heroImage: StakingHero,
         title: 'Staking',
         body: [
             {
-                subtitle: '',
+                subtitle: 'TLDR;',
                 paraContent: [
                     'Staking is the process by which one deposits cryptocurrency tokens into a vault or pool (smart contract) in order to earn rewards. This is conceptually similar to a traditional savings account at your local bank, although staking in cryptocurrency is far more versatile and lucrative.'
                 ]
@@ -45,6 +46,12 @@ const Staking = () => {
                 innerSubtitle: 'Distribution/Farming Staking',
                 paraContent: [
                     'This method of staking is the one that most of us are familiar with. PancakeSwap, SushiSwap, and GalaxySwap all utilize an inflationary distribution model in which new tokens are minted every block. These new tokens are distributed as rewards to those who have deposited tokens into the farming and staking pools. Depositing tokens into a swap helps to increase the liquidity and overall health of the swap, for this reason, swap developers offer high yields on staked tokens.'
+                ]
+            },
+            {
+                innerSubtitle: 'Liquidity Staking (aka Yield Farming)',
+                paraContent: [
+                    'This method of staking is employed by swaps to allow for decentralized trading. Users, known as liquidity providers (LPs), deposit tokens into the liquidity pool of a trading pair in order to allow other users to swap between them. Liquidity providers earn trading fees on their deposited liquidity as well as rewards from staking LP tokens. Providing liquidity involves more complex mechanics and requires its own article.'
                 ]
             },
             {
