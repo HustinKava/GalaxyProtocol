@@ -23,15 +23,19 @@ function Destiny() {
       <div className="boxGrouping-container">
         <div className="boxGrouping">
 
-          <div className="destBox-container">
-            <div className="destBox destBox--1">
-              <img src={Trade} alt="Trade" className="destBox__image destBox__safeGalaxyImg" />
-              <span className="destBox__header">Buy SafeGalaxy</span>
-              <span className="destBox__text">
-              Get in on the on the Galaxia Presale: Buy SafeGalaxy
-              </span>
+          <a href='https://safegalaxy.net/'  target="_blank" rel="noreferrer" className='destiny-links'>
+            <div className="destBox-container">
+              <div className="destBox destBox--1">
+                <img src={Trade} alt="Trade" className="destBox__image destBox__safeGalaxyImg" />
+                <span className="destBox__header">Buy SafeGalaxy</span>
+                <span className="destBox__text">
+                  Get in on the on the Galaxia Presale: Buy SafeGalaxy
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
+
+
 
           <NavLink to='/GalaxyUniversity' className='destiny-links'>
             <div className="destBox-container">
@@ -81,15 +85,15 @@ function Destiny() {
             rel="noopener noreferrer"
             className="destiny-links"
           >
-          <div className="destBox-container">
-            <div className="destBox destBox--6">
-              <img src={Merch} alt="Merch" className="destBox__image" />
-              <span className="destBox__header">Merch</span>
-              <span className="destBox__text">
-                Get your favourite Galaxy merchandise
-              </span>
+            <div className="destBox-container">
+              <div className="destBox destBox--6">
+                <img src={Merch} alt="Merch" className="destBox__image" />
+                <span className="destBox__header">Merch</span>
+                <span className="destBox__text">
+                  Get your favourite Galaxy merchandise
+                </span>
+              </div>
             </div>
-          </div>
           </a>
 
         </div>

@@ -21,16 +21,18 @@ import AboutUs from './Pages/AboutUs';
 // Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
 // import HistoryofDefi from './Pages/Articles/HistoryofDeFi'
-import Staking from './Pages/Articles/Staking';
-import ImpermanentLoss from './Pages/Articles/ImpermanentLoss';
-import ETHvsBTC from './Pages/Articles/ETHvsBTC';
-import Farming from './Pages/Articles/Farming';
-import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens';
-import ChartReading from './Pages/Articles/ChartReading';
-import ChartPatterns from './Pages/Articles/ChartPatterns';
 
-import './sass/css/style.css';
-// import './sass/main.scss';
+import Staking from './Pages/Articles/Staking'
+import ImpermanentLoss from './Pages/Articles/ImpermanentLoss'
+import ETHvsBTC from './Pages/Articles/ETHvsBTC'
+import Farming from './Pages/Articles/Farming'
+import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens'
+import ChartReading from './Pages/Articles/ChartReading'
+import ChartPatterns from './Pages/Articles/ChartPatterns'
+import FlashLoans from './Pages/Articles/FlashLoans'
+import OwnNFTs from './Pages/Articles/OwnNFTs'
+import Bridging from './Pages/Articles/Bridging'
+import './sass/main.scss';
 
 function App() {
   // useState to determine if the mobile menu has been toggled
@@ -69,6 +71,9 @@ function App() {
         />
         <Route exact path="/ChartReading" component={ChartReading} />
         <Route exact path="/ChartPatterns" component={ChartPatterns} />
+        <Route exact path="/FlashLoans" component={FlashLoans} />
+        <Route exact path="/OwnNFTs" component={OwnNFTs} />
+        <Route exact path="/Bridging" component={Bridging} />
 
         <Route exact path="/meetourteam" component={MeetOurTeam} />
         <Route exact path="/aboutus" component={AboutUs} />

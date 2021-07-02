@@ -2,7 +2,6 @@ import React from 'react';
 import ArticleLevel from './ArticleLevel';
 
 function ArticleCard({ articleName, level, length, link, image }) {
-
     return (
         <div className="article-card">
             <div className="article-card-content">
@@ -24,12 +23,13 @@ function ArticleCard({ articleName, level, length, link, image }) {
 
         {/* <hr></hr> */}
 
-        {/* <div className="article-card-timeframe-container">
+                {/* <div className="article-card-timeframe-container">
                     <div className="article-card-length"> &#128343;{length}m</div>
                 </div> */}
-      </div>
-    </div>
-  );
+
+            </div>
+        </div>
+    );
 }
 
 export default ArticleCard;

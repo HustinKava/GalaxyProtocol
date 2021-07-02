@@ -193,8 +193,6 @@ code {
     right: 0; }
   .modal__button {
     width: 10rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
     border-radius: 1rem;
     margin-top: 3rem;
     color: #fff;
@@ -896,20 +894,29 @@ code {
   .banUniversityHeader--2 {
     font-family: Mosk-100; }
 
+.uni-partners-container {
+  display: flex;
+  justify-content: center; }
+
 .uni-partners {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
-  flex-wrap: wrap; }
-  .uni-partners__column {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem; }
-    @media only screen and (max-width: 48.75em) {
-      .uni-partners__column {
-        margin: 1rem; } }
+  flex-wrap: wrap;
+  width: 100rem; }
+  @media only screen and (max-width: 48.75em) {
+    .uni-partners {
+      width: 80rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .uni-partners {
+      width: 60rem;
+      justify-content: center; } }
+  @media only screen and (max-width: 26.25em) {
+    .uni-partners {
+      width: 50rem;
+      justify-content: center; } }
   .uni-partners__logo {
-    height: 8rem;
+    height: 9rem;
     margin: 3rem;
     transition: all 0.2s ease-in-out;
     -webkit-filter: grayscale(100%);
@@ -918,48 +925,49 @@ code {
       transform: scale(1.4);
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
+    @media only screen and (max-width: 48.75em) {
+      .uni-partners__logo {
+        height: 8rem;
+        margin: 1rem; } }
     @media only screen and (max-width: 26.25em) {
       .uni-partners__logo {
-        height: 11rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 20em) {
-      .uni-partners__logo {
-        height: 13rem;
-        margin: 1rem; } }
+        height: 13rem; } }
 
 .university-socials {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .university-socials__bold-text {
-    font-family: Mosk-700;
-    font-size: 6rem; }
-    @media only screen and (max-width: 26.25em) {
-      .university-socials__bold-text {
-        font-size: 5rem; } }
-    @media only screen and (max-width: 17.5em) {
-      .university-socials__bold-text {
-        font-size: 6rem; } }
   .university-socials__text {
-    font-family: Mosk-100;
-    font-weight: lighter;
     font-size: 6rem; }
+    @media only screen and (max-width: 64em) {
+      .university-socials__text {
+        font-size: 8rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .university-socials__text {
+        font-size: 6rem; } }
     @media only screen and (max-width: 26.25em) {
       .university-socials__text {
         font-size: 5rem; } }
-    @media only screen and (max-width: 17.5em) {
+    @media only screen and (max-width: 23.75em) {
+      .university-socials__text {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 20em) {
       .university-socials__text {
         font-size: 6rem; } }
   .university-socials__icon-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 3rem; }
   .university-socials__icon {
     height: 4rem;
     margin: 1.5rem; }
-    @media only screen and (max-width: 26.25em) {
+    @media only screen and (max-width: 64em) {
       .university-socials__icon {
-        height: 3.4rem; } }
+        height: 7rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .university-socials__icon {
+        height: 8rem; } }
 
 .carousel-background {
   background: transparent linear-gradient(270deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box; }
@@ -2017,33 +2025,6 @@ h3, h4 {
   @media only screen and (max-width: 33.75em) {
     .article-level-intermediate {
       font-size: 2.6rem; } }
-  .article-level-intermediate .article-level-beginner {
-    border: .3rem solid #228346;
-    height: 0%;
-    margin-top: 2.2rem;
-    border-radius: 1rem;
-    display: inline-block;
-    padding-left: .8rem;
-    padding-right: .8rem;
-    font-size: 1.8rem;
-    font-family: 'Mosk-600';
-    color: #228346; }
-    @media only screen and (max-width: 33.75em) {
-      .article-level-intermediate .article-level-beginner {
-        font-size: 2.8rem; } }
-  .article-level-intermediate .article-level-advanced {
-    height: 0%;
-    margin-top: 2.2rem;
-    border: .3rem solid #EA044B;
-    border-radius: 1rem;
-    display: inline-block;
-    padding: .1rem 1.8rem;
-    font-size: 1.8rem;
-    font-family: 'Mosk-600';
-    color: #EA044B; }
-    @media only screen and (max-width: 33.75em) {
-      .article-level-intermediate .article-level-advanced {
-        font-size: 2.8rem; } }
   @media only screen and (max-width: 26.25em) {
     .article-level-intermediate {
       font-size: 2.5rem; } }
@@ -2066,8 +2047,7 @@ h3, h4 {
       font-size: 2.5rem; } }
 
 .uni-bold-text {
-  font-family: Mosk-700;
-  font-size: 6rem; }
+  font-family: Mosk-700; }
 
 .uni-text {
   font-family: Mosk-100;

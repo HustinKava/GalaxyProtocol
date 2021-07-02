@@ -3,29 +3,26 @@
   flex-direction: column;
   align-items: center;
 
-  &__bold-text {
-    font-family: Mosk-700;
+  &__text {
     font-size: 6rem;
 
-    @include respond(iphone-plus) {
-      font-size: 5rem;
+    @include respond(ipad-pro) {
+      font-size: 8rem;
     }
 
-    @include respond(galaxy-fold) {
+    @include respond(surface-duo) {
       font-size: 6rem;
     }
-  }
-
-  &__text {
-    font-family: Mosk-100;
-    font-weight: lighter;
-    font-size: 6rem;
 
     @include respond(iphone-plus) {
       font-size: 5rem;
     }
 
-    @include respond(galaxy-fold) {
+    @include respond(iphone-x) {
+      font-size: 7rem;
+    }
+
+    @include respond(iphone-5) {
       font-size: 6rem;
     }
   }
@@ -33,6 +30,7 @@
   &__icon-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 3rem;
   }
 
@@ -40,8 +38,12 @@
     height: 4rem;
     margin: 1.5rem;
 
-    @include respond(iphone-plus) {
-      height: 3.4rem;
+    @include respond(ipad-pro) {
+      height: 7rem;
+    }
+
+    @include respond(iphone-x) {
+      height: 8rem;
     }
   }
 }
