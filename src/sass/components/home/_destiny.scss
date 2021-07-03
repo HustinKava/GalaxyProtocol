@@ -29,6 +29,7 @@
 
     @include respond(surface-duo) {
       font-size: 6rem;
+      line-height: normal;
     }
 
     @include respond(iphone-plus) {

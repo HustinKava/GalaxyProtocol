@@ -16,10 +16,15 @@ export const Modal = ({ modalContent, closeModal }) => {
               className="modal__close"
             />
             {modalContent}
+            <div className="modal__button-container">
+              <button
+                onClick={() => closeModal(false)}
+                className="modal__button"
+              >
+                close
+              </button>
+            </div>
           </div>
-          <button onClick={() => closeModal(false)} className="modal__button">
-            close
-          </button>
         </div>
       </div>
     </>

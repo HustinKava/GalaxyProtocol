@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SidebarContainer } from './SidebarElements';
 import { FaTimes } from 'react-icons/fa';
 import Logo from '../../Assets/logo-white_1_25.png';
 import ComingSoonBadge from '../../Assets/coming-soon-badge.png';
 import { NavLink } from 'react-router-dom';
-import { Modal as MainModal } from '../../Components/Modal/Modal';
-import { modalContent } from '../../Components/Modal/modalContent';
 
 const ExternalLink = ({ href, text }) => {
   return (
@@ -42,9 +40,6 @@ const ComingSoon = ({ text }) => {
 };
 
 function Sidebar({ isOpen, toggle }) {
-
-  const [buyBackModal, setBuyBackModal] = useState(false);
-
   return (
     <SidebarContainer isOpen={isOpen}>
       <div className="sidebar-navbar">
@@ -63,7 +58,11 @@ function Sidebar({ isOpen, toggle }) {
       <div>
         <ComingSoon text="GalaxySwap" />
         <ComingSoon text="Nebula Launchpad" />
-        <InternalLink link="galaxyUniversity" text="Galaxy University" toggle={toggle}/>
+        <InternalLink
+          link="galaxyUniversity"
+          text="Galaxy University"
+          toggle={toggle}
+        />
         <ExternalLink href="https://safegalaxy.net/" text="SafeGalaxy" />
       </div>
 
@@ -73,18 +72,11 @@ function Sidebar({ isOpen, toggle }) {
         href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
         text="Whitepaper V1"
       />
-      {/* <InternalLink link="migrationdocs" text="Migration Docs" /> */}
-      
-      <div className="sidebar-links" >
-        <button 
-        className='sidebar-text'
-        onClick={() => {
-          setBuyBackModal(true);
-        }}>
-          Migration Docs
-        </button>
-        {buyBackModal && <MainModal modalContent={modalContent.buyBackModal} closeModal={setBuyBackModal}/>}
-      </div>
+      <InternalLink
+        link="migrationdocumentation"
+        text="Migration Docs"
+        toggle={toggle}
+      />
 
       {/* Community */}
       <p className="sidebar-header">Community</p>
@@ -104,9 +96,9 @@ function Sidebar({ isOpen, toggle }) {
       <p className="sidebar-header">About</p>
 
       <div>
-        <InternalLink link="aboutus" text="About Us" toggle={toggle}/>
-        <InternalLink link="meetourteam" text="Meet Our Team" toggle={toggle}/>
-        <InternalLink link="faq" text="FAQ" toggle={toggle}/>
+        <InternalLink link="aboutus" text="About Us" toggle={toggle} />
+        <InternalLink link="meetourteam" text="Meet Our Team" toggle={toggle} />
+        <InternalLink link="faq" text="FAQ" toggle={toggle} />
       </div>
     </SidebarContainer>
   );

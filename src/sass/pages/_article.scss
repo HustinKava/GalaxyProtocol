@@ -1,51 +1,40 @@
 // ARTICLE STYLING 
 
 // HERO IMAGE
-.heroImageContainer{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    height: 55rem;
-    width: 128rem;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin-bottom: 8rem;
-
-        @include respond(ipad-pro) {
-            width: 100rem; 
-            height: 40rem;
-            margin-bottom: 2rem;
-               }
-
-        @include respond(ipad) {
-            width: 72rem; 
-               }
-
-        @include respond(surface-duo) {
-            width: 54rem; 
-            height: 25rem;
-            margin-bottom: 1rem;
-               }
-
-        @include respond(iphone-plus) {
-            width: 45rem;
-            height: 20rem; 
-            margin-bottom: 1rem;
-               }
-
-// Iphone x to plus width is behaving strangely - had to add this width in for it to sit right on the screen 
-        @include respond(iphone-x) {
-            width: 60rem;
-               }
-
-        @include respond(iphone-5) {
-            width: 50rem;
-               }
-}
-
 .heroImage{
     border-radius: 2rem;
-    max-width: 100%;
+    margin-bottom: 8rem;
+    height: 55rem;
+    width: 100%;
+
+    @include respond(ipad-pro) {
+        height: 45rem;
+    }
+
+    @include respond(ipad) {
+        height: 38rem;
+    }
+
+    @include respond(surface-duo) {
+        height: 25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @include respond(iphone-plus) {
+        height: 22rem;
+    }
+
+    @include respond(iphone-x) {
+        height: 25rem;
+    }
+
+    @include respond(galaxy-s5) {
+        height: 22rem;
+    }
+
+    @include respond(iphone-5) {
+        height: 20rem;
+    }
 }
 
 // Content container styling */
