@@ -11,7 +11,9 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 // import Jobs from './Pages/Jobs.js';
 // import PositionDetails from './Pages/PositionDetails.js';
-import Article from './Pages/Articles/Article.js';
+
+// import Article from './Pages/Articles/Article.js';
+
 // import GPEcosystem from './Pages/GPEcosystem.js';
 import FAQ from './Pages/FAQ';
 import GalaxyUniversity from './Pages/GalaxyUniversity';
@@ -21,15 +23,18 @@ import MigrationDocs from './Pages/MigrationDocs';
 
 // Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
-// import HistoryofDefi from './Pages/Articles/HistoryofDeFi'
 
+import HistoryofDefi from './Pages/Articles/HistoryofDeFi'
 import Staking from './Pages/Articles/Staking';
 import ImpermanentLoss from './Pages/Articles/ImpermanentLoss';
+import CeFiVsDeFi from './Pages/Articles/CeFiVsDeFi';
+import DLTandBlockchain from './Pages/Articles/DLTandBlockchain';
 import ETHvsBTC from './Pages/Articles/ETHvsBTC';
-import Farming from './Pages/Articles/Farming';
-import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens';
-import ChartReading from './Pages/Articles/ChartReading';
-import ChartPatterns from './Pages/Articles/ChartPatterns';
+// import Farming from './Pages/Articles/Farming';
+// import LiquidityandLPTokens from './Pages/Articles/LiquidityandLPTokens';
+import SmartContractsEthVM from './Pages/Articles/SmartContractsEthVM';
+// import ChartReading from './Pages/Articles/ChartReading';
+// import ChartPatterns from './Pages/Articles/ChartPatterns';
 import FlashLoans from './Pages/Articles/FlashLoans';
 import OwnNFTs from './Pages/Articles/OwnNFTs';
 import Bridging from './Pages/Articles/Bridging';
@@ -57,26 +62,25 @@ function App() {
         {/* <Route exact path="/GPEcosystem" component={GPEcosystem} /> */}
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
-        <Route exact path="/Article" component={Article} />
+        {/* <Route exact path="/Article" component={Article} /> */}
+
 
         {/* Articles */}
-        {/* <Route exact path="/DLTandBlockchain" component={DLTandBlockchain} /> */}
-        {/* <Route exact path="/HistoryofDefi" component={HistoryofDefi} /> */}
+        <Route exact path="/HistoryofDefi" component={HistoryofDefi} />
         <Route exact path="/Staking" component={Staking} />
         <Route exact path="/ImpermanentLoss" component={ImpermanentLoss} />
         <Route exact path="/ETHvsBTC" component={ETHvsBTC} />
-        <Route exact path="/Farming" component={Farming} />
-        <Route
-          exact
-          path="/LiquidityandLPTokens"
-          component={LiquidityandLPTokens}
-        />
-        <Route exact path="/ChartReading" component={ChartReading} />
-        <Route exact path="/ChartPatterns" component={ChartPatterns} />
+        {/* <Route exact path="/Farming" component={Farming} /> */}
+        {/* <Route exact path="/LiquidityandLPTokens" component={LiquidityandLPTokens} /> */}
+        {/* <Route exact path="/ChartReading" component={ChartReading} /> */}
+        {/* <Route exact path="/ChartPatterns" component={ChartPatterns} /> */}
         <Route exact path="/FlashLoans" component={FlashLoans} />
         <Route exact path="/OwnNFTs" component={OwnNFTs} />
         <Route exact path="/Bridging" component={Bridging} />
         <Route exact path="/CryptoWallets" component={CryptoWallets} />
+        <Route exact path="/CeFiVsDeFi" component={CeFiVsDeFi} />
+        <Route exact path="/DLTandBlockchain" component={DLTandBlockchain} />
+        <Route exact path="/SmartContractsandtheEthereumVirtualMachine" component={SmartContractsEthVM} />
 
         <Route exact path="/meetourteam" component={MeetOurTeam} />
         <Route exact path="/aboutus" component={AboutUs} />

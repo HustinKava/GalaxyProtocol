@@ -1723,43 +1723,33 @@ h3, h4 {
     .about-us-h3 {
       font-size: 4rem; } }
 
-.heroImageContainer {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  height: 55rem;
-  width: 128rem;
-  overflow: hidden;
-  border-radius: 2rem;
-  margin-bottom: 8rem; }
-  @media only screen and (max-width: 64em) {
-    .heroImageContainer {
-      width: 100rem;
-      height: 40rem;
-      margin-bottom: 2rem; } }
-  @media only screen and (max-width: 48.75em) {
-    .heroImageContainer {
-      width: 72rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .heroImageContainer {
-      width: 54rem;
-      height: 25rem;
-      margin-bottom: 1rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .heroImageContainer {
-      width: 45rem;
-      height: 20rem;
-      margin-bottom: 1rem; } }
-  @media only screen and (max-width: 23.75em) {
-    .heroImageContainer {
-      width: 60rem; } }
-  @media only screen and (max-width: 20em) {
-    .heroImageContainer {
-      width: 50rem; } }
-
 .heroImage {
   border-radius: 2rem;
-  max-width: 100%; }
+  margin-bottom: 8rem;
+  height: 55rem;
+  width: 100%; }
+  @media only screen and (max-width: 64em) {
+    .heroImage {
+      height: 45rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .heroImage {
+      height: 38rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .heroImage {
+      height: 25rem;
+      margin-bottom: 1.5rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .heroImage {
+      height: 22rem; } }
+  @media only screen and (max-width: 23.75em) {
+    .heroImage {
+      height: 25rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .heroImage {
+      height: 22rem; } }
+  @media only screen and (max-width: 20em) {
+    .heroImage {
+      height: 20rem; } }
 
 .contentContainer {
   margin-left: 8rem; }
