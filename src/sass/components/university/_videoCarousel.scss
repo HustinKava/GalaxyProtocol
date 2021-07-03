@@ -1,5 +1,6 @@
 .carousel-background {
-  background: transparent linear-gradient(270deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #000000 0%, #171717 100%) 0%
+    0% no-repeat padding-box;
 
   @include respond(ipad-pro) {
     padding-top: 10rem;
@@ -40,9 +41,9 @@
 }
 
 .carousel-all-videos {
-    padding-top: 5rem;
-    border-bottom: 0.5rem solid $color-grey-dark-2;
-    width: 25rem; 
+  padding-top: 5rem;
+  border-bottom: 0.5rem solid $color-grey-dark-2;
+  width: 25rem;
 }
 
 .carousel-thin {
@@ -88,8 +89,8 @@
   }
 
   @include respond(surface-duo) {
-    width: 40%;
-    right: -9rem;
+    width: 30%;
+    right: -4rem;
   }
 }
 
@@ -110,13 +111,14 @@
   }
 
   @include respond(surface-duo) {
-    width: 40%;
-    right: -9rem;
+    width: 30%;
+    left: -4rem;
   }
 }
 
-.slick-prev:before, .slick-next:before {
-content: none;
+.slick-prev:before,
+.slick-next:before {
+  content: none;
 }
 
 .arrows {
@@ -128,63 +130,63 @@ content: none;
 // Styling for the images
 
 .carousel-image-container {
-    position: relative;
-  }
-  
-  .carousel-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 80%;
-    border-radius: 1rem;
+  position: relative;
+}
 
-    @include respond(surface-duo) {
-      width: 65%;
-    }
+.carousel-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 80%;
+  border-radius: 1rem;
+
+  @include respond(surface-duo) {
+    width: 65%;
   }
+}
 
 .carousel-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000000CC;
-    opacity: 0.9;
-    overflow: hidden;
-    width: 80%;
-    height: 0;
-    transition: 0.3s ease-in-out;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000cc;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 
-    @include respond(surface-duo) {
-      width: 65%;
-    }
+  @include respond(surface-duo) {
+    width: 65%;
   }
-  
-  .carousel-image-container:hover .carousel-overlay {
-    height: 35%;
-  }
-  
-  .carousel-text {
-    color: white;
-    font-size: 1.4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: Mosk-300;
-    text-align: center;
+}
 
-    @include respond(ipad-pro) {
-      font-size: 1.2rem;
-    }
+.carousel-image-container:hover .carousel-overlay {
+  height: 35%;
+}
+
+.carousel-text {
+  color: white;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Mosk-300;
+  text-align: center;
+
+  @include respond(ipad-pro) {
+    font-size: 1.2rem;
   }
+}
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -208,7 +210,6 @@ content: none;
     transform: rotate(360deg);
   }
 }
-
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Container for the carousel

@@ -1,16 +1,16 @@
 import React from 'react';
-import HeaderImage from '../../Assets/university-img.png'
+import HeaderImage from '../../Assets/university-img.png';
 
 const UniversityHeader = () => {
   return (
     <div>
       <div className="mainContainer headerContainer">
         <div className="galaxyUniversityHeader">
-
           <div className="titleContainer">
-            <h1 className="galaxyUniversityHeader__h1">
-              Galaxy{' '}</h1>
-            <span className="galaxyUniversityHeader__span">UNIVERSE-ITY</span>
+            <h1 className="galaxyUniversityHeader__h1">Galaxy </h1>
+            <span className="galaxyUniversityHeader__span">
+              UNIVERSE&#8209;ITY
+            </span>
           </div>
 
           <div>
@@ -18,10 +18,9 @@ const UniversityHeader = () => {
               Learn all about blockchain &#38; crypto. It doesn’t matter if you
               are a Galaxy Rookie who just started their space journey or if
               you’re a Master Chief looking to test your knowledge, we have it
-              all. 
+              all.
             </p>
           </div>
-
         </div>
 
         <div>

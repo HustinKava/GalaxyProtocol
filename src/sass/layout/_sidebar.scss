@@ -16,7 +16,7 @@
     @include respond(surface-duo) {
       margin-left: 5rem;
     }
-    
+
     @include respond(galaxy-s5) {
       width: 55%;
     }
@@ -53,11 +53,11 @@
   font-family: Mosk-700;
   font-size: 2.2rem;
   padding-left: 5rem;
-  padding-top: 4.5rem;
+  padding-top: 2rem;
 
   @include respond(ipad-pro) {
     font-size: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-left: 6rem;
   }
 
@@ -68,6 +68,10 @@
   @include respond(surface-duo) {
     padding-left: 5rem;
   }
+}
+
+.sidebar-group {
+  padding-bottom: 2.5rem;
 }
 
 .sidebar-text {
@@ -104,5 +108,3 @@
     margin-left: 10%;
   }
 }
-
-

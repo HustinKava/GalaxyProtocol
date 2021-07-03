@@ -5,7 +5,6 @@ import Partners from '../Components/University/Partners';
 import ArticleGallery from '../Components/University/ArticleGallery.js';
 import VideosCarousel from '../Components/University/VideoCarousel';
 import Socials from '../Components/University/Socials';
-import getProgress from '../Components/ProgressBar/getProgress';
 
 const GalaxyUniversity = () => {
   return (
@@ -20,4 +19,4 @@ const GalaxyUniversity = () => {
   );
 };
 
-export default getProgress(GalaxyUniversity);
+export default GalaxyUniversity;

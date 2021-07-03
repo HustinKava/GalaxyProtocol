@@ -55,12 +55,12 @@ function Sidebar({ isOpen, toggle }) {
       {/* Products */}
       <p className="sidebar-header">Products</p>
 
-      <div>
+      <div className="sidebar-group">
         <ComingSoon text="GalaxySwap" />
         <ComingSoon text="Nebula Launchpad" />
         <InternalLink
           link="galaxyUniversity"
-          text="Galaxy University"
+          text="Galaxy Universe&#8209;ity"
           toggle={toggle}
         />
         <ExternalLink href="https://safegalaxy.net/" text="SafeGalaxy" />
@@ -68,19 +68,21 @@ function Sidebar({ isOpen, toggle }) {
 
       {/* Documentation */}
       <p className="sidebar-header">Documentation</p>
-      <ExternalLink
-        href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
-        text="Whitepaper V1"
-      />
-      <InternalLink
-        link="migrationdocumentation"
-        text="Migration Docs"
-        toggle={toggle}
-      />
+      <div className="sidebar-group">
+        <ExternalLink
+          href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+          text="Whitepaper V1"
+        />
+        <InternalLink
+          link="migrationdocumentation"
+          text="Migration Docs"
+          toggle={toggle}
+        />
+      </div>
 
       {/* Community */}
       <p className="sidebar-header">Community</p>
-      <div>
+      <div className="sidebar-group">
         <ExternalLink
           href="https://discord.com/invite/dq7m6R7UAz"
           text="Discord"
@@ -95,7 +97,7 @@ function Sidebar({ isOpen, toggle }) {
       {/* About */}
       <p className="sidebar-header">About</p>
 
-      <div>
+      <div className="sidebar-group">
         <InternalLink link="aboutus" text="About Us" toggle={toggle} />
         <InternalLink link="meetourteam" text="Meet Our Team" toggle={toggle} />
         <InternalLink link="faq" text="FAQ" toggle={toggle} />

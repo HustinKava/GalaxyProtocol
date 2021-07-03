@@ -54,7 +54,10 @@ const Navbar = () => {
             <div className="dropdown-content">
               <ComingSoon text="GalaxySwap" />
               <ComingSoon text="Nebula Launchpad" />
-              <InternalLink link="galaxyuniversity" text="Galaxy University" />
+              <InternalLink
+                link="galaxyuniversity"
+                text="Galaxy Universe&#8209;ity"
+              />
               <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
             </div>
           </div>

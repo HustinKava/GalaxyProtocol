@@ -72,12 +72,12 @@ button {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 @font-face {
   font-family: "Mosk-100";
@@ -365,7 +365,7 @@ code {
   margin-bottom: 0rem; }
   .gen__background {
     height: auto;
-    width: 67%;
+    width: 63%;
     display: block;
     position: absolute;
     left: 50%;
@@ -421,8 +421,11 @@ code {
       .gen__text {
         padding-bottom: 1rem; } }
   .gen__buttons-container {
-    padding-top: 5rem;
+    padding-top: 9rem;
     text-align: center; }
+    @media only screen and (max-width: 64em) {
+      .gen__buttons-container {
+        padding-top: 5rem; } }
     @media only screen and (max-width: 26.25em) {
       .gen__buttons-container {
         display: flex;
@@ -625,6 +628,9 @@ code {
       transform: translateY(0);
       height: auto;
       width: 60%; } }
+
+.discord-join-now {
+  text-decoration: none; }
 
 /* Global banner styling used by 2 more banner components */
 @media only screen and (max-width: 64em) {
@@ -912,7 +918,7 @@ code {
 
 .uni-partners {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
   width: 100rem; }
@@ -1049,8 +1055,8 @@ code {
       right: -8rem; } }
   @media only screen and (max-width: 33.75em) {
     .slick-next {
-      width: 40%;
-      right: -9rem; } }
+      width: 30%;
+      right: -4rem; } }
 
 .slick-prev {
   height: auto;
@@ -1067,10 +1073,11 @@ code {
       left: -8rem; } }
   @media only screen and (max-width: 33.75em) {
     .slick-prev {
-      width: 40%;
-      right: -9rem; } }
+      width: 30%;
+      left: -4rem; } }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   content: none; }
 
 .arrows {
@@ -1096,7 +1103,7 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000000CC;
+  background-color: #000000cc;
   opacity: 0.9;
   overflow: hidden;
   width: 80%;
@@ -1184,38 +1191,9 @@ code {
     padding-left: 4.6rem; } }
 
 .footerLogo {
-  height: 100%;
-  width: auto;
+  width: 25rem;
   padding-top: 3rem;
   padding-bottom: 1rem; }
-  @media only screen and (max-width: 64em) {
-    .footerLogo {
-      height: auto;
-      width: 30%; } }
-  @media only screen and (max-width: 48.75em) {
-    .footerLogo {
-      height: auto;
-      width: 35%; } }
-  @media only screen and (max-width: 33.75em) {
-    .footerLogo {
-      height: auto;
-      width: 50%; } }
-  @media only screen and (max-width: 26.25em) {
-    .footerLogo {
-      height: auto;
-      width: 72%; } }
-  @media only screen and (max-width: 23.75em) {
-    .footerLogo {
-      height: auto;
-      width: 72%; } }
-  @media only screen and (max-width: 20em) {
-    .footerLogo {
-      height: auto;
-      width: 74%; } }
-  @media only screen and (max-width: 17.5em) {
-    .footerLogo {
-      height: auto;
-      width: 70%; } }
 
 .footerAddress {
   font-family: Mosk-300;
@@ -1468,7 +1446,7 @@ h3, h4 {
 .navText {
   font-family: Mosk-300;
   font-size: 2rem;
-  line-height: 3;
+  line-height: 2.3;
   background: none;
   border: none;
   color: #fff; }
@@ -1583,11 +1561,11 @@ h3, h4 {
   font-family: Mosk-700;
   font-size: 2.2rem;
   padding-left: 5rem;
-  padding-top: 4.5rem; }
+  padding-top: 2rem; }
   @media only screen and (max-width: 64em) {
     .sidebar-header {
       font-size: 4rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
       padding-left: 6rem; } }
   @media only screen and (max-width: 48.75em) {
     .sidebar-header {
@@ -1595,6 +1573,9 @@ h3, h4 {
   @media only screen and (max-width: 33.75em) {
     .sidebar-header {
       padding-left: 5rem; } }
+
+.sidebar-group {
+  padding-bottom: 2.5rem; }
 
 .sidebar-text {
   font-family: Mosk-200;
@@ -1805,18 +1786,6 @@ h3, h4 {
   line-height: normal;
   margin-bottom: 5rem;
   padding-top: 3rem; }
-  @media only screen and (max-width: 48.75em) {
-    .faq__header {
-      font-size: 7rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .faq__header {
-      font-size: 4.5rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .faq__header {
-      font-size: 3.5rem; } }
-  @media only screen and (max-width: 22.5em) {
-    .faq__header {
-      font-size: 4rem; } }
 
 .faq__intro {
   font-family: Mosk-200;
@@ -1832,22 +1801,15 @@ h3, h4 {
   font-size: 1.8rem;
   color: #C7C7C7;
   line-height: 2.5rem;
-  padding-bottom: 7.5rem; }
+  padding-bottom: 7rem; }
   @media only screen and (max-width: 64em) {
     .faq__body {
       font-size: 2rem; } }
 
 .faq__h1 {
-  font-size: 6rem; }
-  @media only screen and (max-width: 48.75em) {
-    .faq__h1 {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .faq__h1 {
-      font-size: 2.5rem; } }
-  @media only screen and (max-width: 23.75em) {
-    .faq__h1 {
-      font-size: 3rem; } }
+  font-family: Mosk-700;
+  font-size: 6rem;
+  padding-bottom: 2rem; }
 
 .faq__h3 {
   font-size: 2.6rem; }
@@ -1971,11 +1933,10 @@ h3, h4 {
   @media only screen and (max-width: 33.75em) {
     .article-card-image-div {
       height: 48rem;
-      width: 39rem; } }
-  @media only screen and (max-width: 23.75em) {
-    .article-card-image-div {
-      height: 56rem;
-      width: 46rem; } }
+      width: 36rem; } }
+
+.article-card-image {
+  max-width: 100%; }
 
 .article-card-details-container {
   display: flex;
@@ -2292,7 +2253,7 @@ h3, h4 {
       .profile-card__logo-3d {
         height: 10rem; } }
   .profile-card__linkedIn {
-    height: 2rem;
+    height: 1.5rem;
     margin-top: 0.75rem; }
 
 .migration-docs-container {
@@ -2321,7 +2282,9 @@ h3, h4 {
     font-weight: bold; }
 
 .migration-docs-infographic {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  height: auto;
+  width: 100%; }
 
 /* HERO STYLING */
 .openPos-hero-header {

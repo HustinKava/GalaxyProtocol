@@ -69,7 +69,10 @@ function Footer() {
               <p className="footer-column__heading">Products</p>
               <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
               <ComingSoon text="GalaxySwap" />
-              <InternalLink link="galaxyuniversity" text="Galaxy University" />
+              <InternalLink
+                link="galaxyuniversity"
+                text="Galaxy Universe&#8209;ity"
+              />
               <ComingSoon text="Nebula Launchpad" />
               <ExternalLink
                 href="https://intergalacticmerch.myshopify.com/"

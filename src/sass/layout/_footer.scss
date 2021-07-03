@@ -26,45 +26,44 @@
 }
 
 .footerLogo {
-  height: 100%;
-  width: auto;
+  width: 25rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
 
-  @include respond(ipad-pro) {
-    height: auto;
-    width: 30%;
-  }
-
-  @include respond(ipad) {
-    height: auto;
-    width: 35%;
-  }
-
-  @include respond(surface-duo) {
-    height: auto;
-    width: 50%;
-  }
-
-  @include respond(iphone-plus) {
-    height: auto;
-    width: 72%;
-  }
-
-  @include respond(iphone-x) {
-    height: auto;
-    width: 72%;
-  }
-
-  @include respond(iphone-5) {
-    height: auto;
-    width: 74%;
-  }
-
-  @include respond(galaxy-fold) {
-    height: auto;
-    width: 70%;
-  }
+  // @include respond(ipad-pro) {
+  //   height: auto;
+  //   width: 30%;
+  // }
+  //
+  // @include respond(ipad) {
+  //   height: auto;
+  //   width: 35%;
+  // }
+  //
+  // @include respond(surface-duo) {
+  //   height: auto;
+  //   width: 50%;
+  // }
+  //
+  // @include respond(iphone-plus) {
+  //   height: auto;
+  //   width: 72%;
+  // }
+  //
+  // @include respond(iphone-x) {
+  //   height: auto;
+  //   width: 72%;
+  // }
+  //
+  // @include respond(iphone-5) {
+  //   height: auto;
+  //   width: 74%;
+  // }
+  //
+  // @include respond(galaxy-fold) {
+  //   height: auto;
+  //   width: 70%;
+  // }
 }
 
 .footerAddress {

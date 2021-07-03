@@ -133,17 +133,17 @@
 
   @include respond(surface-duo) {
     height: 48rem;
-    width: 39rem;
+    width: 36rem;
   }
 
-  @include respond(iphone-x) {
-    height: 56rem;
-    width: 46rem;
-  }
+  // @include respond(iphone-x) {
+  //   height: 56rem;
+  //   width: 46rem;
+  // }
 }
 
 .article-card-image {
-  // max-height: 100%;
+  max-width: 100%;
 }
 
 .article-card-details-container {

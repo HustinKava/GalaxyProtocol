@@ -23,8 +23,6 @@ const Partners = () => {
         <PartnerLogo partnerName={CoinGecko} alt="CoinGecko" />
         <PartnerLogo partnerName={CoinTiger} alt="CoinTiger" />
         {/* <PartnerLogo partnerName={ProBit} alt="ProBit" /> */}
-      </div>
-      <div className="uni-partners__column">
         <PartnerLogo partnerName={BscScan} alt="BscScan" />
         <PartnerLogo partnerName={SwftBlockchain} alt="SwftBlockchain" />
         <PartnerLogo partnerName={TrustWallet} alt="TrustWallet" />
