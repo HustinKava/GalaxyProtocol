@@ -26,6 +26,10 @@
     font-size: 3rem;
     margin-right: 3rem;
 
+    @include respond(iphone-only) {
+      font-size: 4.5rem;
+    }
+
     @include respond(galaxy-fold) {
       font-size: 4rem;
     }
@@ -34,6 +38,10 @@
   &__logo {
     @include respond(surface-duo) {
       height: 3rem;
+    }
+
+    @include respond(iphone-only) {
+      height: 2rem;
     }
 
     @include respond(galaxy-fold) {

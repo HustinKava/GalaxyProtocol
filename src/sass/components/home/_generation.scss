@@ -3,6 +3,10 @@
   margin-top: 16rem;
   margin-bottom: 0rem;
 
+  @include respond(iphone-only) {
+    margin-top: 9rem;
+  }
+
   &__background {
     height: auto;
     width: 63%;

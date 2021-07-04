@@ -3,6 +3,19 @@
 .headerContainer {
   display: flex;
   flex-direction: row;
+  margin: 15rem 20rem;
+
+  @include respond(ipad-pro) {
+    margin: 21rem 7rem;
+  }
+
+  @include respond(ipad) {
+    margin: 15rem 7rem;
+  }
+
+  // @include respond(iphone-only) {
+
+  // }
 }
 
 .galaxyUniversityHeader {
@@ -23,6 +36,10 @@
     font-size: 8rem;
     font-family: 'Mosk-200';
 
+    @include respond(ipad-pro) {
+      line-height: 4rem;
+    }
+
     @include respond(ipad) {
       font-size: 6rem;
     }
@@ -40,6 +57,7 @@
     @include respond(ipad-pro) {
       max-width: 90%;
       font-size: 2.3rem;
+      margin-top: 5rem;
     }
   }
 }
@@ -72,6 +90,10 @@
       $color-black 100%
     )
     0% 0% no-repeat padding-box;
+
+  @include respond(iphone-only) {
+    height: 5rem;
+  }
 }
 
 // ARTICLE GALLERY COMPONENT
@@ -229,21 +251,6 @@
     font-size: 2.5rem;
   }
 }
-
-// .article-card-timeframe-container {
-//   display: flex;
-//
-//   @include respond(surface-duo) {
-//     font-size: 2.8rem;
-//   }
-// }
-
-// .article-card-length {
-//   font-size: 2rem;
-//   font-family: 'Mosk-600';
-//   color: $color-white;
-//   padding-top: 1rem;
-// }
 
 .uni-bold-text {
   font-family: Mosk-700;

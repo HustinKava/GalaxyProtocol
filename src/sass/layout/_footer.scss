@@ -257,6 +257,11 @@
     @include respond(iphone-5) {
       margin-top: 1.6rem;
     }
+
+    @include respond(iphone-only) {
+      margin-top: 0.9rem;
+      height: 1.4rem;
+    }
   }
 
   &__link {

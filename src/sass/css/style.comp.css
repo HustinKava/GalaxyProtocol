@@ -134,7 +134,7 @@ code {
   font-style: normal; }
 
 .modal {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -143,7 +143,7 @@ code {
   z-index: 9999;
   transition: all 0.3s;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.6rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -152,36 +152,53 @@ code {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0, 0, 0, 0.3); } }
+  @media only screen and (min-width: 100em) {
+    .modal {
+      font-size: 1.7rem; } }
   @media only screen and (max-width: 48.75em) {
     .modal {
-      font-size: 2.7rem; } }
+      font-size: 1.5rem; } }
   .modal__content-container {
     font-family: Mosk-100;
-    padding: 4rem;
-    max-height: 70vh;
-    max-width: 70vw;
-    overflow: scroll;
+    padding: 6rem;
+    max-height: 80vh;
+    max-width: 60vw;
+    overflow-y: scroll;
     background-color: #1a1a1a;
-    border-radius: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .modal__content-container::-webkit-scrollbar {
-      display: none; }
+    align-items: center;
+    scrollbar-width: thin;
+    scrollbar-color: blue red;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 33.75em) {
+      .modal__content-container {
+        padding: 2rem; } }
     @media only screen and (max-width: 26.25em) {
       .modal__content-container {
         max-height: 75vh;
         max-width: 80vw; } }
+  .modal__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+  .modal__close {
+    color: #00cdd5;
+    cursor: pointer;
+    font-size: 2.5rem;
+    right: 0; }
+  .modal__button-container {
+    width: 100%;
+    padding-bottom: 1rem; }
   .modal__button {
-    width: 17rem;
-    height: 4rem;
+    width: 10rem;
     border-radius: 1rem;
     margin-top: 3rem;
     color: #fff;
     border: none;
     font-family: Mosk-700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background: transparent linear-gradient(120deg, #00cdd5 0%, #00cdd5 26%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box; }
 
 .modal-title {
@@ -190,6 +207,26 @@ code {
   @media only screen and (max-width: 48.75em) {
     .modal-title {
       font-size: 3.6rem; } }
+
+.modal__content-container::-webkit-scrollbar {
+  background-color: #262626;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem; }
+
+.modal__content-container::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #555; }
+
+.content-align-left {
+  text-align: left; }
+
+.buyback-header {
+  font-family: Mosk-700;
+  font-size: 4rem; }
+
+.modal-cookie-link {
+  color: #fff;
+  text-decoration: none; }
 
 .destCenter {
   text-align: center; }
@@ -214,7 +251,8 @@ code {
     line-height: 0.4; }
     @media only screen and (max-width: 33.75em) {
       .destHeader--2 {
-        font-size: 6rem; } }
+        font-size: 6rem;
+        line-height: normal; } }
     @media only screen and (max-width: 26.25em) {
       .destHeader--2 {
         font-size: 5rem; } }
@@ -304,6 +342,11 @@ code {
     @media only screen and (max-width: 33.75em) {
       .destBox__header {
         font-size: 3rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .destBox__header {
+          /* CSS specific to iOS devices */
+          font-size: 4rem; } } }
   .destBox__text {
     text-align: center;
     font-family: Mosk-300;
@@ -317,14 +360,27 @@ code {
       .destBox__text {
         padding: 1rem;
         font-size: 2.2rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .destBox__text {
+          /* CSS specific to iOS devices */
+          font-size: 3.5rem; } } }
+
+.destiny-links {
+  text-decoration: none; }
 
 .gen {
   position: relative;
   margin-top: 16rem;
   margin-bottom: 0rem; }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .gen {
+        /* CSS specific to iOS devices */
+        margin-top: 9rem; } } }
   .gen__background {
     height: auto;
-    width: 67%;
+    width: 63%;
     display: block;
     position: absolute;
     left: 50%;
@@ -356,7 +412,8 @@ code {
         font-size: 7rem; } }
     @media only screen and (max-width: 33.75em) {
       .gen__header {
-        font-size: 6rem; } }
+        font-size: 6rem;
+        line-height: normal; } }
     @media only screen and (max-width: 26.25em) {
       .gen__header {
         font-size: 5rem; } }
@@ -379,8 +436,11 @@ code {
       .gen__text {
         padding-bottom: 1rem; } }
   .gen__buttons-container {
-    padding-top: 5rem;
+    padding-top: 9rem;
     text-align: center; }
+    @media only screen and (max-width: 64em) {
+      .gen__buttons-container {
+        padding-top: 5rem; } }
     @media only screen and (max-width: 26.25em) {
       .gen__buttons-container {
         display: flex;
@@ -409,6 +469,32 @@ code {
     font-size: 2rem;
     border: solid 1px #ff00ff; }
 
+.openingCenter {
+  text-align: center; }
+
+.openingHeader {
+  font-size: 6.4rem;
+  color: #fff;
+  font-family: Mosk-700;
+  line-height: 0.4; }
+  @media only screen and (max-width: 33.75em) {
+    .openingHeader {
+      font-size: 6rem;
+      line-height: normal; } }
+  @media only screen and (max-width: 26.25em) {
+    .openingHeader {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 23.75em) {
+    .openingHeader {
+      font-size: 6rem; } }
+
+.openingText {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  font-family: Mosk-300;
+  font-size: 2.5rem;
+  line-height: 1.2; }
+
 .news {
   background: transparent linear-gradient(269deg, #000 0%, #171717 100%) 0% 0% no-repeat padding-box;
   text-align: center; }
@@ -428,7 +514,8 @@ code {
     line-height: 0; }
     @media only screen and (max-width: 33.75em) {
       .news__text {
-        font-size: 8rem; } }
+        font-size: 8rem;
+        line-height: normal; } }
     @media only screen and (max-width: 17.5em) {
       .news__text {
         font-size: 10.7rem; } }
@@ -557,6 +644,9 @@ code {
       height: auto;
       width: 60%; } }
 
+.discord-join-now {
+  text-decoration: none; }
+
 /* Global banner styling used by 2 more banner components */
 @media only screen and (max-width: 64em) {
   .ban-gridPadding {
@@ -584,6 +674,9 @@ code {
   .banHeader-alt--2 {
     font-size: 7rem;
     line-height: 0.5; }
+    @media only screen and (max-width: 33.75em) {
+      .banHeader-alt--2 {
+        line-height: normal; } }
 
 .banDesc {
   font-family: Mosk-300;
@@ -766,13 +859,11 @@ code {
       width: 60%; } }
 
 .university-image {
-  height: auto;
-  width: 140%;
+  height: 75rem;
   margin-top: -3rem;
   /* Resize university image on small screen */ }
   @media only screen and (max-width: 64em) {
     .university-image {
-      width: 90%;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -833,20 +924,32 @@ code {
   .banUniversityHeader--2 {
     font-family: Mosk-100; }
 
+.ban-university-link {
+  text-decoration: none; }
+
+.uni-partners-container {
+  display: flex;
+  justify-content: center; }
+
 .uni-partners {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-  flex-wrap: wrap; }
-  .uni-partners__column {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem; }
-    @media only screen and (max-width: 48.75em) {
-      .uni-partners__column {
-        margin: 1rem; } }
+  flex-wrap: wrap;
+  width: 100rem; }
+  @media only screen and (max-width: 48.75em) {
+    .uni-partners {
+      width: 80rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .uni-partners {
+      width: 60rem;
+      justify-content: center; } }
+  @media only screen and (max-width: 26.25em) {
+    .uni-partners {
+      width: 50rem;
+      justify-content: center; } }
   .uni-partners__logo {
-    height: 8rem;
+    height: 9rem;
     margin: 3rem;
     transition: all 0.2s ease-in-out;
     -webkit-filter: grayscale(100%);
@@ -855,48 +958,59 @@ code {
       transform: scale(1.4);
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
+    @media only screen and (max-width: 48.75em) {
+      .uni-partners__logo {
+        height: 8rem;
+        margin: 1rem; } }
     @media only screen and (max-width: 26.25em) {
       .uni-partners__logo {
-        height: 11rem;
-        margin: 1rem; } }
-    @media only screen and (max-width: 20em) {
-      .uni-partners__logo {
-        height: 13rem;
-        margin: 1rem; } }
+        height: 13rem; } }
 
 .university-socials {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .university-socials__bold-text {
-    font-family: Mosk-700;
-    font-size: 6rem; }
-    @media only screen and (max-width: 26.25em) {
-      .university-socials__bold-text {
-        font-size: 5rem; } }
-    @media only screen and (max-width: 17.5em) {
-      .university-socials__bold-text {
-        font-size: 6rem; } }
   .university-socials__text {
-    font-family: Mosk-100;
-    font-weight: lighter;
     font-size: 6rem; }
+    @media only screen and (max-width: 64em) {
+      .university-socials__text {
+        font-size: 8rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .university-socials__text {
+        font-size: 6rem; } }
     @media only screen and (max-width: 26.25em) {
       .university-socials__text {
         font-size: 5rem; } }
-    @media only screen and (max-width: 17.5em) {
+    @media only screen and (max-width: 23.75em) {
+      .university-socials__text {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 20em) {
       .university-socials__text {
         font-size: 6rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .university-socials__text {
+          /* CSS specific to iOS devices */
+          font-size: 9rem; } } }
   .university-socials__icon-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 3rem; }
   .university-socials__icon {
     height: 4rem;
     margin: 1.5rem; }
-    @media only screen and (max-width: 26.25em) {
+    @media only screen and (max-width: 64em) {
       .university-socials__icon {
-        height: 3.4rem; } }
+        height: 7rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .university-socials__icon {
+        height: 8rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .university-socials__icon {
+          /* CSS specific to iOS devices */
+          height: 6rem; } } }
 
 .carousel-background {
   background: transparent linear-gradient(270deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box; }
@@ -916,22 +1030,32 @@ code {
   @media only screen and (max-width: 48.75em) {
     .carousel-recent-videos {
       width: 15rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .carousel-recent-videos {
+        /* CSS specific to iOS devices */
+        width: 10rem; } } }
 
 .carousel-all-videos-container {
   width: 100%;
   display: flex;
   justify-content: flex-end; }
-  @media only screen and (max-width: 64em) {
-    .carousel-all-videos-container {
-      margin-left: 5rem; } }
-  @media only screen and (max-width: 48.75em) {
-    .carousel-all-videos-container {
-      margin-left: 10rem; } }
 
 .carousel-all-videos {
   padding-top: 5rem;
   border-bottom: 0.5rem solid #292929;
   width: 25rem; }
+  @media only screen and (max-width: 64em) {
+    .carousel-all-videos {
+      width: 20rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .carousel-all-videos {
+      width: 15rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .carousel-all-videos {
+        /* CSS specific to iOS devices */
+        width: 9rem; } } }
 
 .carousel-thin {
   font-family: Mosk-100;
@@ -966,8 +1090,8 @@ code {
       right: -8rem; } }
   @media only screen and (max-width: 33.75em) {
     .slick-next {
-      width: 40%;
-      right: -9rem; } }
+      width: 30%;
+      right: -4rem; } }
 
 .slick-prev {
   height: auto;
@@ -984,10 +1108,11 @@ code {
       left: -8rem; } }
   @media only screen and (max-width: 33.75em) {
     .slick-prev {
-      width: 40%;
-      right: -9rem; } }
+      width: 30%;
+      left: -4rem; } }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   content: none; }
 
 .arrows {
@@ -1013,7 +1138,7 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000000CC;
+  background-color: #000000cc;
   opacity: 0.9;
   overflow: hidden;
   width: 80%;
@@ -1101,38 +1226,9 @@ code {
     padding-left: 4.6rem; } }
 
 .footerLogo {
-  height: 100%;
-  width: auto;
+  width: 25rem;
   padding-top: 3rem;
   padding-bottom: 1rem; }
-  @media only screen and (max-width: 64em) {
-    .footerLogo {
-      height: auto;
-      width: 30%; } }
-  @media only screen and (max-width: 48.75em) {
-    .footerLogo {
-      height: auto;
-      width: 35%; } }
-  @media only screen and (max-width: 33.75em) {
-    .footerLogo {
-      height: auto;
-      width: 50%; } }
-  @media only screen and (max-width: 26.25em) {
-    .footerLogo {
-      height: auto;
-      width: 72%; } }
-  @media only screen and (max-width: 23.75em) {
-    .footerLogo {
-      height: auto;
-      width: 72%; } }
-  @media only screen and (max-width: 20em) {
-    .footerLogo {
-      height: auto;
-      width: 74%; } }
-  @media only screen and (max-width: 17.5em) {
-    .footerLogo {
-      height: auto;
-      width: 70%; } }
 
 .footerAddress {
   font-family: Mosk-300;
@@ -1154,137 +1250,137 @@ code {
     .footerAddress {
       font-size: 3rem; } }
 
-@media only screen and (max-width: 64em) {
-  .footer-column {
-    padding-left: 6rem; } }
-
-@media only screen and (max-width: 48.75em) {
-  .footer-column {
-    padding-left: 3rem; } }
-
-@media only screen and (max-width: 17.5em) {
-  .footer-column {
-    padding-left: 4.6rem; } }
-
-.footer-column__divider {
-  width: 70%;
-  margin-left: 0;
-  border: 0;
-  height: 0.2rem;
-  background-image: linear-gradient(270deg, #fff 0%, #808080 100%); }
+.footer-column {
+  width: 23rem; }
+  @media only screen and (min-width: 100em) {
+    .footer-column {
+      width: 28rem; } }
   @media only screen and (max-width: 64em) {
-    .footer-column__divider {
-      width: 85%; } }
-  @media only screen and (max-width: 48.75em) {
-    .footer-column__divider {
-      width: 95%; } }
+    .footer-column {
+      padding-left: 3rem; } }
   @media only screen and (max-width: 33.75em) {
-    .footer-column__divider {
-      width: 35%; } }
-  @media only screen and (max-width: 26.25em) {
-    .footer-column__divider {
-      width: 52%; } }
-  @media only screen and (max-width: 23.75em) {
-    .footer-column__divider {
-      width: 47%; } }
-  @media only screen and (max-width: 22.5em) {
-    .footer-column__divider {
-      width: 50%; } }
-  @media only screen and (max-width: 20em) {
-    .footer-column__divider {
-      width: 60%; } }
+    .footer-column {
+      width: 100%; } }
   @media only screen and (max-width: 17.5em) {
-    .footer-column__divider {
-      width: 55%; } }
-
-.footer-column__heading {
-  color: #fff;
-  font-family: Mosk-700;
-  font-size: 2.2rem;
-  padding-bottom: 6rem;
-  padding-top: 4rem; }
-  @media only screen and (max-width: 64em) {
-    .footer-column__heading {
-      font-size: 2rem;
-      padding-top: 3rem;
-      padding-bottom: 3rem; } }
-  @media only screen and (max-width: 64em) {
-    .footer-column__heading {
-      font-size: 1.9rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .footer-column__heading {
-      font-size: 2.2rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .footer-column__heading {
-      padding-bottom: 2rem;
-      font-size: 3.6rem; } }
-  @media only screen and (max-width: 20em) {
-    .footer-column__heading {
-      font-size: 4.2rem; } }
-
-.footer-column__text {
-  color: #fff;
-  font-family: Mosk-200;
-  font-size: 1.8rem;
-  padding-bottom: 2rem; }
-  @media only screen and (min-width: 100em) {
-    .footer-column__text {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 64em) {
-    .footer-column__text {
-      font-size: 1.7rem; } }
-  @media only screen and (max-width: 48.75em) {
-    .footer-column__text {
-      font-size: 1.5rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .footer-column__text {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .footer-column__text {
-      font-size: 3.2rem; } }
-  @media only screen and (max-width: 20em) {
-    .footer-column__text {
-      font-size: 3.8rem; } }
-
-.footer-column__coming-soon-container {
-  display: flex; }
-  @media only screen and (max-width: 64em) {
-    .footer-column__coming-soon-container {
-      justify-content: space-between; } }
-  @media only screen and (max-width: 48.75em) {
-    .footer-column__coming-soon-container {
-      justify-content: flex-start; } }
-
-.footer-column__coming-soon {
-  height: 1.8rem;
-  margin-left: 0.75rem;
-  margin-top: 0.5rem; }
-  @media only screen and (min-width: 100em) {
-    .footer-column__coming-soon {
-      height: 2.4rem; } }
-  @media only screen and (max-width: 64em) {
-    .footer-column__coming-soon {
-      height: 1.4rem;
-      margin-top: 0.6rem; } }
-  @media only screen and (max-width: 48.75em) {
-    .footer-column__coming-soon {
-      height: 0.9rem;
-      margin-top: 0.7rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .footer-column__coming-soon {
-      height: 2.4rem;
-      margin-top: 0.5rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .footer-column__coming-soon {
-      height: 3rem;
-      margin-top: 1rem; } }
-  @media only screen and (max-width: 20em) {
-    .footer-column__coming-soon {
-      margin-top: 1.6rem; } }
-
-.footer-column__link {
-  text-decoration: none;
-  cursor: pointer; }
+    .footer-column {
+      padding-left: 4.6rem; } }
+  .footer-column__divider {
+    width: 70%;
+    margin-left: 0;
+    border: 0;
+    height: 0.2rem;
+    background-image: linear-gradient(270deg, #fff 0%, #808080 100%); }
+    @media only screen and (max-width: 64em) {
+      .footer-column__divider {
+        width: 85%; } }
+    @media only screen and (max-width: 48.75em) {
+      .footer-column__divider {
+        width: 95%; } }
+    @media only screen and (max-width: 33.75em) {
+      .footer-column__divider {
+        width: 35%; } }
+    @media only screen and (max-width: 26.25em) {
+      .footer-column__divider {
+        width: 52%; } }
+    @media only screen and (max-width: 23.75em) {
+      .footer-column__divider {
+        width: 47%; } }
+    @media only screen and (max-width: 22.5em) {
+      .footer-column__divider {
+        width: 50%; } }
+    @media only screen and (max-width: 20em) {
+      .footer-column__divider {
+        width: 60%; } }
+    @media only screen and (max-width: 17.5em) {
+      .footer-column__divider {
+        width: 55%; } }
+  .footer-column__heading {
+    color: #fff;
+    font-family: Mosk-700;
+    font-size: 2.2rem;
+    padding-bottom: 6rem;
+    padding-top: 4rem; }
+    @media only screen and (max-width: 64em) {
+      .footer-column__heading {
+        font-size: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem; } }
+    @media only screen and (max-width: 64em) {
+      .footer-column__heading {
+        font-size: 1.9rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .footer-column__heading {
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .footer-column__heading {
+        padding-bottom: 2rem;
+        font-size: 3.6rem; } }
+    @media only screen and (max-width: 20em) {
+      .footer-column__heading {
+        font-size: 4.2rem; } }
+  .footer-column__text {
+    color: #fff;
+    font-family: Mosk-200;
+    font-size: 1.8rem;
+    padding-bottom: 2rem; }
+    @media only screen and (min-width: 100em) {
+      .footer-column__text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 64em) {
+      .footer-column__text {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .footer-column__text {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .footer-column__text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .footer-column__text {
+        font-size: 3.2rem; } }
+    @media only screen and (max-width: 20em) {
+      .footer-column__text {
+        font-size: 3.8rem; } }
+  .footer-column__coming-soon-container {
+    display: flex; }
+    @media only screen and (max-width: 48.75em) {
+      .footer-column__coming-soon-container {
+        justify-content: flex-start; } }
+  .footer-column__coming-soon {
+    height: 1.8rem;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem; }
+    @media only screen and (min-width: 100em) {
+      .footer-column__coming-soon {
+        height: 2.4rem; } }
+    @media only screen and (max-width: 64em) {
+      .footer-column__coming-soon {
+        height: 1.5rem;
+        margin-top: 0.6rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .footer-column__coming-soon {
+        height: 0.9rem;
+        margin-top: 0.7rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .footer-column__coming-soon {
+        height: 2.4rem;
+        margin-top: 0.5rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .footer-column__coming-soon {
+        height: 3rem;
+        margin-top: 1rem; } }
+    @media only screen and (max-width: 20em) {
+      .footer-column__coming-soon {
+        margin-top: 1.6rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .footer-column__coming-soon {
+          /* CSS specific to iOS devices */
+          margin-top: 0.9rem;
+          height: 1.4rem; } } }
+  .footer-column__link {
+    text-decoration: none;
+    cursor: pointer; }
 
 .footer-copyright {
   color: #727272;
@@ -1294,6 +1390,31 @@ code {
   margin-bottom: 0;
   margin-top: 10rem;
   padding-bottom: 1.5rem; }
+
+.footer-modal-btns {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: Mosk-200;
+  font-size: 1.8rem; }
+  @media only screen and (min-width: 100em) {
+    .footer-modal-btns {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 64em) {
+    .footer-modal-btns {
+      font-size: 1.7rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .footer-modal-btns {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .footer-modal-btns {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .footer-modal-btns {
+      font-size: 3.2rem; } }
+  @media only screen and (max-width: 20em) {
+    .footer-modal-btns {
+      font-size: 3.8rem; } }
 
 /* First title */
 h1 {
@@ -1329,13 +1450,23 @@ h3, h4 {
   .mobile-nav__burger {
     color: #fff;
     font-size: 3rem;
-    margin-right: 1rem; }
+    margin-right: 3rem; }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .mobile-nav__burger {
+          /* CSS specific to iOS devices */
+          font-size: 4.5rem; } } }
     @media only screen and (max-width: 17.5em) {
       .mobile-nav__burger {
         font-size: 4rem; } }
   @media only screen and (max-width: 33.75em) {
     .mobile-nav__logo {
       height: 3rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .mobile-nav__logo {
+        /* CSS specific to iOS devices */
+        height: 2rem; } } }
   @media only screen and (max-width: 17.5em) {
     .mobile-nav__logo {
       height: 4rem; } }
@@ -1344,6 +1475,7 @@ h3, h4 {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
   margin: 3rem; }
   @media only screen and (max-width: 64em) {
@@ -1366,7 +1498,10 @@ h3, h4 {
 .navText {
   font-family: Mosk-300;
   font-size: 2rem;
-  line-height: 3; }
+  line-height: 2.3;
+  background: none;
+  border: none;
+  color: #fff; }
 
 /* Navbar logo sizing */
 .navLogo {
@@ -1416,10 +1551,15 @@ h3, h4 {
   @media only screen and (max-width: 64em) {
     .socialIcon {
       height: 3rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .socialIcon {
+        /* CSS specific to iOS devices */
+        height: 2rem; } } }
 
 .comingSoon {
   margin-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   height: 2rem; }
   @media only screen and (max-width: 64em) {
     .comingSoon {
@@ -1427,6 +1567,12 @@ h3, h4 {
   @media only screen and (max-width: 48.75em) {
     .comingSoon {
       margin-top: 1.5rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .comingSoon {
+        /* CSS specific to iOS devices */
+        margin-top: 0.9rem;
+        height: 1.5rem; } } }
 
 .progress-bar {
   top: 0;
@@ -1478,11 +1624,11 @@ h3, h4 {
   font-family: Mosk-700;
   font-size: 2.2rem;
   padding-left: 5rem;
-  padding-top: 4.5rem; }
+  padding-top: 2rem; }
   @media only screen and (max-width: 64em) {
     .sidebar-header {
       font-size: 4rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
       padding-left: 6rem; } }
   @media only screen and (max-width: 48.75em) {
     .sidebar-header {
@@ -1491,9 +1637,15 @@ h3, h4 {
     .sidebar-header {
       padding-left: 5rem; } }
 
+.sidebar-group {
+  padding-bottom: 2.5rem; }
+
 .sidebar-text {
   font-family: Mosk-200;
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none; }
   @media only screen and (max-width: 64em) {
     .sidebar-text {
       font-size: 3.8rem;
@@ -1567,6 +1719,7 @@ h3, h4 {
   .about-us-info-card__image-Fun {
     height: 12rem; }
   .about-us-info-card__text-container {
+    margin-left: 5rem;
     width: 90rem; }
     @media only screen and (min-width: 100em) {
       .about-us-info-card__text-container {
@@ -1576,10 +1729,11 @@ h3, h4 {
         width: 80rem; } }
     @media only screen and (max-width: 48.75em) {
       .about-us-info-card__text-container {
-        width: 55rem; } }
+        width: 52rem; } }
     @media only screen and (max-width: 33.75em) {
       .about-us-info-card__text-container {
-        width: 38rem; } }
+        margin-left: 3rem;
+        width: 34rem; } }
     @media only screen and (max-width: 26.25em) {
       .about-us-info-card__text-container {
         width: 29rem; } }
@@ -1613,21 +1767,48 @@ h3, h4 {
     .about-us-h3 {
       font-size: 4rem; } }
 
-.heroImageContainer {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 7rem; }
-
 .heroImage {
-  border-radius: 3rem;
-  width: 140rem; }
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+  height: 55rem;
+  width: 100%; }
+  @media only screen and (max-width: 64em) {
+    .heroImage {
+      height: 45rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .heroImage {
+      height: 38rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .heroImage {
+      height: 25rem;
+      margin-bottom: 1.5rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .heroImage {
+      height: 22rem; } }
+  @media only screen and (max-width: 23.75em) {
+    .heroImage {
+      height: 25rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .heroImage {
+        /* CSS specific to iOS devices */
+        height: 15rem; } } }
+  @media only screen and (max-width: 22.5em) {
+    .heroImage {
+      height: 22rem; } }
 
 .contentContainer {
-  margin-left: 12rem; }
+  margin-left: 8rem; }
+  @media only screen and (max-width: 64em) {
+    .contentContainer {
+      margin-left: 0; } }
 
 .articleTitle {
   font-size: 6.4rem;
   font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 33.75em) {
+    .articleTitle {
+      font-size: 5rem; } }
 
 .underTitleLine {
   height: 3px;
@@ -1635,10 +1816,21 @@ h3, h4 {
   margin-top: 2rem;
   border: none;
   background-color: #22222A; }
+  @media only screen and (max-width: 64em) {
+    .underTitleLine {
+      max-width: 100%; } }
 
 .articleBodyContainer {
   margin-left: 10rem;
   padding-top: 10rem; }
+  @media only screen and (max-width: 64em) {
+    .articleBodyContainer {
+      margin-left: 0rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .articleBodyContainer {
+        /* CSS specific to iOS devices */
+        padding-top: 7rem; } } }
 
 .articleSubtitle {
   font-size: 4.5rem;
@@ -1648,9 +1840,12 @@ h3, h4 {
   font-size: 2.5rem;
   font-family: 'Mosk-200';
   color: #C7C7C7;
-  max-width: 80%;
+  max-width: 85%;
   line-height: 3.5rem;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 64em) {
+    .bodyText {
+      max-width: 100%; } }
 
 .innerArticleSubtitle {
   font-size: 3rem;
@@ -1661,18 +1856,6 @@ h3, h4 {
   line-height: normal;
   margin-bottom: 5rem;
   padding-top: 3rem; }
-  @media only screen and (max-width: 48.75em) {
-    .faq__header {
-      font-size: 7rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .faq__header {
-      font-size: 4.5rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .faq__header {
-      font-size: 3.5rem; } }
-  @media only screen and (max-width: 22.5em) {
-    .faq__header {
-      font-size: 4rem; } }
 
 .faq__intro {
   font-family: Mosk-200;
@@ -1688,22 +1871,15 @@ h3, h4 {
   font-size: 1.8rem;
   color: #C7C7C7;
   line-height: 2.5rem;
-  padding-bottom: 7.5rem; }
+  padding-bottom: 7rem; }
   @media only screen and (max-width: 64em) {
     .faq__body {
       font-size: 2rem; } }
 
 .faq__h1 {
-  font-size: 6rem; }
-  @media only screen and (max-width: 48.75em) {
-    .faq__h1 {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .faq__h1 {
-      font-size: 2.5rem; } }
-  @media only screen and (max-width: 23.75em) {
-    .faq__h1 {
-      font-size: 3rem; } }
+  font-family: Mosk-700;
+  font-size: 6rem;
+  padding-bottom: 2rem; }
 
 .faq__h3 {
   font-size: 2.6rem; }
@@ -1734,7 +1910,14 @@ h3, h4 {
 
 .headerContainer {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin: 15rem 20rem; }
+  @media only screen and (max-width: 64em) {
+    .headerContainer {
+      margin: 21rem 7rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .headerContainer {
+      margin: 15rem 7rem; } }
 
 .galaxyUniversityHeader {
   display: flex;
@@ -1749,6 +1932,9 @@ h3, h4 {
   .galaxyUniversityHeader__span {
     font-size: 8rem;
     font-family: 'Mosk-200'; }
+    @media only screen and (max-width: 64em) {
+      .galaxyUniversityHeader__span {
+        line-height: 4rem; } }
     @media only screen and (max-width: 48.75em) {
       .galaxyUniversityHeader__span {
         font-size: 6rem; } }
@@ -1763,7 +1949,8 @@ h3, h4 {
     @media only screen and (max-width: 64em) {
       .galaxyUniversityHeader__intro {
         max-width: 90%;
-        font-size: 2.3rem; } }
+        font-size: 2.3rem;
+        margin-top: 5rem; } }
 
 .headerImage {
   height: 55rem;
@@ -1782,50 +1969,63 @@ h3, h4 {
 .gradientBar {
   height: 5.5rem;
   background: transparent linear-gradient(75deg, #ff00ff 0%, #00cdd5 67%, #00cdd5 100%, #000 100%) 0% 0% no-repeat padding-box; }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .gradientBar {
+        /* CSS specific to iOS devices */
+        height: 5rem; } } }
 
 .articleGalleryContainer {
-  margin: 15rem 20rem; }
+  margin: 12rem 6rem;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (min-width: 100em) {
+    .articleGalleryContainer {
+      margin: 15rem 8rem; } }
   @media only screen and (max-width: 64em) {
     .articleGalleryContainer {
-      margin: 21rem 7rem; } }
+      margin: 10rem 7rem; } }
 
 .article-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
+  @media only screen and (min-width: 100em) {
+    .article-gallery {
+      max-width: 165rem; } }
 
 .article-gallery-column {
-  flex: 25%;
   padding-bottom: 2%; }
+
+.articleGalleryLink {
+  text-decoration: none;
+  color: #22222a; }
+
+.article-card {
+  margin: 3rem;
+  margin-bottom: 0; }
   @media only screen and (max-width: 64em) {
-    .article-gallery-column {
-      flex: 50%; } }
-  @media only screen and (max-width: 33.75em) {
-    .article-gallery-column {
-      flex: 100%; } }
+    .article-card {
+      margin: 2.5rem; } }
 
-/* Body of card styling */
-.article-card {
-  flex: 0 48%;
-  height: auto;
-  padding: 6%; }
-
-.article-card {
-  border-radius: 3rem;
-  width: auto; }
-
-.article-card-image {
-  height: 450px;
-  padding: 1.2rem;
+.article-card-image-div {
+  display: flex;
+  justify-content: center;
+  height: 36rem;
+  width: 28rem;
+  overflow: hidden;
   border-radius: 3rem;
   background: #68d3d6; }
   @media only screen and (max-width: 33.75em) {
-    .article-card-image {
-      height: 375px; } }
+    .article-card-image-div {
+      height: 48rem;
+      width: 36rem; } }
+
+.article-card-image {
+  max-width: 100%; }
 
 .article-card-details-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between; }
 
 .article-card-title {
@@ -1833,62 +2033,74 @@ h3, h4 {
   font-family: 'Mosk-600';
   color: #fff;
   padding-top: 2.2rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  max-width: 16rem; }
   @media only screen and (max-width: 33.75em) {
     .article-card-title {
-      font-size: 2.8rem; } }
+      font-size: 2.6rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .article-card-title {
+      font-size: 2.5rem; } }
 
 .article-level-beginner {
-  border: .3rem solid #228346;
+  border: 0.3rem solid #228346;
   height: 0%;
   margin-top: 2.2rem;
   border-radius: 1rem;
   display: inline-block;
-  padding-left: .8rem;
-  padding-right: .8rem;
-  font-size: 2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.8rem;
   font-family: 'Mosk-600';
   color: #228346; }
   @media only screen and (max-width: 33.75em) {
     .article-level-beginner {
-      font-size: 2.8rem; } }
+      font-size: 2.6rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .article-level-beginner {
+      font-size: 2.5rem; } }
 
 .article-level-intermediate {
-  border: .3rem solid #FFB100;
+  height: 0%;
+  margin-top: 2.2rem;
+  border: 0.3rem solid #ffb100;
   border-radius: 1rem;
   display: inline-block;
-  padding: .1rem 1.8rem;
-  font-size: 2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.8rem;
   font-family: 'Mosk-600';
-  color: #FFB100; }
+  color: #ffb100; }
   @media only screen and (max-width: 33.75em) {
     .article-level-intermediate {
-      font-size: 2.8rem; } }
+      font-size: 2.6rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .article-level-intermediate {
+      font-size: 2.5rem; } }
 
 .article-level-advanced {
-  border: .3rem solid #EA044B;
+  height: 0%;
+  margin-top: 2.2rem;
+  border: 0.3rem solid #ea044b;
   border-radius: 1rem;
   display: inline-block;
-  padding: .1rem 1.8rem;
-  font-size: 2rem;
+  padding: 0.1rem 1.8rem;
+  font-size: 1.8rem;
   font-family: 'Mosk-600';
-  color: #EA044B; }
+  color: #ea044b; }
   @media only screen and (max-width: 33.75em) {
     .article-level-advanced {
-      font-size: 2.8rem; } }
+      font-size: 2.6rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .article-level-advanced {
+      font-size: 2.5rem; } }
 
-.article-card-timeframe-container {
-  display: flex;
-  flex-direction: row; }
-  @media only screen and (max-width: 33.75em) {
-    .article-card-timeframe-container {
-      font-size: 2.8rem; } }
+.uni-bold-text {
+  font-family: Mosk-700; }
 
-.article-card-length {
-  font-size: 2rem;
-  font-family: 'Mosk-600';
-  color: #fff;
-  padding-top: 1rem; }
+.uni-text {
+  font-family: Mosk-100;
+  font-weight: lighter; }
 
 .home-sub-container {
   padding: 2rem 0 12rem 0; }
@@ -2013,46 +2225,64 @@ h3, h4 {
 .meet-our-team {
   display: flex;
   flex-direction: column;
-  padding-bottom: 11rem; }
+  padding-bottom: 11rem;
+  padding-left: 9rem; }
+  @media only screen and (max-width: 48.75em) {
+    .meet-our-team {
+      padding-left: 6rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .meet-our-team {
+      padding-left: 0; } }
+  @media only screen and (max-width: 23.75em) {
+    .meet-our-team {
+      padding-left: 4rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .meet-our-team {
+      padding-left: 3rem; } }
+  @media only screen and (max-width: 20em) {
+    .meet-our-team {
+      padding-left: 0; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .meet-our-team {
+        /* CSS specific to iOS devices */
+        padding-left: 2rem; } } }
+  @media only screen and (max-width: 17.5em) {
+    .meet-our-team {
+      padding-left: 4rem; } }
 
 .team-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 3rem; }
-  @media only screen and (min-width: 100em) {
-    .team-container {
-      padding: 0 10rem; } }
+  flex-wrap: wrap; }
 
 .team-header {
   font-family: Mosk-800;
   font-size: 7rem;
-  margin-left: 23rem;
-  margin-top: 3rem;
   line-height: normal; }
-  @media only screen and (min-width: 100em) {
-    .team-header {
-      margin-left: 38rem; } }
-  @media only screen and (max-width: 64em) {
-    .team-header {
-      margin-left: 14rem; } }
-  @media only screen and (max-width: 33.75em) {
-    .team-header {
-      font-size: 5rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .team-header {
-      font-size: 4rem;
-      margin-left: 13rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .team-header {
+        /* CSS specific to iOS devices */
+        font-size: 6rem; } } }
 
 .profile-card {
   color: #fff;
-  margin: 4rem; }
+  margin: 6rem 5rem 4rem 0; }
   @media only screen and (min-width: 100em) {
     .profile-card {
-      margin: 6rem; } }
+      margin: 6rem 7rem 4rem 0; } }
+  @media only screen and (max-width: 33.75em) {
+    .profile-card {
+      margin: 4rem 4rem 2rem 0; } }
   @media only screen and (max-width: 26.25em) {
     .profile-card {
-      margin: 2rem; } }
+      margin: 4rem 1.5rem 2rem 0; } }
+  @media only screen and (max-width: 23.75em) {
+    .profile-card {
+      margin: 5rem 5rem 2rem 0; } }
+  @media only screen and (max-width: 20em) {
+    .profile-card {
+      margin: 5rem 2.5rem 2rem 0; } }
   .profile-card__pic-container {
     display: flex;
     flex-direction: column;
@@ -2072,30 +2302,37 @@ h3, h4 {
       .profile-card__job-title {
         font-size: 1rem; } }
   .profile-card__image {
-    height: 35rem; }
+    height: 34rem; }
+    @media only screen and (min-width: 100em) {
+      .profile-card__image {
+        height: 35rem; } }
     @media only screen and (max-width: 64em) {
       .profile-card__image {
         height: 30rem; } }
     @media only screen and (max-width: 33.75em) {
       .profile-card__image {
-        height: 27rem; } }
+        height: 26rem; } }
     @media only screen and (max-width: 23.75em) {
       .profile-card__image {
         height: 28rem; } }
   .profile-card__logo-3d-container {
-    height: 35rem;
-    width: 28rem;
+    height: 34rem;
+    width: 27.2rem;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (min-width: 100em) {
+      .profile-card__logo-3d-container {
+        height: 35rem;
+        width: 28rem; } }
     @media only screen and (max-width: 64em) {
       .profile-card__logo-3d-container {
         height: 30rem;
         width: 24rem; } }
     @media only screen and (max-width: 33.75em) {
       .profile-card__logo-3d-container {
-        height: 25rem;
-        width: 19rem; } }
+        height: 26rem;
+        width: 21rem; } }
     @media only screen and (max-width: 23.75em) {
       .profile-card__logo-3d-container {
         height: 28rem;
@@ -2112,8 +2349,38 @@ h3, h4 {
       .profile-card__logo-3d {
         height: 10rem; } }
   .profile-card__linkedIn {
-    height: 2rem;
+    height: 1.5rem;
     margin-top: 0.75rem; }
+
+.migration-docs-container {
+  display: flex;
+  flex-direction: column; }
+
+.migration-docs {
+  color: #fff;
+  font-size: 2rem; }
+  .migration-docs__header {
+    font-size: 9rem;
+    line-height: normal; }
+    @media only screen and (max-width: 33.75em) {
+      .migration-docs__header {
+        font-size: 7rem; } }
+  .migration-docs__subheader {
+    font-size: 6rem; }
+    @media only screen and (max-width: 33.75em) {
+      .migration-docs__subheader {
+        font-size: 5rem; } }
+  .migration-docs__text {
+    padding: 0.5rem; }
+  .migration-docs__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+
+.migration-docs-infographic {
+  padding-top: 3rem;
+  height: auto;
+  width: 100%; }
 
 /* HERO STYLING */
 .openPos-hero-header {

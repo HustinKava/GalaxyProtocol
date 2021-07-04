@@ -24,6 +24,10 @@
     padding-left: 0;
   }
 
+  @include respond(iphone-only) {
+    padding-left: 2rem;
+  }
+
   @include respond(galaxy-fold) {
     padding-left: 4rem;
   }
@@ -38,6 +42,10 @@
   font-family: Mosk-800;
   font-size: 7rem;
   line-height: normal;
+
+  @include respond(iphone-only) {
+    font-size: 6rem;
+  }
 }
 
 .profile-card {

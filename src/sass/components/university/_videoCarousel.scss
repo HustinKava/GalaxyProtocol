@@ -24,26 +24,34 @@
   @include respond(ipad) {
     width: 15rem;
   }
+
+  @include respond(iphone-only) {
+    width: 10rem;
+  }
 }
 
 .carousel-all-videos-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-
-  @include respond(ipad-pro) {
-    margin-left: 5rem;
-  }
-
-  @include respond(ipad) {
-    margin-left: 10rem;
-  }
 }
 
 .carousel-all-videos {
   padding-top: 5rem;
   border-bottom: 0.5rem solid $color-grey-dark-2;
   width: 25rem;
+
+  @include respond(ipad-pro) {
+    width: 20rem;
+  }
+
+  @include respond(ipad) {
+    width: 15rem;
+  }
+
+  @include respond(iphone-only) {
+    width: 9rem;
+  }
 }
 
 .carousel-thin {

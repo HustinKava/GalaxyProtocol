@@ -4,7 +4,7 @@ import HeaderImage from '../../Assets/university-img.png';
 const UniversityHeader = () => {
   return (
     <div>
-      <div className="mainContainer headerContainer">
+      <div className="headerContainer">
         <div className="galaxyUniversityHeader">
           <div className="titleContainer">
             <h1 className="galaxyUniversityHeader__h1">Galaxy </h1>

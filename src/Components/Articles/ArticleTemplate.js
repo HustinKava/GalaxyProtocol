@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
 
 // Importing components
 import Title from './ArticleTitle'
@@ -12,64 +11,60 @@ import BodyParagraph from './BodyParagraph'
 const ArticleTemplate = ({ heroImage, title, body }) => {
     return (
         <div className="articleContainer">
+            <img src={heroImage} alt="" className="heroImage"></img>
+            <div className="contentContainer">
+                {/* Render h1 for the article */}
+                <Title
+                    title={title} />
 
-            <Container maxWidth='xl'>
-                <img src={heroImage} alt="" className="heroImage"></img>
-            
-                <div className="contentContainer">
-                    {/* Render h1 for the article */}
-                    <Title
-                        title={title} />
+                <hr className="underTitleLine"></hr>
 
-                    <hr className="underTitleLine"></hr>
+                {/* Article Contents*/}
 
-                    {/* Article Contents*/}
+                <div className="articleBodyContainer">
+                    {body.map((section) => {
 
-                    <div className="articleBodyContainer">
-                        {body.map((section) => {
-
-                            //Render a subtitle if one exists for that section ( render h2)
-                            if (section.subtitle) {
-                                return (
-                                    <>
-                                        <Subtitle subtitle={section.subtitle} />
-                                        {section.paraContent.map((subSection) => {
-                                            return (
-                                                <BodyParagraph key={subSection} bodyparagraph={subSection} />
-                                            )
-                                        })}
-                                    </>
-                                )
-                            //Render h3 for article if needed
-                            } else if (section.innerSubtitle) {
-                                return (
-                                    <>
-                                        <InnerSubtitle innerSubtitle={section.innerSubtitle} />
-                                        {section.paraContent.map((subSection) => {
-                                            return (
-                                                <BodyParagraph key={subSection} bodyparagraph={subSection} />
-                                            )
-                                        })}
-                                    </>
-                                )
-                            }
-                            // Otherwise just render body text <p>
-                            else {
-                                return (
-                                    <>
-                                        {section.paraContent.map((subSection) => {
-                                            return (
-                                                <BodyParagraph key={subSection}  bodyparagraph={subSection} />
-                                            )
-                                        })}
-                                    </>
-                                )
-                            }
+                        //Render a subtitle if one exists for that section ( render h2)
+                        if (section.subtitle) {
+                            return (
+                                <>
+                                    <Subtitle subtitle={section.subtitle} />
+                                    {section.paraContent.map((subSection) => {
+                                        return (
+                                            <BodyParagraph key={subSection} bodyparagraph={subSection} />
+                                        )
+                                    })}
+                                </>
+                            )
+                        //Render h3 for article if needed
+                        } else if (section.innerSubtitle) {
+                            return (
+                                <>
+                                    <InnerSubtitle innerSubtitle={section.innerSubtitle} />
+                                    {section.paraContent.map((subSection) => {
+                                        return (
+                                            <BodyParagraph key={subSection} bodyparagraph={subSection} />
+                                        )
+                                    })}
+                                </>
+                            )
                         }
-                        )}
-                    </div>
+                        // Otherwise just render body text <p>
+                        else {
+                            return (
+                                <>
+                                    {section.paraContent.map((subSection) => {
+                                        return (
+                                            <BodyParagraph key={subSection}  bodyparagraph={subSection} />
+                                        )
+                                    })}
+                                </>
+                            )
+                        }
+                    }
+                    )}
                 </div>
-            </Container>
+            </div>
         </div>
     );
 };

@@ -28,12 +28,12 @@
         height: 25rem;
     }
 
-    @include respond(galaxy-s5) {
-        height: 22rem;
+    @include respond(iphone-only) {
+        height: 15rem;
     }
 
-    @include respond(iphone-5) {
-        height: 20rem;
+    @include respond(galaxy-s5) {
+        height: 22rem;
     }
 }
 
@@ -76,7 +76,11 @@
     
     @include respond(ipad-pro) {
         margin-left: 0rem;
-            }
+    }
+
+    @include respond(iphone-only) {
+        padding-top: 7rem;
+    }
 
 }
 

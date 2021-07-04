@@ -2,6 +2,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
   margin: 3rem;
 
@@ -97,11 +98,15 @@
   @include respond(ipad-pro) {
     height: 3rem;
   }
+
+  @include respond(iphone-only) {
+    height: 2rem;
+  }
 }
 
 .comingSoon {
   margin-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   height: 2rem;
 
   @include respond(ipad-pro) {
@@ -110,5 +115,10 @@
 
   @include respond(ipad) {
     margin-top: 1.5rem;
+  }
+
+  @include respond(iphone-only) {
+    margin-top: 0.9rem;
+    height: 1.5rem;
   }
 }
