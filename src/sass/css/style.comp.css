@@ -72,12 +72,12 @@ button {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 @font-face {
   font-family: "Mosk-100";
@@ -2257,7 +2257,11 @@ h3, h4 {
 
 .team-container {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100rem; }
+  @media only screen and (min-width: 100em) {
+    .team-container {
+      width: 130rem; } }
 
 .team-header {
   font-family: Mosk-800;
