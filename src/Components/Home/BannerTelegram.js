@@ -20,11 +20,11 @@ function BannerTelegram() {
               interact with one of our developers.
             </span>
             <div className="bannerButtonContainer">
-            <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer">
             <button className="ban-button ban-button--telegram btn-desktop">
-                Join now
-              </button>  
+              <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className='telegram-button-link'>
+                  Join now
               </a>    
+            </button>  
 
             </div>
           </Container>
@@ -35,10 +35,11 @@ function BannerTelegram() {
           </div>
           <div className="bannerButtonMobileContainer">
             <Container maxWidth="sm">
-
               <button className="ban-button ban-button--telegram btn-mobile">
-                Join Now
-              </button>
+                <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className='telegram-button-link'>
+                    Join now
+                </a>    
+              </button>  
             </Container>
           </div>
         </Grid>

@@ -15,7 +15,14 @@ function BannerMerch() {
         <div className="bannerButtonMobileContainer">
           <Container maxWidth="sm">
             <button className="ban-button ban-button--merch btn-mobile">
-              Shop now
+              <a 
+                href='https://intergalacticmerch.myshopify.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='merch-button-link'
+                >
+                Shop now
+              </a>
             </button>
           </Container>
         </div>

@@ -18,6 +18,7 @@
 
   &__subheader {
     font-size: 6rem;
+    padding-top: 6rem;
 
     @include respond(surface-duo) {
       font-size: 5rem;
@@ -36,7 +37,7 @@
 }
 
 .migration-docs-infographic {
-  padding-top: 3rem;
+  padding-top: 6rem;
   height: auto;
   width: 100%;
 }
