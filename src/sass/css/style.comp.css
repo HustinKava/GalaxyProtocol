@@ -72,12 +72,12 @@ button {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 @font-face {
   font-family: "Mosk-100";
@@ -857,6 +857,10 @@ code {
       transform: translateY(0);
       height: auto;
       width: 60%; } }
+
+.telegram-button-link {
+  text-decoration: none;
+  color: #fff; }
 
 .university-image {
   height: 75rem;
@@ -2366,7 +2370,8 @@ h3, h4 {
       .migration-docs__header {
         font-size: 7rem; } }
   .migration-docs__subheader {
-    font-size: 6rem; }
+    font-size: 6rem;
+    padding-top: 6rem; }
     @media only screen and (max-width: 33.75em) {
       .migration-docs__subheader {
         font-size: 5rem; } }
@@ -2378,7 +2383,7 @@ h3, h4 {
     font-weight: bold; }
 
 .migration-docs-infographic {
-  padding-top: 3rem;
+  padding-top: 6rem;
   height: auto;
   width: 100%; }
 
