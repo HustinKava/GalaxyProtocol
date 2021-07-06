@@ -21,7 +21,7 @@ function BannerTelegram() {
             </span>
             <div className="bannerButtonContainer">
             <button className="ban-button ban-button--telegram btn-desktop">
-              <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className='telegram-button-link'>
+              <a href="https://t.me/GalaxyProtocolOfficialTG" target="_blank" rel="noreferrer" className='telegram-button-link'>
                   Join now
               </a>    
             </button>  
@@ -36,7 +36,7 @@ function BannerTelegram() {
           <div className="bannerButtonMobileContainer">
             <Container maxWidth="sm">
               <button className="ban-button ban-button--telegram btn-mobile">
-                <a href="https://t.me/safegalaxychat" target="_blank" rel="noreferrer" className='telegram-button-link'>
+                <a href="https://t.me/GalaxyProtocolOfficialTG" target="_blank" rel="noreferrer" className='telegram-button-link'>
                     Join now
                 </a>    
               </button>  

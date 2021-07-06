@@ -154,11 +154,11 @@ function Footer() {
                 text="Discord"
               />
               <ExternalLink
-                href="https://t.me/safegalaxychat"
+                href="https://t.me/GalaxyProtocolOfficialTG"
                 text="Telegram"
               />
               <ExternalLink
-                href="https://twitter.com/SafeGalaxyToken"
+                href="https://twitter.com/GalaxyProtocol"
                 text="Twitter"
               />
             </div>

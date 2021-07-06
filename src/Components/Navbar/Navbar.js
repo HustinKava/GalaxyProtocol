@@ -84,15 +84,15 @@ const Navbar = () => {
                 text="Discord"
               />
               <ExternalLink
-                href="https://t.me/safegalaxychat"
+                href="https://t.me/GalaxyProtocolOfficialTG"
                 text="Telegram"
               />
               <ExternalLink
-                href="https://twitter.com/SafeGalaxyToken"
+                href="https://twitter.com/GalaxyProtocol"
                 text="Twitter"
               />
               <ExternalLink
-                href="https://www.facebook.com/SafeGalaxyToken"
+                href="https://www.facebook.com/GalaxyProtocol/"
                 text="Facebook"
               />
               <ExternalLink
@@ -100,7 +100,7 @@ const Navbar = () => {
                 text="Instagram"
               />
               <ExternalLink
-                href="https://www.reddit.com/r/SafeGalaxy/"
+                href="https://www.reddit.com/r/GalaxyProtocolx/"
                 text="Reddit"
               />
               <ExternalLink

@@ -65,7 +65,7 @@ export const profileInfo = [
     linkedIn: '',
   },
   {
-    name: 'Collin',
+    name: 'Cullon',
     image: Collin,
     jobTitle: 'Project Manager',
     linkedIn: '',

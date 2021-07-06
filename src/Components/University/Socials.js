@@ -38,17 +38,17 @@ const Socials = () => {
         <SocialIconLink
           icon={Telegram}
           alt="telegram"
-          href="https://t.me/safegalaxychat"
+          href="https://t.me/GalaxyProtocolOfficialTG"
         />
         <SocialIconLink
           icon={Twitter}
           alt="twitter"
-          href="https://twitter.com/SafeGalaxyToken"
+          href="https://twitter.com/GalaxyProtocol"
         />
         <SocialIconLink
           icon={Facebook}
           alt="facebook"
-          href="https://www.facebook.com/SafeGalaxyToken"
+          href="https://www.facebook.com/GalaxyProtocol/"
         />
         <SocialIconLink
           icon={Instagram}
@@ -58,7 +58,7 @@ const Socials = () => {
         <SocialIconLink
           icon={Reddit}
           alt="reddit"
-          href="https://www.reddit.com/r/SafeGalaxy/"
+          href="https://www.reddit.com/r/GalaxyProtocolx/"
         />
         <SocialIconLink
           icon={Tiktok}

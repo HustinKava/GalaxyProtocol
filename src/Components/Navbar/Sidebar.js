@@ -87,9 +87,9 @@ function Sidebar({ isOpen, toggle }) {
           href="https://discord.com/invite/dq7m6R7UAz"
           text="Discord"
         />
-        <ExternalLink href="https://t.me/safegalaxychat" text="Telegram" />
+        <ExternalLink href="https://t.me/GalaxyProtocolOfficialTG" text="Telegram" />
         <ExternalLink
-          href="https://twitter.com/SafeGalaxyToken"
+          href="https://twitter.com/GalaxyProtocol"
           text="Twitter"
         />
       </div>

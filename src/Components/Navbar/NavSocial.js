@@ -15,12 +15,12 @@ const Navbar = ({ toggle }) => {
   return (
     <div>
       <SocialIconLink
-        href="https://twitter.com/SafeGalaxyToken"
+        href="https://twitter.com/GalaxyProtocol"
         logo={TwitterLogo}
         alt="twitter social icon"
       />
       <SocialIconLink 
-      href="https://t.me/safegalaxychat" 
+      href="https://t.me/GalaxyProtocolOfficialTG" 
       logo={TelegramLogo} 
       alt="telegram social icon" 
       />
