@@ -1,8 +1,8 @@
 import React from 'react';
 import { SidebarContainer } from './SidebarElements';
 import { FaTimes } from 'react-icons/fa';
-import Logo from '../../Assets/logo-white_1_25.png';
-import ComingSoonBadge from '../../Assets/coming-soon-badge.png';
+import Logo from '../../Assets/logos/logo-white-text.png';
+import ComingSoonBadge from '../../Assets/customButtons/coming-soon-badge.png';
 import { NavLink } from 'react-router-dom';
 
 const ExternalLink = ({ href, text }) => {
@@ -87,7 +87,10 @@ function Sidebar({ isOpen, toggle }) {
           href="https://discord.com/invite/dq7m6R7UAz"
           text="Discord"
         />
-        <ExternalLink href="https://t.me/GalaxyProtocolOfficialTG" text="Telegram" />
+        <ExternalLink
+          href="https://t.me/GalaxyProtocolOfficialTG"
+          text="Telegram"
+        />
         <ExternalLink
           href="https://twitter.com/GalaxyProtocol"
           text="Twitter"

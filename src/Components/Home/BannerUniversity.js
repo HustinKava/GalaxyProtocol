@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Container, Box } from '@material-ui/core';
-import UniversityImage from '../../Assets/university-img.png';
-import UniversityIcon from '../../Assets/Learn-icon.png';
+import UniversityImage from '../../Assets/banners/university-img.png';
+import UniversityIcon from '../../Assets/destinyBoxes/Learn-icon.png';
 
 function BannerUniversity() {
   return (

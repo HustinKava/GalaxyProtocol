@@ -1,13 +1,13 @@
 import React from 'react';
-import CoinMarketCap from '../../Assets/coinmarketcap-partner-logo-01.png';
-import PancakeSwap from '../../Assets/pancakeswap-partner-logo-02.png';
-import MetaMask from '../../Assets/metamask-partner-logo-03.png';
-import CoinGecko from '../../Assets/coingecko-partner-logo-04.png';
-import CoinTiger from '../../Assets/cointiger-partner-logo-05.png';
-// import ProBit from '../../Assets/probit-partner-logo-04.png';
-import BscScan from '../../Assets/bscscan-partner-logo-07.png';
-import SwftBlockchain from '../../Assets/swft-partner-logo-08.png';
-import TrustWallet from '../../Assets/trustwallet-partner-logo-09.png';
+import CoinMarketCap from '../../Assets/partners/coinmarketcap-partner-logo-01.png';
+import PancakeSwap from '../../Assets/partners/pancakeswap-partner-logo-02.png';
+import MetaMask from '../../Assets/partners/metamask-partner-logo-03.png';
+import CoinGecko from '../../Assets/partners/coingecko-partner-logo-04.png';
+import CoinTiger from '../../Assets/partners/cointiger-partner-logo-05.png';
+// import ProBit from '../../Assets/partners/probit-partner-logo-04.png';
+import BscScan from '../../Assets/partners/bscscan-partner-logo-07.png';
+import SwftBlockchain from '../../Assets/partners/swft-partner-logo-08.png';
+import TrustWallet from '../../Assets/partners/trustwallet-partner-logo-09.png';
 
 const PartnerLogo = ({ partnerName, alt }) => {
   return <img src={partnerName} alt={alt} className="uni-partners__logo" />;

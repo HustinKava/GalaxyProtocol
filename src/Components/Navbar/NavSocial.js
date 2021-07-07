@@ -1,7 +1,7 @@
 import React from 'react';
-import TwitterLogo from '../../Assets/Twitter-icon.png';
-import TelegramLogo from '../../Assets/Telegram-icon-nocircle.png';
-import DiscordLogo from '../../Assets/Discord-icon-nocircle.png';
+import TwitterLogo from '../../Assets/socialIcons/Twitter-icon-nocircle.png';
+import TelegramLogo from '../../Assets/socialIcons/Telegram-icon-nocircle.png';
+import DiscordLogo from '../../Assets/socialIcons/Discord-icon-nocircle.png';
 
 const SocialIconLink = ({ href, logo, alt }) => {
   return (
@@ -19,10 +19,10 @@ const Navbar = ({ toggle }) => {
         logo={TwitterLogo}
         alt="twitter social icon"
       />
-      <SocialIconLink 
-      href="https://t.me/GalaxyProtocolOfficialTG" 
-      logo={TelegramLogo} 
-      alt="telegram social icon" 
+      <SocialIconLink
+        href="https://t.me/GalaxyProtocolOfficialTG"
+        logo={TelegramLogo}
+        alt="telegram social icon"
       />
       <SocialIconLink
         href="https://discord.com/invite/dq7m6R7UAz"

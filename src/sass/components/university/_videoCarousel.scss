@@ -204,10 +204,15 @@
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Spinner styling for when there is no data from the youtube api
+.spinner-container {
+  display: flex;
+  justify-content: center;
+}
 
 .spinner {
   animation: spin infinite 5s linear;
   color: #fff;
+  // font-size: 2rem;
 }
 
 @keyframes spin {

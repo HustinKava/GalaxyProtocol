@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../Assets/logo-white_1_25.png';
-import ComingSoonBadge from '../../Assets/coming-soon-badge.png';
+import Logo from '../../Assets/logos/logo-white-text.png';
+import ComingSoonBadge from '../../Assets/customButtons/coming-soon-badge.png';
 import NavSocial from './NavSocial';
 
 const ExternalLink = ({ href, text }) => {

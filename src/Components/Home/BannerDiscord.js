@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container, Box } from '@material-ui/core';
-import Discord from '../../Assets/Discord-art-1.png';
+import Discord from '../../Assets/banners/Discord-banner.png';
 
 function BannerDiscord() {
   return (

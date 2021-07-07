@@ -6,12 +6,10 @@ import OurTeam from '../Components/MeetOurTeam/OurTeam';
 const MeetOurTeam = () => {
   return (
     // <Container maxWidth='xl'>
-
-    <div className="mainContainer">
-      <TeamHeader />
-      <OurTeam />
-    </div>
-
+      <div className="mainContainer">
+        <TeamHeader />
+        <OurTeam />
+      </div>
     // </Container>
   );
 };

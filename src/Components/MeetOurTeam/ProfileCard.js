@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo3D from '../../Assets/team/Logo-3D-small.png';
-import LinkedInLogo from '../../Assets/Linkedin-logo-full.png';
+import LinkedInLogo from '../../Assets/socialIcons/Linkedin-logo-full.png';
 import Kal from '../../Assets/team/Kal-tongue-out.png';
 
 const ProfileCard = ({ name, jobTitle, image, linkedIn, alt }) => {

@@ -3,8 +3,12 @@
   margin-top: 16rem;
   margin-bottom: 0rem;
 
-  @include respond(iphone-only) {
-    margin-top: 9rem;
+  @include respond(ipad) {
+    margin-top: 10rem;
+  }
+
+  @include respond(surface-duo) {
+    margin-top: 6rem;
   }
 
   &__background {

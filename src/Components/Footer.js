@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { NavLink } from 'react-router-dom';
-import Logo from '../Assets/logo-white_1_25.png';
-import ComingSoonBadge from '../Assets/coming-soon-badge.png';
+import Logo from '../Assets/logos/logo-white-text.png';
+import ComingSoonBadge from '../Assets/customButtons/coming-soon-badge.png';
 import ScrollIntoView from './ScrollIntoView';
 import { Modal as MainModal } from '../Components/Modal/Modal';
 import { modalContent } from '../Components/Modal/modalContent';

@@ -1,47 +1,49 @@
-.meet-our-team {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 11rem;
-  padding-left: 9rem;
+// .meet-our-team {
+//   display: flex;
+//   flex-direction: column;
+//   padding-bottom: 11rem;
+//   padding-left: 9rem;
 
-  @include respond(ipad) {
-    padding-left: 6rem;
-  }
+//   @include respond(ipad) {
+//     padding-left: 6rem;
+//   }
 
-  @include respond(surface-duo) {
-    padding-left: 0;
-  }
+//   @include respond(surface-duo) {
+//     padding-left: 0;
+//   }
 
-  @include respond(iphone-x) {
-    padding-left: 4rem;
-  }
+//   @include respond(iphone-x) {
+//     padding-left: 4rem;
+//   }
 
-  @include respond(galaxy-s5) {
-    padding-left: 3rem;
-  }
+//   @include respond(galaxy-s5) {
+//     padding-left: 3rem;
+//   }
 
-  @include respond(iphone-5) {
-    padding-left: 0;
-  }
+//   @include respond(iphone-5) {
+//     padding-left: 0;
+//   }
 
-  @include respond(iphone-only) {
-    padding-left: 2rem;
-  }
+//   @include respond(iphone-only) {
+//     padding-left: 2rem;
+//   }
 
-  @include respond(galaxy-fold) {
-    padding-left: 4rem;
-  }
-}
+//   @include respond(galaxy-fold) {
+//     padding-left: 4rem;
+//   }
+// }
 
 .team-container {
   display: flex;
   flex-wrap: wrap;
+  height: auto;
   width: 100%;
+  align-items: center;
   justify-content: center;
 
-  @include respond(big-desktop) {
-    width: 100%;
-  }
+  // @include respond(surface-duo) {
+  //   width: 100%;
+  // }
 }
 
 .team-header {
@@ -56,26 +58,36 @@
 
 .profile-card {
   color: $color-white;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  // flex: 0 0 33.333333%;
   margin: 6rem 5rem 4rem 0;
 
   @include respond(big-desktop) {
-    margin: 6rem 7rem 4rem 0;
+    margin: 6rem 7rem 4rem 7rem;
+  }
+
+  @include respond(ipad-pro) {
+    margin: 4rem 2rem 2rem 2rem;
   }
 
   @include respond(surface-duo) {
-    margin: 4rem 4rem 2rem 0;
+    margin: 4rem 4rem 2rem 4rem;
+    width: 60%;
   }
 
   @include respond(iphone-plus) {
-    margin: 4rem 1.5rem 2rem 0;
+    margin: 4rem 1.5rem 2rem 1.5rem;
+    width: 70%;
   }
 
   @include respond(iphone-x) {
-    margin: 5rem 5rem 2rem 0;
+    margin: 5rem 5rem 2rem 5rem;
   }
 
   @include respond(iphone-5) {
-    margin: 5rem 2.5rem 2rem 0;
+    margin: 5rem 2.5rem 2rem 2.5rem;
   }
 
   &__pic-container {
@@ -120,11 +132,11 @@
     }
 
     @include respond(surface-duo) {
-      height: 26rem;
+      height: 40rem;
     }
 
     @include respond(iphone-x) {
-      height: 28rem;
+      height: 45rem;
     }
   }
 

@@ -72,6 +72,10 @@ span {
   @include respond(ipad-pro) {
     margin: 21rem 7rem;
   }
+
+  @include respond(iphone-only) {
+    margin: 15rem 5rem;
+  }
 }
 
 button {

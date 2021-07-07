@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderImage from '../../Assets/university-img.png';
+import HeaderImage from '../../Assets/banners/university-img.png';
 
 const UniversityHeader = () => {
   return (

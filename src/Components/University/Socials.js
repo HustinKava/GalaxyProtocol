@@ -1,11 +1,11 @@
 import React from 'react';
-import Discord from '../../Assets/Discord-icon-gp.png';
-import Telegram from '../../Assets/Telegram-icon-gp.png';
-import Twitter from '../../Assets/Twitter-icon-gp.png';
-import Facebook from '../../Assets/Facebook-icon-gp.png';
-import Instagram from '../../Assets/Instagram-icon-gp.png';
-import Reddit from '../../Assets/Reddit-icon-gp.png';
-import Tiktok from '../../Assets/Tiktok-icon-gp.png';
+import Discord from '../../Assets/socialIcons/Discord-icon-circle.png';
+import Telegram from '../../Assets/socialIcons/Telegram-icon-circle.png';
+import Twitter from '../../Assets/socialIcons/Twitter-icon-circle.png';
+import Facebook from '../../Assets/socialIcons/Facebook-icon-circle.png';
+import Instagram from '../../Assets/socialIcons/Instagram-icon-circle.png';
+import Reddit from '../../Assets/socialIcons/Reddit-icon-circle.png';
+import Tiktok from '../../Assets/socialIcons/Tiktok-icon-circle.png';
 
 const SocialIconLink = ({ icon, alt, href }) => {
   return (

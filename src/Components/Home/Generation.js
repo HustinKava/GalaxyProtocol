@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../../Assets/GP-EMBLEM-COLOR.png';
+import Background from '../../Assets/logos/gp-emblem-color.png';
 import { Container } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 

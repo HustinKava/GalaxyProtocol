@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
-import Trade from '../../Assets/SafeGalaxy-icon.png';
-import Learn from '../../Assets/Learn-icon.png';
+import Trade from '../../Assets/logos/SafeGalaxy-icon.png';
+import Learn from '../../Assets/destinyBoxes/Learn-icon.png';
 // import Rocket from '../../Assets/Rocket-icon.png';
 // import Wallet from '../../Assets/Wallet-icon.png';
 // import Jobs from '../../Assets/Jobs-icon.png';
-import Merch from '../../Assets/Merch-icon.png';
+import Merch from '../../Assets/destinyBoxes/Merch-icon.png';
 import { NavLink } from 'react-router-dom';
 
 function Destiny() {
@@ -22,11 +22,19 @@ function Destiny() {
       {/* Boxes */}
       <div className="boxGrouping-container">
         <div className="boxGrouping">
-
-          <a href='https://safegalaxy.net/'  target="_blank" rel="noreferrer" className='destiny-links'>
+          <a
+            href="https://safegalaxy.net/"
+            target="_blank"
+            rel="noreferrer"
+            className="destiny-links"
+          >
             <div className="destBox-container">
               <div className="destBox destBox--1">
-                <img src={Trade} alt="Trade" className="destBox__image destBox__safeGalaxyImg" />
+                <img
+                  src={Trade}
+                  alt="Trade"
+                  className="destBox__image destBox__safeGalaxyImg"
+                />
                 <span className="destBox__header">Buy SafeGalaxy</span>
                 <span className="destBox__text">
                   Get in on the on the Galaxia Presale: Buy SafeGalaxy
@@ -35,9 +43,7 @@ function Destiny() {
             </div>
           </a>
 
-
-
-          <NavLink to='/GalaxyUniversity' className='destiny-links'>
+          <NavLink to="/GalaxyUniversity" className="destiny-links">
             <div className="destBox-container">
               <div className="destBox destBox--2">
                 <img src={Learn} alt="Learn" className="destBox__image" />
@@ -80,7 +86,7 @@ function Destiny() {
           </div> */}
 
           <a
-            href='https://intergalacticmerch.myshopify.com/'
+            href="https://intergalacticmerch.myshopify.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="destiny-links"
@@ -95,7 +101,6 @@ function Destiny() {
               </div>
             </div>
           </a>
-
         </div>
       </div>
     </div>
