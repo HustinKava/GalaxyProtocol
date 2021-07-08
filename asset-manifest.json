@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/GalaxyProtocol/static/css/main.db84583f.chunk.css",
-    "main.js": "/GalaxyProtocol/static/js/main.2622379c.chunk.js",
-    "main.js.map": "/GalaxyProtocol/static/js/main.2622379c.chunk.js.map",
+    "main.css": "/GalaxyProtocol/static/css/main.7ce2ce94.chunk.css",
+    "main.js": "/GalaxyProtocol/static/js/main.65eb6150.chunk.js",
+    "main.js.map": "/GalaxyProtocol/static/js/main.65eb6150.chunk.js.map",
     "runtime-main.js": "/GalaxyProtocol/static/js/runtime-main.839b6a47.js",
     "runtime-main.js.map": "/GalaxyProtocol/static/js/runtime-main.839b6a47.js.map",
     "static/css/2.09f195fe.chunk.css": "/GalaxyProtocol/static/css/2.09f195fe.chunk.css",
@@ -10,13 +10,14 @@
     "static/js/2.f8f285f2.chunk.js.map": "/GalaxyProtocol/static/js/2.f8f285f2.chunk.js.map",
     "index.html": "/GalaxyProtocol/index.html",
     "static/css/2.09f195fe.chunk.css.map": "/GalaxyProtocol/static/css/2.09f195fe.chunk.css.map",
-    "static/css/main.db84583f.chunk.css.map": "/GalaxyProtocol/static/css/main.db84583f.chunk.css.map",
+    "static/css/main.7ce2ce94.chunk.css.map": "/GalaxyProtocol/static/css/main.7ce2ce94.chunk.css.map",
     "static/js/2.f8f285f2.chunk.js.LICENSE.txt": "/GalaxyProtocol/static/js/2.f8f285f2.chunk.js.LICENSE.txt",
     "static/media/Ali.95412429.png": "/GalaxyProtocol/static/media/Ali.95412429.png",
     "static/media/Collin.70e8f944.png": "/GalaxyProtocol/static/media/Collin.70e8f944.png",
     "static/media/Discord-banner.fb5fc70d.png": "/GalaxyProtocol/static/media/Discord-banner.fb5fc70d.png",
     "static/media/Discord-icon-circle.adf2e0ce.png": "/GalaxyProtocol/static/media/Discord-icon-circle.adf2e0ce.png",
     "static/media/Facebook-icon-circle.a8a50c19.png": "/GalaxyProtocol/static/media/Facebook-icon-circle.a8a50c19.png",
+    "static/media/GalaxyProtocolWhitepaper.8ffe786c.png": "/GalaxyProtocol/static/media/GalaxyProtocolWhitepaper.8ffe786c.png",
     "static/media/GalaxySwap-banner.78376c8a.png": "/GalaxyProtocol/static/media/GalaxySwap-banner.78376c8a.png",
     "static/media/GalaxySwap-logo-text.1d9843b8.png": "/GalaxyProtocol/static/media/GalaxySwap-logo-text.1d9843b8.png",
     "static/media/Hipsley.ed1fdcb5.png": "/GalaxyProtocol/static/media/Hipsley.ed1fdcb5.png",
@@ -89,7 +90,7 @@
     "static/js/runtime-main.839b6a47.js",
     "static/css/2.09f195fe.chunk.css",
     "static/js/2.f8f285f2.chunk.js",
-    "static/css/main.db84583f.chunk.css",
-    "static/js/main.2622379c.chunk.js"
+    "static/css/main.7ce2ce94.chunk.css",
+    "static/js/main.65eb6150.chunk.js"
   ]
 }
