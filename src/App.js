@@ -20,12 +20,14 @@ import GalaxyUniversity from './Pages/GalaxyUniversity';
 import MeetOurTeam from './Pages/MeetOurTeam';
 import AboutUs from './Pages/AboutUs';
 import MigrationDocs from './Pages/MigrationDocs';
+import Buyback from './Pages/Buyback';
 import Whitepaper from './Pages/Whitepaper';
+import Presskit from './Pages/Presskit';
 
 // Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
 
-import HistoryofDefi from './Pages/Articles/HistoryofDeFi'
+import HistoryofDefi from './Pages/Articles/HistoryofDeFi';
 import Staking from './Pages/Articles/Staking';
 import ImpermanentLoss from './Pages/Articles/ImpermanentLoss';
 import CeFiVsDeFi from './Pages/Articles/CeFiVsDeFi';
@@ -64,7 +66,7 @@ function App() {
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
         {/* <Route exact path="/Article" component={Article} /> */}
-
+        <Route exact path="/buyback" component={Buyback} />
 
         {/* Articles */}
         <Route exact path="/HistoryofDefi" component={HistoryofDefi} />
@@ -81,12 +83,17 @@ function App() {
         <Route exact path="/CryptoWallets" component={CryptoWallets} />
         <Route exact path="/CeFiVsDeFi" component={CeFiVsDeFi} />
         <Route exact path="/DLTandBlockchain" component={DLTandBlockchain} />
-        <Route exact path="/SmartContractsandtheEthereumVirtualMachine" component={SmartContractsEthVM} />
+        <Route
+          exact
+          path="/SmartContractsandtheEthereumVirtualMachine"
+          component={SmartContractsEthVM}
+        />
 
         <Route exact path="/meetourteam" component={MeetOurTeam} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/migrationdocumentation" component={MigrationDocs} />
         <Route exact path="/whitepaper" component={Whitepaper} />
+        <Route exact path="/presskit" component={Presskit} />
       </Switch>
       <Footer />
     </Router>

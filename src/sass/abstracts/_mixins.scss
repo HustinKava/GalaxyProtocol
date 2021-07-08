@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
 }
 
-// MEDIA QUERY MANAGER
+// MEDIA QUERY MANAGER (based on Google device taskbar)
 /*
 0 - 280px:          galaxy-fold
 280 - 320px:        iphone-5
@@ -23,8 +23,11 @@
 420 - 540px:        surface-duo
 540 - 780px:        ipad
 780 - 1024px:       ipad-pro
-[1024 - 1600] is where our normal styles apply
-1600px + :          Big desktop
+1024 - 1280px:      laptop-x-small
+1280 - 1440px:      laptop-small
+[1440 - 1504px] is where our normal styles apply
+1505 - 1832px:      large-laptop
+1832px + :          Big desktop
 
 1em = 16px
 */
@@ -32,55 +35,76 @@
   @if $breakpoint == galaxy-fold {
     @media only screen and (max-width: 17.5em) {
       @content;
-    } //280px
+    } // 280px
   }
   @if $breakpoint == iphone-5 {
     @media only screen and (max-width: 20em) {
       @content;
-    } //320px
+    } // 320px
   }
   @if $breakpoint == galaxy-s5 {
     @media only screen and (max-width: 22.5em) {
       @content;
-    } //360px
+    } // 360px
   }
   @if $breakpoint == iphone-x {
     @media only screen and (max-width: 23.75em) {
       @content;
-    } //380px
+    } // 380px
   }
   @if $breakpoint == iphone-only {
+    // CSS specific to iOS mobile devices
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
-        /* CSS specific to iOS devices */
         @content;
       }
-    } //420px
+    } // 420px
   }
   @if $breakpoint == iphone-plus {
     @media only screen and (max-width: 26.25em) {
       @content;
-    } //420px
+    } // 420px
   }
   @if $breakpoint == surface-duo {
     @media only screen and (max-width: 33.75em) {
       @content;
-    } //540px
+    } // 540px
   }
   @if $breakpoint == ipad {
     @media only screen and (max-width: 48.75em) {
       @content;
-    } //780px
+    } // 780px
   }
   @if $breakpoint == ipad-pro {
     @media only screen and (max-width: 64em) {
       @content;
-    } //1024px
+    } // 1024px
+  }
+  @if $breakpoint == laptop-x-small {
+    // screens up to 11in
+    @media only screen and (max-width: 80em) {
+      @content;
+    } // 1280px
+  }
+  @if $breakpoint == laptop-small {
+    // screens up to 13in
+    @media only screen and (max-width: 90em) {
+      @content;
+    } // 1440px
+  }
+  //
+  // 15in laptop is 1504px
+  //
+  @if $breakpoint == large-laptop {
+    // screens larger than 15in smaller than 16in
+    @media only screen and (min-width: 94.1em) and (max-width: 114.5em) {
+      @content;
+    } // 1505-1832
   }
   @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       @content;
-    } //1600
+    } // >1832
   }
 }
 

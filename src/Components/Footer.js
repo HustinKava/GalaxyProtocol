@@ -141,7 +141,7 @@ function Footer() {
               <InternalLink link="meetourteam" text="Meet Our Team" />
               {/* <InternalLink link="jobs" text="Jobs" /> */}
               <InternalLink link="faq" text="FAQ" />
-              {/* <InternalLink link="presskit" text="Presskit" /> */}
+              <InternalLink link="presskit" text="Presskit" />
             </div>
           </Grid>
 

@@ -7,8 +7,11 @@
 420 - 540px:        surface-duo
 540 - 780px:        ipad
 780 - 1024px:       ipad-pro
-[1024 - 1600] is where our normal styles apply
-1600px + :          Big desktop
+1024 - 1280px:      laptop-x-small
+1280 - 1440px:      laptop-small
+[1440 - 1504px] is where our normal styles apply
+1505 - 1832px:      large-laptop
+1832px + :          Big desktop
 
 1em = 16px
 */
@@ -41,7 +44,7 @@ html {
   @media only screen and (max-width: 17.5em) {
     html {
       font-size: 25%; } }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     html {
       font-size: 68.75%; } }
 
@@ -69,7 +72,6 @@ span {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .mainContainer {
-        /* CSS specific to iOS devices */
         margin: 15rem 5rem; } } }
 
 button {
@@ -157,7 +159,7 @@ code {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0, 0, 0, 0.3); } }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .modal {
       font-size: 1.7rem; } }
   @media only screen and (max-width: 48.75em) {
@@ -350,7 +352,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .destBox__header {
-          /* CSS specific to iOS devices */
           font-size: 4rem; } } }
   .destBox__text {
     text-align: center;
@@ -368,7 +369,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .destBox__text {
-          /* CSS specific to iOS devices */
           font-size: 3.5rem; } } }
 
 .destiny-links {
@@ -1000,7 +1000,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .university-socials__text {
-          /* CSS specific to iOS devices */
           font-size: 9rem; } } }
   .university-socials__icon-container {
     display: flex;
@@ -1019,7 +1018,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .university-socials__icon {
-          /* CSS specific to iOS devices */
           height: 6rem; } } }
 
 .carousel-background {
@@ -1043,7 +1041,6 @@ code {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .carousel-recent-videos {
-        /* CSS specific to iOS devices */
         width: 10rem; } } }
 
 .carousel-all-videos-container {
@@ -1064,7 +1061,6 @@ code {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .carousel-all-videos {
-        /* CSS specific to iOS devices */
         width: 9rem; } } }
 
 .carousel-thin {
@@ -1266,7 +1262,7 @@ code {
 
 .footer-column {
   width: 23rem; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .footer-column {
       width: 28rem; } }
   @media only screen and (max-width: 64em) {
@@ -1337,7 +1333,7 @@ code {
     font-family: Mosk-200;
     font-size: 1.8rem;
     padding-bottom: 2rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .footer-column__text {
         font-size: 2rem; } }
     @media only screen and (max-width: 64em) {
@@ -1364,7 +1360,7 @@ code {
     height: 1.8rem;
     margin-left: 0.75rem;
     margin-top: 0.5rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .footer-column__coming-soon {
         height: 2.4rem; } }
     @media only screen and (max-width: 64em) {
@@ -1389,7 +1385,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .footer-column__coming-soon {
-          /* CSS specific to iOS devices */
           margin-top: 0.9rem;
           height: 1.4rem; } } }
   .footer-column__link {
@@ -1411,7 +1406,7 @@ code {
   color: #fff;
   font-family: Mosk-200;
   font-size: 1.8rem; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .footer-modal-btns {
       font-size: 2rem; } }
   @media only screen and (max-width: 64em) {
@@ -1468,7 +1463,6 @@ h3, h4 {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .mobile-nav__burger {
-          /* CSS specific to iOS devices */
           font-size: 4.5rem; } } }
     @media only screen and (max-width: 17.5em) {
       .mobile-nav__burger {
@@ -1479,7 +1473,6 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .mobile-nav__logo {
-        /* CSS specific to iOS devices */
         height: 2rem; } } }
   @media only screen and (max-width: 17.5em) {
     .mobile-nav__logo {
@@ -1568,7 +1561,6 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .socialIcon {
-        /* CSS specific to iOS devices */
         height: 2rem; } } }
 
 .comingSoon {
@@ -1584,7 +1576,6 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .comingSoon {
-        /* CSS specific to iOS devices */
         margin-top: 0.9rem;
         height: 1.5rem; } } }
 
@@ -1735,7 +1726,7 @@ h3, h4 {
   .about-us-info-card__text-container {
     margin-left: 5rem;
     width: 90rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .about-us-info-card__text-container {
         margin-right: 30rem; } }
     @media only screen and (max-width: 64em) {
@@ -1805,7 +1796,6 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .heroImage {
-        /* CSS specific to iOS devices */
         height: 15rem; } } }
   @media only screen and (max-width: 22.5em) {
     .heroImage {
@@ -1843,7 +1833,6 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .articleBodyContainer {
-        /* CSS specific to iOS devices */
         padding-top: 7rem; } } }
 
 .articleSubtitle {
@@ -1864,6 +1853,138 @@ h3, h4 {
 .innerArticleSubtitle {
   font-size: 3rem;
   font-family: 'Mosk-500'; }
+
+.buyback {
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 15rem;
+  background-color: #000;
+  background: url("../../Assets/backgroundImages/buyback.png") no-repeat center center;
+  background-size: cover; }
+  .buyback__connect-wallet-button {
+    color: inherit;
+    background: transparent linear-gradient(262deg, #ff00ff 0%, #440c8b 100%) 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-family: Mosk-700;
+    padding: 0.6rem 1.5rem;
+    align-self: flex-end;
+    margin: 1rem 1rem 0 0; }
+    @media only screen and (max-width: 64em) {
+      .buyback__connect-wallet-button {
+        margin-top: 11rem; } }
+  .buyback__header {
+    font-family: Mosk-800;
+    font-size: 12rem; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__header {
+        font-size: 9rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__header {
+        font-size: 8rem; } }
+  .buyback__large-container {
+    background-color: #000;
+    width: 100rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__large-container {
+        width: 75rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .buyback__large-container {
+        width: 61rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__large-container {
+        width: 54rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .buyback__large-container {
+        width: 70rem; } }
+    @media only screen and (max-width: 20em) {
+      .buyback__large-container {
+        width: 60rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .buyback__large-container {
+        width: 65rem; } }
+  .buyback__details-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    font-size: 2rem; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__details-list-container {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__details-list-container {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .buyback__details-list-container {
+        font-size: 2.1rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .buyback__details-list-container {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .buyback__details-list-container {
+        font-size: 1.8rem; } }
+  .buyback__details-list {
+    display: flex;
+    flex-flow: column;
+    font-family: Mosk-500; }
+  .buyback__detail {
+    line-height: 3;
+    display: flex;
+    align-items: center; }
+  .buyback__circled-number {
+    font-family: Mosk-800;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: transparent linear-gradient(210deg, #00cdd5 0%, #00cdd5 18%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.5rem; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__circled-number {
+        margin-right: 2rem; } }
+  .buyback__lower-container {
+    background-color: #191919;
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .buyback__price-info-container {
+    width: 35rem;
+    padding-bottom: 1rem; }
+  .buyback__price-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem; }
+  .buyback__price-info-text {
+    font-family: Mosk-300; }
+  .buyback__price-info-integer {
+    font-family: Mosk-700; }
+  .buyback__redeem-button {
+    font-family: Mosk-900;
+    font-size: 3.8rem;
+    background-color: #505050;
+    color: #fff;
+    padding: 1.4rem 1.8rem;
+    border-radius: 4px;
+    border: none; }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__redeem-button {
+        font-size: 3rem; } }
+    .buyback__redeem-button:hover {
+      background: transparent linear-gradient(270deg, #00cdd5 0%, #00cdd5 1%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box; }
 
 .bullet-points {
   margin-left: 2rem; }
@@ -1995,14 +2116,13 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .gradientBar {
-        /* CSS specific to iOS devices */
         height: 5rem; } } }
 
 .articleGalleryContainer {
   margin: 12rem 6rem;
   display: flex;
   justify-content: center; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .articleGalleryContainer {
       margin: 15rem 8rem; } }
   @media only screen and (max-width: 64em) {
@@ -2013,7 +2133,7 @@ h3, h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .article-gallery {
       max-width: 165rem; } }
 
@@ -2127,7 +2247,7 @@ h3, h4 {
 
 .home-sub-container {
   padding: 2rem 0 12rem 0; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .home-sub-container {
       padding: 3rem 0 14rem 0; } }
 
@@ -2209,7 +2329,7 @@ h3, h4 {
     font-family: Mosk-600;
     color: #fff;
     padding-bottom: 1.1rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .job-info__title {
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 33.75em) {
@@ -2260,13 +2380,12 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .team-header {
-        /* CSS specific to iOS devices */
         font-size: 6rem; } } }
 
 .profile-card {
   color: #fff;
   margin: 6rem 5rem 4rem 0; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .profile-card {
       margin: 6rem 7rem 4rem 7rem; } }
   @media only screen and (max-width: 64em) {
@@ -2306,7 +2425,7 @@ h3, h4 {
         font-size: 1rem; } }
   .profile-card__image {
     height: 34rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .profile-card__image {
         height: 35rem; } }
     @media only screen and (max-width: 64em) {
@@ -2324,7 +2443,7 @@ h3, h4 {
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .profile-card__logo-3d-container {
         height: 35rem;
         width: 28rem; } }
@@ -2443,3 +2562,101 @@ h3, h4 {
 .contactEmail {
   font-family: Mosk-300;
   font-size: 3.5rem; }
+
+.migration-docs-container {
+  display: flex;
+  flex-direction: column; }
+
+.presskit-image {
+  height: auto;
+  width: 45%; }
+
+.preskit-text {
+  margin-top: 3rem;
+  font-family: Mosk-200;
+  font-size: 2.5rem;
+  color: #C7C7C7;
+  max-width: 90rem;
+  line-height: 3rem; }
+
+.presskit-discover {
+  margin-top: 16rem; }
+  @media only screen and (max-width: 33.75em) {
+    .presskit-discover {
+      text-align: center; } }
+  .presskit-discover__image {
+    height: auto;
+    width: 3%;
+    margin-left: 19rem;
+    margin-top: 2rem;
+    margin-bottom: 15rem; }
+    @media only screen and (max-width: 48.75em) {
+      .presskit-discover__image {
+        width: 4%; } }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-discover__image {
+        margin-left: 0;
+        width: 6%; } }
+  .presskit-discover__assets {
+    font-size: 6rem;
+    margin-bottom: 15rem; }
+    @media only screen and (max-width: 48.75em) {
+      .presskit-discover__assets {
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-discover__assets {
+        font-size: 4.2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .presskit-discover__assets {
+        font-size: 3.5rem; } }
+
+.presskit-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media only screen and (max-width: 64em) {
+    .presskit-flex {
+      justify-content: space-evenly; } }
+  .presskit-flex__1 {
+    background: transparent linear-gradient(308deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+    height: 40rem;
+    width: 63rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-flex__1 {
+        height: 30rem;
+        width: 53rem; } }
+  .presskit-flex__2 {
+    background: #fff;
+    height: 40rem;
+    width: 63rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-flex__2 {
+        height: 30rem;
+        width: 53rem; } }
+  .presskit-flex__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 64em) {
+      .presskit-flex__image {
+        height: auto;
+        width: 90%; } }
+  .presskit-flex__text {
+    color: #8B8B8B;
+    font-family: Mosk-300;
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 64em) {
+      .presskit-flex__text {
+        margin-bottom: 5rem; } }
+
+.presskit-color {
+  margin-top: 20rem;
+  margin-bottom: 15rem; }
+
+.presskit-kal {
+  height: auto;
+  width: 60%; }

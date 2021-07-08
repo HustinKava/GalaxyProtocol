@@ -1,0 +1,129 @@
+.migration-docs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.presskit-image {
+    height: auto;
+    width: 45%;
+}
+
+.preskit-text {
+    margin-top: 3rem;
+    font-family: Mosk-200;
+    font-size: 2.5rem;
+    color: $color-grey-light-3;
+    max-width: 90rem;
+    line-height: 3rem;
+}
+
+.presskit-discover {
+    margin-top: 16rem;
+
+    @include respond(surface-duo) {
+        text-align: center;
+    }
+
+    &__image {
+        height: auto;
+        width: 3%;
+        margin-left: 19rem;
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+
+        @include respond(ipad) {
+            width: 4%;
+        }
+
+        @include respond(surface-duo) {
+            margin-left: 0;
+            width: 6%;
+        }
+    }
+
+    &__assets {
+        font-size: 6rem;
+        margin-bottom: 15rem;
+
+        @include respond(ipad) {
+            font-size: 5.5rem;
+        }
+
+        @include respond(surface-duo) {
+            font-size: 4.2rem;
+        }
+
+        @include respond(iphone-plus) {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+.presskit-flex {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include respond(ipad-pro) {
+        justify-content:space-evenly;
+    }
+
+    &__1 {
+        background: transparent linear-gradient(308deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;        
+        height: 40rem;
+        width: 63rem;
+        margin-bottom: 1rem;
+
+        @include respond(surface-duo) {
+            height: 30rem;
+            width: 53rem;
+        }
+    }
+
+    &__2 {
+        background: $color-white;        
+        height: 40rem;
+        width: 63rem;
+        margin-bottom: 1rem;
+
+        @include respond(surface-duo) {
+            height: 30rem;
+            width: 53rem;
+        }
+    }
+
+    &__image {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include respond(ipad-pro) {
+            height: auto;
+            width: 90%;
+        }
+    }
+
+    &__text {
+        color: $color-grey-light-4;
+        font-family: Mosk-300;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+        @include respond(ipad-pro) {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.presskit-color {
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+}
+
+.presskit-kal {
+    height: auto;
+    width: 60%;
+}
+

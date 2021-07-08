@@ -116,6 +116,7 @@ const Navbar = () => {
               <InternalLink link="aboutus" text="About Us" />
               <InternalLink link="meetourteam" text="Meet Our Team" />
               <InternalLink link="faq" text="FAQ" />
+              <InternalLink link="presskit" text="Presskit" />
             </div>
           </div>
         </div>

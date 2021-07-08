@@ -105,6 +105,7 @@ function Sidebar({ isOpen, toggle }) {
         <InternalLink link="aboutus" text="About Us" toggle={toggle} />
         <InternalLink link="meetourteam" text="Meet Our Team" toggle={toggle} />
         <InternalLink link="faq" text="FAQ" toggle={toggle} />
+        <InternalLink link="presskit" text="Presskit" toggle={toggle} />
       </div>
     </SidebarContainer>
   );
