@@ -134,8 +134,8 @@ function Footer() {
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">About</p>
               <InternalLink link="aboutus" text="About Us" />
-              <ExternalLink
-                href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+              <InternalLink
+                link="whitepaper"
                 text="Whitepaper V1"
               />
               <InternalLink link="meetourteam" text="Meet Our Team" />

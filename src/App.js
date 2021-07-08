@@ -20,6 +20,7 @@ import GalaxyUniversity from './Pages/GalaxyUniversity';
 import MeetOurTeam from './Pages/MeetOurTeam';
 import AboutUs from './Pages/AboutUs';
 import MigrationDocs from './Pages/MigrationDocs';
+import Whitepaper from './Pages/Whitepaper';
 
 // Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
@@ -85,6 +86,7 @@ function App() {
         <Route exact path="/meetourteam" component={MeetOurTeam} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/migrationdocumentation" component={MigrationDocs} />
+        <Route exact path="/whitepaper" component={Whitepaper} />
       </Switch>
       <Footer />
     </Router>

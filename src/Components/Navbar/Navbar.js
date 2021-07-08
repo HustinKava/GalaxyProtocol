@@ -65,8 +65,8 @@ const Navbar = () => {
           <div className="dropdown">
             <p className="dropbtn">Documentation</p>
             <div className="dropdown-content">
-              <ExternalLink
-                href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+              <InternalLink
+                link="whitepaper"
                 text="Whitepaper V1"
               />
               <InternalLink

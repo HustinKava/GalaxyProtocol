@@ -108,3 +108,15 @@
     font-size: 3rem;
     font-family: 'Mosk-500';
 }
+
+.bullet-points {
+    margin-left: 2rem;
+
+    @include respond(ipad-pro) {
+        margin-left: 2.2rem;
+    }
+
+    @include respond(iphone-x) {
+        margin-left: 2.5rem;
+    }
+}

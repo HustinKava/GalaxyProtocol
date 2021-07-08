@@ -69,9 +69,10 @@ function Sidebar({ isOpen, toggle }) {
       {/* Documentation */}
       <p className="sidebar-header">Documentation</p>
       <div className="sidebar-group">
-        <ExternalLink
-          href="https://safegalaxy.medium.com/galaxyprotocol-roadmap-e8a49098dd7a"
+        <InternalLink
+          link="whitepaper"
           text="Whitepaper V1"
+          toggle={toggle}
         />
         <InternalLink
           link="migrationdocumentation"
