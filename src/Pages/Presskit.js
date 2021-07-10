@@ -1,18 +1,28 @@
 import React from 'react';
-import GalaxyProtocol from '../Assets/logos/GP-LOGO-COLOR.png';
 import Arrow from '../Assets/presskit/Arrow-button.png';
+import GalaxyProtocol from '../Assets/logos/GP-LOGO-COLOR.png';
+
+// Web Assets
 import ProtocolWhite from '../Assets/presskit/protocol-white.png';
 import ProtocolBlack from '../Assets/presskit/protocol-black.png';
 import ProtocolColor from '../Assets/presskit/protocol-color.png';
 import SwapWhite from '../Assets/presskit/swap-white.png';
-import SwapWhiteSvg from '../Assets/presskit/swap-white-svg.svg'
 import SwapBlack from '../Assets/presskit/swap-black.png';
-import SwapBlackSvg from '../Assets/presskit/swap-black-svg.svg';
 import SwapColor from '../Assets/presskit/swap-color.png';
 import Kal from '../Assets/team/Kal-tongue-out.png';
 import GalaxyToken from '../Assets/presskit/galaxy-token.png';
-import GalaxiaToken3D from '../Assets/presskit/Galaxia-Token-3D.zip';
-import KalIn3D from '../Assets/presskit/KAL-in-3D.zip';
+
+// Downloads
+import ProtocolWhitePng from '../Assets/presskit/Downloads/protocol-white-png.zip'
+import ProtocolBlackPng from '../Assets/presskit/Downloads/protocol-black-png.zip'
+import ProtocolColorPng from '../Assets/presskit/Downloads/protocol-color-png.zip'
+import SwapWhitePng from '../Assets/presskit/Downloads/swap-white-png.zip'
+import SwapBlackPng from '../Assets/presskit/Downloads/swap-black-png.zip'
+import SwapColorPng from '../Assets/presskit/Downloads/swap-color-png.zip'
+import SwapWhiteSvg from '../Assets/presskit/Downloads/swap-white-svg.zip'
+import SwapBlackSvg from '../Assets/presskit/Downloads/swap-black-svg.zip';
+import GalaxiaToken3D from '../Assets/presskit/Downloads/Galaxia-Token-3D.zip';
+import KalIn3D from '../Assets/presskit/Downloads/KAL-in-3D.zip';
 
 function Presskit() {
     return (
@@ -28,7 +38,7 @@ function Presskit() {
             <div className='presskit-flex'>
                 <div>
                     <div className='presskit-flex__1'>
-                        <a href = {ProtocolWhite} target = "_blank" rel="noreferrer">
+                        <a href = {ProtocolWhitePng} target = "_blank" rel="noreferrer">
                             <img className='presskit-flex__image' src={ProtocolWhite} alt='ProtocolWhite'/>                
                         </a>
                     </div>
@@ -44,7 +54,7 @@ function Presskit() {
 
                 <div>
                     <div className='presskit-flex__2'>
-                        <a href = {ProtocolBlack} target = "_blank" rel="noreferrer">
+                        <a href = {ProtocolBlackPng} target = "_blank" rel="noreferrer">
                             <img className='presskit-flex__image' src={ProtocolBlack} alt='ProtocolBlack'/>
                         </a>
                     </div>
@@ -60,7 +70,7 @@ function Presskit() {
 
                 <div>
                     <div className='presskit-flex__1'>
-                        <a href = {ProtocolColor} target = "_blank" rel="noreferrer">
+                        <a href = {ProtocolColorPng} target = "_blank" rel="noreferrer">
                             <img className='presskit-flex__image' src={ProtocolColor} alt='ProtocolColor'/>
                         </a>
                     </div>
@@ -82,7 +92,7 @@ function Presskit() {
             <div className='presskit-flex'>
                 <div>
                     <div className='presskit-flex__1'>
-                        <a href = {SwapWhite} target = "_blank" rel="noreferrer">
+                        <a href = {SwapWhitePng} target = "_blank" rel="noreferrer">
                             <img className='presskit-flex__image' src={SwapWhite} alt='SwapWhite'/>
                         </a>
                     </div>
@@ -100,7 +110,7 @@ function Presskit() {
 
                 <div>
                     <div className='presskit-flex__2'>
-                        <a href = {SwapBlack} target = "_blank" rel="noreferrer">
+                        <a href = {SwapBlackPng} target = "_blank" rel="noreferrer">
                             <img className='presskit-flex__image' src={SwapBlack} alt='SwapBlack'/>
                         </a>
                     </div>
@@ -118,7 +128,7 @@ function Presskit() {
 
                 <div>
                     <div className='presskit-flex__1'>
-                        <a href = {SwapColor} target = "_blank" rel="noreferrer">
+                        <a href = {SwapColorPng} target = "_blank" rel="noreferrer">
                             <img className='presskit-flex__image' src={SwapColor} alt='SwapColor'/>
                         </a>
                     </div>

@@ -46,7 +46,7 @@ function BannerUniversity() {
                   Galaxy
                 </span>
                 <span className="banUniversityHeader banUniversityHeader--2">
-                  universe-ity
+                  universe&#8209;ity
                 </span>
               </div>
               <span className="banDesc banDesc--1">

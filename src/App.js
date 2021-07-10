@@ -22,7 +22,7 @@ import AboutUs from './Pages/AboutUs';
 import MigrationDocs from './Pages/MigrationDocs';
 import Buyback from './Pages/Buyback';
 import Whitepaper from './Pages/Whitepaper';
-import Presskit from './Pages/Presskit';
+// import Presskit from './Pages/Presskit';
 
 // Importing articles
 // import DLTandBlockchain from './Pages/Articles/DLTandBlockchain'
@@ -93,7 +93,7 @@ function App() {
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/migrationdocumentation" component={MigrationDocs} />
         <Route exact path="/whitepaper" component={Whitepaper} />
-        <Route exact path="/presskit" component={Presskit} />
+        {/* <Route exact path="/presskit" component={Presskit} /> */}
       </Switch>
       <Footer />
     </Router>

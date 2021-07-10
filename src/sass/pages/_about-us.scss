@@ -78,7 +78,7 @@
     margin-left: 5rem;
     width: 90rem;
 
-    @include respond(big-desktop) {
+    @include respond(large-laptop) {
       margin-right: 30rem;
     }
 

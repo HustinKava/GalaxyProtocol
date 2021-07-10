@@ -134,14 +134,11 @@ function Footer() {
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">About</p>
               <InternalLink link="aboutus" text="About Us" />
-              <InternalLink
-                link="whitepaper"
-                text="Whitepaper V1"
-              />
+              <InternalLink link="whitepaper" text="Whitepaper V1" />
               <InternalLink link="meetourteam" text="Meet Our Team" />
               {/* <InternalLink link="jobs" text="Jobs" /> */}
               <InternalLink link="faq" text="FAQ" />
-              <InternalLink link="presskit" text="Presskit" />
+              {/* <InternalLink link="presskit" text="Presskit" /> */}
             </div>
           </Grid>
 

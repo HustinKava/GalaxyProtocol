@@ -21,6 +21,12 @@ const UniversityHeader = () => {
               all.
             </p>
           </div>
+
+          {/* <div className='university-button'>
+            <button className="ban-button university-start btn-desktop">
+              Start here
+            </button>
+          </div> */}
         </div>
 
         <div>

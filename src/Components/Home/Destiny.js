@@ -37,7 +37,8 @@ function Destiny() {
                 />
                 <span className="destBox__header">Buy SafeGalaxy</span>
                 <span className="destBox__text">
-                  Get in on the on the Galaxia Presale: Buy SafeGalaxy
+                  Buy now &#38; get 15% more Galaxia during the buyback (24 - 27
+                  July)
                 </span>
               </div>
             </div>

@@ -7,7 +7,7 @@
 }
 
 .banHeader {
-  font-size: 9rem;
+  font-size: 8rem;
 
   @include respond(ipad-pro) {
     font-size: 6rem;
@@ -46,7 +46,7 @@
 
 .banDesc {
   font-family: Mosk-300;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1.2;
 
   /* Description styling for banner 1, 2 and 3 */

@@ -7,7 +7,7 @@ import Okawa from '../../Assets/team/Okawa.png';
 import Rijk from '../../Assets/team/Rijk.png';
 import Spencer from '../../Assets/team/Spencer.png';
 import Tim from '../../Assets/team/Tim.png';
-import Collin from '../../Assets/team/Collin.png';
+import Cullon from '../../Assets/team/Cullon.png';
 
 export const profileInfo = [
   {
@@ -44,7 +44,7 @@ export const profileInfo = [
     name: 'Ali',
     image: Ali,
     jobTitle: 'Graphic & UX/ UI designer',
-    linkedIn: '',
+    linkedIn: 'https://www.linkedin.com/in/alimyari/',
   },
   {
     name: 'Hipsley',
@@ -66,7 +66,7 @@ export const profileInfo = [
   },
   {
     name: 'Cullon',
-    image: Collin,
+    image: Cullon,
     jobTitle: 'Project Manager',
     linkedIn: '',
   },

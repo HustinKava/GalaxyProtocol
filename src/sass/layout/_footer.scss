@@ -95,7 +95,7 @@
 .footer-column {
   width: 23rem;
 
-  @include respond(big-desktop) {
+  @include respond(x-large-laptop) {
     width: 28rem;
   }
 

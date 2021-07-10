@@ -69,11 +69,7 @@ function Sidebar({ isOpen, toggle }) {
       {/* Documentation */}
       <p className="sidebar-header">Documentation</p>
       <div className="sidebar-group">
-        <InternalLink
-          link="whitepaper"
-          text="Whitepaper V1"
-          toggle={toggle}
-        />
+        <InternalLink link="whitepaper" text="Whitepaper V1" toggle={toggle} />
         <InternalLink
           link="migrationdocumentation"
           text="Migration Docs"
@@ -105,7 +101,7 @@ function Sidebar({ isOpen, toggle }) {
         <InternalLink link="aboutus" text="About Us" toggle={toggle} />
         <InternalLink link="meetourteam" text="Meet Our Team" toggle={toggle} />
         <InternalLink link="faq" text="FAQ" toggle={toggle} />
-        <InternalLink link="presskit" text="Presskit" toggle={toggle} />
+        {/* <InternalLink link="presskit" text="Presskit" toggle={toggle} /> */}
       </div>
     </SidebarContainer>
   );

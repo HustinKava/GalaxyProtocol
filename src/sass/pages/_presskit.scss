@@ -20,8 +20,8 @@
 .presskit-discover {
     margin-top: 16rem;
 
-    @include respond(surface-duo) {
-        text-align: center;
+    @include respond(iphone-only) {
+        margin-top: 12rem;
     }
 
     &__image {
@@ -36,8 +36,20 @@
         }
 
         @include respond(surface-duo) {
-            margin-left: 0;
             width: 6%;
+        }
+
+        @include respond(iphone-plus) {
+            margin-left: 20rem;
+        }
+
+        @include respond(iphone-x) {
+            margin-left: 19rem;
+        }
+
+        @include respond(iphone-only) {
+            margin-bottom: 10rem;
+            margin-left: 13rem;
         }
     }
 
@@ -55,6 +67,10 @@
 
         @include respond(iphone-plus) {
             font-size: 3.5rem;
+        }
+
+        @include respond(iphone-only) {
+            margin-bottom: 10rem;
         }
     }
 }
@@ -79,6 +95,11 @@
             height: 30rem;
             width: 53rem;
         }
+
+        @include respond(iphone-only) {
+            height: 15rem;
+            width: 30rem;
+        }
     }
 
     &__2 {
@@ -91,6 +112,11 @@
             height: 30rem;
             width: 53rem;
         }
+
+        @include respond(iphone-only) {
+            height: 15rem;
+            width: 30rem;
+        }
     }
 
     &__image {
@@ -102,6 +128,10 @@
         @include respond(ipad-pro) {
             height: auto;
             width: 90%;
+        }
+
+        @include respond(iphone-only) {
+            width: 80%;
         }
     }
 
@@ -120,6 +150,11 @@
 .presskit-color {
     margin-top: 20rem;
     margin-bottom: 15rem;
+
+    @include respond(iphone-only) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .presskit-kal {

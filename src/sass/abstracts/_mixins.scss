@@ -80,13 +80,13 @@
       @content;
     } // 1024px
   }
-  @if $breakpoint == laptop-x-small {
+  @if $breakpoint == x-small-laptop {
     // screens up to 11in
     @media only screen and (max-width: 80em) {
       @content;
     } // 1280px
   }
-  @if $breakpoint == laptop-small {
+  @if $breakpoint == small-laptop {
     // screens up to 13in
     @media only screen and (max-width: 90em) {
       @content;
@@ -96,10 +96,16 @@
   // 15in laptop is 1504px
   //
   @if $breakpoint == large-laptop {
-    // screens larger than 15in smaller than 16in
-    @media only screen and (min-width: 94.1em) and (max-width: 114.5em) {
+    // screens slightly larger than 15in and above
+    @media only screen and (min-width: 94.1em) {
       @content;
-    } // 1505-1832
+    } // 1505-1660
+  }
+  @if $breakpoint == x-large-laptop {
+    // screens slightly smaller than 16in and above
+    @media only screen and (min-width: 103.75em) {
+      @content;
+    } // 1660-1832
   }
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 114.5em) {

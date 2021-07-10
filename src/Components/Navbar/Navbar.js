@@ -65,10 +65,7 @@ const Navbar = () => {
           <div className="dropdown">
             <p className="dropbtn">Documentation</p>
             <div className="dropdown-content">
-              <InternalLink
-                link="whitepaper"
-                text="Whitepaper V1"
-              />
+              <InternalLink link="whitepaper" text="Whitepaper V1" />
               <InternalLink
                 link="migrationdocumentation"
                 text="Migration Docs"
@@ -116,7 +113,7 @@ const Navbar = () => {
               <InternalLink link="aboutus" text="About Us" />
               <InternalLink link="meetourteam" text="Meet Our Team" />
               <InternalLink link="faq" text="FAQ" />
-              <InternalLink link="presskit" text="Presskit" />
+              {/* <InternalLink link="presskit" text="Presskit" /> */}
             </div>
           </div>
         </div>

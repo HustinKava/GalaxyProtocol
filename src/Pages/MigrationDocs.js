@@ -1,6 +1,5 @@
 import React from 'react';
 import BuybackInfo from '../Assets/infographics/buyback-infographic.png';
-import { Container } from '@material-ui/core';
 
 const ExternalLink = ({ href, text }) => {
   return (
@@ -74,13 +73,13 @@ const MigrationDocs = () => {
           5. Receive Galaxia and smile :)
         </div>
       </div>
-      <Container maxwidth="xl">
+      <div className="migration-docs-infographic-container">
         <img
           src={BuybackInfo}
           alt="Buyback infographic"
           className="migration-docs-infographic"
         />
-      </Container>
+      </div>
     </div>
   );
 };

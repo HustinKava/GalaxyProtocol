@@ -36,8 +36,12 @@
   }
 }
 
-.migration-docs-infographic {
+.migration-docs-infographic-container {
   padding-top: 6rem;
-  height: auto;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.migration-docs-infographic {
+  max-width: 90%;
 }
