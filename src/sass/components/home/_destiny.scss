@@ -190,6 +190,10 @@
     font-size: 1.8rem;
     padding: 4rem;
 
+    @include respond(big-desktop) {
+      font-size: 1.7rem;
+    }
+
     @include respond(ipad) {
       height: 10rem;
       padding: 2rem;

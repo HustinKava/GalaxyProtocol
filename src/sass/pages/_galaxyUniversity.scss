@@ -2,21 +2,41 @@
 
 .headerContainer {
   display: flex;
-  flex-direction: row;
-  margin: 15rem 20rem;
+  margin: 7rem 8rem 13rem 8rem;
+
+  @include respond(large-laptop) {
+    margin: 7rem 10rem 13rem 10rem;
+  }
+
+  @include respond(x-large-laptop) {
+    margin: 7rem 12rem 13rem 12rem;
+  }
 
   @include respond(ipad-pro) {
-    margin: 21rem 7rem;
+    margin: 15rem 8rem 13rem 8rem;
   }
 
   @include respond(ipad) {
-    margin: 15rem 7rem;
+    margin: 10rem 6rem;
+  }
+
+  @include respond(surface-duo) {
+    margin: 13rem 6rem;
   }
 }
 
 .galaxyUniversityHeader {
   display: flex;
   flex-direction: column;
+
+  &__titleContainer {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+
+    @include respond(surface-duo) {
+      margin-top: 3rem;
+    }
+  }
 
   &__h1 {
     font-size: 10rem;
@@ -39,49 +59,55 @@
     @include respond(ipad) {
       font-size: 6rem;
     }
+
     @include respond(surface-duo) {
       font-size: 7rem;
     }
   }
 
   &__intro {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-family: 'Mosk-200';
     color: $color-grey-light-3;
-    max-width: 60%;
+    max-width: 70%;
 
     @include respond(ipad-pro) {
       max-width: 90%;
       font-size: 2.3rem;
-      margin-top: 5rem;
     }
   }
 }
 
-.headerImage {
+.uni-headerImage {
   height: 55rem;
-  margin-top: -5.5rem;
 
-  @include respond(ipad-pro) {
-    margin-top: 0rem;
+  @include respond(large-laptop) {
+    height: 60rem;
   }
+
   @include respond(ipad) {
-    height: 35rem;
-    margin-top: 4rem;
+    height: 39rem;
+    margin-top: 8rem;
   }
+
   @include respond(surface-duo) {
     display: none;
   }
 }
 
 // GRADIENT BAR
+
 .gradientBar {
-  height: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+    height: fit-content;
+    // height: 9.5rem;
   background: transparent
     linear-gradient(
       75deg,
       $color-pink 0%,
-      $color-teal 67%,
+      $color-teal 80%,
       $color-teal 100%,
       $color-black 100%
     )
@@ -91,6 +117,151 @@
     height: 5rem;
   }
 }
+
+.gradientBarContents{
+  display: flex;
+  align-items: center;
+
+  @include respond(ipad){
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.barTitle{
+  font-size: 2rem;
+  $color-white: #fff;
+  margin-right: 1rem;
+    &--1 {
+      font-family: 'Mosk-100';
+      
+        @include respond(ipad-pro) {
+          font-size: 1.8rem;
+        }
+        @include respond(ipad) {
+          font-size: 2.6rem;
+            }
+    }
+    &--2 {
+      font-family: 'Mosk-700';
+        @include respond(ipad-pro) {
+          font-size: 1.8rem;
+        }
+        @include respond(ipad) {
+          font-size: 2.6rem;
+            }
+    }
+
+    @include respond(ipad-pro) {
+      margin-left: 3rem;
+    }
+
+
+}
+
+.filterOptionsContainer{
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond(ipad){
+    justify-content: center;
+
+  }
+}
+
+// GRADIENT BAR FILTER BUTTONS
+
+.filterBtn{
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255,255,255, 0.15);
+  margin: 2rem 2.5rem;
+  $color-white: #fff;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+
+    &__txt1{
+      font-family: 'Mosk-100';
+        @include respond(ipad-pro) {
+        }
+    }
+
+    &__txt2{
+      font-family: 'Mosk-700';
+      @include respond(ipad-pro) {
+      }
+  
+    }
+
+    @include respond(ipad-pro) {
+      margin: 1.2rem 1.5rem;
+    }
+    @include respond(surface-duo) {
+      font-size: 2.2rem;
+    }
+  }
+
+ .filterBtnSelected{
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255,255,255, 0.3);
+  margin: 2rem 2.5rem;
+  $color-white: #fff;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+
+    &__txt1{
+      font-family: 'Mosk-100';
+        @include respond(ipad-pro) {
+        }
+    }
+
+    &__txt2{
+      font-family: 'Mosk-700';
+      @include respond(ipad-pro) {
+      }
+  
+    }
+
+    @include respond(ipad-pro) {
+      margin: 1.2rem 1.5rem;
+    }
+    @include respond(surface-duo) {
+      font-size: 2.2rem;
+    }
+  }
+  
+  .filterBtn:hover {
+    background-color: rgba(255,255,255, 0.3);
+  }    
+  
+  .filterBtnIcon{
+    height: 2.2rem;
+    margin-left: .6rem;
+
+    @include respond(ipad-pro) {
+      height: 2.6rem;
+    }
+    @include respond(ipad) {
+      height: 3rem;
+    }
+    @include respond(surface-duo) {
+      height: 3.6rem;
+    }
+  }
+  
+
 
 // ARTICLE GALLERY COMPONENT
 .articleGalleryContainer {
@@ -111,14 +282,41 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  @include respond(big-desktop) {
-    max-width: 165rem;
-  }
 }
 
 .article-gallery-column {
   padding-bottom: 2%;
+}
+
+.moreBtnContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.article-more-btn{
+  width: 17rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  color: $color-white;
+  cursor: pointer;
+  background: transparent
+      linear-gradient(
+        75deg,
+        $color-teal 0%,
+        $color-teal 47%,
+        $color-pink 100%,
+        $color-black 100%
+      )
+      0% 0% no-repeat padding-box;
+  font-family: Mosk-800;
+  font-size: 2rem;
+  border: none;
+  margin-right: 3rem;
+
+    @include respond(iphone-plus) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
 }
 
 .articleGalleryLink {
@@ -129,8 +327,6 @@
 // ARTICLE CARD COMPONENT
 
 .article-card {
-  // width: auto;
-  // padding: 6%;
   margin: 3rem;
   margin-bottom: 0;
 
@@ -153,11 +349,6 @@
     height: 48rem;
     width: 36rem;
   }
-
-  // @include respond(iphone-x) {
-  //   height: 56rem;
-  //   width: 46rem;
-  // }
 }
 
 .article-card-image {
@@ -170,12 +361,16 @@
 }
 
 .article-card-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Mosk-600';
   color: $color-white;
   padding-top: 2.2rem;
   padding-bottom: 4rem;
   max-width: 16rem;
+
+  @include respond(large-laptop) {
+    font-size: 2.3rem;
+  }
 
   @include respond(surface-duo) {
     font-size: 2.6rem;
@@ -194,9 +389,13 @@
   display: inline-block;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Mosk-600';
   color: #228346;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
 
   @include respond(surface-duo) {
     font-size: 2.6rem;
@@ -215,9 +414,13 @@
   display: inline-block;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Mosk-600';
   color: #ffb100;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
 
   @include respond(surface-duo) {
     font-size: 2.6rem;
@@ -235,9 +438,13 @@
   border-radius: 1rem;
   display: inline-block;
   padding: 0.1rem 1.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Mosk-600';
   color: #ea044b;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
 
   @include respond(surface-duo) {
     font-size: 2.6rem;
@@ -262,9 +469,13 @@
 }
 
 .university-start {
-  background: transparent linear-gradient(78deg, #00CDD5 0%, #F60AFF 100%, #FF00FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(78deg, #00cdd5 0%, #f60aff 100%, #ff00ff 100%) 0% 0%
+    no-repeat padding-box;
 }
 
 .university-start:hover {
-  background: transparent linear-gradient(257deg, #00CDD5 0%, #F60AFF 78%, #FF00FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(257deg, #00cdd5 0%, #f60aff 78%, #ff00ff 100%) 0% 0%
+    no-repeat padding-box;
 }

@@ -10,8 +10,9 @@
   &__header {
     font-size: $font-size-90;
     line-height: normal;
+    font-family: Mosk-600;
 
-    @include respond(surface-duo) {
+    @include respond(x-small-laptop) {
       font-size: 7rem;
     }
   }
@@ -19,14 +20,24 @@
   &__subheader {
     font-size: 6rem;
     padding-top: 6rem;
+    font-family: Mosk-600;
+
+    @include respond(x-small-laptop) {
+      font-size: 5.2rem;
+    }
+
+    @include respond(ipad) {
+      font-size: 5rem;
+    }
 
     @include respond(surface-duo) {
-      font-size: 5rem;
+      font-size: 3.8rem;
     }
   }
 
   &__text {
     padding: 0.5rem;
+    font-family: Mosk-300;
   }
 
   &__link {

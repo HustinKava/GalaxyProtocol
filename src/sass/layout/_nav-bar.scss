@@ -55,6 +55,10 @@
   border: none;
   margin-right: 3rem;
 
+  @include respond(x-small-laptop) {
+    margin-right: 1rem;
+  }
+
   /* Hiding desktop menu */
   @include respond(ipad-pro) {
     display: none;
@@ -71,6 +75,10 @@
   padding-bottom: 1rem;
   font-family: Mosk-700;
   font-size: $font-size-20;
+
+  @include respond(x-small-laptop) {
+    padding: 0 2rem;
+  }
 }
 
 /* Dropdown content links (Hidden by Default) */
@@ -95,8 +103,13 @@
   height: 2rem;
   margin-right: 3rem;
 
+  @include respond(x-small-laptop) {
+    margin-right: 1.5rem;
+  }
+
   @include respond(ipad-pro) {
     height: 3rem;
+    margin-right: 3rem;
   }
 
   @include respond(iphone-only) {

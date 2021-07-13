@@ -6,8 +6,12 @@
 
 /* Header styling */
 .swapLogo {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+
+  @include respond(large-laptop) {
+    max-width: 100%;
+  }
 
   @include respond(ipad-pro) {
     max-width: 75%;
@@ -27,8 +31,12 @@
   height: auto;
   width: 100%;
   margin-left: -10rem;
-  margin-top: -5rem;
+  margin-top: -1rem;
   margin-bottom: -5rem;
+
+  @include respond(x-small-laptop) {
+    margin-left: -5rem;
+  }
 
   @include respond(ipad-pro) {
     margin-left: auto;

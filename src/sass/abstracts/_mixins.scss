@@ -23,11 +23,12 @@
 420 - 540px:        surface-duo
 540 - 780px:        ipad
 780 - 1024px:       ipad-pro
-1024 - 1280px:      laptop-x-small
-1280 - 1440px:      laptop-small
+1024 - 1280px:      x-small-laptop
+1280 - 1440px:      small-laptop
 [1440 - 1504px] is where our normal styles apply
-1505 - 1832px:      large-laptop
-1832px + :          Big desktop
+1505 - 1660px:      large-laptop
+1660 - 1832px:      x-large-laptop
+1832px + :          big desktop
 
 1em = 16px
 */

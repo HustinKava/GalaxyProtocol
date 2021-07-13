@@ -2,6 +2,10 @@
   height: 75rem;
   margin-top: -3rem;
 
+  @include respond(x-small-laptop) {
+    height: 63rem;
+  }
+
   /* Resize university image on small screen */
   @include respond(ipad-pro) {
     display: block;
@@ -60,6 +64,10 @@
 
 .banUniversityHeader {
   font-size: 8rem;
+
+  @include respond(x-small-laptop) {
+    font-size: 6.5rem;
+  }
 
   @include respond(ipad-pro) {
     font-size: 6rem;

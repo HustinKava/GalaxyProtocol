@@ -1,122 +1,135 @@
-// ARTICLE STYLING 
+// ARTICLE STYLING
+.article-set-container {
+  display: flex;
+  justify-content: center;
+}
+
+.articleContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  @include respond(large-laptop) {
+    width: 120rem;
+  }
+}
 
 // HERO IMAGE
-.heroImage{
-    border-radius: 2rem;
-    margin-bottom: 8rem;
-    height: 55rem;
-    width: 100%;
+.heroImage {
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+  height: 55rem;
 
-    @include respond(ipad-pro) {
-        height: 45rem;
-    }
+  @include respond(x-small-laptop) {
+    height: 45rem;
+  }
 
-    @include respond(ipad) {
-        height: 38rem;
-    }
+  @include respond(ipad-pro) {
+    height: 47rem;
+  }
 
-    @include respond(surface-duo) {
-        height: 25rem;
-        margin-bottom: 1.5rem;
-    }
+  @include respond(ipad) {
+    height: 33rem;
+  }
 
-    @include respond(iphone-plus) {
-        height: 22rem;
-    }
+  @include respond(surface-duo) {
+    height: 28rem;
+    margin-bottom: 1.5rem;
+  }
 
-    @include respond(iphone-x) {
-        height: 25rem;
-    }
+  @include respond(iphone-plus) {
+    height: 22rem;
+  }
 
-    @include respond(iphone-only) {
-        height: 15rem;
-    }
+  @include respond(iphone-x) {
+    height: 33rem;
+  }
 
-    @include respond(galaxy-s5) {
-        height: 22rem;
-    }
+  @include respond(iphone-5) {
+    height: 29rem;
+  }
+
+  @include respond(iphone-only) {
+    height: 15rem;
+  }
 }
 
 // Content container styling */
-.contentContainer{
-    margin-left: 8rem;
+.contentContainer {
+  margin: 0 9rem;
 
-    @include respond(ipad-pro) {
-        margin-left: 0;
-    }
+  @include respond(large-laptop) {
+    margin: 0 17rem;
+  }
+
+  @include respond(ipad-pro) {
+    margin: 0 7rem;
+  }
+
+  @include respond(surface-duo) {
+    margin: 0 3rem;
+  }
 }
 
-
 //TITLE TEXT
-.articleTitle{
-    font-size: 6.4rem;
-    font-family: 'Mosk-700';
+.articleTitle {
+  font-size: 6.4rem;
+  font-family: 'Mosk-700';
 
-     @include respond(surface-duo) {
-        font-size: 5rem;
-    }
+  @include respond(surface-duo) {
+    font-size: 5rem;
+  }
 }
 
 // HR
-.underTitleLine{
-    height: 3px;
-    max-width: 65%;
-    margin-top: 2rem;
-    border: none;
-    background-color: #22222A;
-    
-        @include respond(ipad-pro) {
-            max-width: 100%;
-        }
+.underTitleLine {
+  height: 3px;
+  max-width: 65%;
+  margin-top: 2rem;
+  border: none;
+  background-color: #22222a;
+
+  @include respond(ipad-pro) {
+    max-width: 100%;
+  }
 }
 
-.articleBodyContainer{
-    margin-left: 10rem;
-    padding-top: 10rem;
-    
-    @include respond(ipad-pro) {
-        margin-left: 0rem;
-    }
+.articleBodyContainer {
+  padding-top: 10rem;
 
-    @include respond(iphone-only) {
-        padding-top: 7rem;
-    }
-
+  @include respond(iphone-only) {
+    padding-top: 7rem;
+  }
 }
 
 // Subtitle
-.articleSubtitle{
-    font-size: 4.5rem;
-    font-family: 'Mosk-500';
+.articleSubtitle {
+  font-size: 4.5rem;
+  font-family: 'Mosk-500';
 }
 
 // Article Body Text
-.bodyText{
-    font-size: 2.5rem;
-    font-family: 'Mosk-200';
-    color: $color-grey-light-3;
-    max-width: 85%;
-    line-height: 3.5rem;
-    margin-bottom: 3rem;
-   
-    @include respond(ipad-pro) {
-        max-width: 100%;
-    }
+.bodyText {
+  font-size: 2.5rem;
+  font-family: 'Mosk-200';
+  color: $color-grey-light-3;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
 }
 
-.innerArticleSubtitle{
-    font-size: 3rem;
-    font-family: 'Mosk-500';
+.innerArticleSubtitle {
+  font-size: 3rem;
+  font-family: 'Mosk-500';
 }
 
 .bullet-points {
-    margin-left: 2rem;
+  margin-left: 2rem;
 
-    @include respond(ipad-pro) {
-        margin-left: 2.2rem;
-    }
+  @include respond(ipad-pro) {
+    margin-left: 2.2rem;
+  }
 
-    @include respond(iphone-x) {
-        margin-left: 2.5rem;
-    }
+  @include respond(iphone-x) {
+    margin-left: 2.5rem;
+  }
 }

@@ -15,17 +15,28 @@ const PartnerLogo = ({ partnerName, alt }) => {
 
 const Partners = () => {
   return (
-    <div className="uni-partners-container">
-      <div className="uni-partners">
-        <PartnerLogo partnerName={CoinMarketCap} alt="CoinMarketCap" />
-        <PartnerLogo partnerName={PancakeSwap} alt="PancakeSwap" />
-        <PartnerLogo partnerName={MetaMask} alt="" />
-        <PartnerLogo partnerName={CoinGecko} alt="CoinGecko" />
-        <PartnerLogo partnerName={CoinTiger} alt="CoinTiger" />
-        {/* <PartnerLogo partnerName={ProBit} alt="ProBit" /> */}
-        <PartnerLogo partnerName={BscScan} alt="BscScan" />
-        <PartnerLogo partnerName={SwftBlockchain} alt="SwftBlockchain" />
-        <PartnerLogo partnerName={TrustWallet} alt="TrustWallet" />
+    <div>
+      <div className="partners-heading-container">
+        <h3 className="partners-heading">
+          <span className="uni-text">Galactic</span>{' '}
+          <span className="uni-bold-text">Partners</span>
+        </h3>
+      </div>
+      <div className="partners-decorative-line-container">
+        <div className="partners-decorative-line" />
+      </div>
+      <div className="uni-partners-container">
+        <div className="uni-partners">
+          <PartnerLogo partnerName={CoinMarketCap} alt="CoinMarketCap" />
+          <PartnerLogo partnerName={PancakeSwap} alt="PancakeSwap" />
+          <PartnerLogo partnerName={MetaMask} alt="" />
+          <PartnerLogo partnerName={CoinGecko} alt="CoinGecko" />
+          <PartnerLogo partnerName={CoinTiger} alt="CoinTiger" />
+          {/* <PartnerLogo partnerName={ProBit} alt="ProBit" /> */}
+          <PartnerLogo partnerName={BscScan} alt="BscScan" />
+          <PartnerLogo partnerName={SwftBlockchain} alt="SwftBlockchain" />
+          <PartnerLogo partnerName={TrustWallet} alt="TrustWallet" />
+        </div>
       </div>
     </div>
   );

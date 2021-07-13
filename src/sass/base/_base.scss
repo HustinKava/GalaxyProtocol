@@ -69,6 +69,10 @@ span {
 .mainContainer {
   margin: 15rem 20rem;
 
+  @include respond(x-small-laptop) {
+    margin: 10rem 15rem;
+  }
+
   @include respond(ipad-pro) {
     margin: 21rem 7rem;
   }

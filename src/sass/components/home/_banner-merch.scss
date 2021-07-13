@@ -4,6 +4,10 @@
   margin-top: -6rem;
   margin-bottom: -6rem;
 
+  @include respond(small-laptop) {
+    width: 110%;
+  }
+
   @include respond(ipad-pro) {
     height: auto;
     width: 80%;

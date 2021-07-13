@@ -42,6 +42,10 @@ import FlashLoans from './Pages/Articles/FlashLoans';
 import OwnNFTs from './Pages/Articles/OwnNFTs';
 import Bridging from './Pages/Articles/Bridging';
 import CryptoWallets from './Pages/Articles/CryptoWallets';
+import Slippage from './Pages/Articles/Slippage';
+import BeginnerChart from './Pages/Articles/BeginnerChart';
+import BinanceSmart from './Pages/Articles/BinanceSmart';
+
 import './sass/main.scss';
 
 function App() {
@@ -66,7 +70,7 @@ function App() {
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
         {/* <Route exact path="/Article" component={Article} /> */}
-        <Route exact path="/buyback" component={Buyback} />
+        <Route exact path="/buyback1234" component={Buyback} />
 
         {/* Articles */}
         <Route exact path="/HistoryofDefi" component={HistoryofDefi} />
@@ -83,6 +87,9 @@ function App() {
         <Route exact path="/CryptoWallets" component={CryptoWallets} />
         <Route exact path="/CeFiVsDeFi" component={CeFiVsDeFi} />
         <Route exact path="/DLTandBlockchain" component={DLTandBlockchain} />
+        <Route exact path="/slippage" component={Slippage} />
+        <Route exact path="/beginnerchart" component={BeginnerChart} />
+        <Route exact path="/binancesmart" component={BinanceSmart} />
         <Route
           exact
           path="/SmartContractsandtheEthereumVirtualMachine"

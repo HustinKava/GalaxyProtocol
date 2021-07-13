@@ -45,6 +45,19 @@
   justify-content: space-between;
   margin-top: 4rem;
   margin-bottom: 9rem;
+  max-width: 125rem;
+
+  @include respond(large-laptop) {
+    max-width: 110rem;
+  }
+
+  @include respond(small-laptop) {
+    margin-right: 10rem;
+  }
+
+  @include respond(x-small-laptop) {
+    margin-right: 0;
+  }
 
   &__image-Mission {
     height: 11rem;
@@ -76,10 +89,10 @@
 
   &__text-container {
     margin-left: 5rem;
-    width: 90rem;
+    width: 85rem;
 
     @include respond(large-laptop) {
-      margin-right: 30rem;
+      width: 90rem;
     }
 
     @include respond(ipad-pro) {

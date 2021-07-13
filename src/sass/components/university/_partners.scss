@@ -47,3 +47,65 @@
     }
   }
 }
+
+.partners-heading-container {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.5rem solid $color-grey-dark-2;
+  width: 25rem;
+
+  @include respond(ipad-pro) {
+    width: 21rem;
+  }
+
+  @include respond(ipad) {
+    width: 16rem;
+  }
+
+  @include respond(iphone-x) {
+    width: 17rem;
+  }
+
+  @include respond(iphone-only) {
+    width: 10rem;
+  }
+}
+
+.partners-heading {
+  font-family: Mosk-600;
+  font-size: 2.6rem;
+
+  @include respond(ipad) {
+    font-size: 2rem;
+  }
+}
+
+.partners-decorative-line-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @include respond(small-laptop) {
+    display: none;
+  }
+}
+
+.partners-decorative-line {
+  padding-top: 5rem;
+  margin-bottom: -2rem;
+  border-bottom: 0.5rem solid $color-grey-dark-2;
+  width: 25rem;
+
+  @include respond(ipad-pro) {
+    width: 20rem;
+  }
+
+  @include respond(ipad) {
+    width: 15rem;
+  }
+
+  @include respond(iphone-only) {
+    width: 9rem;
+  }
+}
