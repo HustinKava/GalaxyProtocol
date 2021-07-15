@@ -418,7 +418,6 @@ code {
     text-align: center;
     line-height: 1;
     padding-top: 5rem;
-
     padding-bottom: 4rem; }
     @media only screen and (min-width: 94.1em) {
       .gen__header {
@@ -534,89 +533,6 @@ code {
   font-family: Mosk-300;
   font-size: 2.5rem;
   line-height: 1.2; }
-
-.news {
-  background: transparent linear-gradient(269deg, #000 0%, #171717 100%) 0% 0% no-repeat padding-box;
-  text-align: center; }
-  .news__header {
-    font-family: Mosk-800;
-    font-size: 12.8rem; }
-    @media only screen and (max-width: 33.75em) {
-      .news__header {
-        font-size: 9.5rem; } }
-    @media only screen and (max-width: 17.5em) {
-      .news__header {
-        font-size: 12.8rem; } }
-  .news__text {
-    font-family: Mosk-100;
-    font-size: 10.7rem;
-    padding-bottom: 10rem;
-    line-height: 0; }
-    @media only screen and (max-width: 33.75em) {
-      .news__text {
-        font-size: 8rem;
-        line-height: normal; } }
-    @media only screen and (max-width: 17.5em) {
-      .news__text {
-        font-size: 10.7rem; } }
-
-.news-form {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem; }
-  .news-form__email {
-    width: 44rem;
-    height: 7.1rem;
-    font-size: 2.4rem;
-    font-family: Mosk-500;
-    background: none;
-    border: 1px solid #ff00ff;
-    color: #fff;
-    margin: 0.5rem; }
-    @media only screen and (max-width: 33.75em) {
-      .news-form__email {
-        width: 34rem;
-        height: 5rem; } }
-    @media only screen and (max-width: 17.5em) {
-      .news-form__email {
-        width: 44rem;
-        height: 7.1rem; } }
-  .news-form__subscribe {
-    width: 18.6rem;
-    height: 7.5rem;
-    background: transparent linear-gradient(256deg, #ff00ff 0%, #00cdd5 100%) 0% 0% no-repeat padding-box;
-    border-radius: 4px;
-    border: none;
-    font-family: Mosk-600;
-    font-size: 3.4rem;
-    color: #fff;
-    margin: 0.5rem;
-    cursor: pointer; }
-    @media only screen and (max-width: 33.75em) {
-      .news-form__subscribe {
-        width: 15rem;
-        height: 5.1rem;
-        font-size: 2.5rem; } }
-    @media only screen and (max-width: 17.5em) {
-      .news-form__subscribe {
-        width: 18.6rem;
-        height: 7.5rem;
-        font-size: 3.4rem; } }
-
-.news-span {
-  font-size: 2rem;
-  color: #727272; }
-  .news-span--light {
-    font-family: Mosk-200; }
-    @media only screen and (max-width: 26.25em) {
-      .news-span--light {
-        font-size: 1.8rem; } }
-  .news-span--bold {
-    font-family: Mosk-500;
-    text-decoration: underline; }
-    @media only screen and (max-width: 26.25em) {
-      .news-span--bold {
-        font-size: 1.8rem; } }
 
 .hoodies {
   height: auto;
@@ -937,6 +853,15 @@ code {
   text-decoration: none;
   color: #fff; }
 
+.banner-uni {
+  margin: 5rem 0 12rem 0; }
+  @media only screen and (max-width: 80em) {
+    .banner-uni {
+      margin: 3rem 0; } }
+  @media only screen and (max-width: 48.75em) {
+    .banner-uni {
+      margin: 0; } }
+
 .university-image {
   height: 75rem;
   margin-top: -3rem;
@@ -1013,6 +938,89 @@ code {
 
 .ban-university-link {
   text-decoration: none; }
+
+.news {
+  background: transparent linear-gradient(269deg, #000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+  text-align: center; }
+  .news__header {
+    font-family: Mosk-800;
+    font-size: 12.8rem; }
+    @media only screen and (max-width: 33.75em) {
+      .news__header {
+        font-size: 9.5rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .news__header {
+        font-size: 12.8rem; } }
+  .news__text {
+    font-family: Mosk-100;
+    font-size: 10.7rem;
+    padding-bottom: 10rem;
+    line-height: 0; }
+    @media only screen and (max-width: 33.75em) {
+      .news__text {
+        font-size: 8rem;
+        line-height: normal; } }
+    @media only screen and (max-width: 17.5em) {
+      .news__text {
+        font-size: 10.7rem; } }
+
+.news-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; }
+  .news-form__email {
+    width: 44rem;
+    height: 7.1rem;
+    font-size: 2.4rem;
+    font-family: Mosk-500;
+    background: none;
+    border: 1px solid #ff00ff;
+    color: #fff;
+    margin: 0.5rem; }
+    @media only screen and (max-width: 33.75em) {
+      .news-form__email {
+        width: 34rem;
+        height: 5rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .news-form__email {
+        width: 44rem;
+        height: 7.1rem; } }
+  .news-form__subscribe {
+    width: 18.6rem;
+    height: 7.5rem;
+    background: transparent linear-gradient(256deg, #ff00ff 0%, #00cdd5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: none;
+    font-family: Mosk-600;
+    font-size: 3.4rem;
+    color: #fff;
+    margin: 0.5rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 33.75em) {
+      .news-form__subscribe {
+        width: 15rem;
+        height: 5.1rem;
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .news-form__subscribe {
+        width: 18.6rem;
+        height: 7.5rem;
+        font-size: 3.4rem; } }
+
+.news-span {
+  font-size: 2rem;
+  color: #727272; }
+  .news-span--light {
+    font-family: Mosk-200; }
+    @media only screen and (max-width: 26.25em) {
+      .news-span--light {
+        font-size: 1.8rem; } }
+  .news-span--bold {
+    font-family: Mosk-500;
+    text-decoration: underline; }
+    @media only screen and (max-width: 26.25em) {
+      .news-span--bold {
+        font-size: 1.8rem; } }
 
 .uni-partners-container {
   display: flex;
@@ -1553,17 +1561,16 @@ code {
     .footer-modal-btns {
       font-size: 3.8rem; } }
 
-/* First title */
 h1 {
-  font-family: Mosk-200;
-  font-size: 6rem; }
-
-/* Subtitle */
-h2 {
   font-family: Mosk-600;
   font-size: 9rem; }
 
-h3, h4 {
+h2 {
+  font-family: Mosk-200;
+  font-size: 6rem; }
+
+h3,
+h4 {
   font-family: Mosk-600;
   font-size: 5rem; }
 
@@ -1669,9 +1676,6 @@ h3, h4 {
   padding-bottom: 1rem;
   font-family: Mosk-700;
   font-size: 2rem; }
-  @media only screen and (max-width: 80em) {
-    .dropbtn {
-      padding: 0 2rem; } }
 
 /* Dropdown content links (Hidden by Default) */
 .dropdown-content {
@@ -1686,21 +1690,6 @@ h3, h4 {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block; }
-
-.socialIcon {
-  height: 2rem;
-  margin-right: 3rem; }
-  @media only screen and (max-width: 80em) {
-    .socialIcon {
-      margin-right: 1.5rem; } }
-  @media only screen and (max-width: 64em) {
-    .socialIcon {
-      height: 3rem;
-      margin-right: 3rem; } }
-  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
-    @supports (-webkit-touch-callout: none) {
-      .socialIcon {
-        height: 2rem; } } }
 
 .comingSoon {
   margin-left: 2rem;
@@ -1717,6 +1706,23 @@ h3, h4 {
       .comingSoon {
         margin-top: 0.9rem;
         height: 1.5rem; } } }
+
+.galaxswap-comingsoon {
+  margin-left: 0.7rem;
+  margin-top: 0.3rem;
+  height: 2.5rem; }
+
+.nav-galaxy-1 {
+  font-family: Mosk-700;
+  font-size: 2rem; }
+
+.nav-galaxy-2 {
+  font-family: Mosk-100;
+  font-size: 2rem; }
+
+.galaxyswap-text {
+  display: flex;
+  margin-right: 1rem; }
 
 .progress-bar {
   top: 0;
@@ -2007,7 +2013,7 @@ h3, h4 {
 .bodyText {
   font-size: 2.5rem;
   font-family: 'Mosk-200';
-  color: #C7C7C7;
+  color: #c7c7c7;
   line-height: 3.5rem;
   margin-bottom: 3rem; }
 
@@ -2171,7 +2177,7 @@ h3, h4 {
 .faq__body {
   font-family: Mosk-300;
   font-size: 1.8rem;
-  color: #C7C7C7;
+  color: #c7c7c7;
   line-height: 2.5rem;
   padding-bottom: 7rem; }
   @media only screen and (max-width: 64em) {
@@ -2260,7 +2266,7 @@ h3, h4 {
   .galaxyUniversityHeader__intro {
     font-size: 2.5rem;
     font-family: 'Mosk-200';
-    color: #C7C7C7;
+    color: #c7c7c7;
     max-width: 70%; }
     @media only screen and (max-width: 64em) {
       .galaxyUniversityHeader__intro {
@@ -2286,10 +2292,6 @@ h3, h4 {
   justify-content: space-around;
   height: fit-content;
   background: transparent linear-gradient(75deg, #ff00ff 0%, #00cdd5 80%, #00cdd5 100%, #000 100%) 0% 0% no-repeat padding-box; }
-  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
-    @supports (-webkit-touch-callout: none) {
-      .gradientBar {
-        height: 5rem; } } }
 
 .gradientBarContents {
   display: flex;
@@ -2381,7 +2383,107 @@ h3, h4 {
 
 .filterBtnIcon {
   height: 2.2rem;
-  margin-left: .6rem; }
+  margin-left: 0.6rem; }
+  @media only screen and (max-width: 64em) {
+    .filterBtnIcon {
+      height: 2.6rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .filterBtnIcon {
+      height: 3rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtnIcon {
+      height: 3.6rem; } }
+
+.gradientBarContents {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 48.75em) {
+    .gradientBarContents {
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+
+.barTitle {
+  font-size: 2rem;
+  margin-right: 1rem; }
+  .barTitle--1 {
+    font-family: 'Mosk-100'; }
+    @media only screen and (max-width: 64em) {
+      .barTitle--1 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .barTitle--1 {
+        font-size: 2.6rem; } }
+  .barTitle--2 {
+    font-family: 'Mosk-700'; }
+    @media only screen and (max-width: 64em) {
+      .barTitle--2 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .barTitle--2 {
+        font-size: 2.6rem; } }
+  @media only screen and (max-width: 64em) {
+    .barTitle {
+      margin-left: 3rem; } }
+
+.filterOptionsContainer {
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 48.75em) {
+    .filterOptionsContainer {
+      justify-content: center; } }
+
+.filterBtn {
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer; }
+  .filterBtn__txt1 {
+    font-family: 'Mosk-100'; }
+  .filterBtn__txt2 {
+    font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 64em) {
+    .filterBtn {
+      margin: 1.2rem 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtn {
+      font-size: 2.2rem; } }
+
+.filterBtnSelected {
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer; }
+  .filterBtnSelected__txt1 {
+    font-family: 'Mosk-100'; }
+  .filterBtnSelected__txt2 {
+    font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 64em) {
+    .filterBtnSelected {
+      margin: 1.2rem 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtnSelected {
+      font-size: 2.2rem; } }
+.filterBtn:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.filterBtnIcon {
+  height: 2.2rem;
+  margin-left: 0.6rem; }
   @media only screen and (max-width: 64em) {
     .filterBtnIcon {
       height: 2.6rem; } }
@@ -2402,6 +2504,16 @@ h3, h4 {
   @media only screen and (max-width: 64em) {
     .articleGalleryContainer {
       margin: 10rem 7rem; } }
+
+.totalArticlesContainer {
+  display: flex;
+  flex-direction: row; }
+
+.totalArticles {
+  font-size: 2.4rem;
+  font-family: 'Mosk-100'; }
+  .totalArticles--1 {
+    font-family: 'Mosk-700'; }
 
 .article-gallery {
   display: flex;
@@ -2442,6 +2554,10 @@ h3, h4 {
     .article-card {
       margin: 2.5rem; } }
 
+.article-image-category-container {
+  display: flex;
+  flex-direction: column; }
+
 .article-card-image-div {
   display: flex;
   justify-content: center;
@@ -2458,17 +2574,42 @@ h3, h4 {
 .article-card-image {
   max-width: 100%; }
 
+.article-card-badge-container {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-top: -32rem;
+  justify-content: space-around; }
+  @media only screen and (max-width: 33.75em) {
+    .article-card-badge-container {
+      margin-top: -42rem; } }
+
+.category-badge {
+  background-color: rgba(12, 1, 33, 0.8);
+  font-size: 1.4rem;
+  font-family: 'Mosk-600';
+  padding-left: .6rem;
+  padding-right: .6rem;
+  border-radius: .6rem; }
+  @media only screen and (max-width: 33.75em) {
+    .category-badge {
+      font-size: 2rem; } }
+
 .article-card-details-container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 32rem; }
+  @media only screen and (max-width: 33.75em) {
+    .article-card-details-container {
+      margin-top: 43rem; } }
 
 .article-card-title {
   font-size: 2rem;
   font-family: 'Mosk-600';
   color: #fff;
   padding-top: 2.2rem;
-  padding-bottom: 4rem;
-  max-width: 16rem; }
+  padding-bottom: 1.5rem;
+  max-width: 25rem; }
   @media only screen and (min-width: 94.1em) {
     .article-card-title {
       font-size: 2.3rem; } }
@@ -2477,19 +2618,27 @@ h3, h4 {
       font-size: 2.6rem; } }
   @media only screen and (max-width: 26.25em) {
     .article-card-title {
-      font-size: 2.5rem; } }
+      font-size: 2.3rem; } }
+
+.level-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
 
 .article-level-beginner {
   border: 0.3rem solid #228346;
   height: 0%;
-  margin-top: 2.2rem;
   border-radius: 1rem;
   display: inline-block;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
   font-size: 1.6rem;
   font-family: 'Mosk-600';
-  color: #228346; }
+  color: #228346;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-beginner {
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 94.1em) {
     .article-level-beginner {
       font-size: 1.8rem; } }
@@ -2502,7 +2651,6 @@ h3, h4 {
 
 .article-level-intermediate {
   height: 0%;
-  margin-top: 2.2rem;
   border: 0.3rem solid #ffb100;
   border-radius: 1rem;
   display: inline-block;
@@ -2510,7 +2658,11 @@ h3, h4 {
   padding-right: 0.8rem;
   font-size: 1.6rem;
   font-family: 'Mosk-600';
-  color: #ffb100; }
+  color: #ffb100;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-intermediate {
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 94.1em) {
     .article-level-intermediate {
       font-size: 1.8rem; } }
@@ -2523,14 +2675,17 @@ h3, h4 {
 
 .article-level-advanced {
   height: 0%;
-  margin-top: 2.2rem;
   border: 0.3rem solid #ea044b;
   border-radius: 1rem;
   display: inline-block;
   padding: 0.1rem 1.8rem;
   font-size: 1.6rem;
   font-family: 'Mosk-600';
-  color: #ea044b; }
+  color: #ea044b;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-advanced {
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 94.1em) {
     .article-level-advanced {
       font-size: 1.8rem; } }
@@ -2540,6 +2695,22 @@ h3, h4 {
   @media only screen and (max-width: 26.25em) {
     .article-level-advanced {
       font-size: 2.5rem; } }
+
+.article-card-timeframe-container {
+  display: flex;
+  flex-direction: row; }
+
+.article-card-length, .article-card-posted {
+  font-family: 'Mosk-600';
+  font-size: 2rem;
+  margin-top: .8rem; }
+
+.article-card-length {
+  color: #fff; }
+
+.article-card-posted {
+  color: #5B5D62;
+  margin-right: 2.5rem; }
 
 .uni-bold-text {
   font-family: Mosk-700; }
@@ -2906,7 +3077,7 @@ h3, h4 {
 .positionDetailBody {
   font-family: Mosk-200;
   font-size: 2.5rem;
-  color: #C7C7C7; }
+  color: #c7c7c7; }
 
 .positionDetailSubHead {
   font-family: Mosk-500;
@@ -2949,7 +3120,7 @@ h3, h4 {
   margin-top: 3rem;
   font-family: Mosk-200;
   font-size: 2.5rem;
-  color: #C7C7C7;
+  color: #c7c7c7;
   max-width: 90rem;
   line-height: 3rem; }
 
@@ -3048,7 +3219,7 @@ h3, h4 {
         .presskit-flex__image {
           width: 80%; } } }
   .presskit-flex__text {
-    color: #8B8B8B;
+    color: #8b8b8b;
     font-family: Mosk-300;
     font-size: 3rem;
     margin-bottom: 1rem; }

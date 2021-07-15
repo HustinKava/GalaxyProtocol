@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SidebarContainer } from './SidebarElements';
 import { FaTimes } from 'react-icons/fa';
 import Logo from '../../Assets/logos/logo-white-text.png';
 import ComingSoonBadge from '../../Assets/customButtons/coming-soon-badge.png';
 import { NavLink } from 'react-router-dom';
+import { Modal } from '../Modal/Modal';
+import { modalContent } from '../Modal/modalContent';
 
 const ExternalLink = ({ href, text }) => {
   return (
@@ -40,6 +42,9 @@ const ComingSoon = ({ text }) => {
 };
 
 function Sidebar({ isOpen, toggle }) {
+  const [termsModal, setTermsModal] = useState(false);
+  const [privacyModal, setPrivacyModal] = useState(false);
+
   return (
     <SidebarContainer isOpen={isOpen}>
       <div className="sidebar-navbar">
@@ -56,14 +61,19 @@ function Sidebar({ isOpen, toggle }) {
       <p className="sidebar-header">Products</p>
 
       <div className="sidebar-group">
-        <ComingSoon text="GalaxySwap" />
-        <ComingSoon text="Nebula Launchpad" />
+        <ExternalLink href="https://safegalaxy.net/" text="SafeGalaxy" />
         <InternalLink
           link="galaxyUniversity"
           text="Galaxy Universe&#8209;ity"
           toggle={toggle}
         />
-        <ExternalLink href="https://safegalaxy.net/" text="SafeGalaxy" />
+        <ComingSoon text="GalaxySwap" />
+
+        <ExternalLink
+          href="https://intergalacticmerch.myshopify.com/"
+          text="Galaxy Merchandise"
+        />
+        <ComingSoon text="Nebula Launchpad" />
       </div>
 
       {/* Documentation */}
@@ -75,6 +85,38 @@ function Sidebar({ isOpen, toggle }) {
           text="Migration Docs"
           toggle={toggle}
         />
+        <div className="sidebar-links">
+          <button
+            className="sidebar-text"
+            onClick={() => {
+              setTermsModal(true);
+            }}
+          >
+            Terms & Conditions
+          </button>
+          {termsModal && (
+            <Modal
+              modalContent={modalContent.termsModal}
+              closeModal={setTermsModal}
+            />
+          )}
+        </div>
+        <div className="sidebar-links">
+          <button
+            className="sidebar-text"
+            onClick={() => {
+              setPrivacyModal(true);
+            }}
+          >
+            Privacy & Policy
+          </button>
+          {privacyModal && (
+            <Modal
+              modalContent={modalContent.privacyModal}
+              closeModal={setPrivacyModal}
+            />
+          )}
+        </div>
       </div>
 
       {/* Community */}
@@ -91,6 +133,22 @@ function Sidebar({ isOpen, toggle }) {
         <ExternalLink
           href="https://twitter.com/GalaxyProtocol"
           text="Twitter"
+        />
+        <ExternalLink
+          href="https://www.facebook.com/GalaxyProtocol/"
+          text="Facebook"
+        />
+        <ExternalLink
+          href="https://www.instagram.com/safegalaxytoken/?igshid=jr936k6emyet"
+          text="Instagram"
+        />
+        <ExternalLink
+          href="https://www.reddit.com/r/GalaxyProtocolx/"
+          text="Reddit"
+        />
+        <ExternalLink
+          href="https://www.tiktok.com/@safegalaxytoken?"
+          text="Tiktok"
         />
       </div>
 

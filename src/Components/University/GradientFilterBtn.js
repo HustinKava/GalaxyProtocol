@@ -14,7 +14,7 @@ const GradientFilterBtn = ({ filterType, icon, handler, articleFilters }) => {
                 return (
                     <>
                         <p key={index} className="filterBtn__txt1 ">{word}</p>
-                        <img className="filterBtnIcon" src={icon} alt="filter icon"></img>
+                        {/* <img className="filterBtnIcon" src={icon} alt="filter icon"></img> */}
                     </>
                 )
             })}

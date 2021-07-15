@@ -75,10 +75,6 @@
   padding-bottom: 1rem;
   font-family: Mosk-700;
   font-size: $font-size-20;
-
-  @include respond(x-small-laptop) {
-    padding: 0 2rem;
-  }
 }
 
 /* Dropdown content links (Hidden by Default) */
@@ -99,24 +95,6 @@
   display: block;
 }
 
-.socialIcon {
-  height: 2rem;
-  margin-right: 3rem;
-
-  @include respond(x-small-laptop) {
-    margin-right: 1.5rem;
-  }
-
-  @include respond(ipad-pro) {
-    height: 3rem;
-    margin-right: 3rem;
-  }
-
-  @include respond(iphone-only) {
-    height: 2rem;
-  }
-}
-
 .comingSoon {
   margin-left: 2rem;
   margin-top: 1.2rem;
@@ -134,4 +112,55 @@
     margin-top: 0.9rem;
     height: 1.5rem;
   }
+}
+
+// .navBtnLink {
+//   margin-left: 6rem;
+//   background: transparent
+//     linear-gradient(262deg, $color-pink 0%, $color-purple-light 100%) 0% 0%
+//     no-repeat padding-box;
+//   border-radius: 4px;
+//   padding: 0.5rem 1.1rem;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   text-decoration: none;
+//
+//   @include respond(ipad-pro) {
+//     margin-left: 0;
+//     padding: 1px 4px;
+//   }
+// }
+
+// .galaxyswap-button {
+//   display: flex;
+//   background: transparent
+//   linear-gradient(262deg, $color-pink 0%, $color-purple-light 100%) 0% 0%
+//   no-repeat padding-box;
+//   border-radius: 0.3rem;
+//   padding: 0.1rem 1rem;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+// }
+
+.galaxswap-comingsoon {
+  margin-left: 0.7rem;
+  margin-top: 0.3rem;
+  height: 2.5rem;
+}
+
+.nav-galaxy-1 {
+  font-family: Mosk-700;
+  font-size: $font-size-20;
+}
+
+.nav-galaxy-2 {
+  font-family: Mosk-100;
+  font-size: $font-size-20;
+}
+
+.galaxyswap-text {
+  display: flex;
+  margin-right: 1rem;
 }

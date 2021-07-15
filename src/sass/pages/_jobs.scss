@@ -1,8 +1,9 @@
 .jobHeroHeader {
   font-size: 12rem;
-    @include respond(ipad) {
-      font-size: 6rem;
-    }
+
+  @include respond(ipad) {
+    font-size: 6rem;
+  }
 }
 
 .jobHero-text {
@@ -12,13 +13,14 @@
   &--intro {
     color: $color-grey-light-1;
     width: 80rem;
-      @include respond(ipad) {
-        width: 70rem;
-      }
-      @include respond(surface-duo) {
-        width: 50rem;
-        line-height: 3.5rem;
-      }
+
+    @include respond(ipad) {
+      width: 70rem;
+    }
+    @include respond(surface-duo) {
+      width: 50rem;
+      line-height: 3.5rem;
+    }
   }
 
   &--CTA {
@@ -31,9 +33,10 @@
   font-size: $font-size-90;
   font-family: Mosk-600;
   margin-bottom: 6rem;
-    @include respond(ipad) {
-      font-size: 6.5rem;
-    }
+
+  @include respond(ipad) {
+    font-size: 6.5rem;
+  }
 }
 
 .jobs-gallery {
@@ -41,11 +44,11 @@
   flex-wrap: wrap;
 
   @include respond(ipad) {
-    flex-direction: column; 
-   }
+    flex-direction: column;
+  }
 }
 
-.jobs-gallery-column{
+.jobs-gallery-column {
   flex: 50%;
   padding-right: 2.5%;
   padding-bottom: 2%;
@@ -67,8 +70,8 @@
   box-shadow: 0 0 2rem $color-box-shadow-dark;
 }
 
-.job-card-content{
-  padding: 3% 6%
+.job-card-content {
+  padding: 3% 6%;
 }
 
 /*Styling for small job listing type full time/remote etc - top left of job card */
@@ -120,9 +123,10 @@
     font-family: Mosk-200;
     font-size: 2rem;
     padding-bottom: 3rem;
-      @include respond(surface-duo) {
-        font-size: 1.6rem;
-      }
+
+    @include respond(surface-duo) {
+      font-size: 1.6rem;
+    }
   }
 }
 

@@ -5,7 +5,7 @@ import UniversityIcon from '../../Assets/destinyBoxes/Learn-icon.png';
 
 function BannerUniversity() {
   return (
-    <div className="banner-container" id="footerUniversity">
+    <div className="banner-container banner-uni" id="footerUniversity">
       <Grid container spacing={0} className="fadeRight">
         <Box clone order={{ xs: 2, sm: 2, md: 1 }}>
           <Grid item xs={12} md={6}>

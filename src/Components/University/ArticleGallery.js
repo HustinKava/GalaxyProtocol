@@ -35,7 +35,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Beginner',
       length: 10,
       image: CryptoWallets,
-      catagory: ['crypto', 'trading']
+      categories: ['blockchain'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'ETH vs BTC',
@@ -43,8 +44,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Beginner',
       length: 10,
       image: EthVsBtc,
-      catagory: ['blockchain', 'investing']
-
+      categories: ['blockchain'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'Flash Loans',
@@ -52,8 +53,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Intermediate',
       length: 10,
       image: FlashLoans,
-      catagory: ['crypto', 'trading']
-
+      categories: ['defi'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'DLT and Blockchain',
@@ -61,8 +62,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Intermediate',
       length: 10,
       image: DltAndBlockchain,
-      catagory: ['blockchain', 'investing']
-
+      categories: ['blockchain'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'Impermanent Loss',
@@ -70,8 +71,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Advanced',
       length: 10,
       image: ImpermanentLoss,
-      catagory: ['crypto']
-
+      categories: ['defi'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'How to make your own NFTs',
@@ -79,8 +80,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Beginner',
       length: 10,
       image: OwnNFT,
-      catagory: ['blockchain', 'investing']
-
+      categories: ['defi'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'Bridging',
@@ -88,8 +89,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Beginner',
       length: 10,
       image: Bridging,
-      catagory: ['crypto']
-
+      categories: ['blockchain'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'Smart Contracts and the Ethereum Virtual Machine',
@@ -97,8 +98,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Advanced',
       length: 10,
       image: SmartContract,
-      catagory: ['trading']
-
+      categories: ['blockchain'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'Staking',
@@ -106,8 +107,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Intermediate',
       length: 10,
       image: Staking,
-      catagory: ['blockchain',]
-
+      categories: ['defi'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'History of Defi',
@@ -115,8 +116,8 @@ function ArticleGallery({ articleFilters }) {
       level: 'Beginner',
       length: 10,
       image: HistoryOfDefi,
-      catagory: ['blockchain']
-
+      categories: ['defi'],
+      datePosted: new Date('07/05/2021')
     },
     {
       articleName: 'CeFi vs DeFi',
@@ -124,32 +125,60 @@ function ArticleGallery({ articleFilters }) {
       level: 'Beginner',
       length: 10,
       image: CefiVsDefi,
-      catagory: ['blockchain', 'investing']
-
+      categories: ['finance'],
+      datePosted: new Date('07/05/2021')
+    },
+    {
+      articleName: 'Binance Smart Chain',
+      link: '#binancesmart',
+      level: 'Beginner',
+      length: 10,
+      image: SmartChain,
+      categories: ['blockchain'],
+      datePosted: new Date('07/05/2021')
+    },
+    {
+      articleName: 'Reading a chart for beginners',
+      link: '#beginnerchart',
+      level: 'Beginner',
+      length: 10,
+      image: BeginnerChart,
+      categories: ['finance'],
+      datePosted: new Date('07/05/2021')
+    },
+    {
+      articleName: 'Slippage',
+      link: '#slippage',
+      level: 'Beginner',
+      length: 10,
+      image: Slippage,
+      categories: ['finance'],
+      datePosted: new Date('07/05/2021')
     }
   ]
 
-  // Using the array of catagories as filter
+
+  // Using the array of categories as filter
   // Find articles that contain any of the filters chosen by the user
-  const articlesInselectedCatagories = articles.filter(
+  const articlesInSelectedCategories = articles.filter(
     article => articleFilters.some(
-      catagory => article.catagory.includes(catagory)
+      category => article.categories.includes(category)
     )
   )
 
   function toggleArticles() {
-    // If the user hasn't selected any catagories toggle between 8 and all articles
-    if (!showMore && articlesInselectedCatagories.length === 0) {
+    // If the user hasn't selected any categories toggle between 8 and all articles
+    if (!showMore && articlesInSelectedCategories.length === 0) {
       setShowMore(true)
       setTotalArticlesDisplay(articles.length)
       setBtnText('Hide articles')
-    } else if(showMore && articlesInselectedCatagories.length === 0) {
+    } else if(showMore && articlesInSelectedCategories.length === 0) {
       setTotalArticlesDisplay(8)
       setShowMore(false)
       setBtnText('See all articles')
-    } else if (!showMore  && articlesInselectedCatagories.length > 0){
+    } else if (!showMore && articlesInSelectedCategories.length > 0){
       setShowMore(true)
-      setTotalArticlesDisplay(articlesInselectedCatagories.length)
+      setTotalArticlesDisplay(articlesInSelectedCategories.length)
       setBtnText('Hide articles')
     } else {
       setTotalArticlesDisplay(8)
@@ -161,10 +190,13 @@ function ArticleGallery({ articleFilters }) {
   return (
     <>
       <div className="articleGalleryContainer">
+        <div classNAme="totalArticlesContainer">
+        {/* <p className="totalArticles">{articles.length} <span className="totalArticles--1">Articles</span></p> */}
+        </div>
         <div className="article-gallery">
 
-          {/* If the user has selected catagories to filter by, show those */}
-          {articlesInselectedCatagories.length === 0 ? articles.slice(0, totalArticlesDisplayed).map(article => (
+          {/* If the user has selected categories to filter by, show those */}
+          {articlesInSelectedCategories.length === 0 ? articles.slice(0, totalArticlesDisplayed).map(article => (
             <ArticleCard
               key={article.articleName}
               articleName={article.articleName}
@@ -172,9 +204,11 @@ function ArticleGallery({ articleFilters }) {
               level={article.level}
               length={article.length}
               image={article.image}
+              datePosted={article.datePosted}
+              categories={article.categories}
             />
             //Otherwise render the first eight 
-          )) : articlesInselectedCatagories.length > 0 ? articlesInselectedCatagories.slice(0, totalArticlesDisplayed).map(article => (
+          )) : articlesInSelectedCategories.length > 0 ? articlesInSelectedCategories.slice(0, totalArticlesDisplayed).map(article => (
             <ArticleCard
               key={article.articleName}
               articleName={article.articleName}
@@ -182,39 +216,13 @@ function ArticleGallery({ articleFilters }) {
               level={article.level}
               length={article.length}
               image={article.image}
+              datePosted={article.datePosted}
+              categories={article.categories}
+
             />)) : ''}
 
 
-          <div className="article-gallery-column">
-            <ArticleCard
-              articleName={'Binance Smart Chain'}
-              link={'#binancesmart'}
-              level={'Beginner'}
-              length={10}
-              image={SmartChain}
-            />
-          </div>
-
-          {/* fourth row of article cards */}
-          <div className="article-gallery-column">
-            <ArticleCard
-              articleName={'Reading a chart for beginners'}
-              link={'#beginnerchart'}
-              level={'Beginner'}
-              length={10}
-              image={BeginnerChart}
-            />
-          </div>
-
-          <div className="article-gallery-column">
-            <ArticleCard
-              articleName={'Slippage'}
-              link={'#slippage'}
-              level={'Beginner'}
-              length={10}
-              image={Slippage}
-            />
-          </div>
+  
 
 
         </div>

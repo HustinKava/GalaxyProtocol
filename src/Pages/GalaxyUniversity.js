@@ -12,7 +12,7 @@ const GalaxyUniversity = () => {
 
   const handler = (filterType) => {
      let filterWord = filterType[0].toLowerCase()
-    //  If the catagory to filter by already exists in the filtering array
+    //  If the category to filter by already exists in the filtering array
      if(articleFilters.indexOf(filterWord) !== -1){
       //  Find it's index in the array
        const indexOfWordInstance = articleFilters.findIndex(word => word === filterWord)

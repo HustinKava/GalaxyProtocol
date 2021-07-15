@@ -1,3 +1,15 @@
+.banner-uni {
+  margin: 5rem 0 12rem 0;
+
+  @include respond(x-small-laptop) {
+    margin: 3rem 0;
+  }
+
+  @include respond(ipad) {
+    margin: 0;
+  }
+}
+
 .university-image {
   height: 75rem;
   margin-top: -3rem;

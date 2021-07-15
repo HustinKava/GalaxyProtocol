@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../Assets/logos/logo-white-text.png';
 import ComingSoonBadge from '../Assets/customButtons/coming-soon-badge.png';
 import ScrollIntoView from './ScrollIntoView';
-import { Modal as MainModal } from '../Components/Modal/Modal';
+import { Modal } from '../Components/Modal/Modal';
 import { modalContent } from '../Components/Modal/modalContent';
 
 const ExternalLink = ({ href, text }) => {
@@ -68,16 +68,16 @@ function Footer() {
               <hr className="footer-column__divider" />
               <p className="footer-column__heading">Products</p>
               <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
-              <ComingSoon text="GalaxySwap" />
               <InternalLink
                 link="galaxyuniversity"
                 text="Galaxy Universe&#8209;ity"
               />
-              <ComingSoon text="Nebula Launchpad" />
+              <ComingSoon text="GalaxySwap" />
               <ExternalLink
                 href="https://intergalacticmerch.myshopify.com/"
                 text="Galaxy Merchandise"
               />
+              <ComingSoon text="Nebula Launchpad" />
             </div>
           </Grid>
 
@@ -89,6 +89,12 @@ function Footer() {
               {/* <InternalLink link="partnershipoverview" text="Partnership Overview" /> */}
 
               <div className="footer-column__text">
+                <InternalLink link="whitepaper" text="Whitepaper V1" />
+
+                <InternalLink
+                  link="migrationdocumentation"
+                  text="Migration Docs"
+                />
                 <button
                   className="footer-modal-btns"
                   onClick={() => {
@@ -98,7 +104,7 @@ function Footer() {
                   Terms & Conditions
                 </button>
                 {termsModal && (
-                  <MainModal
+                  <Modal
                     modalContent={modalContent.termsModal}
                     closeModal={setTermsModal}
                   />
@@ -115,30 +121,12 @@ function Footer() {
                   Privacy & Policy
                 </button>
                 {privacyModal && (
-                  <MainModal
+                  <Modal
                     modalContent={modalContent.privacyModal}
                     closeModal={setPrivacyModal}
                   />
                 )}
               </div>
-
-              <InternalLink
-                link="migrationdocumentation"
-                text="Migration Docs"
-              />
-            </div>
-          </Grid>
-
-          <Grid item xs={12} sm={3} md={3} lg={2}>
-            <div className="footer-column">
-              <hr className="footer-column__divider" />
-              <p className="footer-column__heading">About</p>
-              <InternalLink link="aboutus" text="About Us" />
-              <InternalLink link="whitepaper" text="Whitepaper V1" />
-              <InternalLink link="meetourteam" text="Meet Our Team" />
-              {/* <InternalLink link="jobs" text="Jobs" /> */}
-              <InternalLink link="faq" text="FAQ" />
-              {/* <InternalLink link="presskit" text="Presskit" /> */}
             </div>
           </Grid>
 
@@ -158,6 +146,34 @@ function Footer() {
                 href="https://twitter.com/GalaxyProtocol"
                 text="Twitter"
               />
+              <ExternalLink
+                href="https://www.facebook.com/GalaxyProtocol/"
+                text="Facebook"
+              />
+              <ExternalLink
+                href="https://www.instagram.com/safegalaxytoken/?igshid=jr936k6emyet"
+                text="Instagram"
+              />
+              <ExternalLink
+                href="https://www.reddit.com/r/GalaxyProtocolx/"
+                text="Reddit"
+              />
+              <ExternalLink
+                href="https://www.tiktok.com/@safegalaxytoken?"
+                text="Tiktok"
+              />
+            </div>
+          </Grid>
+
+          <Grid item xs={12} sm={3} md={3} lg={2}>
+            <div className="footer-column">
+              <hr className="footer-column__divider" />
+              <p className="footer-column__heading">About</p>
+              <InternalLink link="aboutus" text="About Us" />
+              <InternalLink link="meetourteam" text="Meet Our Team" />
+              {/* <InternalLink link="jobs" text="Jobs" /> */}
+              <InternalLink link="faq" text="FAQ" />
+              {/* <InternalLink link="presskit" text="Presskit" /> */}
             </div>
           </Grid>
         </Grid>

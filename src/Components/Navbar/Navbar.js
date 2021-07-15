@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../Assets/logos/logo-white-text.png';
 import ComingSoonBadge from '../../Assets/customButtons/coming-soon-badge.png';
-import NavSocial from './NavSocial';
+import UseGalaxySwap from './NavUseGalaxySwap';
+import { Modal } from '../Modal/Modal';
+import { modalContent } from '../Modal/modalContent';
 
 const ExternalLink = ({ href, text }) => {
   return (
@@ -39,6 +41,9 @@ const ComingSoon = ({ text }) => {
 };
 
 const Navbar = () => {
+  const [termsModal, setTermsModal] = useState(false);
+  const [privacyModal, setPrivacyModal] = useState(false);
+
   return (
     <div className="nav">
       {/* Company logo and name */}
@@ -52,13 +57,17 @@ const Navbar = () => {
           <div className="dropdown">
             <p className="dropbtn">Products</p>
             <div className="dropdown-content">
-              <ComingSoon text="GalaxySwap" />
-              <ComingSoon text="Nebula Launchpad" />
+              <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
               <InternalLink
                 link="galaxyuniversity"
                 text="Galaxy Universe&#8209;ity"
               />
-              <ExternalLink href="https://safegalaxy.net" text="SafeGalaxy" />
+              <ComingSoon text="GalaxySwap" />
+              <ExternalLink
+                href="https://intergalacticmerch.myshopify.com/"
+                text="Galaxy Merchandise"
+              />
+              <ComingSoon text="Nebula Launchpad" />
             </div>
           </div>
 
@@ -70,6 +79,36 @@ const Navbar = () => {
                 link="migrationdocumentation"
                 text="Migration Docs"
               />
+              <button
+                className="navText"
+                onClick={() => {
+                  setTermsModal(true);
+                }}
+              >
+                Terms & Conditions
+              </button>
+              {termsModal && (
+                <Modal
+                  modalContent={modalContent.termsModal}
+                  closeModal={setTermsModal}
+                />
+              )}
+              <div className="navLink">
+                <button
+                  className="navText"
+                  onClick={() => {
+                    setPrivacyModal(true);
+                  }}
+                >
+                  Privacy & Policy
+                </button>
+                {privacyModal && (
+                  <Modal
+                    modalContent={modalContent.privacyModal}
+                    closeModal={setPrivacyModal}
+                  />
+                )}
+              </div>
             </div>
           </div>
 
@@ -119,7 +158,7 @@ const Navbar = () => {
         </div>
 
         {/* Social icons */}
-        <NavSocial />
+        <UseGalaxySwap />
       </div>
     </div>
   );

@@ -7,8 +7,12 @@
 420 - 540px:        surface-duo
 540 - 780px:        ipad
 780 - 1024px:       ipad-pro
-[1024 - 1600] is where our normal styles apply
-1600px + :          Big desktop
+1024 - 1280px:      x-small-laptop
+1280 - 1440px:      small-laptop
+[1440 - 1504px] is where our normal styles apply
+1505 - 1660px:      large-laptop
+1660 - 1832px:      x-large-laptop
+1832px + :          big desktop
 
 1em = 16px
 */
@@ -41,7 +45,7 @@ html {
   @media only screen and (max-width: 17.5em) {
     html {
       font-size: 25%; } }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     html {
       font-size: 68.75%; } }
 
@@ -63,9 +67,16 @@ span {
 /* Unified space at top and bottom of each page */
 .mainContainer {
   margin: 15rem 20rem; }
+  @media only screen and (max-width: 80em) {
+    .mainContainer {
+      margin: 10rem 15rem; } }
   @media only screen and (max-width: 64em) {
     .mainContainer {
       margin: 21rem 7rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .mainContainer {
+        margin: 15rem 5rem; } } }
 
 button {
   cursor: pointer; }
@@ -143,7 +154,7 @@ code {
   z-index: 9999;
   transition: all 0.3s;
   color: #fff;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -152,7 +163,7 @@ code {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0, 0, 0, 0.3); } }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 94.1em) {
     .modal {
       font-size: 1.7rem; } }
   @media only screen and (max-width: 48.75em) {
@@ -345,13 +356,15 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .destBox__header {
-          /* CSS specific to iOS devices */
           font-size: 4rem; } } }
   .destBox__text {
     text-align: center;
     font-family: Mosk-300;
     font-size: 1.8rem;
     padding: 4rem; }
+    @media only screen and (min-width: 114.5em) {
+      .destBox__text {
+        font-size: 1.7rem; } }
     @media only screen and (max-width: 48.75em) {
       .destBox__text {
         height: 10rem;
@@ -363,7 +376,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .destBox__text {
-          /* CSS specific to iOS devices */
           font-size: 3.5rem; } } }
 
 .destiny-links {
@@ -371,20 +383,21 @@ code {
 
 .gen {
   position: relative;
-  margin-top: 16rem;
+  margin-top: 23rem;
   margin-bottom: 0rem; }
-  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
-    @supports (-webkit-touch-callout: none) {
-      .gen {
-        /* CSS specific to iOS devices */
-        margin-top: 9rem; } } }
+  @media only screen and (max-width: 48.75em) {
+    .gen {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .gen {
+      margin-top: 6rem; } }
   .gen__background {
     height: auto;
-    width: 63%;
+    width: 59%;
     display: block;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 20%;
     transform: translate(-50%, -50%);
     z-index: -1; }
     @media only screen and (max-width: 64em) {
@@ -397,11 +410,26 @@ code {
   .gen__header {
     color: #fff;
     font-family: Mosk-700;
-    font-size: 8.18rem;
+    font-size: 7rem;
     text-align: center;
     line-height: 1;
     padding-top: 5rem;
     padding-bottom: 4rem; }
+    @media only screen and (min-width: 94.1em) {
+      .gen__header {
+        font-size: 8rem; } }
+    @media only screen and (min-width: 103.75em) {
+      .gen__header {
+        font-size: 8.7rem; } }
+    @media only screen and (min-width: 114.5em) {
+      .gen__header {
+        font-size: 8.8rem; } }
+    @media only screen and (max-width: 90em) {
+      .gen__header {
+        font-size: 6.3rem; } }
+    @media only screen and (max-width: 80em) {
+      .gen__header {
+        font-size: 5.8rem; } }
     @media only screen and (max-width: 64em) {
       .gen__header {
         margin-top: 15rem;
@@ -423,9 +451,15 @@ code {
   .gen__text {
     color: #fff;
     font-family: Mosk-300;
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     text-align: center;
     padding-bottom: 7rem; }
+    @media only screen and (min-width: 94.1em) {
+      .gen__text {
+        font-size: 2.7rem; } }
+    @media only screen and (max-width: 90em) {
+      .gen__text {
+        font-size: 2.2rem; } }
     @media only screen and (max-width: 64em) {
       .gen__text {
         padding-bottom: 5rem; } }
@@ -436,8 +470,11 @@ code {
       .gen__text {
         padding-bottom: 1rem; } }
   .gen__buttons-container {
-    padding-top: 9rem;
+    padding-top: 5rem;
     text-align: center; }
+    @media only screen and (min-width: 103.75em) {
+      .gen__buttons-container {
+        padding-top: 8rem; } }
     @media only screen and (max-width: 64em) {
       .gen__buttons-container {
         padding-top: 5rem; } }
@@ -452,11 +489,10 @@ code {
   height: 4rem;
   border-radius: 0.4rem;
   color: #fff;
-  cursor: pointer; }
+  font-size: 2rem; }
   .gen-btn--1 {
     background: transparent linear-gradient(75deg, #00cdd5 0%, #00cdd5 47%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box;
     font-family: Mosk-700;
-    font-size: 2rem;
     border: none;
     margin-right: 3rem; }
     @media only screen and (max-width: 26.25em) {
@@ -466,7 +502,6 @@ code {
   .gen-btn--2 {
     background: none;
     font-family: Mosk-400;
-    font-size: 2rem;
     border: solid 1px #ff00ff; }
 
 .openingCenter {
@@ -584,6 +619,9 @@ code {
   margin-top: -6rem;
   margin-bottom: -6rem;
   /* Resize and move hoodies for mobile view */ }
+  @media only screen and (max-width: 90em) {
+    .hoodies {
+      width: 110%; } }
   @media only screen and (max-width: 64em) {
     .hoodies {
       height: auto;
@@ -654,7 +692,7 @@ code {
     padding-right: 1rem; } }
 
 .banHeader {
-  font-size: 9rem;
+  font-size: 8rem;
   /* Used by Banner2 and Banner3 */ }
   @media only screen and (max-width: 64em) {
     .banHeader {
@@ -671,19 +709,37 @@ code {
   font-family: Mosk-700; }
   .banHeader-alt--1 {
     font-size: 3.8rem; }
+    @media only screen and (max-width: 80em) {
+      .banHeader-alt--1 {
+        font-size: 3.5rem; } }
+    @media only screen and (max-width: 64em) {
+      .banHeader-alt--1 {
+        font-size: 3.8rem; } }
   .banHeader-alt--2 {
     font-size: 7rem;
     line-height: 0.5; }
+    @media only screen and (max-width: 80em) {
+      .banHeader-alt--2 {
+        font-size: 6.9rem; } }
     @media only screen and (max-width: 33.75em) {
       .banHeader-alt--2 {
         line-height: normal; } }
 
 .banDesc {
   font-family: Mosk-300;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   /* Description styling for banner 1, 2 and 3 */
   /* Description styling for banner 4 and 5 */ }
+  @media only screen and (min-width: 94.1em) {
+    .banDesc {
+      font-size: 2.3rem; } }
+  @media only screen and (max-width: 90em) {
+    .banDesc {
+      font-size: 1.9rem; } }
+  @media only screen and (max-width: 80em) {
+    .banDesc {
+      font-size: 2.2rem; } }
   .banDesc--1 {
     color: #727272; }
   .banDesc--2 {
@@ -800,8 +856,11 @@ code {
 
 /* Header styling */
 .swapLogo {
-  max-width: 100%;
+  max-width: 90%;
   height: auto; }
+  @media only screen and (min-width: 94.1em) {
+    .swapLogo {
+      max-width: 100%; } }
   @media only screen and (max-width: 64em) {
     .swapLogo {
       max-width: 75%; } }
@@ -817,8 +876,11 @@ code {
   height: auto;
   width: 100%;
   margin-left: -10rem;
-  margin-top: -5rem;
+  margin-top: -1rem;
   margin-bottom: -5rem; }
+  @media only screen and (max-width: 80em) {
+    .laptop {
+      margin-left: -5rem; } }
   @media only screen and (max-width: 64em) {
     .laptop {
       margin-left: auto;
@@ -838,6 +900,14 @@ code {
   margin-left: -22rem;
   margin-top: -5rem;
   margin-bottom: -7rem; }
+  @media only screen and (max-width: 90em) {
+    .telegram {
+      margin-left: -13rem;
+      margin-top: -1rem; } }
+  @media only screen and (max-width: 80em) {
+    .telegram {
+      margin-left: -9rem;
+      margin-top: 8rem; } }
   @media only screen and (max-width: 64em) {
     .telegram {
       height: auto;
@@ -866,12 +936,17 @@ code {
   height: 75rem;
   margin-top: -3rem;
   /* Resize university image on small screen */ }
+  @media only screen and (max-width: 80em) {
+    .university-image {
+      height: 63rem; } }
   @media only screen and (max-width: 64em) {
     .university-image {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 0; } }
+      margin-top: 0;
+      height: 100%;
+      width: 100%; } }
   @media only screen and (max-width: 48.75em) {
     .university-image {
       position: relative;
@@ -888,7 +963,7 @@ code {
       padding-bottom: 0; } }
 
 .universityText {
-  margin-left: -8rem; }
+  margin-left: -15rem; }
   @media only screen and (max-width: 48.75em) {
     .universityText {
       margin-left: 0; } }
@@ -909,8 +984,11 @@ code {
       width: 17%; } }
 
 .banUniversityHeader {
-  font-size: 9rem;
+  font-size: 8rem;
   /* Used by Banner2 and Banner3 */ }
+  @media only screen and (max-width: 80em) {
+    .banUniversityHeader {
+      font-size: 6.5rem; } }
   @media only screen and (max-width: 64em) {
     .banUniversityHeader {
       font-size: 6rem; } }
@@ -970,6 +1048,57 @@ code {
       .uni-partners__logo {
         height: 13rem; } }
 
+.partners-heading-container {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.5rem solid #292929;
+  width: 25rem; }
+  @media only screen and (max-width: 64em) {
+    .partners-heading-container {
+      width: 21rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .partners-heading-container {
+      width: 16rem; } }
+  @media only screen and (max-width: 23.75em) {
+    .partners-heading-container {
+      width: 17rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .partners-heading-container {
+        width: 10rem; } } }
+
+.partners-heading {
+  font-family: Mosk-600;
+  font-size: 2.6rem; }
+  @media only screen and (max-width: 48.75em) {
+    .partners-heading {
+      font-size: 2rem; } }
+
+.partners-decorative-line-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
+  @media only screen and (max-width: 90em) {
+    .partners-decorative-line-container {
+      display: none; } }
+
+.partners-decorative-line {
+  padding-top: 5rem;
+  margin-bottom: -2rem;
+  border-bottom: 0.5rem solid #292929;
+  width: 25rem; }
+  @media only screen and (max-width: 64em) {
+    .partners-decorative-line {
+      width: 20rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .partners-decorative-line {
+      width: 15rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .partners-decorative-line {
+        width: 9rem; } } }
+
 .university-socials {
   display: flex;
   flex-direction: column;
@@ -994,7 +1123,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .university-socials__text {
-          /* CSS specific to iOS devices */
           font-size: 9rem; } } }
   .university-socials__icon-container {
     display: flex;
@@ -1013,7 +1141,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .university-socials__icon {
-          /* CSS specific to iOS devices */
           height: 6rem; } } }
 
 .carousel-background {
@@ -1037,7 +1164,6 @@ code {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .carousel-recent-videos {
-        /* CSS specific to iOS devices */
         width: 10rem; } } }
 
 .carousel-all-videos-container {
@@ -1058,7 +1184,6 @@ code {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .carousel-all-videos {
-        /* CSS specific to iOS devices */
         width: 9rem; } } }
 
 .carousel-thin {
@@ -1177,6 +1302,10 @@ code {
 .carousel-line-padding {
   padding-bottom: 5rem; }
 
+.spinner-container {
+  display: flex;
+  justify-content: center; }
+
 .spinner {
   animation: spin infinite 5s linear;
   color: #fff; }
@@ -1256,7 +1385,7 @@ code {
 
 .footer-column {
   width: 23rem; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 103.75em) {
     .footer-column {
       width: 28rem; } }
   @media only screen and (max-width: 64em) {
@@ -1327,7 +1456,7 @@ code {
     font-family: Mosk-200;
     font-size: 1.8rem;
     padding-bottom: 2rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .footer-column__text {
         font-size: 2rem; } }
     @media only screen and (max-width: 64em) {
@@ -1354,7 +1483,7 @@ code {
     height: 1.8rem;
     margin-left: 0.75rem;
     margin-top: 0.5rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .footer-column__coming-soon {
         height: 2.4rem; } }
     @media only screen and (max-width: 64em) {
@@ -1379,7 +1508,6 @@ code {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .footer-column__coming-soon {
-          /* CSS specific to iOS devices */
           margin-top: 0.9rem;
           height: 1.4rem; } } }
   .footer-column__link {
@@ -1401,7 +1529,7 @@ code {
   color: #fff;
   font-family: Mosk-200;
   font-size: 1.8rem; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .footer-modal-btns {
       font-size: 2rem; } }
   @media only screen and (max-width: 64em) {
@@ -1420,17 +1548,16 @@ code {
     .footer-modal-btns {
       font-size: 3.8rem; } }
 
-/* First title */
 h1 {
-  font-family: Mosk-200;
-  font-size: 6rem; }
-
-/* Subtitle */
-h2 {
   font-family: Mosk-600;
   font-size: 9rem; }
 
-h3, h4 {
+h2 {
+  font-family: Mosk-200;
+  font-size: 6rem; }
+
+h3,
+h4 {
   font-family: Mosk-600;
   font-size: 5rem; }
 
@@ -1449,6 +1576,7 @@ h3, h4 {
       background: transparent linear-gradient(75deg, #222222 0%, #101010 100%) 0% 0% no-repeat padding-box; } }
   .mobile-nav__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 4rem; }
   .mobile-nav__burger {
@@ -1458,7 +1586,6 @@ h3, h4 {
     @media only screen and (orientation: portrait) and (max-width: 26.25em) {
       @supports (-webkit-touch-callout: none) {
         .mobile-nav__burger {
-          /* CSS specific to iOS devices */
           font-size: 4.5rem; } } }
     @media only screen and (max-width: 17.5em) {
       .mobile-nav__burger {
@@ -1469,7 +1596,6 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .mobile-nav__logo {
-        /* CSS specific to iOS devices */
         height: 2rem; } } }
   @media only screen and (max-width: 17.5em) {
     .mobile-nav__logo {
@@ -1521,6 +1647,9 @@ h3, h4 {
   border: none;
   margin-right: 3rem;
   /* Hiding desktop menu */ }
+  @media only screen and (max-width: 80em) {
+    .navMenu {
+      margin-right: 1rem; } }
   @media only screen and (max-width: 64em) {
     .navMenu {
       display: none; } }
@@ -1549,18 +1678,6 @@ h3, h4 {
 .dropdown:hover .dropdown-content {
   display: block; }
 
-.socialIcon {
-  height: 2rem;
-  margin-right: 3rem; }
-  @media only screen and (max-width: 64em) {
-    .socialIcon {
-      height: 3rem; } }
-  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
-    @supports (-webkit-touch-callout: none) {
-      .socialIcon {
-        /* CSS specific to iOS devices */
-        height: 2rem; } } }
-
 .comingSoon {
   margin-left: 2rem;
   margin-top: 1.2rem;
@@ -1574,9 +1691,40 @@ h3, h4 {
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .comingSoon {
-        /* CSS specific to iOS devices */
         margin-top: 0.9rem;
         height: 1.5rem; } } }
+
+.navBtnLink {
+  margin-left: 6rem;
+  background: transparent linear-gradient(262deg, #ff00ff 0%, #8312b2 100%) 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 0.5rem 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; }
+  @media only screen and (max-width: 64em) {
+    .navBtnLink {
+      margin-left: 0;
+      padding: 1px 4px; } }
+
+.galaxswap-comingsoon {
+  margin-left: 0.7rem;
+  margin-top: 0.3rem;
+  height: 2.5rem; }
+
+.nav-galaxy-1 {
+  font-family: Mosk-700;
+  font-size: 2rem; }
+
+.nav-galaxy-2 {
+  font-family: Mosk-100;
+  font-size: 2rem; }
+
+.galaxyswap-text {
+  display: flex;
+  margin-right: 1rem; }
 
 .progress-bar {
   top: 0;
@@ -1707,7 +1855,17 @@ h3, h4 {
   align-items: center;
   justify-content: space-between;
   margin-top: 4rem;
-  margin-bottom: 9rem; }
+  margin-bottom: 9rem;
+  max-width: 125rem; }
+  @media only screen and (min-width: 94.1em) {
+    .about-us-info-card {
+      max-width: 110rem; } }
+  @media only screen and (max-width: 90em) {
+    .about-us-info-card {
+      margin-right: 10rem; } }
+  @media only screen and (max-width: 80em) {
+    .about-us-info-card {
+      margin-right: 0; } }
   .about-us-info-card__image-Mission {
     height: 11rem; }
   .about-us-info-card__image-Vision {
@@ -1724,10 +1882,10 @@ h3, h4 {
     height: 12rem; }
   .about-us-info-card__text-container {
     margin-left: 5rem;
-    width: 90rem; }
-    @media only screen and (min-width: 100em) {
+    width: 85rem; }
+    @media only screen and (min-width: 94.1em) {
       .about-us-info-card__text-container {
-        margin-right: 30rem; } }
+        width: 90rem; } }
     @media only screen and (max-width: 64em) {
       .about-us-info-card__text-container {
         width: 80rem; } }
@@ -1771,41 +1929,60 @@ h3, h4 {
     .about-us-h3 {
       font-size: 4rem; } }
 
+.article-set-container {
+  display: flex;
+  justify-content: center; }
+
+.articleContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  @media only screen and (min-width: 94.1em) {
+    .articleContainer {
+      width: 120rem; } }
+
 .heroImage {
   border-radius: 2rem;
   margin-bottom: 8rem;
-  height: 55rem;
-  width: 100%; }
-  @media only screen and (max-width: 64em) {
+  height: 55rem; }
+  @media only screen and (max-width: 80em) {
     .heroImage {
       height: 45rem; } }
+  @media only screen and (max-width: 64em) {
+    .heroImage {
+      height: 47rem; } }
   @media only screen and (max-width: 48.75em) {
     .heroImage {
-      height: 38rem; } }
+      height: 33rem; } }
   @media only screen and (max-width: 33.75em) {
     .heroImage {
-      height: 25rem;
+      height: 28rem;
       margin-bottom: 1.5rem; } }
   @media only screen and (max-width: 26.25em) {
     .heroImage {
       height: 22rem; } }
   @media only screen and (max-width: 23.75em) {
     .heroImage {
-      height: 25rem; } }
+      height: 33rem; } }
+  @media only screen and (max-width: 20em) {
+    .heroImage {
+      height: 29rem; } }
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .heroImage {
-        /* CSS specific to iOS devices */
         height: 15rem; } } }
-  @media only screen and (max-width: 22.5em) {
-    .heroImage {
-      height: 22rem; } }
 
 .contentContainer {
-  margin-left: 8rem; }
+  margin: 0 9rem; }
+  @media only screen and (min-width: 94.1em) {
+    .contentContainer {
+      margin: 0 17rem; } }
   @media only screen and (max-width: 64em) {
     .contentContainer {
-      margin-left: 0; } }
+      margin: 0 7rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .contentContainer {
+      margin: 0 3rem; } }
 
 .articleTitle {
   font-size: 6.4rem;
@@ -1819,21 +1996,16 @@ h3, h4 {
   max-width: 65%;
   margin-top: 2rem;
   border: none;
-  background-color: #22222A; }
+  background-color: #22222a; }
   @media only screen and (max-width: 64em) {
     .underTitleLine {
       max-width: 100%; } }
 
 .articleBodyContainer {
-  margin-left: 10rem;
   padding-top: 10rem; }
-  @media only screen and (max-width: 64em) {
-    .articleBodyContainer {
-      margin-left: 0rem; } }
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
       .articleBodyContainer {
-        /* CSS specific to iOS devices */
         padding-top: 7rem; } } }
 
 .articleSubtitle {
@@ -1843,17 +2015,151 @@ h3, h4 {
 .bodyText {
   font-size: 2.5rem;
   font-family: 'Mosk-200';
-  color: #C7C7C7;
-  max-width: 85%;
+  color: #c7c7c7;
   line-height: 3.5rem;
   margin-bottom: 3rem; }
-  @media only screen and (max-width: 64em) {
-    .bodyText {
-      max-width: 100%; } }
 
 .innerArticleSubtitle {
   font-size: 3rem;
   font-family: 'Mosk-500'; }
+
+.bullet-points {
+  margin-left: 2rem; }
+  @media only screen and (max-width: 64em) {
+    .bullet-points {
+      margin-left: 2.2rem; } }
+  @media only screen and (max-width: 23.75em) {
+    .bullet-points {
+      margin-left: 2.5rem; } }
+
+.buyback {
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 15rem;
+  background-color: #000;
+  background: url("../../Assets/backgroundImages/buyback.png") no-repeat center center;
+  background-size: cover; }
+  .buyback__connect-wallet-button {
+    color: inherit;
+    background: transparent linear-gradient(262deg, #ff00ff 0%, #440c8b 100%) 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-family: Mosk-700;
+    padding: 0.6rem 1.5rem;
+    align-self: flex-end;
+    margin: 1rem 1rem 0 0; }
+    @media only screen and (max-width: 64em) {
+      .buyback__connect-wallet-button {
+        margin-top: 11rem; } }
+  .buyback__header {
+    font-family: Mosk-800;
+    font-size: 12rem; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__header {
+        font-size: 9rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__header {
+        font-size: 8rem; } }
+  .buyback__large-container {
+    background-color: #000;
+    width: 100rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__large-container {
+        width: 75rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .buyback__large-container {
+        width: 61rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__large-container {
+        width: 54rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .buyback__large-container {
+        width: 70rem; } }
+    @media only screen and (max-width: 20em) {
+      .buyback__large-container {
+        width: 60rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .buyback__large-container {
+        width: 65rem; } }
+  .buyback__details-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    font-size: 2rem; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__details-list-container {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__details-list-container {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .buyback__details-list-container {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 17.5em) {
+      .buyback__details-list-container {
+        font-size: 1.8rem; } }
+  .buyback__details-list {
+    display: flex;
+    flex-flow: column;
+    font-family: Mosk-500; }
+  .buyback__detail {
+    line-height: 3;
+    display: flex;
+    align-items: center; }
+  .buyback__circled-number {
+    font-family: Mosk-800;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: transparent linear-gradient(210deg, #00cdd5 0%, #00cdd5 18%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.5rem; }
+    @media only screen and (max-width: 48.75em) {
+      .buyback__circled-number {
+        margin-right: 2rem; } }
+  .buyback__lower-container {
+    background-color: #191919;
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .buyback__price-info-container {
+    width: 35rem;
+    padding-bottom: 1rem; }
+  .buyback__price-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem; }
+  .buyback__price-info-text {
+    font-family: Mosk-300; }
+  .buyback__price-info-integer {
+    font-family: Mosk-700; }
+  .buyback__redeem-button {
+    font-family: Mosk-900;
+    font-size: 3.8rem;
+    background-color: #505050;
+    color: #fff;
+    padding: 1.4rem 1.8rem;
+    border-radius: 4px;
+    border: none; }
+    @media only screen and (max-width: 26.25em) {
+      .buyback__redeem-button {
+        font-size: 3rem; } }
+    .buyback__redeem-button:hover {
+      background: transparent linear-gradient(270deg, #00cdd5 0%, #00cdd5 1%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box; }
 
 .faq__header {
   max-width: 90rem;
@@ -1873,7 +2179,7 @@ h3, h4 {
 .faq__body {
   font-family: Mosk-300;
   font-size: 1.8rem;
-  color: #C7C7C7;
+  color: #c7c7c7;
   line-height: 2.5rem;
   padding-bottom: 7rem; }
   @media only screen and (max-width: 64em) {
@@ -1914,18 +2220,32 @@ h3, h4 {
 
 .headerContainer {
   display: flex;
-  flex-direction: row;
-  margin: 15rem 20rem; }
+  margin: 7rem 8rem 13rem 8rem; }
+  @media only screen and (min-width: 94.1em) {
+    .headerContainer {
+      margin: 7rem 10rem 13rem 10rem; } }
+  @media only screen and (min-width: 103.75em) {
+    .headerContainer {
+      margin: 7rem 12rem 13rem 12rem; } }
   @media only screen and (max-width: 64em) {
     .headerContainer {
-      margin: 21rem 7rem; } }
+      margin: 15rem 8rem 13rem 8rem; } }
   @media only screen and (max-width: 48.75em) {
     .headerContainer {
-      margin: 15rem 7rem; } }
+      margin: 10rem 6rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .headerContainer {
+      margin: 13rem 6rem; } }
 
 .galaxyUniversityHeader {
   display: flex;
   flex-direction: column; }
+  .galaxyUniversityHeader__titleContainer {
+    margin-top: 8rem;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 33.75em) {
+      .galaxyUniversityHeader__titleContainer {
+        margin-top: 3rem; } }
   .galaxyUniversityHeader__h1 {
     font-size: 10rem;
     font-family: 'Mosk-700';
@@ -1946,44 +2266,242 @@ h3, h4 {
       .galaxyUniversityHeader__span {
         font-size: 7rem; } }
   .galaxyUniversityHeader__intro {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-family: 'Mosk-200';
-    color: #C7C7C7;
-    max-width: 60%; }
+    color: #c7c7c7;
+    max-width: 70%; }
     @media only screen and (max-width: 64em) {
       .galaxyUniversityHeader__intro {
         max-width: 90%;
-        font-size: 2.3rem;
-        margin-top: 5rem; } }
+        font-size: 2.3rem; } }
 
-.headerImage {
-  height: 55rem;
-  margin-top: -5.5rem; }
-  @media only screen and (max-width: 64em) {
-    .headerImage {
-      margin-top: 0rem; } }
+.uni-headerImage {
+  height: 55rem; }
+  @media only screen and (min-width: 94.1em) {
+    .uni-headerImage {
+      height: 60rem; } }
   @media only screen and (max-width: 48.75em) {
-    .headerImage {
-      height: 35rem;
-      margin-top: 4rem; } }
+    .uni-headerImage {
+      height: 39rem;
+      margin-top: 8rem; } }
   @media only screen and (max-width: 33.75em) {
-    .headerImage {
+    .uni-headerImage {
       display: none; } }
 
 .gradientBar {
-  height: 5.5rem;
-  background: transparent linear-gradient(75deg, #ff00ff 0%, #00cdd5 67%, #00cdd5 100%, #000 100%) 0% 0% no-repeat padding-box; }
-  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
-    @supports (-webkit-touch-callout: none) {
-      .gradientBar {
-        /* CSS specific to iOS devices */
-        height: 5rem; } } }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: fit-content;
+  background: transparent linear-gradient(75deg, #ff00ff 0%, #00cdd5 80%, #00cdd5 100%, #000 100%) 0% 0% no-repeat padding-box; }
+
+.gradientBarContents {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 48.75em) {
+    .gradientBarContents {
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+
+.barTitle {
+  font-size: 2rem;
+  margin-right: 1rem; }
+  .barTitle--1 {
+    font-family: 'Mosk-100'; }
+    @media only screen and (max-width: 64em) {
+      .barTitle--1 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .barTitle--1 {
+        font-size: 2.6rem; } }
+  .barTitle--2 {
+    font-family: 'Mosk-700'; }
+    @media only screen and (max-width: 64em) {
+      .barTitle--2 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .barTitle--2 {
+        font-size: 2.6rem; } }
+  @media only screen and (max-width: 64em) {
+    .barTitle {
+      margin-left: 3rem; } }
+
+.filterOptionsContainer {
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 48.75em) {
+    .filterOptionsContainer {
+      justify-content: center; } }
+
+.filterBtn {
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer; }
+  .filterBtn__txt1 {
+    font-family: 'Mosk-100'; }
+  .filterBtn__txt2 {
+    font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 64em) {
+    .filterBtn {
+      margin: 1.2rem 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtn {
+      font-size: 2.2rem; } }
+
+.filterBtnSelected {
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer; }
+  .filterBtnSelected__txt1 {
+    font-family: 'Mosk-100'; }
+  .filterBtnSelected__txt2 {
+    font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 64em) {
+    .filterBtnSelected {
+      margin: 1.2rem 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtnSelected {
+      font-size: 2.2rem; } }
+
+.filterBtn:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.filterBtnIcon {
+  height: 2.2rem;
+  margin-left: 0.6rem; }
+  @media only screen and (max-width: 64em) {
+    .filterBtnIcon {
+      height: 2.6rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .filterBtnIcon {
+      height: 3rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtnIcon {
+      height: 3.6rem; } }
+
+.gradientBarContents {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 48.75em) {
+    .gradientBarContents {
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+
+.barTitle {
+  font-size: 2rem;
+  margin-right: 1rem; }
+  .barTitle--1 {
+    font-family: 'Mosk-100'; }
+    @media only screen and (max-width: 64em) {
+      .barTitle--1 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .barTitle--1 {
+        font-size: 2.6rem; } }
+  .barTitle--2 {
+    font-family: 'Mosk-700'; }
+    @media only screen and (max-width: 64em) {
+      .barTitle--2 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .barTitle--2 {
+        font-size: 2.6rem; } }
+  @media only screen and (max-width: 64em) {
+    .barTitle {
+      margin-left: 3rem; } }
+
+.filterOptionsContainer {
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 48.75em) {
+    .filterOptionsContainer {
+      justify-content: center; } }
+
+.filterBtn {
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer; }
+  .filterBtn__txt1 {
+    font-family: 'Mosk-100'; }
+  .filterBtn__txt2 {
+    font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 64em) {
+    .filterBtn {
+      margin: 1.2rem 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtn {
+      font-size: 2.2rem; } }
+
+.filterBtnSelected {
+  width: auto;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer; }
+  .filterBtnSelected__txt1 {
+    font-family: 'Mosk-100'; }
+  .filterBtnSelected__txt2 {
+    font-family: 'Mosk-700'; }
+  @media only screen and (max-width: 64em) {
+    .filterBtnSelected {
+      margin: 1.2rem 1.5rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtnSelected {
+      font-size: 2.2rem; } }
+
+.filterBtn:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.filterBtnIcon {
+  height: 2.2rem;
+  margin-left: 0.6rem; }
+  @media only screen and (max-width: 64em) {
+    .filterBtnIcon {
+      height: 2.6rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .filterBtnIcon {
+      height: 3rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .filterBtnIcon {
+      height: 3.6rem; } }
 
 .articleGalleryContainer {
   margin: 12rem 6rem;
   display: flex;
   justify-content: center; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .articleGalleryContainer {
       margin: 15rem 8rem; } }
   @media only screen and (max-width: 64em) {
@@ -1994,12 +2512,29 @@ h3, h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  @media only screen and (min-width: 100em) {
-    .article-gallery {
-      max-width: 165rem; } }
 
 .article-gallery-column {
   padding-bottom: 2%; }
+
+.moreBtnContainer {
+  display: flex;
+  justify-content: center; }
+
+.article-more-btn {
+  width: 17rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  background: transparent linear-gradient(75deg, #00cdd5 0%, #00cdd5 47%, #ff00ff 100%, #000 100%) 0% 0% no-repeat padding-box;
+  font-family: Mosk-800;
+  font-size: 2rem;
+  border: none;
+  margin-right: 3rem; }
+  @media only screen and (max-width: 26.25em) {
+    .article-more-btn {
+      margin-right: 0;
+      margin-bottom: 2rem; } }
 
 .articleGalleryLink {
   text-decoration: none;
@@ -2033,30 +2568,44 @@ h3, h4 {
   justify-content: space-between; }
 
 .article-card-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Mosk-600';
   color: #fff;
   padding-top: 2.2rem;
-  padding-bottom: 4rem;
-  max-width: 16rem; }
+  padding-bottom: 1.5rem;
+  max-width: 25rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-card-title {
+      font-size: 2.3rem; } }
   @media only screen and (max-width: 33.75em) {
     .article-card-title {
       font-size: 2.6rem; } }
   @media only screen and (max-width: 26.25em) {
     .article-card-title {
-      font-size: 2.5rem; } }
+      font-size: 2.3rem; } }
+
+.level-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
 
 .article-level-beginner {
   border: 0.3rem solid #228346;
   height: 0%;
-  margin-top: 2.2rem;
   border-radius: 1rem;
   display: inline-block;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Mosk-600';
-  color: #228346; }
+  color: #228346;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-beginner {
+      font-size: 1.8rem; } }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-beginner {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 33.75em) {
     .article-level-beginner {
       font-size: 2.6rem; } }
@@ -2066,15 +2615,21 @@ h3, h4 {
 
 .article-level-intermediate {
   height: 0%;
-  margin-top: 2.2rem;
   border: 0.3rem solid #ffb100;
   border-radius: 1rem;
   display: inline-block;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Mosk-600';
-  color: #ffb100; }
+  color: #ffb100;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-intermediate {
+      font-size: 1.8rem; } }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-intermediate {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 33.75em) {
     .article-level-intermediate {
       font-size: 2.6rem; } }
@@ -2084,14 +2639,20 @@ h3, h4 {
 
 .article-level-advanced {
   height: 0%;
-  margin-top: 2.2rem;
   border: 0.3rem solid #ea044b;
   border-radius: 1rem;
   display: inline-block;
   padding: 0.1rem 1.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Mosk-600';
-  color: #ea044b; }
+  color: #ea044b;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-advanced {
+      font-size: 1.8rem; } }
+  @media only screen and (min-width: 94.1em) {
+    .article-level-advanced {
+      font-size: 1.8rem; } }
   @media only screen and (max-width: 33.75em) {
     .article-level-advanced {
       font-size: 2.6rem; } }
@@ -2106,9 +2667,18 @@ h3, h4 {
   font-family: Mosk-100;
   font-weight: lighter; }
 
+.university-button {
+  margin-top: 5rem; }
+
+.university-start {
+  background: transparent linear-gradient(78deg, #00cdd5 0%, #f60aff 100%, #ff00ff 100%) 0% 0% no-repeat padding-box; }
+
+.university-start:hover {
+  background: transparent linear-gradient(257deg, #00cdd5 0%, #f60aff 78%, #ff00ff 100%) 0% 0% no-repeat padding-box; }
+
 .home-sub-container {
   padding: 2rem 0 12rem 0; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 114.5em) {
     .home-sub-container {
       padding: 3rem 0 14rem 0; } }
 
@@ -2190,7 +2760,7 @@ h3, h4 {
     font-family: Mosk-600;
     color: #fff;
     padding-bottom: 1.1rem; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 114.5em) {
       .job-info__title {
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 33.75em) {
@@ -2226,71 +2796,72 @@ h3, h4 {
     font-size: 2.2rem;
     margin-top: 0.6rem; }
 
-.meet-our-team {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 11rem;
-  padding-left: 9rem; }
-  @media only screen and (max-width: 48.75em) {
-    .meet-our-team {
-      padding-left: 6rem; } }
+.team-header {
+  font-family: Mosk-800;
+  font-size: 7rem;
+  line-height: normal;
+  margin-left: 4rem;
+  margin-bottom: 5rem; }
+  @media only screen and (min-width: 94.1em) {
+    .team-header {
+      margin-left: 6rem;
+      margin-bottom: 8rem; } }
+  @media only screen and (min-width: 103.75em) {
+    .team-header {
+      margin-left: 13rem; } }
+  @media only screen and (max-width: 64em) {
+    .team-header {
+      margin-left: 8rem; } }
   @media only screen and (max-width: 33.75em) {
-    .meet-our-team {
-      padding-left: 0; } }
+    .team-header {
+      margin-left: 2rem;
+      font-size: 5.7rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .team-header {
+      font-size: 4.9rem; } }
   @media only screen and (max-width: 23.75em) {
-    .meet-our-team {
-      padding-left: 4rem; } }
+    .team-header {
+      font-size: 6.3rem;
+      margin-left: 6rem; } }
   @media only screen and (max-width: 22.5em) {
-    .meet-our-team {
-      padding-left: 3rem; } }
+    .team-header {
+      font-size: 5.9rem; } }
   @media only screen and (max-width: 20em) {
-    .meet-our-team {
-      padding-left: 0; } }
+    .team-header {
+      font-size: 5rem;
+      margin-left: 4rem; } }
+  @media only screen and (max-width: 17.5em) {
+    .team-header {
+      margin-left: 7.5rem; } }
   @media only screen and (orientation: portrait) and (max-width: 26.25em) {
     @supports (-webkit-touch-callout: none) {
-      .meet-our-team {
-        /* CSS specific to iOS devices */
-        padding-left: 2rem; } } }
-  @media only screen and (max-width: 17.5em) {
-    .meet-our-team {
-      padding-left: 4rem; } }
+      .team-header {
+        font-size: 6rem; } } }
 
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  width: 100rem; }
-  @media only screen and (min-width: 100em) {
-    .team-container {
-      width: 130rem; } }
-
-.team-header {
-  font-family: Mosk-800;
-  font-size: 7rem;
-  line-height: normal; }
-  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
-    @supports (-webkit-touch-callout: none) {
-      .team-header {
-        /* CSS specific to iOS devices */
-        font-size: 6rem; } } }
+  justify-content: center; }
 
 .profile-card {
   color: #fff;
-  margin: 6rem 5rem 4rem 0; }
-  @media only screen and (min-width: 100em) {
+  margin: 3rem; }
+  @media only screen and (min-width: 103.75em) {
     .profile-card {
-      margin: 6rem 7rem 4rem 0; } }
+      margin: 3rem 4rem; } }
+  @media only screen and (max-width: 90em) {
+    .profile-card {
+      margin: 2.5rem; } }
+  @media only screen and (max-width: 80em) {
+    .profile-card {
+      margin: 2.3rem; } }
+  @media only screen and (max-width: 64em) {
+    .profile-card {
+      margin-top: 5rem; } }
   @media only screen and (max-width: 33.75em) {
     .profile-card {
-      margin: 4rem 4rem 2rem 0; } }
-  @media only screen and (max-width: 26.25em) {
-    .profile-card {
-      margin: 4rem 1.5rem 2rem 0; } }
-  @media only screen and (max-width: 23.75em) {
-    .profile-card {
-      margin: 5rem 5rem 2rem 0; } }
-  @media only screen and (max-width: 20em) {
-    .profile-card {
-      margin: 5rem 2.5rem 2rem 0; } }
+      margin: 1.3rem;
+      margin-bottom: 4rem; } }
   .profile-card__pic-container {
     display: flex;
     flex-direction: column;
@@ -2300,65 +2871,89 @@ h3, h4 {
   .profile-card__name {
     font-family: Mosk-600;
     font-size: 2rem; }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 23.75em) {
       .profile-card__name {
-        font-size: 1.7rem; } }
+        font-size: 3rem; } }
+    @media only screen and (max-width: 20em) {
+      .profile-card__name {
+        font-size: 2.5rem; } }
   .profile-card__job-title {
     font-family: Mosk-200;
     font-size: 1.2rem; }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 23.75em) {
       .profile-card__job-title {
-        font-size: 1rem; } }
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 20em) {
+      .profile-card__job-title {
+        font-size: 2rem; } }
   .profile-card__image {
-    height: 34rem; }
-    @media only screen and (min-width: 100em) {
+    height: 35rem; }
+    @media only screen and (min-width: 94.1em) {
       .profile-card__image {
-        height: 35rem; } }
+        height: 37rem; } }
+    @media only screen and (max-width: 90em) {
+      .profile-card__image {
+        height: 30rem; } }
+    @media only screen and (max-width: 80em) {
+      .profile-card__image {
+        height: 27rem; } }
     @media only screen and (max-width: 64em) {
       .profile-card__image {
         height: 30rem; } }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 26.25em) {
       .profile-card__image {
-        height: 26rem; } }
+        height: 37rem; } }
     @media only screen and (max-width: 23.75em) {
       .profile-card__image {
-        height: 28rem; } }
+        height: 50rem; } }
   .profile-card__logo-3d-container {
-    height: 34rem;
-    width: 27.2rem;
+    height: 35rem;
+    width: 28rem;
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media only screen and (min-width: 100em) {
+    @media only screen and (min-width: 94.1em) {
       .profile-card__logo-3d-container {
-        height: 35rem;
-        width: 28rem; } }
+        height: 36.8rem;
+        width: 29.8rem; } }
+    @media only screen and (max-width: 90em) {
+      .profile-card__logo-3d-container {
+        height: 30rem;
+        width: 24rem; } }
+    @media only screen and (max-width: 80em) {
+      .profile-card__logo-3d-container {
+        height: 27rem;
+        width: 21.7rem; } }
     @media only screen and (max-width: 64em) {
       .profile-card__logo-3d-container {
         height: 30rem;
         width: 24rem; } }
-    @media only screen and (max-width: 33.75em) {
+    @media only screen and (max-width: 26.25em) {
       .profile-card__logo-3d-container {
-        height: 26rem;
-        width: 21rem; } }
+        height: 36.8rem;
+        width: 29.8rem; } }
     @media only screen and (max-width: 23.75em) {
       .profile-card__logo-3d-container {
-        height: 28rem;
-        width: 22.5rem; } }
+        height: 50rem;
+        width: 40rem; } }
   .profile-card__logo-3d {
     height: 14rem; }
-    @media only screen and (max-width: 64em) {
+    @media only screen and (max-width: 90em) {
+      .profile-card__logo-3d {
+        height: 12rem; } }
+    @media only screen and (max-width: 80em) {
       .profile-card__logo-3d {
         height: 11rem; } }
-    @media only screen and (max-width: 33.75em) {
-      .profile-card__logo-3d {
-        height: 9rem; } }
     @media only screen and (max-width: 23.75em) {
       .profile-card__logo-3d {
-        height: 10rem; } }
+        height: 17rem; } }
   .profile-card__linkedIn {
     height: 1.5rem;
     margin-top: 0.75rem; }
+    @media only screen and (max-width: 23.75em) {
+      .profile-card__linkedIn {
+        height: 2.4rem;
+        margin-bottom: 5rem; } }
 
 .migration-docs-container {
   display: flex;
@@ -2369,27 +2964,39 @@ h3, h4 {
   font-size: 2rem; }
   .migration-docs__header {
     font-size: 9rem;
-    line-height: normal; }
-    @media only screen and (max-width: 33.75em) {
+    line-height: normal;
+    font-family: Mosk-600; }
+    @media only screen and (max-width: 80em) {
       .migration-docs__header {
         font-size: 7rem; } }
   .migration-docs__subheader {
     font-size: 6rem;
-    padding-top: 6rem; }
-    @media only screen and (max-width: 33.75em) {
+    padding-top: 6rem;
+    font-family: Mosk-600; }
+    @media only screen and (max-width: 80em) {
+      .migration-docs__subheader {
+        font-size: 5.2rem; } }
+    @media only screen and (max-width: 48.75em) {
       .migration-docs__subheader {
         font-size: 5rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .migration-docs__subheader {
+        font-size: 3.8rem; } }
   .migration-docs__text {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    font-family: Mosk-300; }
   .migration-docs__link {
     color: #fff;
     text-decoration: none;
     font-weight: bold; }
 
-.migration-docs-infographic {
+.migration-docs-infographic-container {
   padding-top: 6rem;
-  height: auto;
-  width: 100%; }
+  display: flex;
+  justify-content: center; }
+
+.migration-docs-infographic {
+  max-width: 90%; }
 
 /* HERO STYLING */
 .openPos-hero-header {
@@ -2418,7 +3025,7 @@ h3, h4 {
 .positionDetailBody {
   font-family: Mosk-200;
   font-size: 2.5rem;
-  color: #C7C7C7; }
+  color: #c7c7c7; }
 
 .positionDetailSubHead {
   font-family: Mosk-500;
@@ -2448,3 +3055,135 @@ h3, h4 {
 .contactEmail {
   font-family: Mosk-300;
   font-size: 3.5rem; }
+
+.migration-docs-container {
+  display: flex;
+  flex-direction: column; }
+
+.presskit-image {
+  height: auto;
+  width: 45%; }
+
+.preskit-text {
+  margin-top: 3rem;
+  font-family: Mosk-200;
+  font-size: 2.5rem;
+  color: #c7c7c7;
+  max-width: 90rem;
+  line-height: 3rem; }
+
+.presskit-discover {
+  margin-top: 16rem; }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .presskit-discover {
+        margin-top: 12rem; } } }
+  .presskit-discover__image {
+    height: auto;
+    width: 3%;
+    margin-left: 19rem;
+    margin-top: 2rem;
+    margin-bottom: 15rem; }
+    @media only screen and (max-width: 48.75em) {
+      .presskit-discover__image {
+        width: 4%; } }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-discover__image {
+        width: 6%; } }
+    @media only screen and (max-width: 26.25em) {
+      .presskit-discover__image {
+        margin-left: 20rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .presskit-discover__image {
+        margin-left: 19rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .presskit-discover__image {
+          margin-bottom: 10rem;
+          margin-left: 13rem; } } }
+  .presskit-discover__assets {
+    font-size: 6rem;
+    margin-bottom: 15rem; }
+    @media only screen and (max-width: 48.75em) {
+      .presskit-discover__assets {
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-discover__assets {
+        font-size: 4.2rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .presskit-discover__assets {
+        font-size: 3.5rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .presskit-discover__assets {
+          margin-bottom: 10rem; } } }
+
+.presskit-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media only screen and (max-width: 64em) {
+    .presskit-flex {
+      justify-content: space-evenly; } }
+  .presskit-flex__1 {
+    background: transparent linear-gradient(308deg, #000000 0%, #171717 100%) 0% 0% no-repeat padding-box;
+    height: 40rem;
+    width: 63rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-flex__1 {
+        height: 30rem;
+        width: 53rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .presskit-flex__1 {
+          height: 15rem;
+          width: 30rem; } } }
+  .presskit-flex__2 {
+    background: #fff;
+    height: 40rem;
+    width: 63rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 33.75em) {
+      .presskit-flex__2 {
+        height: 30rem;
+        width: 53rem; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .presskit-flex__2 {
+          height: 15rem;
+          width: 30rem; } } }
+  .presskit-flex__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 64em) {
+      .presskit-flex__image {
+        height: auto;
+        width: 90%; } }
+    @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+      @supports (-webkit-touch-callout: none) {
+        .presskit-flex__image {
+          width: 80%; } } }
+  .presskit-flex__text {
+    color: #8b8b8b;
+    font-family: Mosk-300;
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 64em) {
+      .presskit-flex__text {
+        margin-bottom: 5rem; } }
+
+.presskit-color {
+  margin-top: 20rem;
+  margin-bottom: 15rem; }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .presskit-color {
+        margin-top: 5rem;
+        margin-bottom: 5rem; } } }
+
+.presskit-kal {
+  height: auto;
+  width: 60%; }

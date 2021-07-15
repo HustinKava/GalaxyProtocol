@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import MobileLogo from '../../Assets/logos/gp-emblem-color-small.png';
-import NavSocial from './NavSocial';
+import UseGalaxySwap from './NavUseGalaxySwap';
 
 const MobileNav = ({ toggle }) => {
   return (
@@ -20,8 +20,8 @@ const MobileNav = ({ toggle }) => {
           </NavLink>
         </div>
 
-        {/* Social icons */}
-        <NavSocial />
+        {/* Use galaxy swap button */}
+        <UseGalaxySwap />
       </div>
     </div>
   );
