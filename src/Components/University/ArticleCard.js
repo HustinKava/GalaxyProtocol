@@ -1,6 +1,6 @@
 import React from 'react';
 import ArticleLevel from './ArticleLevel';
-// import CategoryBadge from './ArticleCategoryBadge';
+import CategoryBadge from './ArticleCategoryBadge';
 
 function ArticleCard({
   articleName,
@@ -34,7 +34,7 @@ function ArticleCard({
   dateSincePosted();
 
   // To limit the number of badge categories that can be displayed
-  // let sumOfBadges = `+ ${categories.length - 3}`;
+  let sumOfBadges = `+ ${categories.length - 3}`;
 
   return (
     <div className="article-card">
@@ -46,20 +46,20 @@ function ArticleCard({
               <img src={image} alt="" className="article-card-image"></img>
             </div>
             <div className="article-card-badge-container">
-              {/* {categories.map((category, index) => {
-                                if (index < 3) {
-                                    return <CategoryBadge
-                                        key={index}
-                                        categoryType={category} />
-                                } else {
-                                    return <CategoryBadge
-                                        key={index}
-                                        categoryType={sumOfBadges} />
+              {categories.map((category, index) => {
+                if (index < 3) {
+                  return <CategoryBadge
+                    key={index}
+                    categoryType={category[0].toUpperCase() + category.substring(1)} />
+                } else {
+                  return <CategoryBadge
+                    key={index}
+                    categoryType={sumOfBadges} />
 
-                                        }
-                                     }
-                                )
-                            } */}
+                }
+              }
+              )
+              }
             </div>
           </div>
         </a>
@@ -75,8 +75,6 @@ function ArticleCard({
         <div className="article-card-timeframe-container">
           <p className="article-card-posted">{timeSincePosting}</p>
           {/* <div className="article-card-length"> &#128343;{length}m</div> */}
-        </div>
-        <div className="level-container">
           <ArticleLevel level={level} />
         </div>
       </div>

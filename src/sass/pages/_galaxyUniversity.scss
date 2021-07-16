@@ -102,7 +102,6 @@
   flex-direction: row;
   justify-content: space-around;
   height: fit-content;
-  // height: 9.5rem;
   background: transparent
     linear-gradient(
       75deg,
@@ -113,9 +112,6 @@
     )
     0% 0% no-repeat padding-box;
 
-  // @include respond(iphone-only) {
-  //   height: 5rem;
-  // }
 }
 
 .gradientBarContents {
@@ -390,6 +386,41 @@
 }
 
 // ARTICLE GALLERY COMPONENT
+
+.articles-heading-container {
+  margin-top: 4rem;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.5rem solid $color-grey-dark-2;
+  width: 25rem;
+
+  @include respond(ipad-pro) {
+    width: 21rem;
+  }
+
+  @include respond(ipad) {
+    width: 16rem;
+  }
+
+  @include respond(iphone-x) {
+    width: 17rem;
+  }
+
+  @include respond(iphone-only) {
+    width: 10rem;
+  }
+}
+
+.articles-heading {
+  font-family: Mosk-600;
+  font-size: 2.6rem;
+
+  @include respond(ipad) {
+    font-size: 2rem;
+  }
+}
+
 .articleGalleryContainer {
   margin: 12rem 6rem;
   display: flex;
@@ -495,6 +526,40 @@
   }
 }
 
+// The margin top here is matched with the opposite in the article-card-details-container to keep te space between them and allow the categories to sit at the top of the card
+.article-card-badge-container{
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-top: -34rem;
+  justify-content: flex-start;
+  padding-left: 1.8rem;
+
+  @include respond(ipad-pro) {
+    margin-top: -34rem;
+  }
+  
+  @include respond(surface-duo) {
+    margin-top: -45.5rem;
+  }
+}
+
+.category-badge{
+  background-color: rgba(12, 1, 33, 0.8);
+  font-size: 1.5rem;
+  font-family: 'Mosk-600';
+  padding-left: .9rem;
+  padding-right: .9rem;
+  margin-right: .8rem;
+  border-radius: .4rem;
+
+  @include respond(surface-duo) {
+    font-size: 1.9rem;
+  }
+}
+
+
+
 .article-card-image {
   max-width: 100%;
 }
@@ -556,10 +621,17 @@
   }
 }
 
-.level-container {
+.article-card-posted{
+  color: #5B5D62;
+  font-size: 2rem;
+}
+
+.article-card-timeframe-container {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 .article-level-beginner {

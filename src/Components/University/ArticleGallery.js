@@ -172,11 +172,11 @@ function ArticleGallery({ articleFilters }) {
       setShowMore(true)
       setTotalArticlesDisplay(articles.length)
       setBtnText('Hide articles')
-    } else if(showMore && articlesInSelectedCategories.length === 0) {
+    } else if (showMore && articlesInSelectedCategories.length === 0) {
       setTotalArticlesDisplay(8)
       setShowMore(false)
       setBtnText('See all articles')
-    } else if (!showMore && articlesInSelectedCategories.length > 0){
+    } else if (!showMore && articlesInSelectedCategories.length > 0) {
       setShowMore(true)
       setTotalArticlesDisplay(articlesInSelectedCategories.length)
       setBtnText('Hide articles')
@@ -189,10 +189,13 @@ function ArticleGallery({ articleFilters }) {
 
   return (
     <>
+          <div className="articles-heading-container">
+            <h3 className="articles-heading">
+              <span className="uni-text">{articles.length}</span>{' '}
+              <span className="uni-bold-text">Articles</span>
+            </h3>
+          </div>
       <div className="articleGalleryContainer">
-        <div classNAme="totalArticlesContainer">
-        {/* <p className="totalArticles">{articles.length} <span className="totalArticles--1">Articles</span></p> */}
-        </div>
         <div className="article-gallery">
 
           {/* If the user has selected categories to filter by, show those */}
@@ -222,7 +225,7 @@ function ArticleGallery({ articleFilters }) {
             />)) : ''}
 
 
-  
+
 
 
         </div>

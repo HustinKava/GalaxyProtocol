@@ -70,7 +70,7 @@ function App() {
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/GalaxyUniversity" component={GalaxyUniversity} />
         {/* <Route exact path="/Article" component={Article} /> */}
-        <Route exact path="/buyback1234" component={Buyback} />
+        <Route exact path="/buyback" component={Buyback} />
 
         {/* Articles */}
         <Route exact path="/HistoryofDefi" component={HistoryofDefi} />

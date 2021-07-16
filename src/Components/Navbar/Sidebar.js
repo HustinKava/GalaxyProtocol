@@ -67,6 +67,11 @@ function Sidebar({ isOpen, toggle }) {
           text="Galaxy Universe&#8209;ity"
           toggle={toggle}
         />
+        <InternalLink
+          link="buyback"
+          text="BuyBack"
+          toggle={toggle}
+        />
         <ComingSoon text="GalaxySwap" />
 
         <ExternalLink

@@ -84,15 +84,12 @@ button {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
- "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
- sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
- monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 @font-face {
   font-family: "Mosk-100";
@@ -2494,6 +2491,34 @@ h4 {
     .filterBtnIcon {
       height: 3.6rem; } }
 
+.articles-heading-container {
+  margin-top: 4rem;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.5rem solid #292929;
+  width: 25rem; }
+  @media only screen and (max-width: 64em) {
+    .articles-heading-container {
+      width: 21rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .articles-heading-container {
+      width: 16rem; } }
+  @media only screen and (max-width: 23.75em) {
+    .articles-heading-container {
+      width: 17rem; } }
+  @media only screen and (orientation: portrait) and (max-width: 26.25em) {
+    @supports (-webkit-touch-callout: none) {
+      .articles-heading-container {
+        width: 10rem; } } }
+
+.articles-heading {
+  font-family: Mosk-600;
+  font-size: 2.6rem; }
+  @media only screen and (max-width: 48.75em) {
+    .articles-heading {
+      font-size: 2rem; } }
+
 .articleGalleryContainer {
   margin: 12rem 6rem;
   display: flex;
@@ -2571,6 +2596,32 @@ h4 {
       height: 48rem;
       width: 36rem; } }
 
+.article-card-badge-container {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-top: -34rem;
+  justify-content: flex-start;
+  padding-left: 1.8rem; }
+  @media only screen and (max-width: 64em) {
+    .article-card-badge-container {
+      margin-top: -34rem; } }
+  @media only screen and (max-width: 33.75em) {
+    .article-card-badge-container {
+      margin-top: -45.5rem; } }
+
+.category-badge {
+  background-color: rgba(12, 1, 33, 0.8);
+  font-size: 1.5rem;
+  font-family: 'Mosk-600';
+  padding-left: .9rem;
+  padding-right: .9rem;
+  margin-right: .8rem;
+  border-radius: .4rem; }
+  @media only screen and (max-width: 33.75em) {
+    .category-badge {
+      font-size: 1.9rem; } }
+
 .article-card-image {
   max-width: 100%; }
 
@@ -2620,10 +2671,16 @@ h4 {
     .article-card-title {
       font-size: 2.3rem; } }
 
-.level-container {
+.article-card-posted {
+  color: #5B5D62;
+  font-size: 2rem; }
+
+.article-card-timeframe-container {
   width: 100%;
   display: flex;
-  justify-content: flex-end; }
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem; }
 
 .article-level-beginner {
   border: 0.3rem solid #228346;

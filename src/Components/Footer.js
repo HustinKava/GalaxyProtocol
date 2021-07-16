@@ -72,6 +72,10 @@ function Footer() {
                 link="galaxyuniversity"
                 text="Galaxy Universe&#8209;ity"
               />
+              <InternalLink
+                link="buyback"
+                text="BuyBack"
+              />
               <ComingSoon text="GalaxySwap" />
               <ExternalLink
                 href="https://intergalacticmerch.myshopify.com/"

@@ -50,7 +50,7 @@ export const profileInfo = [
     name: 'Hipsley',
     image: Hipsley,
     jobTitle: 'Discord, Telegram, Mod Manager',
-    linkedIn: '',
+    linkedIn: 'https://www.linkedin.com/in/philip-hipsley-0745b9211/',
   },
   {
     name: 'Joshua',

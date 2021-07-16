@@ -152,7 +152,7 @@ const Whitepaper = () => {
 
   return (
     <div>
-      <div className="mainContainer">
+      <div className='mainContainer'>
         <ArticleTemplate
           heroImage={content.heroImage}
           title={content.title}
