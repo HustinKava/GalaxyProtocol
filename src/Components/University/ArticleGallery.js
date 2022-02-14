@@ -19,14 +19,11 @@ import SmartChain from '../../Assets/articlesSlice/binance-smart-slice.png';
 import BeginnerChart from '../../Assets/articlesSlice/beginner-chart-slice.png';
 import Slippage from '../../Assets/articlesSlice/slippage-slice.png';
 
-
-
 function ArticleGallery({ articleFilters }) {
-
   // State to toggle showing the hidden articles
-  const [showMore, setShowMore] = useState(false)
+  const [showMore, setShowMore] = useState(false);
   const [totalArticlesDisplayed, setTotalArticlesDisplay] = useState(8);
-  const [btnText, setBtnText] = useState('See all articles')
+  const [btnText, setBtnText] = useState('See all articles');
   //Creating an array of article objects
   const articles = [
     {
@@ -36,7 +33,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: CryptoWallets,
       categories: ['blockchain'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'ETH vs BTC',
@@ -45,7 +42,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: EthVsBtc,
       categories: ['blockchain'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Flash Loans',
@@ -54,7 +51,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: FlashLoans,
       categories: ['defi'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'DLT and Blockchain',
@@ -63,7 +60,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: DltAndBlockchain,
       categories: ['blockchain'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Impermanent Loss',
@@ -72,7 +69,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: ImpermanentLoss,
       categories: ['defi'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'How to make your own NFTs',
@@ -81,7 +78,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: OwnNFT,
       categories: ['defi'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Bridging',
@@ -90,7 +87,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: Bridging,
       categories: ['blockchain'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Smart Contracts and the Ethereum Virtual Machine',
@@ -99,7 +96,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: SmartContract,
       categories: ['blockchain'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Staking',
@@ -108,7 +105,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: Staking,
       categories: ['defi'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'History of Defi',
@@ -117,7 +114,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: HistoryOfDefi,
       categories: ['defi'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'CeFi vs DeFi',
@@ -126,7 +123,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: CefiVsDefi,
       categories: ['finance'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Binance Smart Chain',
@@ -135,7 +132,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: SmartChain,
       categories: ['blockchain'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Reading a chart for beginners',
@@ -144,7 +141,7 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: BeginnerChart,
       categories: ['finance'],
-      datePosted: new Date('07/05/2021')
+      datePosted: new Date('07/05/2021'),
     },
     {
       articleName: 'Slippage',
@@ -153,18 +150,15 @@ function ArticleGallery({ articleFilters }) {
       length: 10,
       image: Slippage,
       categories: ['finance'],
-      datePosted: new Date('07/05/2021')
-    }
-  ]
-
+      datePosted: new Date('07/05/2021'),
+    },
+  ];
 
   // Using the array of categories as filter
   // Find articles that contain any of the filters chosen by the user
-  const articlesInSelectedCategories = articles.filter(
-    article => articleFilters.some(
-      category => article.categories.includes(category)
-    )
-  )
+  const articlesInSelectedCategories = articles.filter((article) =>
+    articleFilters.some((category) => article.categories.includes(category))
+  );
 
   function toggleArticles() {
     // If the user hasn't selected any categories toggle between 8 and all articles
@@ -181,9 +175,9 @@ function ArticleGallery({ articleFilters }) {
       setTotalArticlesDisplay(articlesInSelectedCategories.length)
       setBtnText('Hide articles')
     } else {
-      setTotalArticlesDisplay(8)
-      setShowMore(false)
-      setBtnText('See all articles')
+      setTotalArticlesDisplay(8);
+      setShowMore(false);
+      setBtnText('See all articles');
     }
   }
 
@@ -197,7 +191,6 @@ function ArticleGallery({ articleFilters }) {
           </div>
       <div className="articleGalleryContainer">
         <div className="article-gallery">
-
           {/* If the user has selected categories to filter by, show those */}
           {articlesInSelectedCategories.length === 0 ? articles.slice(0, totalArticlesDisplayed).map(article => (
             <ArticleCard
@@ -223,15 +216,12 @@ function ArticleGallery({ articleFilters }) {
               categories={article.categories}
 
             />)) : ''}
-
-
-
-
-
         </div>
       </div>
       <div className="moreBtnContainer">
-        <button className="article-more-btn" onClick={toggleArticles}>{btnText}</button>
+        <button className="article-more-btn" onClick={toggleArticles}>
+          {btnText}
+        </button>
       </div>
     </>
   );

@@ -29,7 +29,7 @@ const Partners = () => {
         <div className="uni-partners">
           <PartnerLogo partnerName={CoinMarketCap} alt="CoinMarketCap" />
           <PartnerLogo partnerName={PancakeSwap} alt="PancakeSwap" />
-          <PartnerLogo partnerName={MetaMask} alt="" />
+          <PartnerLogo partnerName={MetaMask} alt="MetaMask" />
           <PartnerLogo partnerName={CoinGecko} alt="CoinGecko" />
           <PartnerLogo partnerName={CoinTiger} alt="CoinTiger" />
           {/* <PartnerLogo partnerName={ProBit} alt="ProBit" /> */}

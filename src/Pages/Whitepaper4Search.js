@@ -1,4 +1,4 @@
-import ArticleTemplate from '../Components/Articles/ArticleTemplate';
+import ArticleTemplate from '../Components/Articles/ArticleContent';
 // Progress bar
 import getProgress from '../Components/ProgressBar/getProgress';
 import GalaxyProtocolWhitepaper from '../Assets/logos/GalaxyProtocolWhitepaper.png';
@@ -151,14 +151,8 @@ const Whitepaper = () => {
   };
 
   return (
-    <div>
-      <div className='mainContainer'>
-        <ArticleTemplate
-          heroImage={content.heroImage}
-          title={content.title}
-          body={content.body}
-        />
-      </div>
+    <div className="mainContainer">
+      <ArticleTemplate article={content} />
     </div>
   );
 };

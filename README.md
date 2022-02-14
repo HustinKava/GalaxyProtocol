@@ -1,23 +1,22 @@
-# Getting Started with Create React App
+# Galaxy Protocol Main Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+### `npm i`
 
-In the project directory, you can run:
+ - If you have a compile error saying it cant find your vendor folder: goto your Node Modules folder, open the node-sass folder, create a new folder called vendor, in the terminal run `npm rebuild node-sass`
+ - Run `npm i npm-run-all -D` then `rm -rf node_modules` then delete your packagelock.json file & then run `npm i`
+ - After installation goto Node Modules folder, open the resolve-url-loader folder, open index.js, under the options object (starting around line 46) change the `removeCR` key from false to true.
+ 
+## To Run
 
 ### `npm start`
 
-Runs the app in the development mode.\
+This runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 

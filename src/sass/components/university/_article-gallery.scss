@@ -1,0 +1,321 @@
+// ARTICLE GALLERY COMPONENT
+.articleGalleryContainer {
+  margin: 12rem 6rem;
+  display: flex;
+  justify-content: center;
+
+  @include respond(big-desktop) {
+    margin: 15rem 8rem;
+  }
+
+  @include respond(ipad-pro) {
+    margin: 10rem 7rem;
+  }
+}
+.totalArticlesContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.totalArticles {
+  font-size: 2.4rem;
+  font-family: 'Mosk-100';
+
+  &--1 {
+    font-family: 'Mosk-700';
+  }
+}
+
+.article-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-gallery-column {
+  padding-bottom: 2%;
+}
+
+.moreBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.article-more-btn {
+  width: 17rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  color: $color-white;
+  cursor: pointer;
+  background: transparent
+    linear-gradient(
+      75deg,
+      $color-teal 0%,
+      $color-teal 47%,
+      $color-pink 100%,
+      $color-black 100%
+    )
+    0% 0% no-repeat padding-box;
+  font-family: Mosk-800;
+  font-size: 2rem;
+  border: none;
+  margin-right: 3rem;
+
+  @include respond(iphone-plus) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.articleGalleryLink {
+  text-decoration: none;
+  color: #22222a;
+}
+
+// ARTICLE CARD COMPONENT
+
+.article-card {
+  margin: 3rem;
+  margin-bottom: 0;
+
+  @include respond(ipad-pro) {
+    margin: 2.5rem;
+  }
+}
+
+.article-image-category-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card-image-div {
+  display: flex;
+  justify-content: center;
+  height: 36rem;
+  width: 28rem;
+  overflow: hidden;
+
+  border-radius: 3rem;
+  background: rgb(104, 211, 214);
+
+  @include respond(surface-duo) {
+    height: 48rem;
+    width: 36rem;
+  }
+}
+
+.article-card-image {
+  max-width: 100%;
+}
+
+// The margin top here is matched with the opposite in the article-card-details-container to keep te space between them and allow the categories to sit at the top of the card
+.article-card-badge-container {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-top: -32rem;
+  justify-content: space-around;
+
+  @include respond(surface-duo) {
+    margin-top: -42rem;
+  }
+}
+
+.category-badge {
+  background-color: rgba(12, 1, 33, 0.8);
+  font-size: 1.4rem;
+  font-family: 'Mosk-600';
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0.6rem;
+
+  @include respond(surface-duo) {
+    font-size: 2rem;
+  }
+}
+
+.article-card-details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rem;
+
+  @include respond(surface-duo) {
+    margin-top: 43rem;
+  }
+}
+
+.article-card-title {
+  font-size: 2rem;
+  font-family: 'Mosk-600';
+  color: $color-white;
+  padding-top: 2.2rem;
+  padding-bottom: 1.5rem;
+  max-width: 25rem;
+
+  @include respond(large-laptop) {
+    font-size: 2.3rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.3rem;
+  }
+}
+
+.level-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.article-level {
+  height: 0%;
+  border-radius: 1rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: 'Mosk-600';
+  margin-bottom: 2rem;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
+
+  &--Beginner {
+    padding: 0 0.8rem;
+    border: 0.3rem solid #228346;
+    color: #228346;
+  }
+
+  &--Intermediate {
+    padding: 0 0.8rem;
+    border: 0.3rem solid #ffb100;
+    color: #ffb100;
+  }
+
+  &--Advanced {
+    padding: 0.1rem 1.8rem;
+    border: 0.3rem solid #ea044b;
+    color: #ea044b;
+  }
+}
+
+.article-card-timeframe-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-card-length,
+.article-card-posted {
+  font-family: 'Mosk-600';
+  font-size: 2rem;
+  margin-top: 0.8rem;
+}
+
+.article-card-length {
+  color: $color-white;
+}
+
+.article-card-posted {
+  color: #5b5d62;
+  margin-right: 2.5rem;
+}
+
+// old classes for levels
+.article-level-beginner {
+  border: 0.3rem solid #228346;
+  height: 0%;
+  border-radius: 1rem;
+  display: inline-block;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.6rem;
+  font-family: 'Mosk-600';
+  color: #228346;
+  margin-bottom: 2rem;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
+}
+
+.article-level-intermediate {
+  height: 0%;
+  border: 0.3rem solid #ffb100;
+  border-radius: 1rem;
+  display: inline-block;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  font-size: 1.6rem;
+  font-family: 'Mosk-600';
+  color: #ffb100;
+  margin-bottom: 2rem;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
+}
+
+.article-level-advanced {
+  height: 0%;
+  border: 0.3rem solid #ea044b;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.1rem 1.8rem;
+  font-size: 1.6rem;
+  font-family: 'Mosk-600';
+  color: #ea044b;
+  margin-bottom: 2rem;
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(large-laptop) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(surface-duo) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(iphone-plus) {
+    font-size: 2.5rem;
+  }
+}
+
+// end of old classes
